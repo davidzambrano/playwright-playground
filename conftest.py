@@ -1,0 +1,71 @@
+import pytest
+from playwright.sync_api import Page, expect
+from typing import Generator, Dict
+import os
+from dotenv import load_dotenv
+from pages.home_page import HomePage
+from pages.slow_resources_page import SlowResourcesPage
+from pages.add_remove_elements_page import AddRemoveElementsPage
+
+load_dotenv()
+
+# Set default expect timeout to 30 seconds
+expect.set_options(timeout=30000)
+
+
+@pytest.fixture(scope="session")
+def browser_context_args(browser_context_args: Dict) -> Dict:
+    """Configure browser context with default settings."""
+    return {
+        **browser_context_args,
+        "viewport": {"width": 1920, "height": 1080},
+        "ignore_https_errors": True,
+        "locale": "en-US",
+        "timezone_id": "America/New_York",
+        "extra_http_headers": {
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache"
+        }
+    }
+
+
+@pytest.fixture(scope="function")
+def page(page: Page) -> Generator[Page, None, None]:
+    """Page fixture with automatic cleanup and error handling."""
+    # Set default timeout to 30 seconds
+    page.set_default_timeout(30000)
+    
+    # Add error handling
+    def handle_error(error):
+        print(f"Page error: {error}")
+    
+    page.on("pageerror", handle_error)
+    
+    yield page
+    
+    # Cleanup
+    page.close()
+
+
+@pytest.fixture(scope="function")
+def home_page(page: Page) -> HomePage:
+    """Fixture for HomePage object."""
+    return HomePage(page)
+
+
+@pytest.fixture(scope="function")
+def slow_resources_page(page: Page) -> SlowResourcesPage:
+    """Fixture for SlowResourcesPage object."""
+    return SlowResourcesPage(page)
+
+
+@pytest.fixture(scope="function")
+def add_remove_elements_page(page: Page) -> AddRemoveElementsPage:
+    """Fixture for AddRemoveElementsPage object."""
+    return AddRemoveElementsPage(page)
+
+
+@pytest.fixture(scope="session")
+def base_url() -> str:
+    """Base URL for the application under test."""
+    return os.getenv("BASE_URL", "https://auto-things.onrender.com/")

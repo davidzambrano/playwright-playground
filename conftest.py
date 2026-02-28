@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from pages.home_page import HomePage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.add_remove_elements_page import AddRemoveElementsPage
+from pages.basic_auth_page import BasicAuthPage
 
 load_dotenv()
 
@@ -64,6 +65,10 @@ def add_remove_elements_page(page: Page) -> AddRemoveElementsPage:
     """Fixture for AddRemoveElementsPage object."""
     return AddRemoveElementsPage(page)
 
+@pytest.fixture(scope="function")
+def basic_auth_page(page: Page) -> BasicAuthPage:
+    """Fixture for BasicAuthPage object."""
+    return BasicAuthPage(page)
 
 @pytest.fixture(scope="session")
 def base_url() -> str:

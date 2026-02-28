@@ -15,6 +15,7 @@ class HomePage(BasePage):
         self.slow_resources_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Slow Resources']]"
         self.stale_element_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Stale Element']]"
         self.add_remove_element_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Add/Remove Elements']]"
+        self.basic_auth_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Basic Auth']]"
     
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -56,6 +57,15 @@ class HomePage(BasePage):
 
         """
         return self.page.locator(self.add_remove_element_card_locator)
+
+    def get_basic_auth_card(self):
+        """Get the Basic Auth card element.
+
+        Returns:
+            Locator: The locator for the Basic Auth card element.
+
+        """
+        return self.page.locator(self.basic_auth_card_locator)
     
     def get_stale_element_card(self):
         """Get the Stale Element card element.
@@ -87,4 +97,15 @@ class HomePage(BasePage):
         card = self.get_add_remove_element_card()
         card.click()
         logger.info("Clicked Add/Remove Elements card")
+
+    def click_basic_auth_card(self):
+        """Click the Basic Auth card.
+
+        Returns:
+            None
+
+        """
+        card = self.get_basic_auth_card()
+        card.click()
+        logger.info("Clicked Basic Auth card")
 

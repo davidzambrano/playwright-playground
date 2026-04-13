@@ -1,0 +1,123 @@
+# This workflow will run Playwright automated tests against the Render-hosted application
+name: Playwright Playground Regression
+on:
+  workflow_dispatch:
+    inputs:
+      test_environment:
+        type: string
+        description: 'Test environment URL'
+        default: 'https://auto-things.onrender.com/'
+        required: true
+      test_markers:
+        type: choice
+        description: 'Test markers to run'
+        options:
+          - 'all'
+          - 'smoke'
+          - 'regression'
+          - 'slow'
+          - 'api'
+          - 'ui'
+        default: 'regression'
+
+env:
+
+jobs:
+
+  # Wake up the Render app
+  wake-app:
+    name: Wake up Render app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake up the application
+        run: |
+          echo "Waking up the app at ${{ inputs.test_environment }}"
+          # Ping the app to wake it up
+          for i in {1..5}; do
+            echo "Attempt $i: Pinging the app..."
+            curl -f -s -o /dev/null -w "%{http_code}" ${{ inputs.test_environment }} && echo " - App is awake!" && break
+            echo " - App not ready, waiting 30 seconds..."
+            sleep 30
+          done
+          
+          echo "Waiting additional 2 minutes for full initialization..."
+          sleep 120
+          
+          echo "Final check..."
+          curl -f ${{ inputs.test_environment }} || echo "App may still be initializing"
+
+  # Prep environment and run tests
+  run-tests:
+    needs: wake-app
+    name: Run Playwright tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+
+ 
+
+      - name: Determine test markers
+        id: markers
+        run: |
+          MARKERS=""
+          if [ "${{ inputs.test_markers }}" == "all" ]; then
+            MARKERS=""
+          elif [ "${{ inputs.test_markers }}" != "regression" ]; then
+            MARKERS="-m ${{ inputs.test_markers }}"
+          else
+            MARKERS="-m regression"
+          fi
+          echo "markers=$MARKERS" >> $GITHUB_OUTPUT
+
+      - name: Run Playwright tests
+        env:
+          BASE_URL: ${{ inputs.test_environment }}
+        run: |
+          # Set up test environment
+          mkdir -p reports
+          mkdir -p test-results
+          mkdir -p playwright-report
+          
+          # Configure pytest options
+          HTML_OPT="--html=reports/playwright-report.html --self-contained-html --disable-warnings -v"
+          MARKER_OPT="${{ steps.markers.outputs.markers }}"
+          PYTEST_PARAMS="$HTML_OPT $MARKER_OPT"
+          
+          # Run tests with proper browser configuration for headless CI
+          pytest --browser chromium --headed=false --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-results
+          path: |
+            reports/
+            test-results/
+            playwright-report/
+          retention-days: 7
+

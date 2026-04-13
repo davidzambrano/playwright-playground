@@ -20,8 +20,6 @@ on:
           - 'ui'
         default: 'regression'
 
-env:
-
 jobs:
 
   # Wake up the Render app

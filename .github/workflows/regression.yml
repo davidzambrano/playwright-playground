@@ -38,11 +38,7 @@ jobs:
             sleep 30
           done
           
-          echo "Waiting additional 2 minutes for full initialization..."
-          sleep 120
-          
-          echo "Final check..."
-          curl -f ${{ inputs.test_environment }} || echo "App may still be initializing"
+          echo "App is ready for testing!"
 
   # Prep environment and run tests
   run-tests:
@@ -110,7 +106,7 @@ jobs:
 
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: playwright-results
           path: |

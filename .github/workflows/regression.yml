@@ -18,7 +18,7 @@ on:
           - 'slow'
           - 'api'
           - 'ui'
-        default: 'all'
+        default: 'regression'
 
 jobs:
 
@@ -91,6 +91,7 @@ jobs:
       - name: Run Playwright tests
         env:
           BASE_URL: ${{ inputs.test_environment }}
+          PLAYWRIGHT_HEADED: false
         run: |
           # Set up test environment
           mkdir -p reports
@@ -103,7 +104,7 @@ jobs:
           PYTEST_PARAMS="$HTML_OPT $MARKER_OPT"
           
           # Run tests with proper browser configuration for headless CI
-          pytest --browser chromium --headed=false --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
+          pytest --browser chromium --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
 
       - name: Upload test results
         if: always()

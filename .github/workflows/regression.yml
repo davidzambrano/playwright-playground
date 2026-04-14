@@ -18,7 +18,7 @@ on:
           - 'slow'
           - 'api'
           - 'ui'
-        default: 'regression'
+        default: 'all'
 
 jobs:
 

@@ -91,7 +91,6 @@ jobs:
       - name: Run Playwright tests
         env:
           BASE_URL: ${{ inputs.test_environment }}
-          PLAYWRIGHT_HEADED: false
         run: |
           # Set up test environment
           mkdir -p reports
@@ -103,8 +102,8 @@ jobs:
           MARKER_OPT="${{ steps.markers.outputs.markers }}"
           PYTEST_PARAMS="$HTML_OPT $MARKER_OPT"
           
-          # Run tests with proper browser configuration for headless CI
-          pytest --browser chromium --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
+          # Run tests with xvfb to provide virtual display
+          xvfb-run -a pytest --browser chromium --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
 
       - name: Upload test results
         if: always()

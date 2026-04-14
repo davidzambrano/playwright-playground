@@ -18,7 +18,7 @@ on:
           - 'slow'
           - 'api'
           - 'ui'
-        default: 'regression'
+        default: 'all'
 
 jobs:
 
@@ -38,11 +38,7 @@ jobs:
             sleep 30
           done
           
-          echo "Waiting additional 2 minutes for full initialization..."
-          sleep 120
-          
-          echo "Final check..."
-          curl -f ${{ inputs.test_environment }} || echo "App may still be initializing"
+          echo "App is ready for testing!"
 
   # Prep environment and run tests
   run-tests:
@@ -70,6 +66,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install pytest-html
 
       - name: Install Playwright browsers
         run: |
@@ -105,12 +102,12 @@ jobs:
           MARKER_OPT="${{ steps.markers.outputs.markers }}"
           PYTEST_PARAMS="$HTML_OPT $MARKER_OPT"
           
-          # Run tests with proper browser configuration for headless CI
-          pytest --browser chromium --headed=false --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
+          # Run tests with xvfb to provide virtual display
+          xvfb-run -a pytest --browser chromium --screenshot only-on-failure --video retain-on-failure --tracing retain-on-failure $PYTEST_PARAMS
 
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: playwright-results
           path: |

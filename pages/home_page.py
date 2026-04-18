@@ -1,51 +1,61 @@
-from playwright.sync_api import Page, expect
-from .base_page import BasePage
+"""Page object for the Home page."""
+
 import logging
+
+from playwright.sync_api import Page
+
+from .base_page import BasePage
 
 logger = logging.getLogger(__name__)
 
 
 class HomePage(BasePage):
     """Page object for the Home page."""
-    
+
     def __init__(self, page: Page):
         super().__init__(page)
         # Locators
         self.page_title_locator = "//h1"
-        self.slow_resources_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Slow Resources']]"
-        self.stale_element_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Stale Element']]"
+        self.slow_resources_card_locator = (
+            "//div[contains(@class, 'rounded-lg') and .//span[text()='Slow Resources']]"
+        )
+        self.stale_element_card_locator = (
+            "//div[contains(@class, 'rounded-lg') and .//span[text()='Stale Element']]"
+        )
         self.add_remove_element_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Add/Remove Elements']]"
-        self.basic_auth_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Basic Auth']]"
-    
+        self.basic_auth_card_locator = (
+            "//div[contains(@class, 'rounded-lg') and .//span[text()='Basic Auth']]"
+        )
+
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
-        
+
         Args:
             base_url (str): The base URL to navigate to.
-        
+
         Returns:
             None
-        
+
         """
         self.navigate_to(base_url)
         self.wait_for_page_load()
         logger.info("Navigated to home page")
-    
+
     def get_page_title(self):
         """Get the page title element.
-        
+
         Returns:
             Locator: The locator for the page title element.
-        
+
         """
         return self.page.locator(self.page_title_locator)
-    
+
     def get_slow_resources_card(self):
         """Get the Slow Resources card element.
-        
+
         Returns:
             Locator: The locator for the Slow Resources card element.
-        
+
         """
         return self.page.locator(self.slow_resources_card_locator)
 
@@ -66,22 +76,22 @@ class HomePage(BasePage):
 
         """
         return self.page.locator(self.basic_auth_card_locator)
-    
+
     def get_stale_element_card(self):
         """Get the Stale Element card element.
-        
+
         Returns:
             Locator: The locator for the Stale Element card element.
-        
+
         """
         return self.page.locator(self.stale_element_card_locator)
-    
+
     def click_slow_resources_card(self):
         """Click the Slow Resources card.
-        
+
         Returns:
             None
-        
+
         """
         card = self.get_slow_resources_card()
         card.click()
@@ -108,4 +118,3 @@ class HomePage(BasePage):
         card = self.get_basic_auth_card()
         card.click()
         logger.info("Clicked Basic Auth card")
-

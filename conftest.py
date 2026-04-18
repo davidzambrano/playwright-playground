@@ -1,12 +1,16 @@
-import pytest
-from playwright.sync_api import Page, expect
-from typing import Generator, Dict
+"""Pytest configuration and fixtures for Playwright testing."""
+
 import os
+from typing import Dict, Generator
+
+import pytest
 from dotenv import load_dotenv
-from pages.home_page import HomePage
-from pages.slow_resources_page import SlowResourcesPage
+from playwright.sync_api import Page, expect
+
 from pages.add_remove_elements_page import AddRemoveElementsPage
 from pages.basic_auth_page import BasicAuthPage
+from pages.home_page import HomePage
+from pages.slow_resources_page import SlowResourcesPage
 
 load_dotenv()
 
@@ -15,7 +19,9 @@ expect.set_options(timeout=30000)
 
 
 @pytest.fixture(scope="session")
-def browser_context_args(browser_context_args: Dict) -> Dict:
+def browser_context_args(
+    browser_context_args: Dict,
+) -> Dict:  # pylint: disable=redefined-outer-name
     """Configure browser context with default settings."""
     return {
         **browser_context_args,
@@ -23,52 +29,59 @@ def browser_context_args(browser_context_args: Dict) -> Dict:
         "ignore_https_errors": True,
         "locale": "en-US",
         "timezone_id": "America/New_York",
-        "extra_http_headers": {
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache"
-        }
+        "extra_http_headers": {"Cache-Control": "no-cache", "Pragma": "no-cache"},
     }
 
 
 @pytest.fixture(scope="function")
-def page(page: Page) -> Generator[Page, None, None]:
+def page(
+    page: Page,
+) -> Generator[Page, None, None]:  # pylint: disable=redefined-outer-name
     """Page fixture with automatic cleanup and error handling."""
     # Set default timeout to 30 seconds
     page.set_default_timeout(30000)
-    
+
     # Add error handling
     def handle_error(error):
         print(f"Page error: {error}")
-    
+
     page.on("pageerror", handle_error)
-    
+
     yield page
-    
+
     # Cleanup
     page.close()
 
 
 @pytest.fixture(scope="function")
-def home_page(page: Page) -> HomePage:
+def home_page(page: Page) -> HomePage:  # pylint: disable=redefined-outer-name
     """Fixture for HomePage object."""
     return HomePage(page)
 
 
 @pytest.fixture(scope="function")
-def slow_resources_page(page: Page) -> SlowResourcesPage:
+def slow_resources_page(
+    page: Page,
+) -> SlowResourcesPage:  # pylint: disable=redefined-outer-name
     """Fixture for SlowResourcesPage object."""
     return SlowResourcesPage(page)
 
 
 @pytest.fixture(scope="function")
-def add_remove_elements_page(page: Page) -> AddRemoveElementsPage:
+def add_remove_elements_page(
+    page: Page,
+) -> AddRemoveElementsPage:  # pylint: disable=redefined-outer-name
     """Fixture for AddRemoveElementsPage object."""
     return AddRemoveElementsPage(page)
 
+
 @pytest.fixture(scope="function")
-def basic_auth_page(page: Page) -> BasicAuthPage:
+def basic_auth_page(
+    page: Page,
+) -> BasicAuthPage:  # pylint: disable=redefined-outer-name
     """Fixture for BasicAuthPage object."""
     return BasicAuthPage(page)
+
 
 @pytest.fixture(scope="session")
 def base_url() -> str:

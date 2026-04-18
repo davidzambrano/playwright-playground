@@ -1,6 +1,8 @@
 """Tests for the Basic Auth page."""
+
 import pytest
 from playwright.sync_api import expect
+
 
 class TestBasicAuthPage:
     """Tests for the Basic Auth page."""

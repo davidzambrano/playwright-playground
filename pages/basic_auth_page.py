@@ -1,6 +1,10 @@
-from playwright.sync_api import Page
-from .base_page import BasePage
+"""Page object for the Basic Auth page."""
+
 import logging
+
+from playwright.sync_api import Page
+
+from .base_page import BasePage
 
 logger = logging.getLogger(__name__)
 

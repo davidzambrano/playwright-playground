@@ -57,7 +57,7 @@ pytest -m smoke  # Only smoke tests
 ```
 
 ## Development Setup
-
+Add change to test pre-commit
 For development, install additional dependencies including code quality tools:
 
 ```bash

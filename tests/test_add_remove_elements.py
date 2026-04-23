@@ -43,9 +43,7 @@ class TestAddRemoveElementsPage:
                 count == expected
             ), f"After {expected} clicks, expected {expected} delete buttons, but found {count}"
 
-    def test_button_visibility_after_adding_one(
-        self, setup_pages, navigate_to_add_remove_elements
-    ):
+    def test_button_visibility_after_adding_one(self, setup_pages, navigate_to_add_remove_elements):
         """Test that Add Element and Delete buttons are visible after adding one element."""
         # Add one element
         self.add_remove_elements_page.click_add_element_button()
@@ -84,9 +82,7 @@ class TestAddRemoveElementsPage:
             final_count == 2
         ), f"Expected 2 delete buttons after removing one, but found {final_count}"
 
-    def test_remove_multiple_elements(
-        self, setup_pages, navigate_to_add_remove_elements
-    ):
+    def test_remove_multiple_elements(self, setup_pages, navigate_to_add_remove_elements):
         """Test removing multiple elements updates the list correctly."""
         # Add 5 elements
         for _ in range(5):

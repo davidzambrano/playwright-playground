@@ -16,7 +16,9 @@ class SlowResourcesPage(BasePage):
         super().__init__(page)
         # Locators
         self.header_locator = "//span[.='Slow Resources'] | //h1[.='Slow Resources']"
-        self.small_resource_banner_locator = "//div[@role='alert' and contains(., 'Small CSS file (5s) has finished loading.')]"
+        self.small_resource_banner_locator = (
+            "//div[@role='alert' and contains(., 'Small CSS file (5s) has finished loading.')]"
+        )
         self.mid_resource_banner_locator = (
             "//div[@role='alert' and contains(., "
             "'Large Javascript bundle (15s) has finished loading.')]"

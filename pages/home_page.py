@@ -22,7 +22,9 @@ class HomePage(BasePage):
         self.stale_element_card_locator = (
             "//div[contains(@class, 'rounded-lg') and .//span[text()='Stale Element']]"
         )
-        self.add_remove_element_card_locator = "//div[contains(@class, 'rounded-lg') and .//span[text()='Add/Remove Elements']]"
+        self.add_remove_element_card_locator = (
+            "//div[contains(@class, 'rounded-lg') and .//span[text()='Add/Remove Elements']]"
+        )
         self.basic_auth_card_locator = (
             "//div[contains(@class, 'rounded-lg') and .//span[text()='Basic Auth']]"
         )

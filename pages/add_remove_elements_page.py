@@ -15,13 +15,9 @@ class AddRemoveElementsPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
         # Locators
-        self.header_locator = (
-            "//span[.='Add/Remove Elements'] | //h1[.='Add/Remove Elements']"
-        )
+        self.header_locator = "//span[.='Add/Remove Elements'] | //h1[.='Add/Remove Elements']"
         self.add_element_button_locator = "//button[.='Add Element']"
-        self.delete_button_locator = (
-            "//div[contains(text(), 'Element ')]/parent::div/button"
-        )
+        self.delete_button_locator = "//div[contains(text(), 'Element ')]/parent::div/button"
 
     def get_header(self):
         """Get the page header element.

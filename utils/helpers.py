@@ -111,9 +111,7 @@ class WaitHelper:  # pylint: disable=too-few-public-methods
     """
 
     @staticmethod
-    def wait_for_condition(
-        condition_func, timeout: int = 10000, poll_interval: int = 500
-    ) -> bool:
+    def wait_for_condition(condition_func, timeout: int = 10000, poll_interval: int = 500) -> bool:
         """Wait for a custom condition to be true.
 
         Args:
@@ -142,9 +140,7 @@ class Logger:  # pylint: disable=too-few-public-methods
     """
 
     @staticmethod
-    def setup_logger(
-        name: str, log_file: str = None, level: int = logging.INFO
-    ) -> logging.Logger:
+    def setup_logger(name: str, log_file: str = None, level: int = logging.INFO) -> logging.Logger:
         """Set up a logger with file and console handlers.
 
         Args:

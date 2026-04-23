@@ -22,6 +22,8 @@ playwright-playground/
 ├── conftest.py            # Pytest configuration and fixtures
 ├── pytest.ini             # Pytest settings
 ├── requirements.txt       # Python dependencies
+├── requirements-dev.txt   # Development dependencies (code quality tools)
+├── .pre-commit-config.yaml # Pre-commit hooks configuration
 ├── .env.example          # Environment variables template
 ├── .gitignore            # Git ignore file
 └── README.md             # This file
@@ -52,6 +54,26 @@ pytest  # Run all tests
 pytest --browser firefox  # Use Firefox
 pytest --headed=false  # Headless mode
 pytest -m smoke  # Only smoke tests
+```
+
+## Development Setup
+
+For development, install additional dependencies including code quality tools:
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+Install pre-commit hooks to automatically run code quality checks before commits:
+
+```bash
+pre-commit install
+```
+
+To run pre-commit manually on all files:
+
+```bash
+pre-commit run --all-files
 ```
 
 ## Key Features

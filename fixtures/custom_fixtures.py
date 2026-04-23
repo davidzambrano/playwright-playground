@@ -1,7 +1,11 @@
-import pytest
-from playwright.sync_api import Page, BrowserContext
-from typing import Generator, Dict
+"""Custom pytest fixtures for testing scenarios."""
+
 import json
+from typing import Dict, Generator
+
+import pytest
+from playwright.sync_api import BrowserContext, Page
+
 from utils.helpers import TestDataGenerator
 
 
@@ -13,7 +17,7 @@ def test_user_data() -> Dict:
         "password": TestDataGenerator.random_string(12) + "1A!",
         "first_name": TestDataGenerator.random_string(8).capitalize(),
         "last_name": TestDataGenerator.random_string(8).capitalize(),
-        "phone": TestDataGenerator.random_phone_number()
+        "phone": TestDataGenerator.random_phone_number(),
     }
 
 
@@ -24,7 +28,7 @@ def api_test_data() -> Dict:
         "user_id": TestDataGenerator.random_string(10),
         "session_token": TestDataGenerator.random_string(32),
         "request_id": TestDataGenerator.random_string(16),
-        "timestamp": TestDataGenerator.random_date()
+        "timestamp": TestDataGenerator.random_date(),
     }
 
 
@@ -32,27 +36,37 @@ def api_test_data() -> Dict:
 def mock_api_responses(page: Page) -> Generator[Page, None, None]:
     """Mock API responses for testing."""
     # Mock login API
-    page.route("**/api/login", lambda route: route.fulfill(
-        status=200,
-        content_type="application/json",
-        body=json.dumps({
-            "success": True,
-            "token": "mock_token_12345",
-            "user_id": "test_user_123"
-        })
-    ))
+    page.route(
+        "**/api/login",
+        lambda route: route.fulfill(
+            status=200,
+            content_type="application/json",
+            body=json.dumps(
+                {
+                    "success": True,
+                    "token": "mock_token_12345",
+                    "user_id": "test_user_123",
+                }
+            ),
+        ),
+    )
 
     # Mock user profile API
-    page.route("**/api/user/profile", lambda route: route.fulfill(
-        status=200,
-        content_type="application/json",
-        body=json.dumps({
-            "username": "testuser@example.com",
-            "first_name": "Test",
-            "last_name": "User",
-            "role": "user"
-        })
-    ))
+    page.route(
+        "**/api/user/profile",
+        lambda route: route.fulfill(
+            status=200,
+            content_type="application/json",
+            body=json.dumps(
+                {
+                    "username": "testuser@example.com",
+                    "first_name": "Test",
+                    "last_name": "User",
+                    "role": "user",
+                }
+            ),
+        ),
+    )
 
     yield page
 
@@ -62,11 +76,14 @@ def slow_network(page: Page) -> Generator[Page, None, None]:
     """Simulate slow network conditions."""
     context = page.context
     # Simulate 3G network conditions
-    context.route("**/*", lambda route: route.fulfill(
-        status=200,
-        headers={"Content-Type": "text/html"},
-        body="<html><body>Slow network test</body></html>"
-    ))
+    context.route(
+        "**/*",
+        lambda route: route.fulfill(
+            status=200,
+            headers={"Content-Type": "text/html"},
+            body="<html><body>Slow network test</body></html>",
+        ),
+    )
 
     yield page
 

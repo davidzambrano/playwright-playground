@@ -1,0 +1,6 @@
+[MESSAGES CONTROL]
+disable=attribute-defined-outside-init,unused-argument,redefined-outer-name,import-error
+
+[TYPECHECK]
+generated-members=pytest.*,playwright.*,dotenv.*
+ignored-modules=pytest,dotenv,playwright

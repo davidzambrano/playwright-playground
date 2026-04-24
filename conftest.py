@@ -1,6 +1,8 @@
 """Pytest configuration and fixtures for Playwright testing."""
 
+import logging
 import os
+from datetime import datetime
 from typing import Dict, Generator
 
 import pytest
@@ -11,11 +13,37 @@ from pages.add_remove_elements_page import AddRemoveElementsPage
 from pages.basic_auth_page import BasicAuthPage
 from pages.home_page import HomePage
 from pages.slow_resources_page import SlowResourcesPage
+from utils.helpers import Logger
 
 load_dotenv()
 
 # Set default expect timeout to 30 seconds
 expect.set_options(timeout=30000)
+
+
+def pytest_configure(config):
+    """Configure pytest to capture logging output."""
+    config.option.log_cli_level = "INFO"
+
+
+@pytest.fixture(scope="session", autouse=True)
+def configure_logging():
+    """Configure logging for the test session."""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = f"logs/test_execution_{timestamp}.log"
+    Logger.setup_logger(name="", log_file=log_file, level=logging.INFO)
+    logging.info("Logging configured for test session")
+
+
+@pytest.fixture(scope="function", autouse=True)
+def log_test_info(request):
+    """Log test start and end for HTML report."""
+    test_name = request.node.name
+    logging.info("=" * 80)
+    logging.info("TEST START: %s", test_name)
+    yield
+    logging.info("TEST END: %s", test_name)
+    logging.info("=" * 80)
 
 
 @pytest.fixture(scope="session")

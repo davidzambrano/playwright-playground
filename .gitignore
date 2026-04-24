@@ -139,6 +139,7 @@ cython_debug/
 /reports/
 /videos/
 /traces/
+/logs/
 
 # IDE
 .vscode/

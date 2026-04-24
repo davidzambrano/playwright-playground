@@ -30,16 +30,20 @@ class SlowResourcesPage(BasePage):
 
     def get_header(self):
         """Get the page header element."""
+        logger.debug("Getting page header element with locator: %s", self.header_locator)
         return self.page.locator(self.header_locator)
 
     def get_small_resource_status_banner(self):
         """Get the small resource status banner."""
+        logger.debug("Getting small resource status banner")
         return self.page.locator(self.small_resource_banner_locator)
 
     def get_mid_resource_status_banner(self):
         """Get the medium resource status banner."""
+        logger.debug("Getting medium resource status banner")
         return self.page.locator(self.mid_resource_banner_locator)
 
     def get_large_resource_status_banner(self):
         """Get the large resource status banner."""
+        logger.debug("Getting large resource status banner")
         return self.page.locator(self.large_resource_banner_locator)

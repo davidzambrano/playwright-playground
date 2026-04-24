@@ -23,4 +23,5 @@ class BasicAuthPage(BasePage):
         Returns:
             Locator: The locator for the page header element.
         """
+        logger.debug("Getting page header element with locator: %s", self.header_locator)
         return self.page.locator(self.header_locator)

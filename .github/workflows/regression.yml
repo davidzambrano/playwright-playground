@@ -104,6 +104,7 @@ jobs:
           mkdir -p reports test-results logs
 
           pytest \
+            --headed=false \
             --browser ${{ inputs.browser }} \
             ${{ steps.markers.outputs.flags }}
 

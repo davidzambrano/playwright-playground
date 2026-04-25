@@ -31,7 +31,13 @@ def configure_logging():
     """Configure logging for the test session."""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_file = f"logs/test_execution_{timestamp}.log"
-    Logger.setup_logger(name="", log_file=log_file, level=logging.INFO)
+    Logger.setup_logger(
+        name="",
+        log_file=log_file,
+        level=logging.DEBUG,
+        file_level=logging.DEBUG,
+        console_level=logging.INFO,
+    )
     logging.info("Logging configured for test session")
 
 

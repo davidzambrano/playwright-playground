@@ -96,6 +96,7 @@ jobs:
           mkdir -p reports
           mkdir -p test-results
           mkdir -p playwright-report
+          mkdir -p logs
           
           # Configure pytest options
           HTML_OPT="--html=reports/playwright-report.html --self-contained-html --disable-warnings -v"
@@ -114,5 +115,6 @@ jobs:
             reports/
             test-results/
             playwright-report/
+            logs/
           retention-days: 7
 

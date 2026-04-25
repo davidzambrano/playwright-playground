@@ -1,5 +1,5 @@
 # This workflow will run Playwright automated tests against the Render-hosted application
-name: Playwright Playground Regression
+name: Regression
 on:
   workflow_dispatch:
     inputs:

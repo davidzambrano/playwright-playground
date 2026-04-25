@@ -103,8 +103,7 @@ jobs:
         run: |
           mkdir -p reports test-results logs
 
-          pytest \
-            --no-headed \
+          xvfb-run -a pytest \
             --browser ${{ inputs.browser }} \
             ${{ steps.markers.outputs.flags }}
 

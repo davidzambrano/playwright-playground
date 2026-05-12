@@ -80,6 +80,14 @@ class AddRemoveElementsPage(BasePage):
         button.click()
         logger.info("Clicked Delete button %s", index)
 
+    def get_delete_buttons(self):
+        """Get all delete button elements.
+
+        Returns:
+            Locator: The locator for all delete buttons.
+        """
+        return self.page.locator(self.delete_button_locator)
+
     def get_delete_buttons_count(self):
         """Get the count of delete buttons currently on the page.
 

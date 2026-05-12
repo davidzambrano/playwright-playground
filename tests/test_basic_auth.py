@@ -4,6 +4,8 @@ import pytest
 from playwright.sync_api import expect
 
 
+@pytest.mark.ui
+@pytest.mark.regression
 class TestBasicAuthPage:
     """Tests for the Basic Auth page."""
 
@@ -21,6 +23,7 @@ class TestBasicAuthPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_basic_auth_card()
 
+    @pytest.mark.smoke
     def test_basic_auth_page_loads(self, navigate_to_basic_auth_page):
         """Test that the Basic Auth page loads."""
         expect(self.basic_auth_page.get_header()).to_have_text("Basic Auth")

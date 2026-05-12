@@ -15,7 +15,7 @@ class BasicAuthPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
         # Locators
-        self.header_locator = "//span[.='Add/Remove Elements'] | //h1[.='Basic Auth']"
+        self.header_locator = "//h1[.='Basic Auth']"
 
     def get_header(self):
         """Get the page header element.

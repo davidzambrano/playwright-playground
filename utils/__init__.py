@@ -1,5 +1,5 @@
 """Utility functions package."""
 
-from .helpers import Logger, ScreenshotManager, TestDataGenerator, WaitHelper
+from .helpers import Logger, TestDataGenerator, WaitHelper
 
-__all__ = ["TestDataGenerator", "ScreenshotManager", "WaitHelper", "Logger"]
+__all__ = ["TestDataGenerator", "WaitHelper", "Logger"]

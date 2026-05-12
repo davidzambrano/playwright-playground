@@ -4,6 +4,9 @@ import pytest
 from playwright.sync_api import expect
 
 
+@pytest.mark.ui
+@pytest.mark.regression
+@pytest.mark.slow
 class TestSlowResourcesPage:
     """Tests for status banner visibility on the Slow Resources page."""
 
@@ -21,6 +24,7 @@ class TestSlowResourcesPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_slow_resources_card()
 
+    @pytest.mark.smoke
     def test_small_resource_banner_visible(self, navigate_to_slow_resources):
         """Verify that the small resource status banner appears after loading."""
         header = self.slow_resources_page.get_header()

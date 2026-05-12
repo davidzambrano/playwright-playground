@@ -27,7 +27,6 @@ jobs:
       - name: Run Pylint
         run: |
           pylint --fail-under=8.0 \
-            --disable=C0114,C0115,C0116 \
             --output-format=colorized \
             $(git ls-files '*.py' | grep -v '__pycache__' | grep -v '.venv' || echo "tests/ pages/ utils/ fixtures/ *.py")
 

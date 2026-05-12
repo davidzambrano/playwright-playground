@@ -1,6 +1,8 @@
 """Base page object with common functionality for all pages."""
 
 import logging
+import os
+from typing import Literal
 
 from playwright.sync_api import Page
 
@@ -35,14 +37,20 @@ class BasePage:
         logger.info("Navigating to: %s", url)
         self.page.goto(url)
 
-    def wait_for_page_load(self) -> None:
-        """Wait for the page to finish loading.
+    def wait_for_page_load(
+        self, state: Literal["domcontentloaded", "load", "networkidle"] = "load"
+    ) -> None:
+        """Wait for the page to reach the specified load state.
+
+        Args:
+            state (str): The load state to wait for. Options: 'load', 'domcontentloaded',
+                         'networkidle'. Defaults to 'load'.
 
         Returns:
             None
 
         """
-        self.page.wait_for_load_state("networkidle")
+        self.page.wait_for_load_state(state)
         logger.info("Page load completed")
 
     def take_screenshot(self, filename: str) -> None:
@@ -55,7 +63,9 @@ class BasePage:
             None
 
         """
-        screenshot_path = f"reports/screenshots/{filename}.png"
+        screenshot_dir = "reports/screenshots"
+        os.makedirs(screenshot_dir, exist_ok=True)
+        screenshot_path = f"{screenshot_dir}/{filename}.png"
         self.page.screenshot(path=screenshot_path, full_page=True)
         logger.info("Screenshot saved: %s", screenshot_path)
 

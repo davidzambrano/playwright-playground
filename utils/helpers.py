@@ -67,42 +67,6 @@ class TestDataGenerator:
         return random_date.strftime("%Y-%m-%d")
 
 
-class ScreenshotManager:
-    """Utility class for managing screenshots.
-
-    This class provides methods for ensuring screenshot directories exist
-    and generating unique screenshot filenames for test automation.
-    """
-
-    @staticmethod
-    def ensure_screenshot_directory() -> None:
-        """Ensure screenshot directory exists.
-
-        Creates the 'reports/screenshots' directory if it doesn't already exist.
-        This method is safe to call multiple times.
-        """
-        screenshot_dir = "reports/screenshots"
-        os.makedirs(screenshot_dir, exist_ok=True)
-
-    @staticmethod
-    def generate_screenshot_name(test_name: str, timestamp: bool = True) -> str:
-        """Generate a unique screenshot filename.
-
-        Args:
-            test_name (str): The base name for the screenshot (usually the test name).
-            timestamp (bool): Whether to include a timestamp in the filename. Defaults to True.
-
-        Returns:
-            str: A unique screenshot filename with .png extension.
-                 If timestamp is True, includes YYYYMMDD_HHMMSS format.
-                 If timestamp is False, returns just test_name.png.
-        """
-        if timestamp:
-            timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-            return f"{test_name}_{timestamp_str}.png"
-        return f"{test_name}.png"
-
-
 class WaitHelper:  # pylint: disable=too-few-public-methods
     """Utility class for custom wait conditions.
 
@@ -162,15 +126,11 @@ class Logger:  # pylint: disable=too-few-public-methods
 
         Returns:
             logging.Logger: A configured logger instance with the specified name and handlers.
-
-        Note:
-            This method clears any existing handlers on the logger before setting up new ones.
-            File handler includes more detailed formatting than console handler.
         """
         logger = logging.getLogger(name)
         logger.setLevel(level)
 
-        # Clear existing handlers
+        # Clear existing handlers to avoid duplicate log entries on repeated calls
         logger.handlers.clear()
 
         # Use provided levels or fall back to default level
@@ -192,7 +152,7 @@ class Logger:  # pylint: disable=too-few-public-methods
             file_handler = logging.FileHandler(log_file)
             file_handler.setLevel(actual_file_level)
             file_formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(funcName)s:%(lineno)d - %(message)s"
+                "%(asctime)s - %(name)s - %(levelname)s - %(funcName)s:%(lineno)d - %(message)s"
             )
             file_handler.setFormatter(file_formatter)
             logger.addHandler(file_handler)

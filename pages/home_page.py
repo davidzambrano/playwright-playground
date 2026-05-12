@@ -43,11 +43,11 @@ class HomePage(BasePage):
         self.wait_for_page_load()
         logger.info("Navigated to home page")
 
-    def get_page_title(self):
-        """Get the page title element.
+    def get_page_heading(self):
+        """Get the page heading element.
 
         Returns:
-            Locator: The locator for the page title element.
+            Locator: The locator for the page heading element.
 
         """
         return self.page.locator(self.page_title_locator)

@@ -1,127 +1,117 @@
 # Playwright Python Test Framework
 
-This is a Playwright test framework for Python that uses the Page Object Model pattern for maintainable and professional testing.
+A sync Playwright + pytest UI automation framework using Page Object Model, targeting a self-hosted clone of "the-internet" on Render.
 
 ## Project Structure
 
 ```
 playwright-playground/
-├── fixtures/               # Custom pytest fixtures
-│   ├── __init__.py
-│   └── custom_fixtures.py  # Custom test fixtures
+├── .github/workflows/      # CI pipelines
+│   ├── regression.yml      # Manual trigger, runs Playwright tests
+│   └── code-quality.yml    # Push/PR, pylint, black, isort checks
+├── fixtures/               # Pytest fixtures (registered via pytest_plugins)
+│   ├── page_fixtures.py    # Page-object fixtures
+│   ├── data_fixtures.py    # Synthetic test data generators
+│   └── network_fixtures.py # Mock API, viewport, offline, slow network
 ├── pages/                  # Page Object Model
-│   ├── __init__.py
-│   ├── base_page.py       # Base page class with common functionality
-│   └── [page_classes].py  # Page classes inheriting from BasePage (e.g., home_page.py, login_page.py)
+│   ├── base_page.py        # Base page class with common functionality
+│   └── [page_classes].py   # Page classes inheriting from BasePage
 ├── tests/                  # Test cases
-│   ├── __init__.py
-│   └── [test_files].py     # Test files (e.g., test_home.py, test_login.py)
-├── utils/                  # Utility functions
-│   ├── __init__.py
-│   └── helpers.py         # Helper functions
-├── conftest.py            # Pytest configuration and fixtures
-├── pytest.ini             # Pytest settings
-├── requirements.txt       # Python dependencies
-├── requirements-dev.txt   # Development dependencies (code quality tools)
-├── .pre-commit-config.yaml # Pre-commit hooks configuration
-├── .env.example          # Environment variables template
-├── .gitignore            # Git ignore file
-└── README.md             # This file
+│   └── [test_files].py     # Test files, one per page/feature
+├── utils/                  # Utility classes
+│   └── helpers.py          # Logger, TestDataGenerator, WaitHelper
+├── conftest.py             # Infrastructure fixtures (browser, page, logging, timeouts)
+├── pytest.ini              # Pytest settings and markers
+├── pyproject.toml          # Black and isort config
+├── requirements.txt        # Runtime dependencies
+└── requirements-dev.txt    # Development dependencies (pylint, black, isort, pre-commit)
 ```
 
 ## Quick Start
 
-To get started, install the dependencies and set up your environment.
-
-First, install the required packages:
+Install dependencies and Playwright browsers:
 
 ```bash
 pip install -r requirements.txt
 playwright install
 ```
 
-Then, copy the environment file and configure it:
+Run the tests:
 
 ```bash
-cp .env.example .env
-# Edit .env with your settings
-```
-
-Now you can run the tests:
-
-```bash
-pytest  # Run all tests
-pytest --browser firefox  # Use Firefox
-pytest --headed=false  # Headless mode
-pytest -m smoke  # Only smoke tests
+pytest                              # Run all tests (headed by default)
+pytest -m smoke                     # Only smoke tests
+pytest -m "regression and not slow" # Skip slow tests
+pytest --browser firefox            # Use Firefox
 ```
 
 ## Development Setup
 
-For development, install additional dependencies including code quality tools:
+Install code quality tools:
 
 ```bash
 pip install -r requirements-dev.txt
-```
-
-Install pre-commit hooks to automatically run code quality checks before commits:
-
-```bash
 pre-commit install
 ```
 
-To run pre-commit manually on all files:
+Run quality checks manually:
 
 ```bash
-pre-commit run --all-files
+black .
+isort .
+pylint tests/ pages/ utils/ fixtures/
 ```
 
-## Key Features
+## Test Markers
 
-The framework uses the Page Object Model for clean separation between page logic and test logic. The BasePage provides common methods like navigation and waiting, while specific pages like HomePage handle their own elements.
-
-Tests are organized with fixtures for setup, and include markers for different test types. It supports parametrization for data-driven tests and generates reports with screenshots on failures.
-
-Utilities include helpers for common tasks.
+| Marker | Description |
+|---|---|
+| `smoke` | Fast, essential tests |
+| `regression` | Full regression suite |
+| `ui` | UI tests |
+| `slow` | Tests with long waits |
 
 ## Writing Tests
 
-Here's a basic test example:
+Tests use fixture-injected page objects. Never create page instances directly:
 
 ```python
 import pytest
-from pages.home_page import HomePage
+from playwright.sync_api import expect
 
-class TestHome:
+
+@pytest.mark.ui
+@pytest.mark.regression
+class TestExample:
+
     @pytest.fixture(autouse=True)
-    def setup(self, page, base_url):
+    def setup_pages(self, home_page, page, base_url):
         self.page = page
+        self.home_page = home_page
         self.base_url = base_url
-        self.home_page = HomePage(page)
-    
-    def test_home_page_loads(self):
+
+    @pytest.mark.smoke
+    def test_page_loads(self):
         self.home_page.goto_home_page(self.base_url)
-        # Assertions here
+        expect(self.home_page.get_page_heading()).to_be_visible()
 ```
-
-You can use custom fixtures and parametrize tests as needed.
-
-## Configuration
-
-Configuration is handled through pytest.ini for test settings, and test data can be managed in the helpers if needed. Environment variables are used for sensitive data.
-
-## Reporting
-
-Tests generate screenshots and traces on failure.
-
-## Best Practices
-
-The framework follows Page Object Model, uses fixtures for setup, manages configuration securely, and provides good error handling.
 
 ## Extending the Framework
 
-To add new pages, create a class in pages/ inheriting from BasePage.
+1. **New page:** Create `pages/<name>_page.py` inheriting `BasePage`, add a fixture in `fixtures/page_fixtures.py`
+2. **New marker:** Declare it in `pytest.ini` first (strict markers enabled)
+3. **New fixture:** Add to the appropriate file in `fixtures/` (page, data, or network)
 
-Add new fixtures in fixtures/custom_fixtures.py.
+## CI / GitHub Actions
 
-Add utilities in utils/helpers.py.
+- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers.
+- **`code-quality.yml`** - Runs on push/PR to `main`/`develop`. Checks pylint (≥8.0), black, and isort.
+
+## Configuration
+
+| Setting | Location |
+|---|---|
+| pytest options (`--headed`, artifacts) | `pytest.ini` |
+| Black/isort (line-length: 100) | `pyproject.toml` |
+| Base URL | `BASE_URL` env var, fallback to `https://auto-things.onrender.com/` |
+| Timeouts | 30s default (`conftest.py`) |

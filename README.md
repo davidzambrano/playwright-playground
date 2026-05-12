@@ -1,6 +1,6 @@
 # Playwright Python Test Framework
 
-A sync Playwright + pytest UI automation framework using Page Object Model, targeting a self-hosted clone of "the-internet" on Render.
+A Playwright + pytest UI automation framework using Page Object Model, targeting a self-hosted clone of "the-internet" on Render.
 
 ## Project Structure
 

@@ -1,41 +1,16 @@
-"""Custom pytest fixtures for testing scenarios."""
+"""Network and browser environment fixtures for testing edge cases."""
 
 import json
-from typing import Dict, Generator
+import time
+from typing import Generator
 
 import pytest
 from playwright.sync_api import BrowserContext, Page
-
-from utils.helpers import TestDataGenerator
-
-
-@pytest.fixture(scope="function")
-def test_user_data() -> Dict:
-    """Generate test user data."""
-    return {
-        "username": TestDataGenerator.random_email(),
-        "password": TestDataGenerator.random_string(12) + "1A!",
-        "first_name": TestDataGenerator.random_string(8).capitalize(),
-        "last_name": TestDataGenerator.random_string(8).capitalize(),
-        "phone": TestDataGenerator.random_phone_number(),
-    }
-
-
-@pytest.fixture(scope="function")
-def api_test_data() -> Dict:
-    """Generate API test data."""
-    return {
-        "user_id": TestDataGenerator.random_string(10),
-        "session_token": TestDataGenerator.random_string(32),
-        "request_id": TestDataGenerator.random_string(16),
-        "timestamp": TestDataGenerator.random_date(),
-    }
 
 
 @pytest.fixture(scope="function")
 def mock_api_responses(page: Page) -> Generator[Page, None, None]:
     """Mock API responses for testing."""
-    # Mock login API
     page.route(
         "**/api/login",
         lambda route: route.fulfill(
@@ -51,7 +26,6 @@ def mock_api_responses(page: Page) -> Generator[Page, None, None]:
         ),
     )
 
-    # Mock user profile API
     page.route(
         "**/api/user/profile",
         lambda route: route.fulfill(
@@ -73,19 +47,49 @@ def mock_api_responses(page: Page) -> Generator[Page, None, None]:
 
 @pytest.fixture(scope="function")
 def slow_network(page: Page) -> Generator[Page, None, None]:
-    """Simulate slow network conditions."""
-    context = page.context
-    # Simulate 3G network conditions
-    context.route(
-        "**/*",
-        lambda route: route.fulfill(
-            status=200,
-            headers={"Content-Type": "text/html"},
-            body="<html><body>Slow network test</body></html>",
-        ),
-    )
+    """Simulate slow network by adding latency to every request.
 
+    Adds a 2-second delay to each network request using route interception.
+    Works across all browsers (chromium, firefox, webkit).
+    """
+
+    def delay_route(route):
+        time.sleep(2)
+        route.continue_()
+
+    page.route("**/*", delay_route)
     yield page
+    page.unroute("**/*", delay_route)
+
+
+@pytest.fixture(scope="function")
+def slow_network_cdp(page: Page) -> Generator[Page, None, None]:
+    """Simulate 3G network conditions via CDP (Chromium only).
+
+    Emulates network throttling at the protocol level for realistic latency,
+    download/upload speed limits. Will fail on Firefox/WebKit.
+    """
+    cdp = page.context.new_cdp_session(page)
+    cdp.send(
+        "Network.emulateNetworkConditions",
+        {
+            "offline": False,
+            "downloadThroughput": 1.5 * 1024 * 1024 / 8,  # 1.5 Mbps
+            "uploadThroughput": 750 * 1024 / 8,  # 750 Kbps
+            "latency": 100,  # 100ms RTT
+        },
+    )
+    yield page
+    cdp.send(
+        "Network.emulateNetworkConditions",
+        {
+            "offline": False,
+            "downloadThroughput": -1,
+            "uploadThroughput": -1,
+            "latency": 0,
+        },
+    )
+    cdp.detach()
 
 
 @pytest.fixture(scope="function")
@@ -93,7 +97,6 @@ def mobile_viewport(page: Page) -> Generator[Page, None, None]:
     """Set mobile viewport for responsive testing."""
     page.set_viewport_size({"width": 375, "height": 667})
     yield page
-    # Reset to desktop viewport
     page.set_viewport_size({"width": 1920, "height": 1080})
 
 
@@ -109,7 +112,6 @@ def offline_mode(page: Page) -> Generator[Page, None, None]:
 @pytest.fixture(scope="function")
 def browser_storage(context: BrowserContext) -> Generator[BrowserContext, None, None]:
     """Browser storage fixture for testing local/session storage."""
-    # Set up initial storage state
     context.add_init_script("""
         localStorage.setItem('test_item', 'test_value');
         sessionStorage.setItem('session_test', 'session_value');

@@ -1,6 +1,6 @@
 # Playwright Python Test Framework
 
-A sync Playwright + pytest UI automation framework using Page Object Model, targeting a self-hosted clone of "the-internet" on Render.
+Playwright + pytest UI automation framework using Page Object Model, targeting a self-hosted clone of "the-internet" on Render.
 
 ## Project Structure
 
@@ -27,12 +27,11 @@ playwright-playground/
 └── requirements-dev.txt    # Development dependencies (pylint, black, isort, pre-commit)
 ```
 
----
+## Quick Start
 
 Install dependencies and Playwright browsers:
 
 ```bash
-# 1. Clone and install dependencies
 pip install -r requirements.txt
 playwright install
 ```
@@ -46,14 +45,14 @@ pytest -m "regression and not slow" # Skip slow tests
 pytest --browser firefox            # Use Firefox
 ```
 
----
+## Development Setup
 
 Install code quality tools:
 
 ```bash
-# Install dev dependencies (linters, pre-commit)
 pip install -r requirements-dev.txt
 pre-commit install
+```
 
 Run quality checks manually:
 
@@ -72,12 +71,11 @@ pylint tests/ pages/ utils/ fixtures/
 | `ui` | UI tests |
 | `slow` | Tests with long waits |
 
-> **Anti-pattern to avoid:** Never put `page.locator(...)` calls or `page.click()` calls directly inside test functions. That breaks the abstraction and makes locator changes expensive.
+## Writing Tests
 
 Tests use fixture-injected page objects. Never create page instances directly:
 
 ```python
-# tests/test_login.py
 import pytest
 from playwright.sync_api import expect
 

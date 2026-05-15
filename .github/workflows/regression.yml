@@ -105,7 +105,8 @@ jobs:
 
           xvfb-run -a pytest \
             --browser ${{ inputs.browser }} \
-            ${{ steps.markers.outputs.flags }}
+            ${{ steps.markers.outputs.flags }} \
+            --html=reports/report.html --self-contained-html
 
       - name: Upload test results
         if: always()

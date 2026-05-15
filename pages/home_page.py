@@ -2,8 +2,6 @@
 
 import logging
 
-from playwright.sync_api import Page
-
 from .base_page import BasePage
 
 logger = logging.getLogger(__name__)
@@ -12,22 +10,23 @@ logger = logging.getLogger(__name__)
 class HomePage(BasePage):
     """Page object for the Home page."""
 
-    def __init__(self, page: Page):
-        super().__init__(page)
-        # Locators
-        self.page_title_locator = "//h1"
-        self.slow_resources_card_locator = (
-            "//div[contains(@class, 'rounded-lg') and .//span[text()='Slow Resources']]"
-        )
-        self.stale_element_card_locator = (
-            "//div[contains(@class, 'rounded-lg') and .//span[text()='Stale Element']]"
-        )
-        self.add_remove_element_card_locator = (
-            "//div[contains(@class, 'rounded-lg') and .//span[text()='Add/Remove Elements']]"
-        )
-        self.basic_auth_card_locator = (
-            "//div[contains(@class, 'rounded-lg') and .//span[text()='Basic Auth']]"
-        )
+    # Locators
+    PAGE_TITLE_LOCATOR = "//h1"
+    SLOW_RESOURCES_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Slow Resources']]"
+    )
+    STALE_ELEMENT_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Stale Element']]"
+    )
+    ADD_REMOVE_ELEMENT_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Add/Remove Elements']]"
+    )
+    BASIC_AUTH_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Basic Auth']]"
+    )
+    AB_TESTING_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='A/B Testing']]"
+    )
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -50,7 +49,7 @@ class HomePage(BasePage):
             Locator: The locator for the page heading element.
 
         """
-        return self.page.locator(self.page_title_locator)
+        return self.page.locator(self.PAGE_TITLE_LOCATOR)
 
     def get_slow_resources_card(self):
         """Get the Slow Resources card element.
@@ -59,7 +58,7 @@ class HomePage(BasePage):
             Locator: The locator for the Slow Resources card element.
 
         """
-        return self.page.locator(self.slow_resources_card_locator)
+        return self.page.locator(self.SLOW_RESOURCES_CARD_LOCATOR)
 
     def get_add_remove_element_card(self):
         """Get the Add/Remove Elements card element.
@@ -68,7 +67,7 @@ class HomePage(BasePage):
             Locator: The locator for the Add/Remove Elements card element.
 
         """
-        return self.page.locator(self.add_remove_element_card_locator)
+        return self.page.locator(self.ADD_REMOVE_ELEMENT_CARD_LOCATOR)
 
     def get_basic_auth_card(self):
         """Get the Basic Auth card element.
@@ -77,7 +76,7 @@ class HomePage(BasePage):
             Locator: The locator for the Basic Auth card element.
 
         """
-        return self.page.locator(self.basic_auth_card_locator)
+        return self.page.locator(self.BASIC_AUTH_CARD_LOCATOR)
 
     def get_stale_element_card(self):
         """Get the Stale Element card element.
@@ -86,7 +85,16 @@ class HomePage(BasePage):
             Locator: The locator for the Stale Element card element.
 
         """
-        return self.page.locator(self.stale_element_card_locator)
+        return self.page.locator(self.STALE_ELEMENT_CARD_LOCATOR)
+
+    def get_ab_testing_card(self):
+        """Get the A/B Testing card element.
+
+        Returns:
+            Locator: The locator for the A/B Testing card element.
+
+        """
+        return self.page.locator(self.AB_TESTING_CARD_LOCATOR)
 
     def click_slow_resources_card(self):
         """Click the Slow Resources card.
@@ -95,8 +103,7 @@ class HomePage(BasePage):
             None
 
         """
-        card = self.get_slow_resources_card()
-        card.click()
+        self.get_slow_resources_card().click()
         logger.info("Clicked Slow Resources card")
 
     def click_add_remove_element_card(self):
@@ -106,8 +113,7 @@ class HomePage(BasePage):
             None
 
         """
-        card = self.get_add_remove_element_card()
-        card.click()
+        self.get_add_remove_element_card().click()
         logger.info("Clicked Add/Remove Elements card")
 
     def click_basic_auth_card(self):
@@ -117,6 +123,15 @@ class HomePage(BasePage):
             None
 
         """
-        card = self.get_basic_auth_card()
-        card.click()
+        self.get_basic_auth_card().click()
         logger.info("Clicked Basic Auth card")
+
+    def click_ab_testing_card(self):
+        """Click the A/B Testing card.
+
+        Returns:
+            None
+
+        """
+        self.get_ab_testing_card().click()
+        logger.info("Clicked A/B Testing card")

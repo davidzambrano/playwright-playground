@@ -62,11 +62,22 @@ def browser_context_args(
     """Configure browser context with default settings."""
     return {
         **browser_context_args,
-        "viewport": {"width": 1920, "height": 1080},
+        "no_viewport": True,
         "ignore_https_errors": True,
         "locale": "en-US",
         "timezone_id": "America/New_York",
         "extra_http_headers": {"Cache-Control": "no-cache", "Pragma": "no-cache"},
+    }
+
+
+@pytest.fixture(scope="session")
+def browser_type_launch_args(
+    browser_type_launch_args: Dict,
+) -> Dict:  # pylint: disable=redefined-outer-name
+    """Configure browser launch args so the OS window matches the CSS viewport."""
+    return {
+        **browser_type_launch_args,
+        "args": ["--start-maximized"],
     }
 
 

@@ -3,6 +3,7 @@
 import pytest
 from playwright.sync_api import Page
 
+from pages.ab_testing_page import ABTestingPage
 from pages.add_remove_elements_page import AddRemoveElementsPage
 from pages.basic_auth_page import BasicAuthPage
 from pages.home_page import HomePage
@@ -31,3 +32,9 @@ def add_remove_elements_page(page: Page) -> AddRemoveElementsPage:
 def basic_auth_page(page: Page) -> BasicAuthPage:
     """Fixture for BasicAuthPage object."""
     return BasicAuthPage(page)
+
+
+@pytest.fixture(scope="function")
+def ab_testing_page(page: Page) -> ABTestingPage:
+    """Fixture for ABTestingPage object."""
+    return ABTestingPage(page)

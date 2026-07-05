@@ -6,6 +6,8 @@ from playwright.sync_api import Page
 from pages.ab_testing_page import ABTestingPage
 from pages.add_remove_elements_page import AddRemoveElementsPage
 from pages.basic_auth_page import BasicAuthPage
+from pages.broken_images_page import BrokenImagesPage
+from pages.challenging_dom_page import ChallengingDomPage
 from pages.home_page import HomePage
 from pages.slow_resources_page import SlowResourcesPage
 
@@ -38,3 +40,16 @@ def basic_auth_page(page: Page) -> BasicAuthPage:
 def ab_testing_page(page: Page) -> ABTestingPage:
     """Fixture for ABTestingPage object."""
     return ABTestingPage(page)
+
+
+# Broken Images page fixture
+@pytest.fixture(scope="function")
+def broken_images_page(page: Page) -> BrokenImagesPage:
+    """Fixture for BrokenImagesPage object."""
+    return BrokenImagesPage(page)
+
+
+@pytest.fixture(scope="function")
+def challenging_dom_page(page: Page) -> ChallengingDomPage:
+    """Fixture for ChallengingDomPage object."""
+    return ChallengingDomPage(page)

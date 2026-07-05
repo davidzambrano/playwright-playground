@@ -27,6 +27,12 @@ class HomePage(BasePage):
     AB_TESTING_CARD_LOCATOR = (
         "//div[contains(@class, 'rounded-lg') and .//span[text()='A/B Testing']]"
     )
+    BROKEN_IMAGES_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Broken Images']]"
+    )
+    CHALLENGING_DOM_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Challenging DOM']]"
+    )
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -47,8 +53,8 @@ class HomePage(BasePage):
 
         Returns:
             Locator: The locator for the page heading element.
-
         """
+        logger.info("Getting page heading element")
         return self.page.locator(self.PAGE_TITLE_LOCATOR)
 
     def get_slow_resources_card(self):
@@ -56,8 +62,8 @@ class HomePage(BasePage):
 
         Returns:
             Locator: The locator for the Slow Resources card element.
-
         """
+        logger.info("Getting Slow Resources card element")
         return self.page.locator(self.SLOW_RESOURCES_CARD_LOCATOR)
 
     def get_add_remove_element_card(self):
@@ -65,8 +71,8 @@ class HomePage(BasePage):
 
         Returns:
             Locator: The locator for the Add/Remove Elements card element.
-
         """
+        logger.info("Getting Add/Remove Elements card element")
         return self.page.locator(self.ADD_REMOVE_ELEMENT_CARD_LOCATOR)
 
     def get_basic_auth_card(self):
@@ -74,8 +80,8 @@ class HomePage(BasePage):
 
         Returns:
             Locator: The locator for the Basic Auth card element.
-
         """
+        logger.info("Getting Basic Auth card element")
         return self.page.locator(self.BASIC_AUTH_CARD_LOCATOR)
 
     def get_stale_element_card(self):
@@ -83,8 +89,8 @@ class HomePage(BasePage):
 
         Returns:
             Locator: The locator for the Stale Element card element.
-
         """
+        logger.info("Getting Stale Element card element")
         return self.page.locator(self.STALE_ELEMENT_CARD_LOCATOR)
 
     def get_ab_testing_card(self):
@@ -92,9 +98,27 @@ class HomePage(BasePage):
 
         Returns:
             Locator: The locator for the A/B Testing card element.
-
         """
+        logger.info("Getting A/B Testing card element")
         return self.page.locator(self.AB_TESTING_CARD_LOCATOR)
+
+    def get_challenging_dom_card(self):
+        """Get the Challenging DOM card element.
+
+        Returns:
+            Locator: The locator for the Challenging DOM card element.
+        """
+        logger.info("Getting Challenging DOM card element")
+        return self.page.locator(self.CHALLENGING_DOM_CARD_LOCATOR)
+
+    def get_broken_images_card(self):
+        """Get the Broken Images card element.
+
+        Returns:
+            Locator: The locator for the Broken Images card element.
+        """
+        logger.info("Getting Broken Images card element")
+        return self.page.locator(self.BROKEN_IMAGES_CARD_LOCATOR)
 
     def click_slow_resources_card(self):
         """Click the Slow Resources card.
@@ -111,7 +135,6 @@ class HomePage(BasePage):
 
         Returns:
             None
-
         """
         self.get_add_remove_element_card().click()
         logger.info("Clicked Add/Remove Elements card")
@@ -121,7 +144,6 @@ class HomePage(BasePage):
 
         Returns:
             None
-
         """
         self.get_basic_auth_card().click()
         logger.info("Clicked Basic Auth card")
@@ -131,7 +153,24 @@ class HomePage(BasePage):
 
         Returns:
             None
-
         """
         self.get_ab_testing_card().click()
         logger.info("Clicked A/B Testing card")
+
+    def click_challenging_dom_card(self):
+        """Click the Challenging DOM card.
+
+        Returns:
+            None
+        """
+        self.get_challenging_dom_card().click()
+        logger.info("Clicked Challenging DOM card")
+
+    def click_broken_images_card(self):
+        """Click the Broken Images card.
+
+        Returns:
+            None
+        """
+        self.get_broken_images_card().click()
+        logger.info("Clicked Broken Images card")

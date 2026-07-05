@@ -1,0 +1,76 @@
+"""Page object for the Checkboxes page."""
+
+import logging
+
+from .base_page import BasePage
+
+logger = logging.getLogger(__name__)
+
+
+class CheckboxesPage(BasePage):
+    """
+    Page object for the Checkboxes page.
+    Provides locators and actions for various checkbox interactions.
+    """
+
+    # Locators
+    HEADING_LOCATOR = "//h3[contains(text(), 'Basic Checkboxes')]"
+    CHECKBOX1_LOCATOR = "#checkbox1"
+    CHECKBOX2_LOCATOR = "#checkbox2"
+    DISABLED_UNCHECKED_LOCATOR = "#disabled-unchecked"
+    DISABLED_CHECKED_LOCATOR = "#disabled-checked"
+    TERMS_CHECKBOX_LOCATOR = "#terms1"
+    SELECT_ALL_LOCATOR = "#select-all"
+    ITEM1_LOCATOR = "#item1"
+    ITEM2_LOCATOR = "#item2"
+    ITEM3_LOCATOR = "#item3"
+
+    def get_heading(self):
+        """Get the Basic Checkboxes heading element."""
+        logger.info("Getting Basic Checkboxes heading element")
+        return self.page.locator(self.HEADING_LOCATOR)
+
+    def get_checkbox1(self):
+        """Get the first basic checkbox (unchecked by default)."""
+        logger.info("Getting checkbox1 element")
+        return self.page.locator(self.CHECKBOX1_LOCATOR)
+
+    def get_checkbox2(self):
+        """Get the second basic checkbox (checked by default)."""
+        logger.info("Getting checkbox2 element")
+        return self.page.locator(self.CHECKBOX2_LOCATOR)
+
+    def get_disabled_unchecked(self):
+        """Get the disabled unchecked checkbox."""
+        logger.info("Getting disabled unchecked checkbox element")
+        return self.page.locator(self.DISABLED_UNCHECKED_LOCATOR)
+
+    def get_disabled_checked(self):
+        """Get the disabled checked checkbox."""
+        logger.info("Getting disabled checked checkbox element")
+        return self.page.locator(self.DISABLED_CHECKED_LOCATOR)
+
+    def get_terms_checkbox(self):
+        """Get the terms and conditions checkbox."""
+        logger.info("Getting terms checkbox element")
+        return self.page.locator(self.TERMS_CHECKBOX_LOCATOR)
+
+    def get_select_all(self):
+        """Get the select all checkbox in controlled group."""
+        logger.info("Getting select all checkbox element")
+        return self.page.locator(self.SELECT_ALL_LOCATOR)
+
+    def get_item1(self):
+        """Get the Apples checkbox in controlled group."""
+        logger.info("Getting item1 (Apples) checkbox element")
+        return self.page.locator(self.ITEM1_LOCATOR)
+
+    def get_item2(self):
+        """Get the Bananas checkbox in controlled group."""
+        logger.info("Getting item2 (Bananas) checkbox element")
+        return self.page.locator(self.ITEM2_LOCATOR)
+
+    def get_item3(self):
+        """Get the Oranges checkbox in controlled group."""
+        logger.info("Getting item3 (Oranges) checkbox element")
+        return self.page.locator(self.ITEM3_LOCATOR)

@@ -33,6 +33,9 @@ class HomePage(BasePage):
     CHALLENGING_DOM_CARD_LOCATOR = (
         "//div[contains(@class, 'rounded-lg') and .//span[text()='Challenging DOM']]"
     )
+    CHECKBOXES_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[text()='Checkboxes']]"
+    )
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -120,6 +123,15 @@ class HomePage(BasePage):
         logger.info("Getting Broken Images card element")
         return self.page.locator(self.BROKEN_IMAGES_CARD_LOCATOR)
 
+    def get_checkboxes_card(self):
+        """Get the Checkboxes card element.
+
+        Returns:
+            Locator: The locator for the Checkboxes card element.
+        """
+        logger.info("Getting Checkboxes card element")
+        return self.page.locator(self.CHECKBOXES_CARD_LOCATOR)
+
     def click_slow_resources_card(self):
         """Click the Slow Resources card.
 
@@ -174,3 +186,13 @@ class HomePage(BasePage):
         """
         self.get_broken_images_card().click()
         logger.info("Clicked Broken Images card")
+
+    def click_checkboxes_card(self):
+        """Click the Checkboxes card.
+
+        Returns:
+            None
+
+        """
+        self.get_checkboxes_card().click()
+        logger.info("Clicked Checkboxes card")

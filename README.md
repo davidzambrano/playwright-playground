@@ -70,6 +70,7 @@ pylint tests/ pages/ utils/ fixtures/
 | `regression` | Full regression suite |
 | `ui` | UI tests |
 | `slow` | Tests with long waits |
+| `pipelinedebug` | Temporary marker for debugging in CI pipeline only |
 
 ## Writing Tests
 
@@ -104,7 +105,7 @@ class TestExample:
 
 ## CI / GitHub Actions
 
-- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers.
+- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging.
 - **`code-quality.yml`** - Runs on push/PR to `main`/`develop`. Checks pylint (≥8.0), black, and isort.
 
 ## Configuration

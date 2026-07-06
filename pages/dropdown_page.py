@@ -127,4 +127,6 @@ class DropdownPage(BasePage):
         """
         logger.info("Searching combobox with term: %s", search_term)
         self.get_combobox_trigger().click()
+        # Wait for the input to be visible and ready
+        self.get_combobox_input().wait_for(state="visible", timeout=5000)
         self.get_combobox_input().fill(search_term)

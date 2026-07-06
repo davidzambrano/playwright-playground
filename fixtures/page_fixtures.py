@@ -9,6 +9,7 @@ from pages.basic_auth_page import BasicAuthPage
 from pages.broken_images_page import BrokenImagesPage
 from pages.challenging_dom_page import ChallengingDomPage
 from pages.checkboxes_page import CheckboxesPage
+from pages.dropdown_page import DropdownPage
 from pages.home_page import HomePage
 from pages.slow_resources_page import SlowResourcesPage
 
@@ -60,3 +61,9 @@ def challenging_dom_page(page: Page) -> ChallengingDomPage:
 def checkboxes_page(page: Page) -> CheckboxesPage:
     """Fixture for CheckboxesPage object."""
     return CheckboxesPage(page)
+
+
+@pytest.fixture(scope="function")
+def dropdown_page(page: Page) -> DropdownPage:
+    """Fixture for DropdownPage object."""
+    return DropdownPage(page)

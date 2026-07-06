@@ -20,6 +20,7 @@ on:
           - 'slow'
           - 'api'
           - 'ui'
+          - 'pipelinedebug'
         default: 'all'
       browser:
         type: choice

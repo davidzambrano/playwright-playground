@@ -73,12 +73,19 @@ def browser_context_args(
 @pytest.fixture(scope="session")
 def browser_type_launch_args(
     browser_type_launch_args: Dict,
+    browser_name: str,
 ) -> Dict:  # pylint: disable=redefined-outer-name
-    """Configure browser launch args so the OS window matches the CSS viewport."""
-    return {
-        **browser_type_launch_args,
-        "args": ["--start-maximized"],
-    }
+    """Configure browser launch args so the OS window matches the CSS viewport.
+
+    --start-maximized is only supported by Chromium, not Firefox or WebKit.
+    """
+    launch_args = {**browser_type_launch_args}
+
+    # Only add Chromium-specific args for Chromium browser
+    if browser_name == "chromium":
+        launch_args["args"] = ["--start-maximized"]
+
+    return launch_args
 
 
 @pytest.fixture(scope="function")

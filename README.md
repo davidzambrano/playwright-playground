@@ -105,8 +105,20 @@ class TestExample:
 
 ## CI / GitHub Actions
 
-- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging.
+- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Tests are sharded across 4 parallel runners for faster execution. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging.
 - **`code-quality.yml`** - Runs on push/PR to `main`/`develop`. Checks pylint (≥8.0), black, and isort.
+
+### Test Sharding
+
+The regression workflow uses test sharding to parallelize test execution across 4 GitHub Actions runners:
+
+- **Sharding library**: `pytest-shard` divides tests into 4 equal groups
+- **Matrix strategy**: Each shard runs on a separate Ubuntu runner
+- **Isolation**: Each shard has its own test results directory and HTML report
+- **Fail-fast disabled**: All shards complete even if one fails
+- **Artifacts**: Each shard uploads its own results (reports, test-results, logs)
+
+This reduces total execution time by approximately 75% compared to running all tests sequentially.
 
 ## Configuration
 

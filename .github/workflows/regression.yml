@@ -62,12 +62,17 @@ jobs:
           exit 1
 
   # ---------------------------------------------------------------------------
-  # Job 2: Install dependencies and run Playwright tests
+  # Job 2: Install dependencies and run Playwright tests in parallel shards
   # ---------------------------------------------------------------------------
   run-tests:
     needs: wake-app
-    name: Run Playwright tests
+    name: Run Playwright tests (shard ${{ matrix.shard }})
     runs-on: ubuntu-latest
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
 
     steps:
       - name: Checkout repository
@@ -98,24 +103,25 @@ jobs:
             echo "flags=-m ${{ inputs.test_markers }}" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run Playwright tests
+      - name: Run Playwright tests (shard ${{ matrix.shard }}/4)
         env:
           BASE_URL: ${{ inputs.test_environment }}
         run: |
-          mkdir -p reports test-results logs
-
+          mkdir -p reports/test-results-shard-${{ matrix.shard }} logs
+          
           xvfb-run -a pytest \
             --browser ${{ inputs.browser }} \
             ${{ steps.markers.outputs.flags }} \
-            --html=reports/report.html --self-contained-html
+            --shard-id=${{ matrix.shard }} \
+            --num-shards=4 \
+            --html=reports/report-shard-${{ matrix.shard }}.html --self-contained-html
 
-      - name: Upload test results
+      - name: Upload test results (shard ${{ matrix.shard }})
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: playwright-results
+          name: playwright-results-shard-${{ matrix.shard }}
           path: |
-            reports/
-            test-results/
+            reports/test-results-shard-${{ matrix.shard }}/
             logs/
           retention-days: 7

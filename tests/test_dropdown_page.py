@@ -6,7 +6,6 @@ from playwright.sync_api import expect
 
 @pytest.mark.ui
 @pytest.mark.regression
-@pytest.mark.pipelinedebug
 class TestDropdownPage:
     """Tests for the Dropdown page."""
 

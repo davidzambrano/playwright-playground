@@ -37,6 +37,13 @@ class DropdownPage(BasePage):
         logger.info("Getting simple dropdown trigger element")
         return self.page.locator(self.SIMPLE_DROPDOWN_TRIGGER)
 
+    def click_simple_dropdown_trigger(self):
+        """Click the simple dropdown trigger to open it."""
+        trigger = self.get_simple_dropdown_trigger()
+        trigger.scroll_into_view_if_needed()
+        logger.info("Clicking simple dropdown trigger")
+        trigger.click()
+
     def get_simple_dropdown_option(self, value):
         """Get a specific option from the simple dropdown.
 
@@ -62,6 +69,13 @@ class DropdownPage(BasePage):
         # There are two combobox buttons: fruit selector (1st index 0)
         # and framework selector (2nd index 1). Get the second one.
         return self.page.locator("//button[@role='combobox']").nth(1)
+
+    def click_combobox_trigger(self):
+        """Click the combobox trigger to open it."""
+        trigger = self.get_combobox_trigger()
+        trigger.scroll_into_view_if_needed()
+        logger.info("Clicking combobox trigger")
+        trigger.click()
 
     def get_combobox_input(self):
         """Get the combobox search input field."""
@@ -98,8 +112,12 @@ class DropdownPage(BasePage):
             None
         """
         logger.info("Selecting option from simple dropdown: %s", value)
-        self.get_simple_dropdown_trigger().click()
-        self.get_simple_dropdown_option(value).click()
+        self.click_simple_dropdown_trigger()
+        option = self.get_simple_dropdown_option(value)
+        logger.info("Waiting for option to be visible")
+        option.wait_for(state="visible")
+        logger.info("Clicking dropdown option: %s", value)
+        option.click()
 
     def select_combobox_option(self, label):
         """Select an option from the searchable combobox.
@@ -111,10 +129,10 @@ class DropdownPage(BasePage):
             None
         """
         logger.info("Selecting option from combobox: %s", label)
-        self.get_combobox_trigger().click()
-        self.get_combobox_option(label).click()
-        # Wait for the popover to close and the selection to be reflected
-        self.page.wait_for_timeout(500)
+        self.click_combobox_trigger()
+        option = self.get_combobox_option(label)
+        option.wait_for(state="visible")
+        option.click()
 
     def search_combobox(self, search_term):
         """Type a search term in the combobox input.

@@ -10,6 +10,10 @@ logger = logging.getLogger(__name__)
 class HomePage(BasePage):
     """Page object for the Home page."""
 
+    # pylint: disable=R0904
+    # HomePage is a navigation hub with multiple cards, each requiring getter and clicker methods
+    # Following the project's Page Object Model pattern with clear separation of concerns
+
     # Locators
     PAGE_TITLE_LOCATOR = "//h1"
     SLOW_RESOURCES_CARD_LOCATOR = (
@@ -36,7 +40,25 @@ class HomePage(BasePage):
     CHECKBOXES_CARD_LOCATOR = (
         "//div[contains(@class, 'rounded-lg') and .//span[text()='Checkboxes']]"
     )
-    DROPDOWN_CARD_LOCATOR = "//div[contains(@class, 'rounded-lg') and .//span[text()='Dropdown']]"
+    DROPDOWN_CARD_LOCATOR = (
+        "//div[contains(@class, 'rounded-lg') and .//span[contains(text(), 'Dropdown')]]"
+    )
+    CONTEXT_MENU_CARD_LOCATOR = "//a[contains(@href, 'context-menu')]"
+    DYNAMIC_CONTROLS_CARD_LOCATOR = "//a[contains(@href, 'dynamic-controls')]"
+    HOVERS_CARD_LOCATOR = "//a[contains(@href, 'hovers')]"
+    JAVASCRIPT_ALERTS_CARD_LOCATOR = "//a[contains(@href, 'javascript-alerts')]"
+    DISAPPEARING_ELEMENTS_CARD_LOCATOR = "//a[contains(@href, 'disappearing-elements')]"
+    KEY_PRESSES_CARD_LOCATOR = "//a[contains(@href, 'key-presses')]"
+    DRAG_AND_DROP_CARD_LOCATOR = "//a[contains(@href, 'drag-and-drop')]"
+    DYNAMIC_CONTENT_CARD_LOCATOR = "//a[contains(@href, 'dynamic-content')]"
+    DYNAMIC_LOADING_CARD_LOCATOR = "//a[contains(@href, 'dynamic-loading')]"
+    ENTRY_AD_CARD_LOCATOR = "//a[contains(@href, 'entry-ad')]"
+    EXIT_INTENT_CARD_LOCATOR = "//a[contains(@href, 'exit-intent')]"
+    FILE_DOWNLOAD_CARD_LOCATOR = "//a[@href='/link/file-download']"
+    FILE_UPLOAD_CARD_LOCATOR = "//a[@href='/link/file-upload']"
+    FLOATING_MENU_CARD_LOCATOR = "//a[@href='/link/floating-menu']"
+    GEOLOCATION_CARD_LOCATOR = "//a[@href='/link/geolocation']"
+    HORIZONTAL_SLIDER_CARD_LOCATOR = "//a[@href='/link/horizontal-slider']"
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -97,6 +119,15 @@ class HomePage(BasePage):
         logger.info("Getting Stale Element card element")
         return self.page.locator(self.STALE_ELEMENT_CARD_LOCATOR)
 
+    def click_stale_element_card(self):
+        """Click the Stale Element card.
+
+        Returns:
+            None
+        """
+        self.get_stale_element_card().click()
+        logger.info("Clicked Stale Element card")
+
     def get_ab_testing_card(self):
         """Get the A/B Testing card element.
 
@@ -141,6 +172,213 @@ class HomePage(BasePage):
         """
         logger.info("Getting Dropdown card element")
         return self.page.locator(self.DROPDOWN_CARD_LOCATOR)
+
+    def get_context_menu_card(self):
+        """Get the Context Menu card element.
+
+        Returns:
+            Locator: The locator for the Context Menu card element.
+        """
+        logger.info("Getting Context Menu card element")
+        return self.page.locator(self.CONTEXT_MENU_CARD_LOCATOR)
+
+    def get_dynamic_controls_card(self):
+        """Get the Dynamic Controls card element.
+
+        Returns:
+            Locator: The locator for the Dynamic Controls card element.
+        """
+        logger.info("Getting Dynamic Controls card element")
+        return self.page.locator(self.DYNAMIC_CONTROLS_CARD_LOCATOR)
+
+    def get_hovers_card(self):
+        """Get the Hovers card element.
+
+        Returns:
+            Locator: The locator for the Hovers card element.
+        """
+        logger.info("Getting Hovers card element")
+        return self.page.locator(self.HOVERS_CARD_LOCATOR)
+
+    def get_javascript_alerts_card(self):
+        """Get the JavaScript Alerts card element.
+
+        Returns:
+            Locator: The locator for the JavaScript Alerts card element.
+        """
+        logger.info("Getting JavaScript Alerts card element")
+        return self.page.locator(self.JAVASCRIPT_ALERTS_CARD_LOCATOR)
+
+    def get_disappearing_elements_card(self):
+        """Get the Disappearing Elements card element.
+
+        Returns:
+            Locator: The locator for the Disappearing Elements card element.
+        """
+        logger.info("Getting Disappearing Elements card element")
+        return self.page.locator(self.DISAPPEARING_ELEMENTS_CARD_LOCATOR)
+
+    def get_key_presses_card(self):
+        """Get the Key Presses card element.
+
+        Returns:
+            Locator: The locator for the Key Presses card element.
+        """
+        logger.info("Getting Key Presses card element")
+        return self.page.locator(self.KEY_PRESSES_CARD_LOCATOR)
+
+    def get_drag_and_drop_card(self):
+        """Get the Drag and Drop card element.
+
+        Returns:
+            Locator: The locator for the Drag and Drop card element.
+        """
+        logger.info("Getting Drag and Drop card element")
+        return self.page.locator(self.DRAG_AND_DROP_CARD_LOCATOR)
+
+    def get_dynamic_loading_card(self):
+        """Get the Dynamic Loading card element.
+
+        Returns:
+            Locator: The locator for the Dynamic Loading card element.
+        """
+        logger.info("Getting Dynamic Loading card element")
+        return self.page.locator(self.DYNAMIC_LOADING_CARD_LOCATOR)
+
+    def get_dynamic_content_card(self):
+        """Get the Dynamic Content card element.
+
+        Returns:
+            Locator: The locator for the Dynamic Content card element.
+        """
+        logger.info("Getting Dynamic Content card element")
+        return self.page.locator(self.DYNAMIC_CONTENT_CARD_LOCATOR)
+
+    def get_entry_ad_card(self):
+        """Get the Entry Ad card element.
+
+        Returns:
+            Locator: The locator for the Entry Ad card element.
+        """
+        logger.info("Getting Entry Ad card element")
+        return self.page.locator(self.ENTRY_AD_CARD_LOCATOR)
+
+    def click_entry_ad_card(self):
+        """Click the Entry Ad card.
+
+        Returns:
+            None
+        """
+        self.get_entry_ad_card().click()
+        logger.info("Clicked Entry Ad card")
+
+    def get_exit_intent_card(self):
+        """Get the Exit Intent card element.
+
+        Returns:
+            Locator: The locator for the Exit Intent card element.
+        """
+        logger.info("Getting Exit Intent card element")
+        return self.page.locator(self.EXIT_INTENT_CARD_LOCATOR)
+
+    def click_exit_intent_card(self):
+        """Click the Exit Intent card.
+
+        Returns:
+            None
+        """
+        self.get_exit_intent_card().click()
+        logger.info("Clicked Exit Intent card")
+
+    def get_file_download_card(self):
+        """Get the File Download card element.
+
+        Returns:
+            Locator: The locator for the File Download card element.
+        """
+        logger.info("Getting File Download card element")
+        return self.page.locator(self.FILE_DOWNLOAD_CARD_LOCATOR)
+
+    def click_file_download_card(self):
+        """Click the File Download card.
+
+        Returns:
+            None
+        """
+        self.get_file_download_card().click()
+        logger.info("Clicked File Download card")
+
+    def get_file_upload_card(self):
+        """Get the File Upload card element.
+
+        Returns:
+            Locator: The locator for the File Upload card element.
+        """
+        logger.info("Getting File Upload card element")
+        return self.page.locator(self.FILE_UPLOAD_CARD_LOCATOR)
+
+    def click_file_upload_card(self):
+        """Click the File Upload card.
+
+        Returns:
+            None
+        """
+        self.get_file_upload_card().click()
+        logger.info("Clicked File Upload card")
+
+    def get_floating_menu_card(self):
+        """Get the Floating Menu card element.
+
+        Returns:
+            Locator: The locator for the Floating Menu card element.
+        """
+        logger.info("Getting Floating Menu card element")
+        return self.page.locator(self.FLOATING_MENU_CARD_LOCATOR)
+
+    def click_floating_menu_card(self):
+        """Click the Floating Menu card.
+
+        Returns:
+            None
+        """
+        self.get_floating_menu_card().click()
+        logger.info("Clicked Floating Menu card")
+
+    def get_geolocation_card(self):
+        """Get the Geolocation card element.
+
+        Returns:
+            Locator: The locator for the Geolocation card element.
+        """
+        logger.info("Getting Geolocation card element")
+        return self.page.locator(self.GEOLOCATION_CARD_LOCATOR)
+
+    def click_geolocation_card(self):
+        """Click the Geolocation card.
+
+        Returns:
+            None
+        """
+        self.get_geolocation_card().click()
+        logger.info("Clicked Geolocation card")
+
+    def get_horizontal_slider_card(self):
+        """Get the Horizontal Slider card element.
+
+        Returns:
+            Locator: The locator for the Horizontal Slider card element.
+        """
+        logger.info("Getting Horizontal Slider card element")
+        return self.page.locator(self.HORIZONTAL_SLIDER_CARD_LOCATOR)
+
+    def click_horizontal_slider_card(self):
+        """Click the Horizontal Slider card.
+
+        Returns:
+            None
+        """
+        self.get_horizontal_slider_card().click()
+        logger.info("Clicked Horizontal Slider card")
 
     def click_slow_resources_card(self):
         """Click the Slow Resources card.
@@ -216,3 +454,93 @@ class HomePage(BasePage):
         """
         self.get_dropdown_card().click()
         logger.info("Clicked Dropdown card")
+
+    def click_context_menu_card(self):
+        """Click the Context Menu card.
+
+        Returns:
+            None
+
+        """
+        self.get_context_menu_card().click()
+        logger.info("Clicked Context Menu card")
+
+    def click_dynamic_controls_card(self):
+        """Click the Dynamic Controls card.
+
+        Returns:
+            None
+
+        """
+        self.get_dynamic_controls_card().click()
+        logger.info("Clicked Dynamic Controls card")
+
+    def click_hovers_card(self):
+        """Click the Hovers card.
+
+        Returns:
+            None
+
+        """
+        self.get_hovers_card().click()
+        logger.info("Clicked Hovers card")
+
+    def click_javascript_alerts_card(self):
+        """Click the JavaScript Alerts card.
+
+        Returns:
+            None
+
+        """
+        self.get_javascript_alerts_card().click()
+        logger.info("Clicked JavaScript Alerts card")
+
+    def click_disappearing_elements_card(self):
+        """Click the Disappearing Elements card.
+
+        Returns:
+            None
+
+        """
+        self.get_disappearing_elements_card().click()
+        logger.info("Clicked Disappearing Elements card")
+
+    def click_key_presses_card(self):
+        """Click the Key Presses card.
+
+        Returns:
+            None
+
+        """
+        self.get_key_presses_card().click()
+        logger.info("Clicked Key Presses card")
+
+    def click_drag_and_drop_card(self):
+        """Click the Drag and Drop card.
+
+        Returns:
+            None
+
+        """
+        self.get_drag_and_drop_card().click()
+        logger.info("Clicked Drag and Drop card")
+
+    def click_dynamic_loading_card(self):
+        """Click the Dynamic Loading card.
+
+        Returns:
+            None
+
+        """
+        self.get_dynamic_loading_card().click()
+        logger.info("Clicked Dynamic Loading card")
+
+    def click_dynamic_content_card(self):
+        """Click the Dynamic Content card.
+
+        Returns:
+            None
+
+        """
+        self.get_dynamic_content_card().click()
+        logger.info("Clicked Dynamic Content card")

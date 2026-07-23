@@ -54,14 +54,16 @@ class TestABTestingPage:
 
         version_a_title.or_(version_b_title).wait_for()
 
+        expect(version_a_title.or_(version_b_title)).to_be_visible()
+        expect(self.ab_testing_page.get_heading()).to_be_visible()
+        expect(self.ab_testing_page.get_description()).to_be_visible()
+
         if version_a_title.is_visible():
             expect(version_a_title).to_have_text("Get Our Newsletter")
             expect(self.ab_testing_page.get_version_a_description()).to_be_visible()
             expect(self.ab_testing_page.get_version_a_description()).to_have_text(
                 "Stay up to date with our latest news and offers."
             )
-            expect(self.ab_testing_page.get_heading()).to_be_visible()
-            expect(self.ab_testing_page.get_description()).to_be_visible()
             expect(self.ab_testing_page.get_version_a_signup_button()).to_be_visible()
         else:
             expect(version_b_title).to_have_text("Unlock Exclusive Content!")
@@ -69,8 +71,6 @@ class TestABTestingPage:
             expect(self.ab_testing_page.get_version_b_description()).to_have_text(
                 "Don't miss out on tips, tricks, and special promotions."
             )
-            expect(self.ab_testing_page.get_heading()).to_be_visible()
-            expect(self.ab_testing_page.get_description()).to_be_visible()
             expect(self.ab_testing_page.get_version_b_signup_button()).to_be_visible()
 
     def test_page_heading_and_description_text_are_correct(self, navigate_to_ab_testing_page):
@@ -90,7 +90,11 @@ class TestABTestingPage:
 
         version_a_title.or_(version_b_title).wait_for()
 
-        if version_a_title.is_visible():
+        a_visible = version_a_title.is_visible()
+        b_visible = version_b_title.is_visible()
+        assert a_visible != b_visible, "Exactly one A/B version should be visible"
+
+        if a_visible:
             expect(version_b_title).to_be_hidden()
         else:
             expect(version_a_title).to_be_hidden()

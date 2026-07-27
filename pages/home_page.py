@@ -59,6 +59,7 @@ class HomePage(BasePage):
     FLOATING_MENU_CARD_LOCATOR = "//a[@href='/link/floating-menu']"
     GEOLOCATION_CARD_LOCATOR = "//a[@href='/link/geolocation']"
     HORIZONTAL_SLIDER_CARD_LOCATOR = "//a[@href='/link/horizontal-slider']"
+    IFRAME_CARD_LOCATOR = "//a[@href='/link/iframe']"
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -379,6 +380,24 @@ class HomePage(BasePage):
         """
         self.get_horizontal_slider_card().click()
         logger.info("Clicked Horizontal Slider card")
+
+    def get_iframe_card(self):
+        """Get the iFrame card element.
+
+        Returns:
+            Locator: The locator for the iFrame card element.
+        """
+        logger.info("Getting iFrame card element")
+        return self.page.locator(self.IFRAME_CARD_LOCATOR)
+
+    def click_iframe_card(self):
+        """Click the iFrame card.
+
+        Returns:
+            None
+        """
+        self.get_iframe_card().click()
+        logger.info("Clicked iFrame card")
 
     def click_slow_resources_card(self):
         """Click the Slow Resources card.

@@ -25,6 +25,7 @@ from pages.geolocation_page import GeolocationPage
 from pages.home_page import HomePage
 from pages.horizontal_slider_page import HorizontalSliderPage
 from pages.hovers_page import HoversPage
+from pages.iframe_page import IFramePage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
 from pages.key_presses_page import KeyPressesPage
 from pages.slow_resources_page import SlowResourcesPage
@@ -186,3 +187,9 @@ def geolocation_page(page: Page) -> GeolocationPage:
 def horizontal_slider_page(page: Page) -> HorizontalSliderPage:
     """Fixture for HorizontalSliderPage object."""
     return HorizontalSliderPage(page)
+
+
+@pytest.fixture(scope="function")
+def iframe_page(page: Page) -> IFramePage:
+    """Fixture for IFramePage object."""
+    return IFramePage(page)

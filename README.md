@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![Playwright](https://img.shields.io/badge/playwright-1.58.0-green)
+![pytest](https://img.shields.io/badge/pytest-9.0.3-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # Playwright Python Test Framework
 
 A Playwright + pytest UI automation framework using Page Object Model, targeting a self-hosted clone of "the-internet" on Render.

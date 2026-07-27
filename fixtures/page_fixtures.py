@@ -26,6 +26,7 @@ from pages.home_page import HomePage
 from pages.horizontal_slider_page import HorizontalSliderPage
 from pages.hovers_page import HoversPage
 from pages.iframe_page import IFramePage
+from pages.infinite_scroll_page import InfiniteScrollPage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
 from pages.key_presses_page import KeyPressesPage
 from pages.slow_resources_page import SlowResourcesPage
@@ -193,3 +194,9 @@ def horizontal_slider_page(page: Page) -> HorizontalSliderPage:
 def iframe_page(page: Page) -> IFramePage:
     """Fixture for IFramePage object."""
     return IFramePage(page)
+
+
+@pytest.fixture(scope="function")
+def infinite_scroll_page(page: Page) -> InfiniteScrollPage:
+    """Fixture for InfiniteScrollPage object."""
+    return InfiniteScrollPage(page)

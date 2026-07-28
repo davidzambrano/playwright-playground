@@ -61,6 +61,7 @@ class HomePage(BasePage):
     HORIZONTAL_SLIDER_CARD_LOCATOR = "//a[@href='/link/horizontal-slider']"
     IFRAME_CARD_LOCATOR = "//a[@href='/link/iframe']"
     INFINITE_SCROLL_CARD_LOCATOR = "//a[contains(@href, 'infinite-scroll')]"
+    INPUTS_CARD_LOCATOR = "//a[contains(@href, 'inputs')]"
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -417,6 +418,24 @@ class HomePage(BasePage):
         """
         self.get_infinite_scroll_card().click()
         logger.info("Clicked Infinite Scroll card")
+
+    def get_inputs_card(self):
+        """Get the Inputs card element.
+
+        Returns:
+            Locator: The locator for the Inputs card element.
+        """
+        logger.info("Getting Inputs card element")
+        return self.page.locator(self.INPUTS_CARD_LOCATOR)
+
+    def click_inputs_card(self):
+        """Click the Inputs card.
+
+        Returns:
+            None
+        """
+        self.get_inputs_card().click()
+        logger.info("Clicked Inputs card")
 
     def click_slow_resources_card(self):
         """Click the Slow Resources card.

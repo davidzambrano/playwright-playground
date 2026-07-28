@@ -40,7 +40,7 @@ class TestInfiniteScrollPage:
 
     def test_scroll_loads_more_content(self, navigate_to_infinite_scroll_page):
         """
-        Test that scrolling to bottom loads more content (Test Case 23.1).
+        Test that scrolling to bottom loads more content.
         """
         # Get initial paragraph count
         initial_count = self.infinite_scroll_page.get_paragraph_count()

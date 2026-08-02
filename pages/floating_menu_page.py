@@ -56,6 +56,8 @@ class FloatingMenuPage(BasePage):
         for _ in range(10):
             self.page.mouse.wheel(0, 200)
             self.page.wait_for_timeout(100)
+            if self.is_menu_hidden():
+                break
 
     def scroll_up(self):
         """Scroll up to the top of the page to trigger the floating menu to reappear.

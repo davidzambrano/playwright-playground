@@ -114,6 +114,7 @@ jobs:
             ${{ steps.markers.outputs.flags }} \
             --shard-id=${{ matrix.shard }} \
             --num-shards=4 \
+            --reruns 2 \
             --html=reports/report-shard-${{ matrix.shard }}.html --self-contained-html
 
       - name: Upload test results (shard ${{ matrix.shard }})

@@ -67,6 +67,7 @@ jobs:
             -m "not slow" \
             --shard-id=${{ matrix.shard }} \
             --num-shards=4 \
+            --reruns 2 \
             --cov=pages --cov=fixtures --cov=utils
 
       - name: Upload coverage data

@@ -28,7 +28,7 @@ jobs:
   # ---------------------------------------------------------------------------
   test:
     needs: wake-app
-    name: Run tests (shard ${{ matrix.shard }}/4)
+    name: Run tests (shard ${{ matrix.shard }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -57,7 +57,7 @@ jobs:
           playwright install chromium
           playwright install-deps chromium
 
-      - name: Run tests with coverage (shard ${{ matrix.shard }}/4)
+      - name: Run tests with coverage (shard ${{ matrix.shard }})
         env:
           BASE_URL: https://auto-things.onrender.com/
           COVERAGE_FILE: .coverage.shard${{ matrix.shard }}

@@ -116,6 +116,8 @@ class DropdownPage(BasePage):
         option = self.get_simple_dropdown_option(value)
         logger.info("Waiting for option to be visible")
         option.wait_for(state="visible")
+        logger.info("Scrolling option into view if needed")
+        option.scroll_into_view_if_needed()
         logger.info("Clicking dropdown option: %s", value)
         option.click()
 

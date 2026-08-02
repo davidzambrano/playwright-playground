@@ -108,11 +108,12 @@ jobs:
         with:
           path: coverage-data
           pattern: coverage-shard-*
-          merge-multiple: true
 
       - name: Combine coverage and generate XML
         run: |
-          python -m coverage combine coverage-data/
+          mkdir -p .coverage-combined
+          find coverage-data -name '.coverage.shard*' -exec cp {} .coverage-combined/ \;
+          python -m coverage combine .coverage-combined/
           python -m coverage xml
 
       - name: SonarQube Scan

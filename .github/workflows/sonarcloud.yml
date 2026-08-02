@@ -107,13 +107,13 @@ jobs:
         uses: actions/download-artifact@v7
         with:
           path: coverage-data
-          pattern: coverage-shard-*
 
       - name: Combine coverage and generate XML
         run: |
-          mkdir -p .coverage-combined
-          find coverage-data -name '.coverage.shard*' -exec cp {} .coverage-combined/ \;
-          python -m coverage combine .coverage-combined/
+          if [ -d "coverage-data" ]; then
+            find coverage-data -name '.coverage.shard*' -exec cp {} . \;
+          fi
+          python -m coverage combine
           python -m coverage xml
 
       - name: SonarQube Scan

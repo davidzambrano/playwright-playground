@@ -69,8 +69,13 @@ jobs:
             --num-shards=4 \
             --reruns 2 \
             --cov=pages --cov=fixtures --cov=utils \
-            --cov-report=term-missing \
-            --override-ini="addopts="
+            --cov-report= \
+            -p no:cacheprovider \
+            -o addopts="" \
+            tests/
+          
+          # Verify coverage file was created
+          ls -la .coverage.shard* 2>/dev/null || echo "Warning: No coverage file found"
 
       - name: Upload coverage data
         if: always()

@@ -1,0 +1,48 @@
+# Runs SonarCloud analysis on every push and pull request to main/develop.
+# Requires SONAR_TOKEN to be set as a GitHub Actions secret.
+name: SonarCloud
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  sonarcloud:
+    name: SonarCloud Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run tests with coverage
+        env:
+          BASE_URL: https://auto-things.onrender.com/
+        run: |
+          xvfb-run -a pytest --browser chromium -m "not slow" --cov=pages --cov=fixtures --cov=utils --cov-report=xml
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io

@@ -60,7 +60,6 @@ jobs:
       - name: Run tests with coverage (shard ${{ matrix.shard }})
         env:
           BASE_URL: https://auto-things.onrender.com/
-          COVERAGE_FILE: .coverage.shard${{ matrix.shard }}
         run: |
           xvfb-run -a pytest \
             --browser chromium \
@@ -69,7 +68,8 @@ jobs:
             --num-shards=4 \
             --reruns 2 \
             --cov=pages --cov=fixtures --cov=utils \
-            --cov-report= \
+            --cov-report=term \
+            --cov-data-file=.coverage.shard${{ matrix.shard }} \
             -p no:cacheprovider \
             -o addopts="" \
             tests/

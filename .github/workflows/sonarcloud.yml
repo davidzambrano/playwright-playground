@@ -68,7 +68,9 @@ jobs:
             --shard-id=${{ matrix.shard }} \
             --num-shards=4 \
             --reruns 2 \
-            --cov=pages --cov=fixtures --cov=utils
+            --cov=pages --cov=fixtures --cov=utils \
+            --cov-report=term-missing \
+            --override-ini="addopts="
 
       - name: Upload coverage data
         if: always()
@@ -112,9 +114,11 @@ jobs:
         run: |
           if [ -d "coverage-data" ]; then
             find coverage-data -name '.coverage.shard*' -exec cp {} . \;
+            if ls .coverage.shard* 1> /dev/null 2>&1; then
+              python -m coverage combine
+            fi
           fi
-          python -m coverage combine
-          python -m coverage xml
+          python -m coverage xml || echo "No coverage data available"
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@master

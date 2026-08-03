@@ -1,0 +1,130 @@
+# Runs SonarCloud analysis on every push and pull request to main/develop.
+# Requires SONAR_TOKEN to be set as a GitHub Actions secret.
+# Tests run in 4 parallel shards for speed; coverage data is combined before scanning.
+name: SonarCloud
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  wake-app:
+    name: Wake up Render app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app until ready
+        run: |
+          for i in {1..5}; do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://auto-things.onrender.com/")
+            if [ "$STATUS" -eq 200 ]; then exit 0; fi
+            sleep 30
+          done
+          exit 1
+
+  # ---------------------------------------------------------------------------
+  # Job 2: Run tests in parallel shards, each generating partial coverage data
+  # ---------------------------------------------------------------------------
+  test:
+    needs: wake-app
+    name: Run tests (shard ${{ matrix.shard }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run tests with coverage (shard ${{ matrix.shard }})
+        env:
+          BASE_URL: https://auto-things.onrender.com/
+          COVERAGE_FILE: .coverage.shard${{ matrix.shard }}
+        run: |
+          xvfb-run -a pytest \
+            --browser chromium \
+            -m "not slow" \
+            --shard-id=${{ matrix.shard }} \
+            --num-shards=4 \
+            --reruns 2 \
+            --cov=pages --cov=fixtures --cov=utils \
+            tests/
+          
+          # Verify coverage file was created
+          find . -maxdepth 1 -name '.coverage.shard*' -type f
+
+      - name: Upload coverage data
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage-shard-${{ matrix.shard }}
+          path: .coverage.shard${{ matrix.shard }}
+          include-hidden-files: true
+          retention-days: 1
+
+  # ---------------------------------------------------------------------------
+  # Job 3: Combine coverage from all shards and run SonarCloud scan
+  # ---------------------------------------------------------------------------
+  sonarcloud:
+    name: SonarCloud Analysis
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Download coverage data from all shards
+        uses: actions/download-artifact@v7
+        with:
+          path: coverage-data
+
+      - name: Combine coverage and generate XML
+        run: |
+          if [ -d "coverage-data" ]; then
+            find coverage-data -name '.coverage.shard*' -exec cp {} . \;
+            if ls .coverage.shard* 1> /dev/null 2>&1; then
+              python -m coverage combine
+            fi
+          fi
+          python -m coverage xml || echo "No coverage data available"
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io

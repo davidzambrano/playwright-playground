@@ -80,6 +80,7 @@ jobs:
         with:
           name: coverage-shard-${{ matrix.shard }}
           path: .coverage.shard${{ matrix.shard }}
+          include-hidden-files: true
           retention-days: 1
 
   # ---------------------------------------------------------------------------

@@ -14,7 +14,6 @@ from utils.helpers import Logger
 # Register fixture modules from fixtures/ package
 pytest_plugins = [
     "fixtures.page_fixtures",
-    "fixtures.data_fixtures",
     "fixtures.network_fixtures",
 ]
 

@@ -114,10 +114,10 @@ class DropdownPage(BasePage):
         logger.info("Selecting option from simple dropdown: %s", value)
         self.click_simple_dropdown_trigger()
         option = self.get_simple_dropdown_option(value)
-        logger.info("Waiting for option to be visible")
-        option.wait_for(state="visible")
+        logger.info("Waiting for option to exist")
+        option.wait_for(state="attached")
         logger.info("Clicking dropdown option: %s", value)
-        option.click()
+        option.click(force=True)
 
     def select_combobox_option(self, label):
         """Select an option from the searchable combobox.

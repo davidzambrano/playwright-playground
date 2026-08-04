@@ -4,3 +4,9 @@ line-length = 100
 [tool.isort]
 profile = "black"
 line_length = 100
+
+[tool.coverage.run]
+# Playwright's sync API uses greenlets internally to bridge sync/async calls.
+# Without this, coverage.py loses trace continuity across greenlet switches,
+# under-reporting lines that follow a Playwright action (click, wait_for, etc.).
+concurrency = ["greenlet", "thread"]

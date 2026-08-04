@@ -8,10 +8,10 @@ A Playwright + pytest UI automation framework using Page Object Model, targeting
 playwright-playground/
 ├── .github/workflows/      # CI pipelines
 │   ├── regression.yml      # Manual trigger, runs Playwright tests
-│   └── code-quality.yml    # Push/PR, pylint, black, isort checks
+│   ├── code-quality.yml    # Push/PR, pylint, black, isort checks
+│   └── sonarcloud.yml      # Push/PR to main, SonarCloud analysis
 ├── fixtures/               # Pytest fixtures (registered via pytest_plugins)
 │   ├── page_fixtures.py    # Page-object fixtures
-│   ├── data_fixtures.py    # Synthetic test data generators
 │   └── network_fixtures.py # Mock API, viewport, offline, slow network
 ├── pages/                  # Page Object Model
 │   ├── base_page.py        # Base page class with common functionality
@@ -19,12 +19,14 @@ playwright-playground/
 ├── tests/                  # Test cases
 │   └── [test_files].py     # Test files, one per page/feature
 ├── utils/                  # Utility classes
-│   └── helpers.py          # Logger, TestDataGenerator, WaitHelper
+│   └── helpers.py          # Logger
 ├── conftest.py             # Infrastructure fixtures (browser, page, logging, timeouts)
 ├── pytest.ini              # Pytest settings and markers
 ├── pyproject.toml          # Black and isort config
-├── requirements.txt        # Runtime dependencies
-└── requirements-dev.txt    # Development dependencies (pylint, black, isort, pre-commit)
+├── requirements.txt        # Runtime dependencies (source of truth)
+├── requirements.lock       # Locked runtime dependencies with SHA256 hashes
+├── requirements-dev.txt    # Development dependencies (pylint, black, isort, pre-commit)
+└── requirements-dev.lock   # Locked dev dependencies with SHA256 hashes
 ```
 
 ## Quick Start
@@ -53,6 +55,19 @@ Install code quality tools:
 pip install -r requirements-dev.txt
 pre-commit install
 ```
+
+## Dependency Lock Files
+
+This project uses `pip-tools` to generate lock files with SHA256 hashes for all dependencies (including transitive ones). CI installs from the lock files using `pip install --require-hashes` for secure, reproducible builds.
+
+When you change `requirements.txt` or `requirements-dev.txt`, regenerate the corresponding lock file:
+
+```bash
+pip-compile requirements.txt --output-file requirements.lock --generate-hashes --strip-extras
+pip-compile requirements-dev.txt --output-file requirements-dev.lock --generate-hashes --strip-extras
+```
+
+Commit both the source file and the regenerated lock file together.
 
 Run quality checks manually:
 
@@ -101,12 +116,13 @@ class TestExample:
 
 1. **New page:** Create `pages/<name>_page.py` inheriting `BasePage`, add a fixture in `fixtures/page_fixtures.py`
 2. **New marker:** Declare it in `pytest.ini` first (strict markers enabled)
-3. **New fixture:** Add to the appropriate file in `fixtures/` (page, data, or network)
+3. **New fixture:** Add to the appropriate file in `fixtures/` (page or network)
 
 ## CI / GitHub Actions
 
 - **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Tests are sharded across 4 parallel runners for faster execution. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging.
 - **`code-quality.yml`** - Runs on push/PR to `main`/`develop`. Checks pylint (≥8.0), black, and isort.
+- **`sonarcloud.yml`** - Runs on push/PR to `main`. Runs tests in 4 parallel shards, combines coverage, and performs SonarCloud analysis. Requires `SONAR_TOKEN` secret.
 
 ### Test Sharding
 

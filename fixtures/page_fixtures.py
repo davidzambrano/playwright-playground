@@ -30,6 +30,7 @@ from pages.infinite_scroll_page import InfiniteScrollPage
 from pages.inputs_page import InputsPage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
 from pages.key_presses_page import KeyPressesPage
+from pages.multiple_windows_page import MultipleWindowsPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
@@ -207,3 +208,9 @@ def infinite_scroll_page(page: Page) -> InfiniteScrollPage:
 def inputs_page(page: Page) -> InputsPage:
     """Fixture for InputsPage object."""
     return InputsPage(page)
+
+
+@pytest.fixture(scope="function")
+def multiple_windows_page(page: Page) -> MultipleWindowsPage:
+    """Fixture for MultipleWindowsPage object."""
+    return MultipleWindowsPage(page)

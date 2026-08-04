@@ -62,6 +62,7 @@ class HomePage(BasePage):
     IFRAME_CARD_LOCATOR = "//a[@href='/link/iframe']"
     INFINITE_SCROLL_CARD_LOCATOR = "//a[contains(@href, 'infinite-scroll')]"
     INPUTS_CARD_LOCATOR = "//a[contains(@href, 'inputs')]"
+    MULTIPLE_WINDOWS_CARD_LOCATOR = "//a[@href='/link/multiple-windows']"
 
     def goto_home_page(self, base_url: str):
         """Navigate to the home page.
@@ -436,6 +437,24 @@ class HomePage(BasePage):
         """
         self.get_inputs_card().click()
         logger.info("Clicked Inputs card")
+
+    def get_multiple_windows_card(self):
+        """Get the Multiple Windows card element.
+
+        Returns:
+            Locator: The locator for the Multiple Windows card element.
+        """
+        logger.info("Getting Multiple Windows card element")
+        return self.page.locator(self.MULTIPLE_WINDOWS_CARD_LOCATOR)
+
+    def click_multiple_windows_card(self):
+        """Click the Multiple Windows card.
+
+        Returns:
+            None
+        """
+        self.get_multiple_windows_card().click()
+        logger.info("Clicked Multiple Windows card")
 
     def click_slow_resources_card(self):
         """Click the Slow Resources card.

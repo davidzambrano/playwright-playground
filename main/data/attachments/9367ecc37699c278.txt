@@ -1,0 +1,13 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_checking_all_items_checks_select_all[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:168 Getting Checkboxes card element
+INFO     pages.home_page:home_page.py:522 Clicked Checkboxes card
+INFO     pages.checkboxes_page:checkboxes_page.py:60 Getting select all checkbox element
+INFO     pages.checkboxes_page:checkboxes_page.py:65 Getting item1 (Apples) checkbox element
+INFO     pages.checkboxes_page:checkboxes_page.py:70 Getting item2 (Bananas) checkbox element
+INFO     pages.checkboxes_page:checkboxes_page.py:75 Getting item3 (Oranges) checkbox element
+INFO     root:conftest.py:53 TEST END: test_checking_all_items_checks_select_all[chromium]
+INFO     root:conftest.py:54 ================================================================================

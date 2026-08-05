@@ -1,0 +1,12 @@
+2026-08-05 18:28:33,086 - root - INFO - Logging configured for test session
+2026-08-05 18:28:34,128 - root - INFO - ================================================================================
+2026-08-05 18:28:34,128 - root - INFO - TEST START: test_page_heading_and_description_text_are_correct[chromium]
+2026-08-05 18:28:34,289 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 18:28:35,190 - pages.base_page - INFO - Page load completed
+2026-08-05 18:28:35,191 - pages.home_page - INFO - Navigated to home page
+2026-08-05 18:28:35,191 - pages.home_page - INFO - Getting A/B Testing card element
+2026-08-05 18:28:36,401 - pages.home_page - INFO - Clicked A/B Testing card
+2026-08-05 18:28:36,405 - pages.ab_testing_page - INFO - Getting heading element for A/B Testing page
+2026-08-05 18:28:37,269 - pages.ab_testing_page - INFO - Getting page description element for A/B Testing page
+2026-08-05 18:28:37,612 - root - INFO - TEST END: test_page_heading_and_description_text_are_correct[chromium]
+2026-08-05 18:28:37,612 - root - INFO - ================================================================================

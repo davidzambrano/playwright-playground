@@ -1,0 +1,17 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_table_structure_and_row_deletion[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:150 Getting Challenging DOM card element
+INFO     pages.home_page:home_page.py:503 Clicked Challenging DOM card
+INFO     pages.challenging_dom_page:challenging_dom_page.py:45 Getting table element
+INFO     pages.challenging_dom_page:challenging_dom_page.py:50 Getting all table row elements
+INFO     pages.challenging_dom_page:challenging_dom_page.py:58 Clicking delete button for row at index 0
+INFO     pages.challenging_dom_page:challenging_dom_page.py:50 Getting all table row elements
+INFO     pages.challenging_dom_page:challenging_dom_page.py:50 Getting all table row elements
+INFO     pages.challenging_dom_page:challenging_dom_page.py:58 Clicking delete button for row at index 0
+INFO     pages.challenging_dom_page:challenging_dom_page.py:50 Getting all table row elements
+INFO     pages.challenging_dom_page:challenging_dom_page.py:50 Getting all table row elements
+INFO     root:conftest.py:53 TEST END: test_table_structure_and_row_deletion[chromium]
+INFO     root:conftest.py:54 ================================================================================

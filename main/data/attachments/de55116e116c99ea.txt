@@ -1,0 +1,16 @@
+2026-08-05 18:30:43,335 - root - INFO - ================================================================================
+2026-08-05 18:30:43,335 - root - INFO - TEST START: test_menu_hides_on_scroll_down[chromium]
+2026-08-05 18:30:43,431 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 18:30:44,544 - pages.base_page - INFO - Page load completed
+2026-08-05 18:30:44,545 - pages.home_page - INFO - Navigated to home page
+2026-08-05 18:30:44,545 - pages.home_page - INFO - Getting Floating Menu card element
+2026-08-05 18:30:44,613 - pages.home_page - INFO - Clicked Floating Menu card
+2026-08-05 18:30:44,618 - pages.floating_menu_page - INFO - Scrolling down the page
+2026-08-05 18:30:44,756 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-05 18:30:46,053 - pages.floating_menu_page - INFO - Floating menu hidden: False
+2026-08-05 18:30:46,170 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-05 18:30:46,179 - pages.floating_menu_page - INFO - Floating menu hidden: True
+2026-08-05 18:30:46,180 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-05 18:30:46,190 - pages.floating_menu_page - INFO - Floating menu hidden: True
+2026-08-05 18:30:46,480 - root - INFO - TEST END: test_menu_hides_on_scroll_down[chromium]
+2026-08-05 18:30:46,481 - root - INFO - ================================================================================

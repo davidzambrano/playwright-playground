@@ -111,17 +111,17 @@ jobs:
 
       - name: Run Playwright tests (shard ${{ matrix.shard }}/4)
         env:
-          BASE_URL: $TEST_ENVIRONMENT
+          BASE_URL: ${{ env.TEST_ENVIRONMENT }}
         run: |
           mkdir -p reports/test-results-shard-${{ matrix.shard }} logs
-          
+
           xvfb-run -a pytest \
             --browser "$TEST_BROWSER" \
             ${{ steps.markers.outputs.flags }} \
             --shard-id=${{ matrix.shard }} \
             --num-shards=4 \
             --reruns 2 \
-            --html=reports/report-shard-${{ matrix.shard }}.html --self-contained-html
+            --alluredir=reports/allure-results
 
       - name: Upload test results (shard ${{ matrix.shard }})
         if: always()
@@ -132,3 +132,74 @@ jobs:
             reports/test-results-shard-${{ matrix.shard }}/
             logs/
           retention-days: 7
+
+      - name: Upload Allure results (shard ${{ matrix.shard }})
+        if: always()
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        with:
+          name: allure-results-shard-${{ matrix.shard }}
+          path: reports/allure-results/
+          retention-days: 7
+
+  # ---------------------------------------------------------------------------
+  # Job 3: Merge shard Allure results and publish a single HTML report
+  # ---------------------------------------------------------------------------
+  publish-report:
+    needs: run-tests
+    if: always()
+    name: Publish Allure report
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download Allure results from all shards
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        with:
+          pattern: allure-results-shard-*
+          path: reports/allure-results
+          merge-multiple: true
+
+      - name: Get previous Allure history (for trend graphs)
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Restore Allure history
+        run: |
+          mkdir -p "reports/allure-results/history"
+          cp -r "gh-pages/${{ github.ref_name }}/history/." reports/allure-results/history/ 2>/dev/null || true
+
+      - name: Set up Java (required by Allure commandline)
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install Allure commandline
+        run: npm install -g allure-commandline --no-progress
+
+      - name: Generate Allure report
+        run: allure generate reports/allure-results --clean -o reports/allure-report
+
+      - name: Upload Allure report artifact
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        with:
+          name: allure-report-${{ github.ref_name }}
+          path: reports/allure-report/
+          retention-days: 7
+
+      - name: Publish report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: reports/allure-report
+          destination_dir: ${{ github.ref_name }}
+          publish_branch: gh-pages
+          keep_files: true
+
+      - name: Add report link to job summary
+        run: |
+          echo "### Allure report (${{ github.ref_name }})" >> "$GITHUB_STEP_SUMMARY"
+          echo "https://${{ github.repository_owner }}.github.io/$(basename '${{ github.repository }}')/${{ github.ref_name }}/" >> "$GITHUB_STEP_SUMMARY"

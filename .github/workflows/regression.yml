@@ -168,8 +168,8 @@ jobs:
 
       - name: Restore Allure history
         run: |
-          mkdir -p reports/allure-results/history
-          cp -r gh-pages/history/. reports/allure-results/history/ 2>/dev/null || true
+          mkdir -p "reports/allure-results/history"
+          cp -r "gh-pages/${{ github.ref_name }}/history/." reports/allure-results/history/ 2>/dev/null || true
 
       - name: Set up Java (required by Allure commandline)
         uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
@@ -186,7 +186,7 @@ jobs:
       - name: Upload Allure report artifact
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
-          name: allure-report
+          name: allure-report-${{ github.ref_name }}
           path: reports/allure-report/
           retention-days: 7
 
@@ -195,9 +195,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: reports/allure-report
+          destination_dir: ${{ github.ref_name }}
           publish_branch: gh-pages
+          keep_files: true
 
       - name: Add report link to job summary
         run: |
-          echo "### Allure report" >> "$GITHUB_STEP_SUMMARY"
-          echo "https://${{ github.repository_owner }}.github.io/$(basename '${{ github.repository }}')/" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Allure report (${{ github.ref_name }})" >> "$GITHUB_STEP_SUMMARY"
+          echo "https://${{ github.repository_owner }}.github.io/$(basename '${{ github.repository }}')/${{ github.ref_name }}/" >> "$GITHUB_STEP_SUMMARY"

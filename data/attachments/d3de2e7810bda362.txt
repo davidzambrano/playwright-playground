@@ -1,0 +1,10 @@
+2026-08-05 11:40:27,492 - root - INFO - ================================================================================
+2026-08-05 11:40:27,492 - root - INFO - TEST START: test_buttons_are_present_and_interactable[chromium]
+2026-08-05 11:40:27,591 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 11:40:28,617 - pages.base_page - INFO - Page load completed
+2026-08-05 11:40:28,617 - pages.home_page - INFO - Navigated to home page
+2026-08-05 11:40:28,617 - pages.home_page - INFO - Getting Challenging DOM card element
+2026-08-05 11:40:28,679 - pages.home_page - INFO - Clicked Challenging DOM card
+2026-08-05 11:40:28,681 - pages.challenging_dom_page - INFO - Getting all random buttons
+2026-08-05 11:40:30,955 - root - INFO - TEST END: test_buttons_are_present_and_interactable[chromium]
+2026-08-05 11:40:30,956 - root - INFO - ================================================================================

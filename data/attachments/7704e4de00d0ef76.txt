@@ -1,0 +1,13 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_combobox_search_no_results[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:177 Getting Dropdown card element
+INFO     pages.home_page:home_page.py:532 Clicked Dropdown card
+INFO     pages.dropdown_page:dropdown_page.py:68 Getting combobox trigger element
+INFO     pages.dropdown_page:dropdown_page.py:146 Searching combobox with term: nonexistent
+INFO     pages.dropdown_page:dropdown_page.py:82 Getting combobox input element
+INFO     pages.dropdown_page:dropdown_page.py:102 Getting no results text element
+INFO     root:conftest.py:53 TEST END: test_combobox_search_no_results[chromium]
+INFO     root:conftest.py:54 ================================================================================

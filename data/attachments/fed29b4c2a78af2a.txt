@@ -1,0 +1,11 @@
+2026-08-05 11:42:27,513 - root - INFO - ================================================================================
+2026-08-05 11:42:27,513 - root - INFO - TEST START: test_download_file[chromium]
+2026-08-05 11:42:27,611 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 11:42:28,517 - pages.base_page - INFO - Page load completed
+2026-08-05 11:42:28,517 - pages.home_page - INFO - Navigated to home page
+2026-08-05 11:42:28,517 - pages.home_page - INFO - Getting File Download card element
+2026-08-05 11:42:28,589 - pages.home_page - INFO - Clicked File Download card
+2026-08-05 11:42:28,604 - pages.file_download_page - INFO - Clicking Download File button
+2026-08-05 11:42:28,604 - pages.file_download_page - INFO - Getting Download File button element
+2026-08-05 11:42:29,952 - root - INFO - TEST END: test_download_file[chromium]
+2026-08-05 11:42:29,953 - root - INFO - ================================================================================

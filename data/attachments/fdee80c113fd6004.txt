@@ -1,0 +1,12 @@
+2026-08-05 11:43:00,325 - root - INFO - ================================================================================
+2026-08-05 11:43:00,325 - root - INFO - TEST START: test_handle_js_confirm_accept[chromium]
+2026-08-05 11:43:00,419 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 11:43:01,151 - pages.base_page - INFO - Page load completed
+2026-08-05 11:43:01,151 - pages.home_page - INFO - Navigated to home page
+2026-08-05 11:43:01,151 - pages.home_page - INFO - Getting JavaScript Alerts card element
+2026-08-05 11:43:01,223 - pages.home_page - INFO - Clicked JavaScript Alerts card
+2026-08-05 11:43:01,230 - pages.javascript_alerts_page - INFO - Clicking JS Confirm button
+2026-08-05 11:43:01,231 - pages.javascript_alerts_page - INFO - Getting JS Confirm button element
+2026-08-05 11:43:02,053 - pages.javascript_alerts_page - INFO - Getting result text element
+2026-08-05 11:43:02,435 - root - INFO - TEST END: test_handle_js_confirm_accept[chromium]
+2026-08-05 11:43:02,436 - root - INFO - ================================================================================

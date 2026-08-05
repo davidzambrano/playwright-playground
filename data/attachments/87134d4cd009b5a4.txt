@@ -1,0 +1,10 @@
+2026-08-05 11:41:03,161 - root - INFO - ================================================================================
+2026-08-05 11:41:03,161 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-08-05 11:41:03,271 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 11:41:06,229 - pages.base_page - INFO - Page load completed
+2026-08-05 11:41:06,229 - pages.home_page - INFO - Navigated to home page
+2026-08-05 11:41:06,229 - pages.home_page - INFO - Getting Disappearing Elements card element
+2026-08-05 11:41:06,308 - pages.home_page - INFO - Clicked Disappearing Elements card
+2026-08-05 11:41:06,312 - pages.disappearing_elements_page - INFO - Getting page heading element
+2026-08-05 11:41:07,467 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-08-05 11:41:07,467 - root - INFO - ================================================================================

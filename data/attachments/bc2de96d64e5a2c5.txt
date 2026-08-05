@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_stale_button_label_is_correct[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:123 Getting Stale Element card element
+INFO     pages.home_page:home_page.py:133 Clicked Stale Element card
+INFO     pages.stale_element_page:stale_element_page.py:39 Getting stale button element
+INFO     root:conftest.py:53 TEST END: test_stale_button_label_is_correct[chromium]
+INFO     root:conftest.py:54 ================================================================================

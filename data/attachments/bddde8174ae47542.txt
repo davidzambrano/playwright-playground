@@ -1,0 +1,25 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_multiple_scrolls_load_incremental_content[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:411 Getting Infinite Scroll card element
+INFO     pages.home_page:home_page.py:421 Clicked Infinite Scroll card
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:41 Getting paragraph count
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:32 Getting all paragraph elements
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:50 Scrolling to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:52 Scrolled to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:64 Waiting for new paragraphs to load (initial count: 0)
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:69 New paragraphs loaded
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:50 Scrolling to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:52 Scrolled to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:64 Waiting for new paragraphs to load (initial count: 10)
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:69 New paragraphs loaded
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:50 Scrolling to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:52 Scrolled to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:64 Waiting for new paragraphs to load (initial count: 20)
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:69 New paragraphs loaded
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:41 Getting paragraph count
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:32 Getting all paragraph elements
+INFO     root:conftest.py:53 TEST END: test_multiple_scrolls_load_incremental_content[chromium]
+INFO     root:conftest.py:54 ================================================================================

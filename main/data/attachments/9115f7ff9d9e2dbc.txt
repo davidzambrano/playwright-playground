@@ -1,0 +1,14 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_example2_content_appears_after_start[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:249 Getting Dynamic Loading card element
+INFO     pages.home_page:home_page.py:612 Clicked Dynamic Loading card
+INFO     pages.dynamic_loading_page:dynamic_loading_page.py:116 Clicking Example 2 Start button
+INFO     pages.dynamic_loading_page:dynamic_loading_page.py:107 Getting Example 2 Start button
+INFO     pages.dynamic_loading_page:dynamic_loading_page.py:145 Waiting for Example 2 content to load
+INFO     pages.dynamic_loading_page:dynamic_loading_page.py:125 Getting Example 2 finish content
+INFO     pages.dynamic_loading_page:dynamic_loading_page.py:125 Getting Example 2 finish content
+INFO     root:conftest.py:53 TEST END: test_example2_content_appears_after_start[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,16 @@
+2026-08-05 13:00:26,984 - root - INFO - ================================================================================
+2026-08-05 13:00:26,985 - root - INFO - TEST START: test_simple_dropdown_select_vegetable[chromium]
+2026-08-05 13:00:27,078 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 13:00:28,584 - pages.base_page - INFO - Page load completed
+2026-08-05 13:00:28,584 - pages.home_page - INFO - Navigated to home page
+2026-08-05 13:00:28,585 - pages.home_page - INFO - Getting Dropdown card element
+2026-08-05 13:00:28,667 - pages.home_page - INFO - Clicked Dropdown card
+2026-08-05 13:00:28,671 - pages.dropdown_page - INFO - Selecting option from simple dropdown: carrot
+2026-08-05 13:00:28,672 - pages.dropdown_page - INFO - Getting simple dropdown trigger element
+2026-08-05 13:00:30,022 - pages.dropdown_page - INFO - Clicking simple dropdown trigger
+2026-08-05 13:00:30,094 - pages.dropdown_page - INFO - Getting simple dropdown option with value: carrot
+2026-08-05 13:00:30,095 - pages.dropdown_page - INFO - Waiting for option to exist
+2026-08-05 13:00:30,126 - pages.dropdown_page - INFO - Clicking dropdown option: carrot
+2026-08-05 13:00:30,171 - pages.dropdown_page - INFO - Getting selection text element
+2026-08-05 13:00:30,490 - root - INFO - TEST END: test_simple_dropdown_select_vegetable[chromium]
+2026-08-05 13:00:30,491 - root - INFO - ================================================================================

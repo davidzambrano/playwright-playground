@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_only_one_ab_version_is_displayed_at_a_time[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:141 Getting A/B Testing card element
+INFO     pages.home_page:home_page.py:494 Clicked A/B Testing card
+INFO     pages.ab_testing_page:ab_testing_page.py:69 Getting Version A title element
+INFO     pages.ab_testing_page:ab_testing_page.py:114 Getting Version B title element
+INFO     root:conftest.py:53 TEST END: test_only_one_ab_version_is_displayed_at_a_time[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,10 @@
+2026-08-05 13:00:57,414 - root - INFO - ================================================================================
+2026-08-05 13:00:57,414 - root - INFO - TEST START: test_text_input_is_disabled_initially[chromium]
+2026-08-05 13:00:57,516 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 13:00:59,138 - pages.base_page - INFO - Page load completed
+2026-08-05 13:00:59,138 - pages.home_page - INFO - Navigated to home page
+2026-08-05 13:00:59,139 - pages.home_page - INFO - Getting Dynamic Controls card element
+2026-08-05 13:00:59,209 - pages.home_page - INFO - Clicked Dynamic Controls card
+2026-08-05 13:00:59,212 - pages.dynamic_controls_page - INFO - Getting text input element
+2026-08-05 13:01:00,846 - root - INFO - TEST END: test_text_input_is_disabled_initially[chromium]
+2026-08-05 13:01:00,846 - root - INFO - ================================================================================

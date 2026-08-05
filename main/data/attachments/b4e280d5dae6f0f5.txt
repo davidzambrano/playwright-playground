@@ -1,0 +1,16 @@
+2026-08-05 12:59:35,848 - root - INFO - Logging configured for test session
+2026-08-05 12:59:40,177 - root - INFO - ================================================================================
+2026-08-05 12:59:40,178 - root - INFO - TEST START: test_signup_displays_confirmation_toast[chromium]
+2026-08-05 12:59:40,316 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 12:59:41,888 - pages.base_page - INFO - Page load completed
+2026-08-05 12:59:41,889 - pages.home_page - INFO - Navigated to home page
+2026-08-05 12:59:41,889 - pages.home_page - INFO - Getting A/B Testing card element
+2026-08-05 12:59:41,970 - pages.home_page - INFO - Clicked A/B Testing card
+2026-08-05 12:59:41,976 - pages.ab_testing_page - INFO - Getting Version A title element
+2026-08-05 12:59:41,977 - pages.ab_testing_page - INFO - Getting Version B title element
+2026-08-05 12:59:43,324 - pages.ab_testing_page - INFO - Getting Version A description element
+2026-08-05 12:59:43,334 - pages.ab_testing_page - INFO - Clicking Version A sign up button
+2026-08-05 12:59:43,373 - pages.ab_testing_page - INFO - Getting toast title element
+2026-08-05 12:59:43,384 - pages.ab_testing_page - INFO - Getting toast description element for Version A
+2026-08-05 12:59:43,749 - root - INFO - TEST END: test_signup_displays_confirmation_toast[chromium]
+2026-08-05 12:59:43,749 - root - INFO - ================================================================================

@@ -1,0 +1,17 @@
+2026-08-05 13:00:02,049 - root - INFO - ================================================================================
+2026-08-05 13:00:02,049 - root - INFO - TEST START: test_table_structure_and_row_deletion[chromium]
+2026-08-05 13:00:02,136 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 13:00:04,413 - pages.base_page - INFO - Page load completed
+2026-08-05 13:00:04,414 - pages.home_page - INFO - Navigated to home page
+2026-08-05 13:00:04,414 - pages.home_page - INFO - Getting Challenging DOM card element
+2026-08-05 13:00:04,476 - pages.home_page - INFO - Clicked Challenging DOM card
+2026-08-05 13:00:04,479 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-05 13:00:05,859 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-05 13:00:05,866 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-05 13:00:05,866 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-05 13:00:05,920 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-05 13:00:05,928 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-05 13:00:05,928 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-05 13:00:05,997 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-05 13:00:06,371 - root - INFO - TEST END: test_table_structure_and_row_deletion[chromium]
+2026-08-05 13:00:06,371 - root - INFO - ================================================================================

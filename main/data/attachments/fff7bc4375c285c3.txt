@@ -1,0 +1,16 @@
+2026-08-05 13:00:35,861 - root - INFO - ================================================================================
+2026-08-05 13:00:35,861 - root - INFO - TEST START: test_simple_dropdown_select_apple[chromium]
+2026-08-05 13:00:35,947 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-05 13:00:37,474 - pages.base_page - INFO - Page load completed
+2026-08-05 13:00:37,474 - pages.home_page - INFO - Navigated to home page
+2026-08-05 13:00:37,474 - pages.home_page - INFO - Getting Dropdown card element
+2026-08-05 13:00:37,543 - pages.home_page - INFO - Clicked Dropdown card
+2026-08-05 13:00:37,546 - pages.dropdown_page - INFO - Selecting option from simple dropdown: apple
+2026-08-05 13:00:37,546 - pages.dropdown_page - INFO - Getting simple dropdown trigger element
+2026-08-05 13:00:39,383 - pages.dropdown_page - INFO - Clicking simple dropdown trigger
+2026-08-05 13:00:39,446 - pages.dropdown_page - INFO - Getting simple dropdown option with value: apple
+2026-08-05 13:00:39,446 - pages.dropdown_page - INFO - Waiting for option to exist
+2026-08-05 13:00:39,467 - pages.dropdown_page - INFO - Clicking dropdown option: apple
+2026-08-05 13:00:39,511 - pages.dropdown_page - INFO - Getting selection text element
+2026-08-05 13:00:39,835 - root - INFO - TEST END: test_simple_dropdown_select_apple[chromium]
+2026-08-05 13:00:39,836 - root - INFO - ================================================================================

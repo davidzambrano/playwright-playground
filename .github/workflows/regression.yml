@@ -153,7 +153,7 @@ jobs:
       contents: write
     steps:
       - name: Download Allure results from all shards
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v6.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           pattern: allure-results-shard-*
           path: reports/allure-results
@@ -172,7 +172,7 @@ jobs:
           cp -r gh-pages/history/. reports/allure-results/history/ 2>/dev/null || true
 
       - name: Set up Java (required by Allure commandline)
-        uses: actions/setup-java@e94a1483ac1ae7261e4f7ec00d5d0e3f00a570be # v5.0.0
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
         with:
           distribution: temurin
           java-version: '21'

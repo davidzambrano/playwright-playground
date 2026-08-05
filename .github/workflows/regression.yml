@@ -111,7 +111,7 @@ jobs:
 
       - name: Run Playwright tests (shard ${{ matrix.shard }}/4)
         env:
-          BASE_URL: $TEST_ENVIRONMENT
+          BASE_URL: ${{ env.TEST_ENVIRONMENT }}
         run: |
           mkdir -p reports/test-results-shard-${{ matrix.shard }} logs
 

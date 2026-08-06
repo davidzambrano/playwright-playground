@@ -120,7 +120,7 @@ class TestExample:
 
 ## CI / GitHub Actions
 
-- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Tests are sharded across 4 parallel runners for faster execution. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging.
+- **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Tests are sharded across 4 parallel runners for faster execution. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging. Publishes an Allure report per branch (see [Allure Reporting](#allure-reporting)).
 - **`code-quality.yml`** - Runs on push/PR to `main`/`develop`. Checks pylint (≥8.0), black, and isort.
 - **`sonarcloud.yml`** - Runs on push/PR to `main`. Runs tests in 4 parallel shards, combines coverage, and performs SonarCloud analysis. Requires `SONAR_TOKEN` secret.
 
@@ -130,11 +130,37 @@ The regression workflow uses test sharding to parallelize test execution across 
 
 - **Sharding library**: `pytest-shard` divides tests into 4 equal groups
 - **Matrix strategy**: Each shard runs on a separate Ubuntu runner
-- **Isolation**: Each shard has its own test results directory and HTML report
+- **Isolation**: Each shard has its own test results directory and Allure results
 - **Fail-fast disabled**: All shards complete even if one fails
 - **Artifacts**: Each shard uploads its own results (reports, test-results, logs)
 
 This reduces total execution time by approximately 75% compared to running all tests sequentially.
+
+## Allure Reporting
+
+Test results are recorded with [`allure-pytest`](https://pypi.org/project/allure-pytest/). Raw results are written to `reports/allure-results` (configured via `--alluredir` in `pytest.ini`).
+
+### Viewing a report locally
+
+```bash
+pytest                                          # generates reports/allure-results
+allure serve reports/allure-results             # builds and opens the report in your browser
+```
+
+`allure serve` requires the [Allure commandline](https://allurereport.org/docs/install/) (`npm install -g allure-commandline`, or via `scoop`/`brew`).
+
+To generate a persistent report folder instead of a temporary one:
+
+```bash
+allure generate reports/allure-results --clean -o reports/allure-report
+allure open reports/allure-report
+```
+
+### CI reports
+
+The `regression.yml` `publish-report` job merges Allure results from all 4 shards, generates a single report, and publishes it to the `gh-pages` branch under a folder named after the triggering branch (e.g. `develop/`, `main/`), so different branches keep independent reports and trend history. The report link is posted to the workflow run's Job Summary. A downloadable `allure-report-<branch>` artifact is also uploaded for each run.
+
+The latest `main` branch report is available at [https://davidzambrano.github.io/playwright-playground/main/](https://davidzambrano.github.io/playwright-playground/main/).
 
 ## Configuration
 

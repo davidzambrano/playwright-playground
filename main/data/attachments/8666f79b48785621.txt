@@ -1,0 +1,10 @@
+2026-08-06 06:54:22,403 - root - INFO - ================================================================================
+2026-08-06 06:54:22,403 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-08-06 06:54:22,505 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-06 06:54:24,437 - pages.base_page - INFO - Page load completed
+2026-08-06 06:54:24,437 - pages.home_page - INFO - Navigated to home page
+2026-08-06 06:54:24,437 - pages.home_page - INFO - Getting Exit Intent card element
+2026-08-06 06:54:24,500 - pages.home_page - INFO - Clicked Exit Intent card
+2026-08-06 06:54:24,504 - pages.exit_intent_page - INFO - Getting page heading element
+2026-08-06 06:54:24,915 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-08-06 06:54:24,916 - root - INFO - ================================================================================

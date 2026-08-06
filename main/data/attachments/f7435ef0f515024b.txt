@@ -1,0 +1,13 @@
+2026-08-06 06:54:56,984 - root - INFO - ================================================================================
+2026-08-06 06:54:56,984 - root - INFO - TEST START: test_combobox_search_no_results[chromium]
+2026-08-06 06:54:57,076 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-06 06:54:58,939 - pages.base_page - INFO - Page load completed
+2026-08-06 06:54:58,939 - pages.home_page - INFO - Navigated to home page
+2026-08-06 06:54:58,939 - pages.home_page - INFO - Getting Dropdown card element
+2026-08-06 06:54:59,004 - pages.home_page - INFO - Clicked Dropdown card
+2026-08-06 06:54:59,007 - pages.dropdown_page - INFO - Getting combobox trigger element
+2026-08-06 06:55:00,365 - pages.dropdown_page - INFO - Searching combobox with term: nonexistent
+2026-08-06 06:55:00,365 - pages.dropdown_page - INFO - Getting combobox input element
+2026-08-06 06:55:00,397 - pages.dropdown_page - INFO - Getting no results text element
+2026-08-06 06:55:00,796 - root - INFO - TEST END: test_combobox_search_no_results[chromium]
+2026-08-06 06:55:00,797 - root - INFO - ================================================================================

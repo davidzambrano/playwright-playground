@@ -1,0 +1,12 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_handle_js_confirm_dismiss[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:213 Getting JavaScript Alerts card element
+INFO     pages.home_page:home_page.py:572 Clicked JavaScript Alerts card
+INFO     pages.javascript_alerts_page:javascript_alerts_page.py:93 Clicking JS Confirm button
+INFO     pages.javascript_alerts_page:javascript_alerts_page.py:57 Getting JS Confirm button element
+INFO     pages.javascript_alerts_page:javascript_alerts_page.py:75 Getting result text element
+INFO     root:conftest.py:53 TEST END: test_handle_js_confirm_dismiss[chromium]
+INFO     root:conftest.py:54 ================================================================================

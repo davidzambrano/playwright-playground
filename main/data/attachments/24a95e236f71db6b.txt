@@ -1,0 +1,10 @@
+2026-08-06 06:55:10,012 - root - INFO - ================================================================================
+2026-08-06 06:55:10,013 - root - INFO - TEST START: test_instruction_text_is_visible[chromium]
+2026-08-06 06:55:10,117 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-06 06:55:12,253 - pages.base_page - INFO - Page load completed
+2026-08-06 06:55:12,254 - pages.home_page - INFO - Navigated to home page
+2026-08-06 06:55:12,254 - pages.home_page - INFO - Getting Hovers card element
+2026-08-06 06:55:12,330 - pages.home_page - INFO - Clicked Hovers card
+2026-08-06 06:55:12,334 - pages.hovers_page - INFO - Getting instruction text element
+2026-08-06 06:55:14,541 - root - INFO - TEST END: test_instruction_text_is_visible[chromium]
+2026-08-06 06:55:14,542 - root - INFO - ================================================================================

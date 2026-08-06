@@ -1,0 +1,11 @@
+2026-08-06 06:54:41,380 - root - INFO - ================================================================================
+2026-08-06 06:54:41,380 - root - INFO - TEST START: test_headings_are_visible[chromium]
+2026-08-06 06:54:41,475 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-06 06:54:43,575 - pages.base_page - INFO - Page load completed
+2026-08-06 06:54:43,576 - pages.home_page - INFO - Navigated to home page
+2026-08-06 06:54:43,576 - pages.home_page - INFO - Getting Dropdown card element
+2026-08-06 06:54:43,656 - pages.home_page - INFO - Clicked Dropdown card
+2026-08-06 06:54:43,660 - pages.dropdown_page - INFO - Getting Simple Dropdown heading element
+2026-08-06 06:54:45,058 - pages.dropdown_page - INFO - Getting Searchable Combobox heading element
+2026-08-06 06:54:45,365 - root - INFO - TEST END: test_headings_are_visible[chromium]
+2026-08-06 06:54:45,366 - root - INFO - ================================================================================

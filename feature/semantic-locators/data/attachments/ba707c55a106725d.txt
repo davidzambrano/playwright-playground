@@ -1,0 +1,10 @@
+2026-08-07 17:23:31,145 - root - INFO - ================================================================================
+2026-08-07 17:23:31,146 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-08-07 17:23:31,240 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 17:23:33,762 - pages.base_page - INFO - Page load completed
+2026-08-07 17:23:33,762 - pages.home_page - INFO - Navigated to home page
+2026-08-07 17:23:33,763 - pages.home_page - INFO - Getting iFrame card element
+2026-08-07 17:23:33,828 - pages.home_page - INFO - Clicked iFrame card
+2026-08-07 17:23:33,832 - pages.iframe_page - INFO - Getting page heading element
+2026-08-07 17:23:35,010 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-08-07 17:23:35,010 - root - INFO - ================================================================================

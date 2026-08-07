@@ -1,0 +1,13 @@
+2026-08-07 17:21:13,832 - root - INFO - ================================================================================
+2026-08-07 17:21:13,833 - root - INFO - TEST START: test_click_contact_us_tab_shows_content[chromium]
+2026-08-07 17:21:13,925 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 17:21:15,418 - pages.base_page - INFO - Page load completed
+2026-08-07 17:21:15,418 - pages.home_page - INFO - Navigated to home page
+2026-08-07 17:21:15,418 - pages.home_page - INFO - Getting Disappearing Elements card element
+2026-08-07 17:21:15,501 - pages.home_page - INFO - Clicked Disappearing Elements card
+2026-08-07 17:21:15,505 - pages.disappearing_elements_page - INFO - Clicking Contact Us tab
+2026-08-07 17:21:15,505 - pages.disappearing_elements_page - INFO - Getting Contact Us tab button element
+2026-08-07 17:21:15,505 - pages.disappearing_elements_page - INFO - Getting Contact Us tab button element
+2026-08-07 17:21:16,861 - pages.disappearing_elements_page - INFO - Getting content area element
+2026-08-07 17:21:17,199 - root - INFO - TEST END: test_click_contact_us_tab_shows_content[chromium]
+2026-08-07 17:21:17,200 - root - INFO - ================================================================================

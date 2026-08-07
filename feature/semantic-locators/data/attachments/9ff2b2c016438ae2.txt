@@ -1,0 +1,14 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_combobox_search_and_select_nextjs[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:71 Navigated to home page
+INFO     pages.home_page:home_page.py:169 Getting Dropdown card element
+INFO     pages.home_page:home_page.py:524 Clicked Dropdown card
+INFO     pages.dropdown_page:dropdown_page.py:127 Selecting option from combobox: Next.js
+INFO     pages.dropdown_page:dropdown_page.py:67 Getting combobox trigger element
+INFO     pages.dropdown_page:dropdown_page.py:76 Clicking combobox trigger
+INFO     pages.dropdown_page:dropdown_page.py:93 Getting combobox option with label: Next.js
+INFO     pages.dropdown_page:dropdown_page.py:67 Getting combobox trigger element
+INFO     root:conftest.py:53 TEST END: test_combobox_search_and_select_nextjs[chromium]
+INFO     root:conftest.py:54 ================================================================================

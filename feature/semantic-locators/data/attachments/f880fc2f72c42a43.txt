@@ -1,0 +1,13 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_get_location_displays_coordinates[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:71 Navigated to home page
+INFO     pages.home_page:home_page.py:349 Getting Geolocation card element
+INFO     pages.home_page:home_page.py:359 Clicked Geolocation card
+INFO     pages.geolocation_page:geolocation_page.py:46 Clicking Where am I? button
+INFO     pages.geolocation_page:geolocation_page.py:37 Getting Where am I? button element
+INFO     pages.geolocation_page:geolocation_page.py:55 Getting latitude value element
+INFO     pages.geolocation_page:geolocation_page.py:64 Getting longitude value element
+INFO     root:conftest.py:53 TEST END: test_get_location_displays_coordinates[chromium]
+INFO     root:conftest.py:54 ================================================================================

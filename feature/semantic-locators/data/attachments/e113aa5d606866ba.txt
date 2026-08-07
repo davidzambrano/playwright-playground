@@ -1,0 +1,9 @@
+2026-08-07 17:21:56,481 - root - INFO - ================================================================================
+2026-08-07 17:21:56,481 - root - INFO - TEST START: test_small_resource_banner_visible[chromium]
+2026-08-07 17:21:56,572 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 17:21:57,835 - pages.base_page - INFO - Page load completed
+2026-08-07 17:21:57,836 - pages.home_page - INFO - Navigated to home page
+2026-08-07 17:21:57,836 - pages.home_page - INFO - Getting Slow Resources card element
+2026-08-07 17:21:57,912 - pages.home_page - INFO - Clicked Slow Resources card
+2026-08-07 17:22:04,057 - root - INFO - TEST END: test_small_resource_banner_visible[chromium]
+2026-08-07 17:22:04,058 - root - INFO - ================================================================================

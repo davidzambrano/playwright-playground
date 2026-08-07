@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_large_resource_banner_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:71 Navigated to home page
+INFO     pages.home_page:home_page.py:88 Getting Slow Resources card element
+INFO     pages.home_page:home_page.py:459 Clicked Slow Resources card
+DEBUG    pages.slow_resources_page:slow_resources_page.py:26 Getting page header element
+DEBUG    pages.slow_resources_page:slow_resources_page.py:41 Getting large resource status banner
+INFO     root:conftest.py:53 TEST END: test_large_resource_banner_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

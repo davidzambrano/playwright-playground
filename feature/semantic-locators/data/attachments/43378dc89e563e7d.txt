@@ -1,0 +1,13 @@
+2026-08-07 17:20:59,186 - root - INFO - ================================================================================
+2026-08-07 17:20:59,186 - root - INFO - TEST START: test_checking_all_items_checks_select_all[chromium]
+2026-08-07 17:20:59,273 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 17:21:02,324 - pages.base_page - INFO - Page load completed
+2026-08-07 17:21:02,324 - pages.home_page - INFO - Navigated to home page
+2026-08-07 17:21:02,325 - pages.home_page - INFO - Getting Checkboxes card element
+2026-08-07 17:21:02,402 - pages.home_page - INFO - Clicked Checkboxes card
+2026-08-07 17:21:02,405 - pages.checkboxes_page - INFO - Getting select all checkbox element
+2026-08-07 17:21:02,405 - pages.checkboxes_page - INFO - Getting item1 (Apples) checkbox element
+2026-08-07 17:21:02,405 - pages.checkboxes_page - INFO - Getting item2 (Bananas) checkbox element
+2026-08-07 17:21:02,405 - pages.checkboxes_page - INFO - Getting item3 (Oranges) checkbox element
+2026-08-07 17:21:05,190 - root - INFO - TEST END: test_checking_all_items_checks_select_all[chromium]
+2026-08-07 17:21:05,190 - root - INFO - ================================================================================

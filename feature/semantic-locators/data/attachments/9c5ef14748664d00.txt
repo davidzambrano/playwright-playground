@@ -1,0 +1,13 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_google_maps_link_appears[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:71 Navigated to home page
+INFO     pages.home_page:home_page.py:349 Getting Geolocation card element
+INFO     pages.home_page:home_page.py:359 Clicked Geolocation card
+INFO     pages.geolocation_page:geolocation_page.py:46 Clicking Where am I? button
+INFO     pages.geolocation_page:geolocation_page.py:37 Getting Where am I? button element
+INFO     pages.geolocation_page:geolocation_page.py:82 Getting Google Maps link element
+INFO     pages.geolocation_page:geolocation_page.py:82 Getting Google Maps link element
+INFO     root:conftest.py:53 TEST END: test_google_maps_link_appears[chromium]
+INFO     root:conftest.py:54 ================================================================================

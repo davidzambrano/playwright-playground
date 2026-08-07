@@ -1,0 +1,14 @@
+2026-08-07 17:20:34,580 - root - INFO - ================================================================================
+2026-08-07 17:20:34,581 - root - INFO - TEST START: test_combobox_search_and_select_react[chromium]
+2026-08-07 17:20:34,673 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 17:20:36,114 - pages.base_page - INFO - Page load completed
+2026-08-07 17:20:36,114 - pages.home_page - INFO - Navigated to home page
+2026-08-07 17:20:36,114 - pages.home_page - INFO - Getting Dropdown card element
+2026-08-07 17:20:36,185 - pages.home_page - INFO - Clicked Dropdown card
+2026-08-07 17:20:36,189 - pages.dropdown_page - INFO - Selecting option from combobox: React
+2026-08-07 17:20:36,189 - pages.dropdown_page - INFO - Getting combobox trigger element
+2026-08-07 17:20:38,040 - pages.dropdown_page - INFO - Clicking combobox trigger
+2026-08-07 17:20:38,096 - pages.dropdown_page - INFO - Getting combobox option with label: React
+2026-08-07 17:20:38,366 - pages.dropdown_page - INFO - Getting combobox trigger element
+2026-08-07 17:20:38,678 - root - INFO - TEST END: test_combobox_search_and_select_react[chromium]
+2026-08-07 17:20:38,679 - root - INFO - ================================================================================

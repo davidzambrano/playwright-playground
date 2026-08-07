@@ -1,6 +1,7 @@
 """Page object for the Key Presses page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,11 +15,11 @@ class KeyPressesPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Key Presses')]"
-    INSTRUCTION_TEXT = "//p[contains(text(), 'Key presses are often used')]"
-    INPUT_FIELD = "//input[@id='key-input']"
-    RESULT_TEXT = "//p[contains(text(), 'You entered:')]"
-    RESULT_VALUE = "//span[contains(@class, 'text-primary')]"
+    PAGE_HEADING = re.compile("Key Presses")
+    INSTRUCTION_TEXT = re.compile("Key presses are often used")
+    INPUT_FIELD = "#key-input"
+    RESULT_TEXT = re.compile("You entered:")
+    RESULT_VALUE = "span.text-primary"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -27,7 +28,7 @@ class KeyPressesPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_instruction_text(self):
         """Get the instruction text element.
@@ -36,7 +37,7 @@ class KeyPressesPage(BasePage):
             Locator: The locator for the instruction text element.
         """
         logger.info("Getting instruction text element")
-        return self.page.locator(self.INSTRUCTION_TEXT)
+        return self.page.get_by_text(self.INSTRUCTION_TEXT)
 
     def get_input_field(self):
         """Get the input field element.
@@ -54,7 +55,7 @@ class KeyPressesPage(BasePage):
             Locator: The locator for the result text element.
         """
         logger.info("Getting result text element")
-        return self.page.locator(self.RESULT_TEXT)
+        return self.page.get_by_text(self.RESULT_TEXT)
 
     def get_result_value(self):
         """Get the result value element.

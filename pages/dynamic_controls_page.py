@@ -1,6 +1,7 @@
 """Page object for the Dynamic Controls page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,15 +15,11 @@ class DynamicControlsPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Dynamic Controls')]"
-    CHECKBOX = "input[type='checkbox']"
-    CHECKBOX_CONTROL_SECTION = "//h3[contains(text(), 'Checkbox Control')]/.."
-    TOGGLE_CHECKBOX_BUTTON = (
-        "//h3[contains(text(), 'Checkbox Control')]/..//button[not(@role='checkbox')]"
-    )
-    TEXT_INPUT = "//input[@type='text']"
-    INPUT_CONTROL_SECTION = "//h3[contains(text(), 'Input Control')]/.."
-    TOGGLE_INPUT_BUTTON = "//h3[contains(text(), 'Input Control')]/..//button"
+    PAGE_HEADING = re.compile("Dynamic Controls")
+    CHECKBOX = "A checkbox"
+    TOGGLE_CHECKBOX_BUTTON = re.compile("Checkbox")
+    TEXT_INPUT = "This can be enabled or disabled"
+    TOGGLE_INPUT_BUTTON = re.compile("Input")
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -31,7 +28,7 @@ class DynamicControlsPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_checkbox(self):
         """Get the checkbox element.
@@ -40,7 +37,7 @@ class DynamicControlsPage(BasePage):
             Locator: The locator for the checkbox element.
         """
         logger.info("Getting checkbox element")
-        return self.page.get_by_role("checkbox", name="A checkbox")
+        return self.page.get_by_role("checkbox", name=self.CHECKBOX)
 
     def get_toggle_checkbox_button(self):
         """Get the toggle checkbox button element (Remove/Add).
@@ -49,7 +46,7 @@ class DynamicControlsPage(BasePage):
             Locator: The locator for the toggle checkbox button element.
         """
         logger.info("Getting toggle checkbox button element")
-        return self.page.locator(self.TOGGLE_CHECKBOX_BUTTON)
+        return self.page.get_by_role("button", name=self.TOGGLE_CHECKBOX_BUTTON)
 
     def get_text_input(self):
         """Get the text input element.
@@ -58,7 +55,7 @@ class DynamicControlsPage(BasePage):
             Locator: The locator for the text input element.
         """
         logger.info("Getting text input element")
-        return self.page.locator(self.TEXT_INPUT)
+        return self.page.get_by_placeholder(self.TEXT_INPUT)
 
     def get_toggle_input_button(self):
         """Get the toggle input button element (Enable/Disable).
@@ -67,7 +64,7 @@ class DynamicControlsPage(BasePage):
             Locator: The locator for the toggle input button element.
         """
         logger.info("Getting toggle input button element")
-        return self.page.locator(self.TOGGLE_INPUT_BUTTON)
+        return self.page.get_by_role("button", name=self.TOGGLE_INPUT_BUTTON)
 
     def click_toggle_checkbox_button(self):
         """Click the toggle checkbox button to remove or add the checkbox.

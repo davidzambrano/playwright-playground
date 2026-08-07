@@ -1,6 +1,7 @@
 """Page object for the Inputs page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -11,15 +12,15 @@ class InputsPage(BasePage):
     """Page object for the Inputs page."""
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Inputs')]"
-    NAME_INPUT = "//input[@placeholder='John Doe']"
-    EMAIL_INPUT = "//input[@type='email' and @placeholder='john.doe@example.com']"
-    PASSWORD_INPUT = "//input[@type='password' and @placeholder='********']"
-    NUMBER_INPUT = "//input[@type='number' and @placeholder='Enter a positive number']"
-    WEBSITE_INPUT = "//input[@type='url' and @placeholder='https://example.com']"
-    SUBMIT_BUTTON = "//button[normalize-space()='Submit']"
-    TOAST_TITLE = "//li[@role='status']//div[contains(text(), 'Form Submitted!')]"
-    EMAIL_ERROR_MESSAGE = "//p[contains(@class, 'text-destructive')]"
+    PAGE_HEADING = re.compile("Inputs")
+    NAME_INPUT = "Name"
+    EMAIL_INPUT = "Email"
+    PASSWORD_INPUT = "Password"
+    NUMBER_INPUT = "Number"
+    WEBSITE_INPUT = "Website"
+    SUBMIT_BUTTON = "Submit"
+    TOAST_TITLE = "Form Submitted!"
+    EMAIL_ERROR_MESSAGE = re.compile("valid email")
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -28,7 +29,7 @@ class InputsPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_name_input(self):
         """Get the Name input field.
@@ -37,7 +38,7 @@ class InputsPage(BasePage):
             Locator: The locator for the Name input field.
         """
         logger.info("Getting Name input field")
-        return self.page.locator(self.NAME_INPUT)
+        return self.page.get_by_label(self.NAME_INPUT)
 
     def get_email_input(self):
         """Get the Email input field.
@@ -46,7 +47,7 @@ class InputsPage(BasePage):
             Locator: The locator for the Email input field.
         """
         logger.info("Getting Email input field")
-        return self.page.locator(self.EMAIL_INPUT)
+        return self.page.get_by_label(self.EMAIL_INPUT)
 
     def get_password_input(self):
         """Get the Password input field.
@@ -55,7 +56,7 @@ class InputsPage(BasePage):
             Locator: The locator for the Password input field.
         """
         logger.info("Getting Password input field")
-        return self.page.locator(self.PASSWORD_INPUT)
+        return self.page.get_by_label(self.PASSWORD_INPUT)
 
     def get_number_input(self):
         """Get the Number input field.
@@ -64,7 +65,7 @@ class InputsPage(BasePage):
             Locator: The locator for the Number input field.
         """
         logger.info("Getting Number input field")
-        return self.page.locator(self.NUMBER_INPUT)
+        return self.page.get_by_label(self.NUMBER_INPUT)
 
     def get_website_input(self):
         """Get the Website input field.
@@ -73,7 +74,7 @@ class InputsPage(BasePage):
             Locator: The locator for the Website input field.
         """
         logger.info("Getting Website input field")
-        return self.page.locator(self.WEBSITE_INPUT)
+        return self.page.get_by_label(self.WEBSITE_INPUT)
 
     def get_submit_button(self):
         """Get the Submit button.
@@ -82,7 +83,7 @@ class InputsPage(BasePage):
             Locator: The locator for the Submit button.
         """
         logger.info("Getting Submit button")
-        return self.page.locator(self.SUBMIT_BUTTON)
+        return self.page.get_by_role("button", name=self.SUBMIT_BUTTON)
 
     def get_toast_title(self):
         """Get the toast notification title.
@@ -91,7 +92,7 @@ class InputsPage(BasePage):
             Locator: The locator for the toast title.
         """
         logger.info("Getting toast title")
-        return self.page.locator(self.TOAST_TITLE)
+        return self.page.get_by_text(self.TOAST_TITLE, exact=True)
 
     def get_email_error_message(self):
         """Get the email validation error message.
@@ -100,7 +101,7 @@ class InputsPage(BasePage):
             Locator: The locator for the email error message.
         """
         logger.info("Getting email error message")
-        return self.page.locator(self.EMAIL_ERROR_MESSAGE)
+        return self.page.get_by_text(self.EMAIL_ERROR_MESSAGE)
 
     def fill_name(self, name: str):
         """Fill the Name input field.

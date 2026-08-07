@@ -1,6 +1,7 @@
 """Page object for the Dynamic Loading page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,22 +15,18 @@ class DynamicLoadingPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Dynamic Loading')]"
+    PAGE_HEADING = re.compile("Dynamic Loading")
 
     # Example 1: Hidden element
-    EXAMPLE1_START_BUTTON = (
-        "(//h3[contains(text(), 'Example 1')]/following-sibling::button[text()='Start'])[1]"
-    )
-    EXAMPLE1_HIDDEN_DIV = "//div[@id='start']"
-    EXAMPLE1_CONTENT = "//div[@id='start']//p"
+    EXAMPLE1_START_BUTTON = re.compile("Example 1")
+    EXAMPLE1_HIDDEN_DIV = "#start"
+    EXAMPLE1_CONTENT = "#start p"
 
     # Example 2: Rendered element
-    EXAMPLE2_START_BUTTON = (
-        "(//h3[contains(text(), 'Example 2')]/following-sibling::button[text()='Start'])[1]"
-    )
-    EXAMPLE2_LOADING_SKELETON = "//div[@id='finish']//div[contains(@class, 'space-y-2')]"
-    EXAMPLE2_FINISH_CARD = "//div[@id='finish']//p"
-    EXAMPLE2_LOADING_BUTTON_TEXT = "//button[text()='Loading...']"
+    EXAMPLE2_START_BUTTON = re.compile("Example 2")
+    EXAMPLE2_LOADING_SKELETON = "#finish .space-y-2"
+    EXAMPLE2_FINISH_CARD = "#finish p"
+    EXAMPLE2_LOADING_BUTTON_TEXT = "Loading..."
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -38,7 +35,7 @@ class DynamicLoadingPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     # Example 1: Hidden element methods
 
@@ -49,7 +46,7 @@ class DynamicLoadingPage(BasePage):
             Locator: The locator for the Example 1 Start button.
         """
         logger.info("Getting Example 1 Start button")
-        return self.page.locator(self.EXAMPLE1_START_BUTTON)
+        return self.page.get_by_role("button", name="Start").first
 
     def get_example1_hidden_div(self):
         """Get the Example 1 hidden div element.
@@ -105,7 +102,7 @@ class DynamicLoadingPage(BasePage):
             Locator: The locator for the Example 2 Start button.
         """
         logger.info("Getting Example 2 Start button")
-        return self.page.locator(self.EXAMPLE2_START_BUTTON)
+        return self.page.get_by_role("button", name="Start").nth(1)
 
     def click_example2_start_button(self):
         """Click the Example 2 Start button to trigger the async load.

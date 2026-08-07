@@ -1,6 +1,7 @@
 """Page object for the Dynamic Content page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,11 +15,11 @@ class DynamicContentPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Dynamic Content')]"
-    INSTRUCTION_TEXT = "//p[contains(text(), 'content that can change')]"
-    RANDOMIZE_BUTTON = "//button[contains(text(), 'Randomize Content')]"
-    CONTENT_ITEMS = "//div[contains(@class, 'animate-in')]//p"
-    CONTENT_IMAGES = "//div[contains(@class, 'animate-in')]//img"
+    PAGE_HEADING = re.compile("Dynamic Content")
+    INSTRUCTION_TEXT = re.compile("content that can change")
+    RANDOMIZE_BUTTON = "Randomize Content"
+    CONTENT_ITEMS = "div.animate-in p"
+    CONTENT_IMAGES = "div.animate-in img"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -27,7 +28,7 @@ class DynamicContentPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_instruction_text(self):
         """Get the instruction text element.
@@ -36,7 +37,7 @@ class DynamicContentPage(BasePage):
             Locator: The locator for the instruction text element.
         """
         logger.info("Getting instruction text element")
-        return self.page.locator(self.INSTRUCTION_TEXT)
+        return self.page.get_by_text(self.INSTRUCTION_TEXT)
 
     def get_randomize_button(self):
         """Get the Randomize Content button element.
@@ -45,7 +46,7 @@ class DynamicContentPage(BasePage):
             Locator: The locator for the Randomize Content button element.
         """
         logger.info("Getting Randomize Content button element")
-        return self.page.locator(self.RANDOMIZE_BUTTON)
+        return self.page.get_by_role("button", name=self.RANDOMIZE_BUTTON)
 
     def get_content_items(self):
         """Get all content item text elements.

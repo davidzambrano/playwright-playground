@@ -1,6 +1,7 @@
 """Page object for the Horizontal Slider page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -11,7 +12,7 @@ class HorizontalSliderPage(BasePage):
     """Page object for the Horizontal Slider page."""
 
     # Locators
-    PAGE_HEADING = "//h1"
+    PAGE_HEADING = re.compile("Horizontal Slider")
     SINGLE_SLIDER = "[role='slider']:not([aria-label])"
     RANGE_SLIDER_MIN = "[role='slider'][aria-label='Minimum']"
     RANGE_SLIDER_MAX = "[role='slider'][aria-label='Maximum']"
@@ -25,7 +26,7 @@ class HorizontalSliderPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_single_slider(self):
         """Get the single value slider element.

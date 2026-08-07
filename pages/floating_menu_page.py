@@ -1,6 +1,7 @@
 """Page object for the Floating Menu page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -11,10 +12,9 @@ class FloatingMenuPage(BasePage):
     """Page object for the Floating Menu page."""
 
     # Locators
-    PAGE_HEADING = "//h1"
-    INSTRUCTION_TEXT = "//p[contains(text(), 'Scroll down')]"
-    FLOATING_MENU = "//div[contains(@class, 'fixed') and contains(@class, 'bottom-4')]"
-    HOME_BUTTON = "//button[.//*[local-name()='svg']]"
+    PAGE_HEADING = re.compile("Floating Menu")
+    INSTRUCTION_TEXT = re.compile("Scroll down this page")
+    FLOATING_MENU = "div.fixed.bottom-4"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -23,7 +23,7 @@ class FloatingMenuPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_instruction_text(self):
         """Get the instruction text element.
@@ -32,7 +32,7 @@ class FloatingMenuPage(BasePage):
             Locator: The locator for the instruction text element.
         """
         logger.info("Getting instruction text element")
-        return self.page.locator(self.INSTRUCTION_TEXT)
+        return self.page.get_by_text(self.INSTRUCTION_TEXT)
 
     def get_floating_menu(self):
         """Get the floating menu element.

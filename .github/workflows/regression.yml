@@ -152,6 +152,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Sanitize branch name for artifact
+        id: sanitize
+        run: |
+          echo "name=$(echo '${{ github.ref_name }}' | tr '/' '-')" >> $GITHUB_OUTPUT
+
       - name: Download Allure results from all shards
         uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
@@ -186,7 +191,7 @@ jobs:
       - name: Upload Allure report artifact
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
-          name: allure-report-${{ github.ref_name }}
+          name: allure-report-${{ steps.sanitize.outputs.name }}
           path: reports/allure-report/
           retention-days: 7
 

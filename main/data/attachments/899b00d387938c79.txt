@@ -1,0 +1,19 @@
+2026-08-07 10:00:59,606 - root - INFO - ================================================================================
+2026-08-07 10:00:59,606 - root - INFO - TEST START: test_menu_reappears_on_scroll_up[chromium]
+2026-08-07 10:00:59,695 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 10:01:00,373 - pages.base_page - INFO - Page load completed
+2026-08-07 10:01:00,373 - pages.home_page - INFO - Navigated to home page
+2026-08-07 10:01:00,374 - pages.home_page - INFO - Getting Floating Menu card element
+2026-08-07 10:01:00,446 - pages.home_page - INFO - Clicked Floating Menu card
+2026-08-07 10:01:00,448 - pages.floating_menu_page - INFO - Scrolling down the page
+2026-08-07 10:01:00,583 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-07 10:01:01,384 - pages.floating_menu_page - INFO - Floating menu hidden: False
+2026-08-07 10:01:01,521 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-07 10:01:01,557 - pages.floating_menu_page - INFO - Floating menu hidden: True
+2026-08-07 10:01:01,557 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-07 10:01:01,567 - pages.floating_menu_page - INFO - Floating menu hidden: True
+2026-08-07 10:01:01,567 - pages.floating_menu_page - INFO - Scrolling up to the top of the page
+2026-08-07 10:01:02,207 - pages.floating_menu_page - INFO - Getting floating menu element
+2026-08-07 10:01:02,226 - pages.floating_menu_page - INFO - Floating menu visible: True
+2026-08-07 10:01:02,520 - root - INFO - TEST END: test_menu_reappears_on_scroll_up[chromium]
+2026-08-07 10:01:02,521 - root - INFO - ================================================================================

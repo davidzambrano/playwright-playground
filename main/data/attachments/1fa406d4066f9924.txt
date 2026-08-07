@@ -1,0 +1,14 @@
+2026-08-07 09:59:57,365 - root - INFO - ================================================================================
+2026-08-07 09:59:57,365 - root - INFO - TEST START: test_all_input_fields_are_visible[chromium]
+2026-08-07 09:59:57,453 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 09:59:58,588 - pages.base_page - INFO - Page load completed
+2026-08-07 09:59:58,589 - pages.home_page - INFO - Navigated to home page
+2026-08-07 09:59:58,589 - pages.home_page - INFO - Getting Inputs card element
+2026-08-07 09:59:58,665 - pages.home_page - INFO - Clicked Inputs card
+2026-08-07 09:59:58,668 - pages.inputs_page - INFO - Getting Name input field
+2026-08-07 10:00:00,056 - pages.inputs_page - INFO - Getting Email input field
+2026-08-07 10:00:00,064 - pages.inputs_page - INFO - Getting Password input field
+2026-08-07 10:00:00,071 - pages.inputs_page - INFO - Getting Number input field
+2026-08-07 10:00:00,078 - pages.inputs_page - INFO - Getting Website input field
+2026-08-07 10:00:00,381 - root - INFO - TEST END: test_all_input_fields_are_visible[chromium]
+2026-08-07 10:00:00,381 - root - INFO - ================================================================================

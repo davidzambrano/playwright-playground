@@ -1,0 +1,12 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_click_about_tab_shows_content[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:79 Navigated to home page
+INFO     pages.home_page:home_page.py:222 Getting Disappearing Elements card element
+INFO     pages.home_page:home_page.py:582 Clicked Disappearing Elements card
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:138 Clicking About tab
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:72 Getting About tab button element
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:108 Getting content area element
+INFO     root:conftest.py:53 TEST END: test_click_about_tab_shows_content[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,10 @@
+2026-08-07 09:58:46,939 - root - INFO - ================================================================================
+2026-08-07 09:58:46,939 - root - INFO - TEST START: test_terms_checkbox_can_be_checked[chromium]
+2026-08-07 09:58:47,026 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 09:58:47,799 - pages.base_page - INFO - Page load completed
+2026-08-07 09:58:47,799 - pages.home_page - INFO - Navigated to home page
+2026-08-07 09:58:47,799 - pages.home_page - INFO - Getting Checkboxes card element
+2026-08-07 09:58:47,875 - pages.home_page - INFO - Clicked Checkboxes card
+2026-08-07 09:58:47,879 - pages.checkboxes_page - INFO - Getting terms checkbox element
+2026-08-07 09:58:49,077 - root - INFO - TEST END: test_terms_checkbox_can_be_checked[chromium]
+2026-08-07 09:58:49,078 - root - INFO - ================================================================================

@@ -1,515 +1,515 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
-        Test that the modal window appears after navigating to the page.
-        ","1860","test_modal_appears_on_page_load[chromium]","tests","2026-08-06","passed","2026-08-06","TestEntryAdPage","test_entry_ad_page","",""
+        Test that dragging the item from column A to column B works.
+        ","2415","test_drag_item_to_column_b[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
 "
-        Test that hovering over User 2 image shows the caption.
-        ","1346","test_user_2_caption_visible_on_hover[chromium]","tests","2026-08-06","passed","2026-08-06","TestHoversPage","test_hovers_page","",""
-"
-        Test that dragging the item from column C back to column A works.
-        ","1496","test_drag_item_from_c_to_a[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that left-clicking outside the menu dismisses the context menu.
-        ","1410","test_left_click_dismisses_context_menu[chromium]","tests","2026-08-06","passed","2026-08-06","TestContextMenuPage","test_context_menu_page","",""
-"
-        Test that searching for React in the combobox and selecting it updates the button text.
-        ","2205","test_combobox_search_and_select_react[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"
-        Test that clicking JS Prompt, entering text, and accepting it shows the entered text.
-        ","1381","test_handle_js_prompt_accept[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that the static page heading and description text are correct
-        regardless of A/B version.
-        ","1429","test_page_heading_and_description_text_are_correct[chromium]","tests","2026-08-06","passed","2026-08-06","TestABTestingPage","test_ab_testing_page","",""
-"
-        Test that the instruction text is visible.
-        ","900","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileDownloadPage","test_file_download_page","",""
-"
-        Test that the page heading is visible.
-        ","18","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestExitIntentPage","test_exit_intent_page","",""
-"
-        Test that the modal has body text.
-        ","2853","test_modal_has_body_text[chromium]","tests","2026-08-06","passed","2026-08-06","TestEntryAdPage","test_entry_ad_page","",""
-"
-        Test that the heading and description text are correct and visible.
-        ","1486","test_page_content_is_correct[chromium]","tests","2026-08-06","passed","2026-08-06","TestBrokenImagesPage","test_broken_images_page","",""
-"
-        Test that the single value slider is visible.
-        ","919","test_single_slider_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
-"
-        Test that the Drag and Drop heading is visible.
-        ","1378","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that the instruction text is visible.
-        ","1401","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that a checkbox can be toggled from unchecked to checked and back.
-        ","2018","test_toggle_checkbox[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
-"
-        Test that clicking Start in Example 2 loads the content after the async request.
-        ","3142","test_example2_content_appears_after_start[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that the page heading is visible.
-        ","12","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestGeolocationPage","test_geolocation_page","",""
-"
-        Test that multiple new windows can be opened simultaneously.
-        ","2395","test_multiple_new_windows_can_be_opened[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"
-        Test that dragging the item from column B to column C works.
-        ","998","test_drag_item_from_b_to_c[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that clicking the Close button dismisses the modal.
-        ","2551","test_close_modal[chromium]","tests","2026-08-06","passed","2026-08-06","TestEntryAdPage","test_entry_ad_page","",""
-"
-        Test that the heading, description, card content, and sign up button are all visible
-        for the active A/B version.
-        ","914","test_active_version_elements_are_displayed[chromium]","tests","2026-08-06","passed","2026-08-06","TestABTestingPage","test_ab_testing_page","",""
-"
-        Test that clicking the Gallery tab shows the Gallery content if the tab is present.
-        ","11","test_click_gallery_tab_shows_content_if_present[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that refreshing the page changes the displayed content.
-        ","4079","test_content_changes_on_refresh[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
-"
-        Test that the instruction text is visible.
-        ","1908","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that setting the range slider maximum thumb updates the displayed values.
-        ","1629","test_set_range_slider_max[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
-"
-        Test that the modal has a title.
-        ","2345","test_modal_has_title[chromium]","tests","2026-08-06","passed","2026-08-06","TestEntryAdPage","test_entry_ad_page","",""
-"
-        Test that dragging the item from column A to column D works.
-        ","931","test_drag_item_to_column_d[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that clicking Click Here opens a new window.
-        ","3532","test_click_here_opens_new_window[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"
-        Test that the range slider is visible.
-        ","2416","test_range_slider_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
-"
-        Test that clicking JS Prompt and dismissing it shows the null message.
-        ","1384","test_handle_js_prompt_dismiss[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that the JavaScript Alerts heading is visible.
-        ","881","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that uploading a file displays the uploaded section with the correct file name.
-        ","1373","test_upload_file[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileUploadPage","test_file_upload_page","",""
-"Verify that the large resource status banner appears after loading.","31081","test_large_resource_banner_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestSlowResourcesPage","test_slow_resources_page","",""
-"
-        Test that clicking Randomize Content changes the displayed content.
-        ","1476","test_content_changes_on_randomize[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
-"
-        Test that the Hovers heading is visible.
-        ","1385","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestHoversPage","test_hovers_page","",""
-"
-        Test that the Gallery tab may or may not be present on page load.
-        The test passes regardless of whether the tab is present or not.
-        ","2417","test_gallery_tab_may_be_present[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+        Test that the new window description text is visible.
+        ","1907","test_new_window_description_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
         Test that the three challenge buttons are present, visible, and clickable.
-        ","1459","test_buttons_are_present_and_interactable[chromium]","tests","2026-08-06","passed","2026-08-06","TestChallengingDomPage","test_challenging_dom_page","",""
+        ","1497","test_buttons_are_present_and_interactable[chromium]","tests","2026-08-07","passed","2026-08-07","TestChallengingDomPage","test_challenging_dom_page","",""
 "
-        Test that dragging the item from column D back to column A works.
-        ","2010","test_drag_item_from_d_to_a[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
+        Test that the page heading is visible.
+        ","13","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
-        Test that the Inputs page heading is visible.
-        ","920","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestInputsPage","test_inputs_page","",""
+        Test that the stale button is visible on the page.
+        ","1379","test_stale_button_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestStaleElementPage","test_stale_element_page","",""
 "
-        Test clearing iFrame content and typing new text.
-        ","1707","test_clear_and_type_in_iframe[chromium]","tests","2026-08-06","passed","2026-08-06","TestIFramePage","test_iframe_page","",""
+        Test that the floating menu reappears when scrolling back up.
+        ","1781","test_menu_reappears_on_scroll_up[chromium]","tests","2026-08-07","passed","2026-08-07","TestFloatingMenuPage","test_floating_menu_page","",""
 "
-        Test that both Simple Dropdown and Searchable Combobox headings are visible.
-        ","1407","test_headings_are_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
+        Test that content items are visible on the page.
+        ","803","test_content_items_are_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
 "
         Test that clicking the stale button shows the success message.
 
         Playwright auto-retries actions on stale element references,
         so it should succeed despite the 150ms re-render interval.
-        ","1349","test_click_stale_button_shows_success_message[chromium]","tests","2026-08-06","passed","2026-08-06","TestStaleElementPage","test_stale_element_page","",""
+        ","832","test_click_stale_button_shows_success_message[chromium]","tests","2026-08-07","passed","2026-08-07","TestStaleElementPage","test_stale_element_page","",""
 "
-        Test invalid email format shows validation error.
-        ","1991","test_invalid_email_shows_error[chromium]","tests","2026-08-06","passed","2026-08-06","TestInputsPage","test_inputs_page","",""
+        Test that broken images fail to load (naturalWidth == 0).
+        ","1876","test_broken_images_fail_to_load[chromium]","tests","2026-08-07","passed","2026-08-07","TestBrokenImagesPage","test_broken_images_page","",""
 "
-        Test that hovering over User 3 image shows the caption.
-        ","1850","test_user_3_caption_visible_on_hover[chromium]","tests","2026-08-06","passed","2026-08-06","TestHoversPage","test_hovers_page","",""
-"
-        Test that loaded paragraphs contain text content.
-        ","12","test_paragraphs_have_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestInfiniteScrollPage","test_infinite_scroll_page","",""
-"
-        Test that searching for Next.js in the combobox and selecting it updates the button text.
-        ","1691","test_combobox_search_and_select_nextjs[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"
-        Test that all input fields are visible on the page.
-        ","1435","test_all_input_fields_are_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestInputsPage","test_inputs_page","",""
-"
-        Test that the Upload button is visible.
-        ","1391","test_upload_button_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileUploadPage","test_file_upload_page","",""
-"
-        Test that the Click Here link is visible.
-        ","1941","test_click_here_link_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"
-        Test that the Disappearing Elements heading is visible.
-        ","1379","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that initial paragraphs are present on page load.
-        ","892","test_initial_paragraphs_present[chromium]","tests","2026-08-06","passed","2026-08-06","TestInfiniteScrollPage","test_infinite_scroll_page","",""
-"
-        Test that the page heading is visible.
-        ","11","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFloatingMenuPage","test_floating_menu_page","",""
-"
-        Test that the new window heading is 'New Window'.
-        ","2965","test_new_window_heading_is_correct[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"Test that the Basic Auth page loads.","1391","test_basic_auth_page_loads[chromium]","tests","2026-08-06","passed","2026-08-06","TestBasicAuthPage","test_basic_auth_page","",""
-"
-        Test that setting the range slider minimum thumb updates the displayed values.
-        ","1661","test_set_range_slider_min[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
-"
-        Test that clicking JS Confirm and dismissing it shows the Cancel message.
-        ","838","test_handle_js_confirm_dismiss[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that clicking Randomize Content changes the displayed images.
-        ","993","test_images_change_on_randomize[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
-"
-        Test that clicking JS Confirm and accepting it shows the Ok message.
-        ","838","test_handle_js_confirm_accept[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that the floating menu reappears when scrolling back up.
-        ","2246","test_menu_reappears_on_scroll_up[chromium]","tests","2026-08-06","passed","2026-08-06","TestFloatingMenuPage","test_floating_menu_page","",""
-"
-        Test that clicking Enable enables the text input.
-        ","1332","test_enable_text_input[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
-"
-        Test that the Context Menu heading is visible.
-        ","1399","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestContextMenuPage","test_context_menu_page","",""
-"
-        Test that the new window content section is visible.
-        ","2646","test_new_window_content_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"
-        Test that the exit intent modal has the expected title.
-        ","1389","test_modal_has_title[chromium]","tests","2026-08-06","passed","2026-08-06","TestExitIntentPage","test_exit_intent_page","",""
-"
-        Test that all images (working and broken) are present in the DOM.
-        ","803","test_all_images_are_present_in_dom[chromium]","tests","2026-08-06","passed","2026-08-06","TestBrokenImagesPage","test_broken_images_page","",""
-"
-        Test that content items are visible on the page.
-        ","2321","test_content_items_are_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
-"
-        Test typing text into iFrame without clearing first (appends to existing content).
-        ","913","test_type_text_without_clearing[chromium]","tests","2026-08-06","passed","2026-08-06","TestIFramePage","test_iframe_page","",""
-"Test removing a single element removes only that button.","1508","test_remove_single_element[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
-"
-        Test that the page description and canvas elements are visible.
-        ","926","test_description_and_canvas_are_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestChallengingDomPage","test_challenging_dom_page","",""
-"
-        Test that clicking Start in Example 1 reveals the hidden content.
-        ","1427","test_example1_content_becomes_visible_after_start[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that all images have non-empty alt text.
-        ","18","test_all_images_have_alt_text[chromium]","tests","2026-08-06","passed","2026-08-06","TestBrokenImagesPage","test_broken_images_page","",""
-"Verify that the small resource status banner appears after loading.","5957","test_small_resource_banner_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestSlowResourcesPage","test_slow_resources_page","",""
-"
-        Test that the Example 1 content displays the expected text.
-        ","1865","test_example1_content_text_is_correct[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that the iFrame page heading is visible.
-        ","882","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestIFramePage","test_iframe_page","",""
-"
-        Test that the file input element is present in the DOM.
-        File inputs are typically hidden but should be attached.
-        ","1390","test_file_input_is_present[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileUploadPage","test_file_upload_page","",""
-"
-        Test that selecting a vegetable from the simple dropdown updates the confirmation text.
-        ","1501","test_simple_dropdown_select_vegetable[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"
-        Test that selecting Banana from the simple dropdown updates the confirmation text.
-        ","1980","test_simple_dropdown_select_banana[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"
-        Test that the File Uploader heading is visible.
-        ","1394","test_uploader_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileUploadPage","test_file_upload_page","",""
-"Test adding a single element creates exactly one delete button.","1394","test_add_one_element[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
-"
-        Test that clicking the About tab shows the About content.
-        ","2334","test_click_about_tab_shows_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that dragging the item from column B back to column A works.
-        ","1513","test_drag_item_back_to_column_a[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that moving the single slider to a new position updates the displayed value.
-        ","2275","test_move_slider_updates_value[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
-"
-        Test valid form submission.
-        ","1516","test_valid_form_submission[chromium]","tests","2026-08-06","passed","2026-08-06","TestInputsPage","test_inputs_page","",""
-"
-        Test that the original page URL remains unchanged after opening a new window.
-        ","2245","test_original_page_url_unchanged_after_opening_new_window[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
+        Test that unchecking an individual item unchecks Select All.
+        ","1422","test_unchecking_item_unchecks_select_all[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
 "
         Test that clicking the Home tab shows the Home content.
-        ","1317","test_click_home_tab_shows_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that the working image loads successfully.
-        ","1468","test_working_image_loads_successfully[chromium]","tests","2026-08-06","passed","2026-08-06","TestBrokenImagesPage","test_broken_images_page","",""
-"
-        Test that the page heading is visible.
-        ","13","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"
-        Test that multiple consecutive scrolls continue to load more content.
-        ","3187","test_multiple_scrolls_load_incremental_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestInfiniteScrollPage","test_infinite_scroll_page","",""
-"
-        Test that the floating menu is visible when the page loads.
-        ","1409","test_floating_menu_is_visible_on_load[chromium]","tests","2026-08-06","passed","2026-08-06","TestFloatingMenuPage","test_floating_menu_page","",""
-"
-        Test that clicking the Portfolio tab shows the Portfolio content.
-        ","1333","test_click_portfolio_tab_shows_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that only one A/B version card is visible at a time - never both simultaneously.
-        ","867","test_only_one_ab_version_is_displayed_at_a_time[chromium]","tests","2026-08-06","passed","2026-08-06","TestABTestingPage","test_ab_testing_page","",""
-"
-        Test that the hot-spot area is visible.
-        ","1401","test_hotspot_area_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestContextMenuPage","test_context_menu_page","",""
-"
-        Test that typing in the combobox search filters the available options.
-        ","1892","test_combobox_search_filters_options[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"
-        Test that all rows can be deleted from the table one by one.
-        ","2027","test_delete_all_rows[chromium]","tests","2026-08-06","passed","2026-08-06","TestChallengingDomPage","test_challenging_dom_page","",""
-"
-        Test that the input field is visible.
-        ","1407","test_input_field_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestKeyPressesPage","test_key_presses_page","",""
-"
-        Test that clicking the Contact Us tab shows the Contact Us content.
-        ","1363","test_click_contact_us_tab_shows_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"Test removing multiple elements updates the list correctly.","2118","test_remove_multiple_elements[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
-"
-        Test that dragging the item from column A to column B works.
-        ","2464","test_drag_item_to_column_b[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that hovering over User 1 image shows the caption.
-        ","1347","test_user_1_caption_visible_on_hover[chromium]","tests","2026-08-06","passed","2026-08-06","TestHoversPage","test_hovers_page","",""
-"
-        Test that the Dynamic Content heading is visible.
-        ","880","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
-"
-        Test that the Example 2 finish content displays ""Hello World!"".
-        ","4653","test_example2_content_text_is_hello_world[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that the page heading is visible.
-        ","12","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileUploadPage","test_file_upload_page","",""
-"
-        Test that moving the mouse out of the top of the viewport
-        triggers the exit intent modal.
-        ","1376","test_modal_triggers_on_exit_intent[chromium]","tests","2026-08-06","passed","2026-08-06","TestExitIntentPage","test_exit_intent_page","",""
-"
-        Test that the Randomize Content button is visible.
-        ","2421","test_randomize_button_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
-"
-        Test that clicking the Close button dismisses the modal.
-        ","1823","test_close_modal[chromium]","tests","2026-08-06","passed","2026-08-06","TestExitIntentPage","test_exit_intent_page","",""
-"
-        Test that the Where am I? button is visible.
-        ","1408","test_where_am_i_button_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestGeolocationPage","test_geolocation_page","",""
-"Test that newly created elements display the correct 'Element N' text.","1933","test_button_text[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
-"
-        Test that the Home tab is always present.
-        ","1916","test_home_tab_always_present[chromium]","tests","2026-08-06","passed","2026-08-06","TestDisappearingElementsPage","test_disappearing_elements_page","",""
-"
-        Test that checking all items individually checks Select All.
-        ","1433","test_checking_all_items_checks_select_all[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
-"
-        Test that the instruction text is visible.
-        ","1910","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestHoversPage","test_hovers_page","",""
-"
-        Test that the Example 2 finish content is not present before clicking Start.
-        ","17","test_example2_content_not_present_initially[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that the Dynamic Controls heading is visible.
-        ","1896","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
-"
-        Test empty required field shows validation error.
-        ","1473","test_required_field_empty_shows_error[chromium]","tests","2026-08-06","passed","2026-08-06","TestInputsPage","test_inputs_page","",""
-"Verify that the mid resource status banner appears after loading.","15499","test_mid_resource_banner_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestSlowResourcesPage","test_slow_resources_page","",""
-"
-        Test that the instruction text is visible.
-        ","894","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"
-        Test that pressing a special key (Enter) displays the correct result.
-        ","1361","test_send_special_key[chromium]","tests","2026-08-06","passed","2026-08-06","TestKeyPressesPage","test_key_presses_page","",""
-"
-        Test that the Basic Checkboxes heading is visible.
-        ","1893","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
-"
-        Test that the page heading is visible.
-        ","15","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileDownloadPage","test_file_download_page","",""
+        ","1351","test_click_home_tab_shows_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
 "
         Test that the range slider displays the default values.
-        ","1400","test_range_slider_default_values[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+        ","916","test_range_slider_default_values[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
 "
-        Test that the downloaded file contains the expected text.
-        ","846","test_download_file_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileDownloadPage","test_file_download_page","",""
+        Test that the modal has body text.
+        ","2367","test_modal_has_body_text[chromium]","tests","2026-08-07","passed","2026-08-07","TestEntryAdPage","test_entry_ad_page","",""
 "
-        Test that clicking the Download File button downloads sample-file.txt.
-        ","1050","test_download_file[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileDownloadPage","test_file_download_page","",""
+        Test that the success message displays the expected text.
+        ","851","test_success_message_has_correct_text[chromium]","tests","2026-08-07","passed","2026-08-07","TestStaleElementPage","test_stale_element_page","",""
 "
-        Test that the new window description text is visible.
-        ","3152","test_new_window_description_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
+        Test that a checkbox can be toggled from unchecked to checked and back.
+        ","1468","test_toggle_checkbox[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
 "
-        Test that the Infinite Scroll page heading is visible.
-        ","897","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+        Test that the Dynamic Content heading is visible.
+        ","897","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
 "
-        Test that right-clicking the hot-spot area triggers the custom context menu.
-        ","1337","test_right_click_triggers_context_menu[chromium]","tests","2026-08-06","passed","2026-08-06","TestContextMenuPage","test_context_menu_page","",""
-"
-        Test that the stale button is visible on the page.
-        ","1419","test_stale_button_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestStaleElementPage","test_stale_element_page","",""
-"
-        Test that hovering over the Share menu item triggers the sub-menu.
-        ","1410","test_hover_share_item_triggers_sub_menu[chromium]","tests","2026-08-06","passed","2026-08-06","TestContextMenuPage","test_context_menu_page","",""
+        Test that multiple new windows can be opened simultaneously.
+        ","4065","test_multiple_new_windows_can_be_opened[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
         Test that dragging the item from column A to column C works.
-        ","2413","test_drag_item_to_column_c[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
+        ","1898","test_drag_item_to_column_c[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
 "
-        Test that pressing a standard key (A) displays the correct result.
-        ","1841","test_send_standard_key[chromium]","tests","2026-08-06","passed","2026-08-06","TestKeyPressesPage","test_key_presses_page","",""
+        Test that selecting Banana from the simple dropdown updates the confirmation text.
+        ","1977","test_simple_dropdown_select_banana[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
 "
-        Test that searching for a non-existent framework shows no results message.
-        ","1413","test_combobox_search_no_results[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"Test that Add Element and Delete buttons are visible after adding one element.","1859","test_button_visibility_after_adding_one[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+        Test that all images (working and broken) are present in the DOM.
+        ","802","test_all_images_are_present_in_dom[chromium]","tests","2026-08-07","passed","2026-08-07","TestBrokenImagesPage","test_broken_images_page","",""
 "
-        Test that the stale button has the expected label text.
-        ","884","test_stale_button_label_is_correct[chromium]","tests","2026-08-06","passed","2026-08-06","TestStaleElementPage","test_stale_element_page","",""
+        Test that the File Uploader heading is visible.
+        ","1421","test_uploader_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileUploadPage","test_file_upload_page","",""
 "
-        Test that the checkbox is visible on page load.
-        ","1424","test_checkbox_is_visible_initially[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
+        Test that the new window navigates to the correct URL.
+        ","2404","test_new_window_url_is_correct[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
-        Test that the page heading is visible.
-        ","12","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+        Test that the original page URL remains unchanged after opening a new window.
+        ","1533","test_original_page_url_unchanged_after_opening_new_window[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
-        Test that the Stale Element Monster heading is visible.
-        ","1389","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestStaleElementPage","test_stale_element_page","",""
+        Test that clicking Start in Example 2 loads the content after the async request.
+        ","4145","test_example2_content_appears_after_start[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
 "
-        Test that the instruction text is visible.
-        ","1415","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestKeyPressesPage","test_key_presses_page","",""
-"Test that adding elements works after deleting all.","2204","test_add_after_removing_all[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+        Test that clicking the Portfolio tab shows the Portfolio content.
+        ","1343","test_click_portfolio_tab_shows_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test that the modal has a title.
+        ","1831","test_modal_has_title[chromium]","tests","2026-08-07","passed","2026-08-07","TestEntryAdPage","test_entry_ad_page","",""
+"
+        Test that the working image loads successfully.
+        ","2153","test_working_image_loads_successfully[chromium]","tests","2026-08-07","passed","2026-08-07","TestBrokenImagesPage","test_broken_images_page","",""
+"
+        Test that pressing a special key (Enter) displays the correct result.
+        ","1327","test_send_special_key[chromium]","tests","2026-08-07","passed","2026-08-07","TestKeyPressesPage","test_key_presses_page","",""
 "
         Test that the Back to Home link is visible in the new window.
-        ","2152","test_new_window_back_to_home_link_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
+        ","3044","test_new_window_back_to_home_link_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
-        Test that the Key Presses heading is visible.
-        ","2442","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestKeyPressesPage","test_key_presses_page","",""
+        Test that searching for React in the combobox and selecting it updates the button text.
+        ","1173","test_combobox_search_and_select_react[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
 "
-        Test that the instruction text is visible.
-        ","1392","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFloatingMenuPage","test_floating_menu_page","",""
+        Test that the modal window appears after navigating to the page.
+        ","2337","test_modal_appears_on_page_load[chromium]","tests","2026-08-07","passed","2026-08-07","TestEntryAdPage","test_entry_ad_page","",""
 "
-        Test that the original page remains active after closing the new window.
-        ","2931","test_original_page_still_active_after_closing_new_window[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
+        Test that clicking JS Alert and accepting it shows the success message.
+        ","873","test_handle_js_alert[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
+"
+        Test that the Randomize Content button is visible.
+        ","876","test_randomize_button_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
+"
+        Test that the Example 2 finish content displays ""Hello World!"".
+        ","4146","test_example2_content_text_is_hello_world[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
+"Test that newly created elements display the correct 'Element N' text.","921","test_button_text[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
 "
         Test switching to iFrame and retrieving text content.
-        ","1320","test_switch_to_iframe_and_get_text[chromium]","tests","2026-08-06","passed","2026-08-06","TestIFramePage","test_iframe_page","",""
+        ","874","test_switch_to_iframe_and_get_text[chromium]","tests","2026-08-07","passed","2026-08-07","TestIFramePage","test_iframe_page","",""
+"
+        Test that clicking the Contact Us tab shows the Contact Us content.
+        ","1352","test_click_contact_us_tab_shows_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test that the floating menu hides when scrolling down.
+        ","1573","test_menu_hides_on_scroll_down[chromium]","tests","2026-08-07","passed","2026-08-07","TestFloatingMenuPage","test_floating_menu_page","",""
+"Test that Add Element and Delete buttons are visible after adding one element.","1377","test_button_visibility_after_adding_one[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+"
+        Test that the page heading is visible.
+        ","12","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileDownloadPage","test_file_download_page","",""
+"
+        Test that the hot-spot area is visible.
+        ","879","test_hotspot_area_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestContextMenuPage","test_context_menu_page","",""
+"
+        Test that clicking Randomize Content changes the displayed content.
+        ","1519","test_content_changes_on_randomize[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
+"
+        Test that dragging the item from column B back to column A works.
+        ","1497","test_drag_item_back_to_column_a[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that clicking JS Prompt and dismissing it shows the null message.
+        ","1336","test_handle_js_prompt_dismiss[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
+"
+        Test that all input fields are visible on the page.
+        ","1417","test_all_input_fields_are_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestInputsPage","test_inputs_page","",""
+"
+        Test that right-clicking the hot-spot area triggers the custom context menu.
+        ","836","test_right_click_triggers_context_menu[chromium]","tests","2026-08-07","passed","2026-08-07","TestContextMenuPage","test_context_menu_page","",""
+"
+        Test that dragging the item from column C to column D works.
+        ","1498","test_drag_item_from_c_to_d[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that the Disappearing Elements heading is visible.
+        ","904","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test that newly loaded content is different from initial content.
+        ","1423","test_new_content_is_different[chromium]","tests","2026-08-07","passed","2026-08-07","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+"
+        Test that the instruction text is visible.
+        ","1906","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
+"
+        Test that clicking Enable enables the text input.
+        ","833","test_enable_text_input[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
+"
+        Test that clicking JS Prompt, entering text, and accepting it shows the entered text.
+        ","1845","test_handle_js_prompt_accept[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
+"
+        Test that clicking Click Here opens a new window.
+        ","2195","test_click_here_opens_new_window[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
+"
+        Test that the Upload button is visible.
+        ","1402","test_upload_button_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileUploadPage","test_file_upload_page","",""
+"Test that adding elements works after deleting all.","1654","test_add_after_removing_all[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+"Test removing a single element removes only that button.","1035","test_remove_single_element[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+"
+        Test that the Context Menu heading is visible.
+        ","885","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestContextMenuPage","test_context_menu_page","",""
+"
+        Test that dragging the item from column D back to column A works.
+        ","2513","test_drag_item_from_d_to_a[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that clicking the Gallery tab shows the Gallery content if the tab is present.
+        ","11","test_click_gallery_tab_shows_content_if_present[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test that the page heading is visible.
+        ","13","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestExitIntentPage","test_exit_intent_page","",""
+"
+        Test that hovering over User 1 image shows the caption.
+        ","1344","test_user_1_caption_visible_on_hover[chromium]","tests","2026-08-07","passed","2026-08-07","TestHoversPage","test_hovers_page","",""
+"
+        Test that the floating menu is visible when the page loads.
+        ","883","test_floating_menu_is_visible_on_load[chromium]","tests","2026-08-07","passed","2026-08-07","TestFloatingMenuPage","test_floating_menu_page","",""
+"
+        Test that multiple consecutive scrolls continue to load more content.
+        ","2170","test_multiple_scrolls_load_incremental_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+"
+        Test that the page heading is visible.
+        ","21","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFloatingMenuPage","test_floating_menu_page","",""
+"
+        Test that both Simple Dropdown and Searchable Combobox headings are visible.
+        ","1389","test_headings_are_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
+"
+        Test that the page heading is visible.
+        ","13","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestEntryAdPage","test_entry_ad_page","",""
+"
+        Test typing text into iFrame without clearing first (appends to existing content).
+        ","476","test_type_text_without_clearing[chromium]","tests","2026-08-07","passed","2026-08-07","TestIFramePage","test_iframe_page","",""
+"
+        Test that the page description and canvas elements are visible.
+        ","901","test_description_and_canvas_are_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestChallengingDomPage","test_challenging_dom_page","",""
+"
+        Test valid form submission.
+        ","1513","test_valid_form_submission[chromium]","tests","2026-08-07","passed","2026-08-07","TestInputsPage","test_inputs_page","",""
+"
+        Test empty required field shows validation error.
+        ","940","test_required_field_empty_shows_error[chromium]","tests","2026-08-07","passed","2026-08-07","TestInputsPage","test_inputs_page","",""
+"
+        Test that clicking the About tab shows the About content.
+        ","877","test_click_about_tab_shows_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test that clicking Where am I? displays latitude and longitude values.
+        ","857","test_get_location_displays_coordinates[chromium]","tests","2026-08-07","passed","2026-08-07","TestGeolocationPage","test_geolocation_page","",""
+"
+        Test that hovering over User 2 image shows the caption.
+        ","846","test_user_2_caption_visible_on_hover[chromium]","tests","2026-08-07","passed","2026-08-07","TestHoversPage","test_hovers_page","",""
+"
+        Test that the Infinite Scroll page heading is visible.
+        ","1395","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+"
+        Test that only one A/B version card is visible at a time - never both simultaneously.
+        ","405","test_only_one_ab_version_is_displayed_at_a_time[chromium]","tests","2026-08-07","passed","2026-08-07","TestABTestingPage","test_ab_testing_page","",""
+"
+        Test that the Dynamic Loading heading is visible.
+        ","903","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
+"Verify that the small resource status banner appears after loading.","5449","test_small_resource_banner_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestSlowResourcesPage","test_slow_resources_page","",""
+"
+        Test that clicking Add brings the checkbox back.
+        ","940","test_add_checkbox[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
+"
+        Test that clicking Randomize Content changes the displayed images.
+        ","981","test_images_change_on_randomize[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
+"
+        Test that refreshing the page changes the displayed content.
+        ","3032","test_content_changes_on_refresh[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
+"
+        Test that the stale button has the expected label text.
+        ","872","test_stale_button_label_is_correct[chromium]","tests","2026-08-07","passed","2026-08-07","TestStaleElementPage","test_stale_element_page","",""
+"
+        Test that the heading and description text are correct and visible.
+        ","939","test_page_content_is_correct[chromium]","tests","2026-08-07","passed","2026-08-07","TestBrokenImagesPage","test_broken_images_page","",""
+"
+        Test that the new window content section is visible.
+        ","2801","test_new_window_content_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
+"
+        Test that selecting a vegetable from the simple dropdown updates the confirmation text.
+        ","1518","test_simple_dropdown_select_vegetable[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
+"
+        Test that checkbox1 is unchecked by default and checkbox2 is checked by default.
+        ","1408","test_default_checkbox_states[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
+"
+        Test that the Key Presses heading is visible.
+        ","913","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestKeyPressesPage","test_key_presses_page","",""
+"
+        Test that setting the range slider maximum thumb updates the displayed values.
+        ","2151","test_set_range_slider_max[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+"
+        Test that the input field is visible.
+        ","900","test_input_field_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestKeyPressesPage","test_key_presses_page","",""
+"
+        Test that clicking JS Confirm and dismissing it shows the Cancel message.
+        ","1344","test_handle_js_confirm_dismiss[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
+"
+        Test that loaded paragraphs contain text content.
+        ","11","test_paragraphs_have_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+"
+        Test that the Download File button is visible.
+        ","885","test_download_button_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileDownloadPage","test_file_download_page","",""
+"
+        Test clearing iFrame content and typing new text.
+        ","1554","test_clear_and_type_in_iframe[chromium]","tests","2026-08-07","passed","2026-08-07","TestIFramePage","test_iframe_page","",""
+"
+        Test that clicking Start in Example 1 reveals the hidden content.
+        ","1391","test_example1_content_becomes_visible_after_start[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
+"
+        Test that the table is visible, has initial rows, and that individual row deletions work.
+        ","2030","test_table_structure_and_row_deletion[chromium]","tests","2026-08-07","passed","2026-08-07","TestChallengingDomPage","test_challenging_dom_page","",""
+"
+        Test that left-clicking outside the menu dismisses the context menu.
+        ","1891","test_left_click_dismisses_context_menu[chromium]","tests","2026-08-07","passed","2026-08-07","TestContextMenuPage","test_context_menu_page","",""
+"
+        Test that the draggable item is in column A initially.
+        ","1390","test_draggable_item_in_column_a_initially[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that clicking the stale button shows the success description.
+        ","825","test_click_stale_button_shows_success_description[chromium]","tests","2026-08-07","passed","2026-08-07","TestStaleElementPage","test_stale_element_page","",""
+"
+        Test that the instruction text is visible.
+        ","883","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
+"
+        Test that setting the range slider minimum thumb updates the displayed values.
+        ","2116","test_set_range_slider_min[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+"
+        Test that the instruction text is visible.
+        ","882","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicContentPage","test_dynamic_content_page","",""
+"
+        Test that the static page heading and description text are correct
+        regardless of A/B version.
+        ","1891","test_page_heading_and_description_text_are_correct[chromium]","tests","2026-08-07","passed","2026-08-07","TestABTestingPage","test_ab_testing_page","",""
+"
+        Test that the Example 1 content displays the expected text.
+        ","1373","test_example1_content_text_is_correct[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
+"
+        Test that the Home tab is always present.
+        ","2441","test_home_tab_always_present[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test that after dropping the item in column B, it is a child of column B.
+        ","1418","test_verify_item_in_column_b_after_drop[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that the Drag and Drop heading is visible.
+        ","1397","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that hovering over the Share menu item triggers the sub-menu.
+        ","1422","test_hover_share_item_triggers_sub_menu[chromium]","tests","2026-08-07","passed","2026-08-07","TestContextMenuPage","test_context_menu_page","",""
+"
+        Test that the instruction text is visible.
+        ","878","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestKeyPressesPage","test_key_presses_page","",""
+"
+        Test that the JavaScript Alerts heading is visible.
+        ","883","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
+"
+        Test that all images have non-empty alt text.
+        ","15","test_all_images_have_alt_text[chromium]","tests","2026-08-07","passed","2026-08-07","TestBrokenImagesPage","test_broken_images_page","",""
+"
+        Test that all rows can be deleted from the table one by one.
+        ","2013","test_delete_all_rows[chromium]","tests","2026-08-07","passed","2026-08-07","TestChallengingDomPage","test_challenging_dom_page","",""
+"
+        Test that the page heading is visible.
+        ","12","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+"
+        Test that disabled checkboxes cannot be changed.
+        ","902","test_disabled_checkboxes_cannot_be_changed[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
+"
+        Test that the original page remains active after closing the new window.
+        ","1916","test_original_page_still_active_after_closing_new_window[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
+"
+        Test that the exit intent modal has the expected title.
+        ","1888","test_modal_has_title[chromium]","tests","2026-08-07","passed","2026-08-07","TestExitIntentPage","test_exit_intent_page","",""
+"
+        Test that parent page content is still accessible while working with iFrame.
+        ","921","test_parent_page_content_accessible[chromium]","tests","2026-08-07","passed","2026-08-07","TestIFramePage","test_iframe_page","",""
+"
+        Test that the Stale Element Monster heading is visible.
+        ","1898","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestStaleElementPage","test_stale_element_page","",""
 "
         Test that the terms checkbox can be checked.
-        ","954","test_terms_checkbox_can_be_checked[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
+        ","917","test_terms_checkbox_can_be_checked[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
+"
+        Test that typing in the combobox search filters the available options.
+        ","873","test_combobox_search_filters_options[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
+"
+        Test that the single value slider is visible.
+        ","899","test_single_slider_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+"
+        Test that the Gallery tab may or may not be present on page load.
+        The test passes regardless of whether the tab is present or not.
+        ","919","test_gallery_tab_may_be_present[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"Test adding a single element creates exactly one delete button.","876","test_add_one_element[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+"
+        Test that clicking the Close button dismisses the modal.
+        ","1224","test_close_modal[chromium]","tests","2026-08-07","passed","2026-08-07","TestExitIntentPage","test_exit_intent_page","",""
+"
+        Test that searching for a non-existent framework shows no results message.
+        ","891","test_combobox_search_no_results[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
+"
+        Test that the Basic Checkboxes heading is visible.
+        ","1888","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
+"
+        Test that clicking Disable disables the text input.
+        ","1413","test_disable_text_input[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
+"
+        Test that moving the single slider to a new position updates the displayed value.
+        ","1294","test_move_slider_updates_value[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
+"
+        Test that the See it on Google link appears after getting coordinates.
+        ","1856","test_google_maps_link_appears[chromium]","tests","2026-08-07","passed","2026-08-07","TestGeolocationPage","test_geolocation_page","",""
+"
+        Test that the heading, description, card content, and sign up button are all visible
+        for the active A/B version.
+        ","1391","test_active_version_elements_are_displayed[chromium]","tests","2026-08-07","passed","2026-08-07","TestABTestingPage","test_ab_testing_page","",""
+"
+        Test that the instruction text is visible.
+        ","1379","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDisappearingElementsPage","test_disappearing_elements_page","",""
+"
+        Test invalid email format shows validation error.
+        ","1453","test_invalid_email_shows_error[chromium]","tests","2026-08-07","passed","2026-08-07","TestInputsPage","test_inputs_page","",""
 "
         Test that the card body paragraph for the active A/B version is visible
         and has correct content.
-        ","1362","test_active_version_card_body_content_is_displayed[chromium]","tests","2026-08-06","passed","2026-08-06","TestABTestingPage","test_ab_testing_page","",""
+        ","2873","test_active_version_card_body_content_is_displayed[chromium]","tests","2026-08-07","passed","2026-08-07","TestABTestingPage","test_ab_testing_page","",""
 "
-        Test that after dropping the item in column B, it is a child of column B.
-        ","1418","test_verify_item_in_column_b_after_drop[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
+        Test that clicking JS Confirm and accepting it shows the Ok message.
+        ","882","test_handle_js_confirm_accept[chromium]","tests","2026-08-07","passed","2026-08-07","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
 "
-        Test that the Example 1 content is hidden before clicking Start.
-        ","11","test_example1_content_is_hidden_initially[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that checkbox1 is unchecked by default and checkbox2 is checked by default.
-        ","2941","test_default_checkbox_states[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
+        Test that the Where am I? button is visible.
+        ","1917","test_where_am_i_button_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestGeolocationPage","test_geolocation_page","",""
 "
         Test that the instruction text is visible.
-        ","1918","test_instruction_text_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicContentPage","test_dynamic_content_page","",""
+        ","911","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFloatingMenuPage","test_floating_menu_page","",""
 "
-        Test that the Download File button is visible.
-        ","1393","test_download_button_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestFileDownloadPage","test_file_download_page","",""
+        Test that dragging the item from column A to column D works.
+        ","1397","test_drag_item_to_column_d[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
 "
-        Test that the iFrame element is present on the page.
-        ","901","test_iframe_is_present[chromium]","tests","2026-08-06","passed","2026-08-06","TestIFramePage","test_iframe_page","",""
+        Test that hovering over User 3 image shows the caption.
+        ","1409","test_user_3_caption_visible_on_hover[chromium]","tests","2026-08-07","passed","2026-08-07","TestHoversPage","test_hovers_page","",""
 "
-        Test that clicking Where am I? displays latitude and longitude values.
-        ","865","test_get_location_displays_coordinates[chromium]","tests","2026-08-06","passed","2026-08-06","TestGeolocationPage","test_geolocation_page","",""
+        Test that the Dynamic Controls heading is visible.
+        ","1387","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
 "
-        Test that the table is visible, has initial rows, and that individual row deletions work.
-        ","2084","test_table_structure_and_row_deletion[chromium]","tests","2026-08-06","passed","2026-08-06","TestChallengingDomPage","test_challenging_dom_page","",""
+        Test that the instruction text is visible.
+        ","1924","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileDownloadPage","test_file_download_page","",""
 "
-        Test that scrolling to bottom loads more content.
-        ","1215","test_scroll_loads_more_content[chromium]","tests","2026-08-06","passed","2026-08-06","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+        Test that the file input element is present in the DOM.
+        File inputs are typically hidden but should be attached.
+        ","869","test_file_input_is_present[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileUploadPage","test_file_upload_page","",""
 "
-        Test that clicking Disable disables the text input.
-        ","1384","test_disable_text_input[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
+        Test that the Click Here link is visible.
+        ","891","test_click_here_link_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
 "
-        Test that selecting Apple from the simple dropdown updates the confirmation text.
-        ","1488","test_simple_dropdown_select_apple[chromium]","tests","2026-08-06","passed","2026-08-06","TestDropdownPage","test_dropdown_page","",""
-"
-        Test that the Dynamic Loading heading is visible.
-        ","1440","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicLoadingPage","test_dynamic_loading_page","",""
-"
-        Test that unchecking an individual item unchecks Select All.
-        ","1890","test_unchecking_item_unchecks_select_all[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
-"
-        Test that the success message displays the expected text.
-        ","851","test_success_message_has_correct_text[chromium]","tests","2026-08-06","passed","2026-08-06","TestStaleElementPage","test_stale_element_page","",""
+        Test that pressing a standard key (A) displays the correct result.
+        ","1327","test_send_standard_key[chromium]","tests","2026-08-07","passed","2026-08-07","TestKeyPressesPage","test_key_presses_page","",""
 "
         Test that the page heading is visible.
-        ","15","test_page_heading_is_visible[chromium]","tests","2026-08-06","passed","2026-08-06","TestEntryAdPage","test_entry_ad_page","",""
+        ","15","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileUploadPage","test_file_upload_page","",""
+"Test adding multiple elements creates one new delete button per click.","1033","test_add_multiple_elements[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
 "
-        Test that the draggable item is in column A initially.
-        ","1420","test_draggable_item_in_column_a_initially[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
+        Test that the checkbox is visible on page load.
+        ","884","test_checkbox_is_visible_initially[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
 "
-        Test that broken images fail to load (naturalWidth == 0).
-        ","1350","test_broken_images_fail_to_load[chromium]","tests","2026-08-06","passed","2026-08-06","TestBrokenImagesPage","test_broken_images_page","",""
+        Test that the Example 2 finish content is not present before clicking Start.
+        ","11","test_example2_content_not_present_initially[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
 "
-        Test that the new window navigates to the correct URL.
-        ","2889","test_new_window_url_is_correct[chromium]","tests","2026-08-06","passed","2026-08-06","TestMultipleWindowsPage","test_multiple_windows_page","",""
-"Test adding multiple elements creates one new delete button per click.","2098","test_add_multiple_elements[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
-"Test that no delete buttons are present initially.","12","test_initial_state[chromium]","tests","2026-08-06","passed","2026-08-06","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+        Test that the downloaded file contains the expected text.
+        ","937","test_download_file_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileDownloadPage","test_file_download_page","",""
 "
-        Test that newly loaded content is different from initial content.
-        ","2881","test_new_content_is_different[chromium]","tests","2026-08-06","passed","2026-08-06","TestInfiniteScrollPage","test_infinite_scroll_page","",""
-"
-        Test that the See it on Google link appears after getting coordinates.
-        ","1423","test_google_maps_link_appears[chromium]","tests","2026-08-06","passed","2026-08-06","TestGeolocationPage","test_geolocation_page","",""
-"
-        Test that parent page content is still accessible while working with iFrame.
-        ","1901","test_parent_page_content_accessible[chromium]","tests","2026-08-06","passed","2026-08-06","TestIFramePage","test_iframe_page","",""
-"
-        Test that disabled checkboxes cannot be changed.
-        ","1431","test_disabled_checkboxes_cannot_be_changed[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
-"
-        Test that clicking JS Alert and accepting it shows the success message.
-        ","1351","test_handle_js_alert[chromium]","tests","2026-08-06","passed","2026-08-06","TestJavaScriptAlertsPage","test_javascript_alerts_page","",""
-"
-        Test that clicking Add brings the checkbox back.
-        ","905","test_add_checkbox[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
-"
-        Test that clicking the stale button shows the success description.
-        ","1341","test_click_stale_button_shows_success_description[chromium]","tests","2026-08-06","passed","2026-08-06","TestStaleElementPage","test_stale_element_page","",""
-"
-        Test that dragging the item from column C to column D works.
-        ","1496","test_drag_item_from_c_to_d[chromium]","tests","2026-08-06","passed","2026-08-06","TestDragAndDropPage","test_drag_and_drop_page","",""
-"
-        Test that the text input is disabled by default.
-        ","1405","test_text_input_is_disabled_initially[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
-"
-        Test that the floating menu hides when scrolling down.
-        ","1579","test_menu_hides_on_scroll_down[chromium]","tests","2026-08-06","passed","2026-08-06","TestFloatingMenuPage","test_floating_menu_page","",""
-"
-        Test that the exit intent modal has body text.
-        ","1393","test_modal_has_body_text[chromium]","tests","2026-08-06","passed","2026-08-06","TestExitIntentPage","test_exit_intent_page","",""
+        Test that searching for Next.js in the combobox and selecting it updates the button text.
+        ","1690","test_combobox_search_and_select_nextjs[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
 "
         Test that clicking the sign up button on the active A/B version
         shows a confirmation toast.
-        ","1429","test_signup_displays_confirmation_toast[chromium]","tests","2026-08-06","passed","2026-08-06","TestABTestingPage","test_ab_testing_page","",""
+        ","987","test_signup_displays_confirmation_toast[chromium]","tests","2026-08-07","passed","2026-08-07","TestABTestingPage","test_ab_testing_page","",""
+"
+        Test that the exit intent modal has body text.
+        ","872","test_modal_has_body_text[chromium]","tests","2026-08-07","passed","2026-08-07","TestExitIntentPage","test_exit_intent_page","",""
+"
+        Test that uploading a file displays the uploaded section with the correct file name.
+        ","983","test_upload_file[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileUploadPage","test_file_upload_page","",""
+"Verify that the mid resource status banner appears after loading.","15981","test_mid_resource_banner_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestSlowResourcesPage","test_slow_resources_page","",""
+"
+        Test that moving the mouse out of the top of the viewport
+        triggers the exit intent modal.
+        ","899","test_modal_triggers_on_exit_intent[chromium]","tests","2026-08-07","passed","2026-08-07","TestExitIntentPage","test_exit_intent_page","",""
+"
+        Test that the Hovers heading is visible.
+        ","1393","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestHoversPage","test_hovers_page","",""
+"
+        Test that scrolling to bottom loads more content.
+        ","1359","test_scroll_loads_more_content[chromium]","tests","2026-08-07","passed","2026-08-07","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+"
+        Test that the page heading is visible.
+        ","13","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestGeolocationPage","test_geolocation_page","",""
+"
+        Test that the iFrame element is present on the page.
+        ","439","test_iframe_is_present[chromium]","tests","2026-08-07","passed","2026-08-07","TestIFramePage","test_iframe_page","",""
+"
+        Test that the Inputs page heading is visible.
+        ","1391","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestInputsPage","test_inputs_page","",""
+"
+        Test that clicking the Close button dismisses the modal.
+        ","2035","test_close_modal[chromium]","tests","2026-08-07","passed","2026-08-07","TestEntryAdPage","test_entry_ad_page","",""
+"
+        Test that the range slider is visible.
+        ","1438","test_range_slider_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestHorizontalSliderPage","test_horizontal_slider_page","",""
 "
         Test that clicking Remove removes the checkbox from the DOM.
-        ","1389","test_remove_checkbox[chromium]","tests","2026-08-06","passed","2026-08-06","TestDynamicControlsPage","test_dynamic_controls_page","",""
+        ","853","test_remove_checkbox[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
+"Verify that the large resource status banner appears after loading.","31054","test_large_resource_banner_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestSlowResourcesPage","test_slow_resources_page","",""
+"
+        Test that the iFrame page heading is visible.
+        ","378","test_page_heading_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestIFramePage","test_iframe_page","",""
+"
+        Test that the new window heading is 'New Window'.
+        ","2630","test_new_window_heading_is_correct[chromium]","tests","2026-08-07","passed","2026-08-07","TestMultipleWindowsPage","test_multiple_windows_page","",""
+"
+        Test that the text input is disabled by default.
+        ","1389","test_text_input_is_disabled_initially[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicControlsPage","test_dynamic_controls_page","",""
 "
         Test that clicking Select All checks all fruit checkboxes.
-        ","2514","test_select_all_checks_all_items[chromium]","tests","2026-08-06","passed","2026-08-06","TestCheckboxesPage","test_checkboxes_page","",""
+        ","1452","test_select_all_checks_all_items[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
+"
+        Test that selecting Apple from the simple dropdown updates the confirmation text.
+        ","1503","test_simple_dropdown_select_apple[chromium]","tests","2026-08-07","passed","2026-08-07","TestDropdownPage","test_dropdown_page","",""
+"Test removing multiple elements updates the list correctly.","1634","test_remove_multiple_elements[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+"
+        Test that checking all items individually checks Select All.
+        ","950","test_checking_all_items_checks_select_all[chromium]","tests","2026-08-07","passed","2026-08-07","TestCheckboxesPage","test_checkboxes_page","",""
+"
+        Test that the instruction text is visible.
+        ","1393","test_instruction_text_is_visible[chromium]","tests","2026-08-07","passed","2026-08-07","TestHoversPage","test_hovers_page","",""
+"
+        Test that the Example 1 content is hidden before clicking Start.
+        ","13","test_example1_content_is_hidden_initially[chromium]","tests","2026-08-07","passed","2026-08-07","TestDynamicLoadingPage","test_dynamic_loading_page","",""
+"Test that the Basic Auth page loads.","915","test_basic_auth_page_loads[chromium]","tests","2026-08-07","passed","2026-08-07","TestBasicAuthPage","test_basic_auth_page","",""
+"
+        Test that clicking the Download File button downloads sample-file.txt.
+        ","1412","test_download_file[chromium]","tests","2026-08-07","passed","2026-08-07","TestFileDownloadPage","test_file_download_page","",""
+"Test that no delete buttons are present initially.","13","test_initial_state[chromium]","tests","2026-08-07","passed","2026-08-07","TestAddRemoveElementsPage","test_add_remove_elements_page","",""
+"
+        Test that dragging the item from column C back to column A works.
+        ","1029","test_drag_item_from_c_to_a[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""
+"
+        Test that initial paragraphs are present on page load.
+        ","893","test_initial_paragraphs_present[chromium]","tests","2026-08-07","passed","2026-08-07","TestInfiniteScrollPage","test_infinite_scroll_page","",""
+"
+        Test that dragging the item from column B to column C works.
+        ","1015","test_drag_item_from_b_to_c[chromium]","tests","2026-08-07","passed","2026-08-07","TestDragAndDropPage","test_drag_and_drop_page","",""

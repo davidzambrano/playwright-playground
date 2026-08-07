@@ -1,0 +1,25 @@
+2026-08-07 09:59:50,075 - root - INFO - ================================================================================
+2026-08-07 09:59:50,076 - root - INFO - TEST START: test_multiple_scrolls_load_incremental_content[chromium]
+2026-08-07 09:59:50,165 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 09:59:51,185 - pages.base_page - INFO - Page load completed
+2026-08-07 09:59:51,186 - pages.home_page - INFO - Navigated to home page
+2026-08-07 09:59:51,186 - pages.home_page - INFO - Getting Infinite Scroll card element
+2026-08-07 09:59:51,266 - pages.home_page - INFO - Clicked Infinite Scroll card
+2026-08-07 09:59:51,269 - pages.infinite_scroll_page - INFO - Getting paragraph count
+2026-08-07 09:59:51,269 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-08-07 09:59:51,281 - pages.infinite_scroll_page - INFO - Scrolling to bottom of page
+2026-08-07 09:59:51,308 - pages.infinite_scroll_page - INFO - Scrolled to bottom of page
+2026-08-07 09:59:51,308 - pages.infinite_scroll_page - INFO - Waiting for new paragraphs to load (initial count: 0)
+2026-08-07 09:59:52,376 - pages.infinite_scroll_page - INFO - New paragraphs loaded
+2026-08-07 09:59:52,376 - pages.infinite_scroll_page - INFO - Scrolling to bottom of page
+2026-08-07 09:59:52,383 - pages.infinite_scroll_page - INFO - Scrolled to bottom of page
+2026-08-07 09:59:52,383 - pages.infinite_scroll_page - INFO - Waiting for new paragraphs to load (initial count: 10)
+2026-08-07 09:59:52,892 - pages.infinite_scroll_page - INFO - New paragraphs loaded
+2026-08-07 09:59:52,892 - pages.infinite_scroll_page - INFO - Scrolling to bottom of page
+2026-08-07 09:59:52,907 - pages.infinite_scroll_page - INFO - Scrolled to bottom of page
+2026-08-07 09:59:52,907 - pages.infinite_scroll_page - INFO - Waiting for new paragraphs to load (initial count: 20)
+2026-08-07 09:59:53,424 - pages.infinite_scroll_page - INFO - New paragraphs loaded
+2026-08-07 09:59:53,425 - pages.infinite_scroll_page - INFO - Getting paragraph count
+2026-08-07 09:59:53,425 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-08-07 09:59:53,961 - root - INFO - TEST END: test_multiple_scrolls_load_incremental_content[chromium]
+2026-08-07 09:59:53,962 - root - INFO - ================================================================================

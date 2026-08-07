@@ -1,0 +1,10 @@
+2026-08-07 18:21:46,744 - root - INFO - ================================================================================
+2026-08-07 18:21:46,745 - root - INFO - TEST START: test_range_slider_default_values[chromium]
+2026-08-07 18:21:46,855 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 18:21:49,083 - pages.base_page - INFO - Page load completed
+2026-08-07 18:21:49,083 - pages.home_page - INFO - Navigated to home page
+2026-08-07 18:21:49,084 - pages.home_page - INFO - Getting Horizontal Slider card element
+2026-08-07 18:21:49,168 - pages.home_page - INFO - Clicked Horizontal Slider card
+2026-08-07 18:21:49,171 - pages.horizontal_slider_page - INFO - Getting range values element
+2026-08-07 18:21:50,392 - root - INFO - TEST END: test_range_slider_default_values[chromium]
+2026-08-07 18:21:50,392 - root - INFO - ================================================================================

@@ -1,0 +1,17 @@
+2026-08-07 18:21:55,690 - root - INFO - ================================================================================
+2026-08-07 18:21:55,691 - root - INFO - TEST START: test_scroll_loads_more_content[chromium]
+2026-08-07 18:21:55,783 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 18:21:57,699 - pages.base_page - INFO - Page load completed
+2026-08-07 18:21:57,699 - pages.home_page - INFO - Navigated to home page
+2026-08-07 18:21:57,700 - pages.home_page - INFO - Getting Infinite Scroll card element
+2026-08-07 18:21:57,766 - pages.home_page - INFO - Clicked Infinite Scroll card
+2026-08-07 18:21:57,768 - pages.infinite_scroll_page - INFO - Getting paragraph count
+2026-08-07 18:21:57,769 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-08-07 18:21:57,781 - pages.infinite_scroll_page - INFO - Scrolling to bottom of page
+2026-08-07 18:21:57,801 - pages.infinite_scroll_page - INFO - Scrolled to bottom of page
+2026-08-07 18:21:57,802 - pages.infinite_scroll_page - INFO - Waiting for new paragraphs to load (initial count: 0)
+2026-08-07 18:21:58,616 - pages.infinite_scroll_page - INFO - New paragraphs loaded
+2026-08-07 18:21:58,617 - pages.infinite_scroll_page - INFO - Getting paragraph count
+2026-08-07 18:21:58,617 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-08-07 18:21:58,999 - root - INFO - TEST END: test_scroll_loads_more_content[chromium]
+2026-08-07 18:21:59,000 - root - INFO - ================================================================================

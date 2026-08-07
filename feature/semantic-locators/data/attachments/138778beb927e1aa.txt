@@ -1,0 +1,15 @@
+2026-08-07 18:20:07,493 - root - INFO - ================================================================================
+2026-08-07 18:20:07,493 - root - INFO - TEST START: test_left_click_dismisses_context_menu[chromium]
+2026-08-07 18:20:07,582 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-07 18:20:09,999 - pages.base_page - INFO - Page load completed
+2026-08-07 18:20:10,000 - pages.home_page - INFO - Navigated to home page
+2026-08-07 18:20:10,000 - pages.home_page - INFO - Getting Context Menu card element
+2026-08-07 18:20:10,070 - pages.home_page - INFO - Clicked Context Menu card
+2026-08-07 18:20:10,072 - pages.context_menu_page - INFO - Right-clicking on hot-spot area
+2026-08-07 18:20:10,073 - pages.context_menu_page - INFO - Getting hot-spot area element
+2026-08-07 18:20:11,901 - pages.context_menu_page - INFO - Getting context menu element
+2026-08-07 18:20:11,910 - pages.context_menu_page - INFO - Left-clicking outside context menu to dismiss it
+2026-08-07 18:20:11,910 - pages.context_menu_page - INFO - Getting page heading element
+2026-08-07 18:20:11,966 - pages.context_menu_page - INFO - Getting context menu element
+2026-08-07 18:20:12,254 - root - INFO - TEST END: test_left_click_dismisses_context_menu[chromium]
+2026-08-07 18:20:12,255 - root - INFO - ================================================================================

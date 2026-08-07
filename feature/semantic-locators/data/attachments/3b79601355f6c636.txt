@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_button_visibility_after_adding_one[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:71 Navigated to home page
+INFO     pages.home_page:home_page.py:97 Getting Add/Remove Elements card element
+INFO     pages.home_page:home_page.py:468 Clicked Add/Remove Elements card
+INFO     pages.add_remove_elements_page:add_remove_elements_page.py:43 Clicked Add Element button
+INFO     root:conftest.py:53 TEST END: test_button_visibility_after_adding_one[chromium]
+INFO     root:conftest.py:54 ================================================================================

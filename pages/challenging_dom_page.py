@@ -1,6 +1,7 @@
 """Page object for the Challenging DOM page."""
 
 import logging
+import re
 
 from playwright.sync_api import expect
 
@@ -16,19 +17,15 @@ class ChallengingDomPage(BasePage):
     """
 
     # Locators
-    DESCRIPTION_LOCATOR = (
-        "//p[contains(@class, 'text-muted-foreground') and "
-        "contains(text(), 'random text and colors')]"
-    )
-    BUTTONS_LOCATOR = "//button[contains(@class, 'w-48')]"
-    CANVAS_LOCATOR = "//canvas"
-    TABLE_LOCATOR = "//table"
-    TABLE_ROW_LOCATOR = "//table//tbody//tr"
+    DESCRIPTION_LOCATOR = re.compile("random text and colors")
+    BUTTONS_LOCATOR = "button.w-48"
+    CANVAS_LOCATOR = "canvas"
+    TABLE_ROW_LOCATOR = "tbody tr"
 
     def get_description(self):
         """Get the page description element."""
         logger.info("Getting Challenging DOM page description element")
-        return self.page.locator(self.DESCRIPTION_LOCATOR)
+        return self.page.get_by_text(self.DESCRIPTION_LOCATOR)
 
     def get_buttons(self):
         """Get all random buttons."""
@@ -43,12 +40,12 @@ class ChallengingDomPage(BasePage):
     def get_table(self):
         """Get the table element."""
         logger.info("Getting table element")
-        return self.page.locator(self.TABLE_LOCATOR)
+        return self.page.get_by_role("table")
 
     def get_table_rows(self):
         """Get all table row elements."""
         logger.info("Getting all table row elements")
-        return self.page.locator(self.TABLE_ROW_LOCATOR)
+        return self.get_table().locator(self.TABLE_ROW_LOCATOR)
 
     def delete_table_row(self, row_index: int):
         """

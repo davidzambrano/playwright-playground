@@ -12,9 +12,9 @@ class ModalPage(BasePage):
 
     # Common modal locators (to be overridden by child classes if needed)
     MODAL = "[role='dialog']"
-    MODAL_TITLE = "//h2"
-    MODAL_BODY = "//*[contains(@class, 'modal-body') or contains(@class, 'modal')]"
-    CLOSE_BUTTON = "//button[normalize-space()='Close' and not(contains(@class, 'absolute'))]"
+    MODAL_TITLE = "h2"
+    MODAL_BODY = "[role='dialog'] p"
+    CLOSE_BUTTON = "Close"
 
     def get_modal(self):
         """Get the modal element.
@@ -32,7 +32,7 @@ class ModalPage(BasePage):
             Locator: The locator for the modal title element.
         """
         logger.info("Getting modal title element")
-        return self.page.locator(self.MODAL_TITLE)
+        return self.get_modal().locator(self.MODAL_TITLE)
 
     def get_modal_body(self):
         """Get the modal body element.
@@ -41,7 +41,7 @@ class ModalPage(BasePage):
             Locator: The locator for the modal body element.
         """
         logger.info("Getting modal body element")
-        return self.page.locator(self.MODAL_BODY)
+        return self.get_modal().locator(self.MODAL_BODY)
 
     def get_close_button(self):
         """Get the Close button element.
@@ -50,7 +50,7 @@ class ModalPage(BasePage):
             Locator: The locator for the Close button element.
         """
         logger.info("Getting Close button element")
-        return self.page.locator(self.CLOSE_BUTTON)
+        return self.get_modal().get_by_role("button", name=self.CLOSE_BUTTON).last
 
     def click_close_button(self):
         """Click the Close button on the modal.

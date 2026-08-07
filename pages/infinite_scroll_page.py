@@ -1,6 +1,7 @@
 """Page object for the Infinite Scroll page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -11,8 +12,8 @@ class InfiniteScrollPage(BasePage):
     """Page object for the Infinite Scroll page."""
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Infinite Scroll')]"
-    PARAGRAPH_LOCATOR = "//div[contains(@class, 'space-y-8')]//p"
+    PAGE_HEADING = re.compile("Infinite Scroll")
+    PARAGRAPH_LOCATOR = "div.space-y-8 p"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -21,7 +22,7 @@ class InfiniteScrollPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_paragraphs(self):
         """Get all paragraph elements on the page.

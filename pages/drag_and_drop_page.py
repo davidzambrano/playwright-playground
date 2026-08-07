@@ -1,6 +1,7 @@
 """Page object for the Drag and Drop page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,7 +15,7 @@ class DragAndDropPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Drag and Drop')]"
+    PAGE_HEADING = re.compile("Drag and Drop")
     DRAGGABLE_ITEM = "#draggable"
     COLUMN_A = "#column-a"
     COLUMN_B = "#column-b"
@@ -28,7 +29,7 @@ class DragAndDropPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_draggable_item(self):
         """Get the draggable item element.

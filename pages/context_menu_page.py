@@ -1,6 +1,7 @@
 """Page object for the Context Menu page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,11 +15,11 @@ class ContextMenuPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Context Menu')]"
-    HOTSPOT_AREA = "//p[contains(text(), 'Right-click me!')]"
-    CONTEXT_MENU = "//ul"
-    MENU_ITEM_SHARE = "//li[contains(text(), 'Share')]"
-    SUB_MENU = "//ul[li[contains(text(), 'Email')]]"
+    PAGE_HEADING = re.compile("Context Menu")
+    HOTSPOT_AREA = "#hot-spot"
+    CONTEXT_MENU = "#context-menu"
+    MENU_ITEM_SHARE = re.compile("Share")
+    SUB_MENU = "#sub-menu"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -27,7 +28,7 @@ class ContextMenuPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_hotspot_area(self):
         """Get the hot-spot area element for right-clicking.
@@ -54,7 +55,7 @@ class ContextMenuPage(BasePage):
             Locator: The locator for the Share menu item element.
         """
         logger.info("Getting Share menu item element")
-        return self.page.locator(self.MENU_ITEM_SHARE)
+        return self.page.locator(self.CONTEXT_MENU).get_by_text(self.MENU_ITEM_SHARE)
 
     def get_sub_menu(self):
         """Get the sub-menu element.

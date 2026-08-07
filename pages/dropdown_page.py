@@ -1,6 +1,7 @@
 """Page object for the Dropdown page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,33 +15,31 @@ class DropdownPage(BasePage):
     """
 
     # Locators
-    SIMPLE_DROPDOWN_HEADING = "//h3[contains(text(), 'Simple Dropdown')]"
-    SEARCHABLE_COMBOBOX_HEADING = "//h3[contains(text(), 'Searchable Combobox')]"
-    SIMPLE_DROPDOWN_TRIGGER = "//button[@role='combobox' and contains(., 'Select a fruit')]"
-    SIMPLE_DROPDOWN_VALUE = "//span[contains(@class, 'SelectValue')]"
-    SELECTION_TEXT = "//p[contains(text(), 'You selected:')]"
-    COMBOBOX_INPUT = "//input[@placeholder='Search framework...']"
-    NO_RESULTS_TEXT = "//p[contains(text(), 'No framework found')]"
+    SIMPLE_DROPDOWN_HEADING = re.compile("Simple Dropdown")
+    SEARCHABLE_COMBOBOX_HEADING = re.compile("Searchable Combobox")
+    SIMPLE_DROPDOWN_TRIGGER = "Select a fruit"
+    SELECTION_TEXT = "You selected:"
+    COMBOBOX_INPUT = "Search framework..."
+    NO_RESULTS_TEXT = "No framework found"
 
     def get_simple_dropdown_heading(self):
         """Get the Simple Dropdown heading element."""
         logger.info("Getting Simple Dropdown heading element")
-        return self.page.locator(self.SIMPLE_DROPDOWN_HEADING)
+        return self.page.get_by_role("heading", name=self.SIMPLE_DROPDOWN_HEADING)
 
     def get_searchable_combobox_heading(self):
         """Get the Searchable Combobox heading element."""
         logger.info("Getting Searchable Combobox heading element")
-        return self.page.locator(self.SEARCHABLE_COMBOBOX_HEADING)
+        return self.page.get_by_role("heading", name=self.SEARCHABLE_COMBOBOX_HEADING)
 
     def get_simple_dropdown_trigger(self):
         """Get the simple dropdown trigger button."""
         logger.info("Getting simple dropdown trigger element")
-        return self.page.locator(self.SIMPLE_DROPDOWN_TRIGGER)
+        return self.page.get_by_text(self.SIMPLE_DROPDOWN_TRIGGER)
 
     def click_simple_dropdown_trigger(self):
         """Click the simple dropdown trigger to open it."""
         trigger = self.get_simple_dropdown_trigger()
-        trigger.scroll_into_view_if_needed()
         logger.info("Clicking simple dropdown trigger")
         trigger.click()
 
@@ -61,14 +60,14 @@ class DropdownPage(BasePage):
     def get_selection_text(self):
         """Get the selection confirmation text element."""
         logger.info("Getting selection text element")
-        return self.page.locator(self.SELECTION_TEXT)
+        return self.page.get_by_text(self.SELECTION_TEXT)
 
     def get_combobox_trigger(self):
         """Get the searchable combobox trigger button."""
         logger.info("Getting combobox trigger element")
         # There are two combobox buttons: fruit selector (1st index 0)
         # and framework selector (2nd index 1). Get the second one.
-        return self.page.locator("//button[@role='combobox']").nth(1)
+        return self.page.get_by_role("combobox").nth(1)
 
     def click_combobox_trigger(self):
         """Click the combobox trigger to open it."""
@@ -80,7 +79,7 @@ class DropdownPage(BasePage):
     def get_combobox_input(self):
         """Get the combobox search input field."""
         logger.info("Getting combobox input element")
-        return self.page.locator(self.COMBOBOX_INPUT)
+        return self.page.get_by_placeholder(self.COMBOBOX_INPUT)
 
     def get_combobox_option(self, label):
         """Get a specific option from the searchable combobox.
@@ -92,15 +91,12 @@ class DropdownPage(BasePage):
             Locator: The locator for the option button element.
         """
         logger.info("Getting combobox option with label: %s", label)
-        # Options are rendered as buttons with class="font-normal"
-        return self.page.locator(
-            f"//button[contains(@class, 'font-normal') and contains(., '{label}')]"
-        )
+        return self.page.get_by_role("button", name=label, exact=True)
 
     def get_no_results_text(self):
         """Get the no results text element."""
         logger.info("Getting no results text element")
-        return self.page.locator(self.NO_RESULTS_TEXT)
+        return self.page.get_by_text(self.NO_RESULTS_TEXT)
 
     def select_simple_dropdown_option(self, value):
         """Select an option from the simple dropdown.

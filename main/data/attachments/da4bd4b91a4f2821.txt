@@ -1,0 +1,15 @@
+2026-08-08 11:04:39,491 - root - INFO - ================================================================================
+2026-08-08 11:04:39,491 - root - INFO - TEST START: test_click_paste_shows_toast[chromium]
+2026-08-08 11:04:39,587 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:04:40,719 - pages.base_page - INFO - Page load completed
+2026-08-08 11:04:40,719 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:04:40,719 - pages.home_page - INFO - Getting Menus card element
+2026-08-08 11:04:40,789 - pages.home_page - INFO - Clicked Menus card
+2026-08-08 11:04:40,792 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-08-08 11:04:40,792 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-08 11:04:41,653 - pages.menus_page - INFO - Clicking Paste menu item
+2026-08-08 11:04:41,653 - pages.menus_page - INFO - Getting Paste menu item element
+2026-08-08 11:04:41,654 - pages.menus_page - INFO - Getting menu item: Paste
+2026-08-08 11:04:41,915 - pages.menus_page - INFO - Getting toast notification element
+2026-08-08 11:04:42,207 - root - INFO - TEST END: test_click_paste_shows_toast[chromium]
+2026-08-08 11:04:42,207 - root - INFO - ================================================================================

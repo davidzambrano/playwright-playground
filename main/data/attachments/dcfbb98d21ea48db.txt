@@ -1,0 +1,10 @@
+2026-08-08 11:04:36,440 - root - INFO - ================================================================================
+2026-08-08 11:04:36,440 - root - INFO - TEST START: test_instruction_text_is_visible[chromium]
+2026-08-08 11:04:36,532 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:04:37,720 - pages.base_page - INFO - Page load completed
+2026-08-08 11:04:37,721 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:04:37,721 - pages.home_page - INFO - Getting Key Presses card element
+2026-08-08 11:04:37,790 - pages.home_page - INFO - Clicked Key Presses card
+2026-08-08 11:04:37,794 - pages.key_presses_page - INFO - Getting instruction text element
+2026-08-08 11:04:39,480 - root - INFO - TEST END: test_instruction_text_is_visible[chromium]
+2026-08-08 11:04:39,480 - root - INFO - ================================================================================

@@ -1,0 +1,9 @@
+2026-08-08 11:02:47,055 - root - INFO - ================================================================================
+2026-08-08 11:02:47,056 - root - INFO - TEST START: test_basic_auth_page_loads[chromium]
+2026-08-08 11:02:47,146 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:02:47,835 - pages.base_page - INFO - Page load completed
+2026-08-08 11:02:47,835 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:02:47,836 - pages.home_page - INFO - Getting Basic Auth card element
+2026-08-08 11:02:47,892 - pages.home_page - INFO - Clicked Basic Auth card
+2026-08-08 11:02:49,095 - root - INFO - TEST END: test_basic_auth_page_loads[chromium]
+2026-08-08 11:02:49,096 - root - INFO - ================================================================================

@@ -1,0 +1,12 @@
+2026-08-08 11:04:57,818 - root - INFO - ================================================================================
+2026-08-08 11:04:57,818 - root - INFO - TEST START: test_send_standard_key[chromium]
+2026-08-08 11:04:57,910 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:04:59,632 - pages.base_page - INFO - Page load completed
+2026-08-08 11:04:59,632 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:04:59,632 - pages.home_page - INFO - Getting Key Presses card element
+2026-08-08 11:04:59,732 - pages.home_page - INFO - Clicked Key Presses card
+2026-08-08 11:04:59,734 - pages.key_presses_page - INFO - Pressing key 'A' in input field
+2026-08-08 11:04:59,735 - pages.key_presses_page - INFO - Getting input field element
+2026-08-08 11:05:01,059 - pages.key_presses_page - INFO - Getting result value element
+2026-08-08 11:05:01,378 - root - INFO - TEST END: test_send_standard_key[chromium]
+2026-08-08 11:05:01,378 - root - INFO - ================================================================================

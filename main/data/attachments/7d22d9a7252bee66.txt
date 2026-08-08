@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_disabled_trigger_is_disabled[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:72 Navigated to home page
+INFO     pages.home_page:home_page.py:440 Getting Menus card element
+INFO     pages.home_page:home_page.py:450 Clicked Menus card
+INFO     pages.menus_page:menus_page.py:66 Getting Disabled menu trigger element
+INFO     root:conftest.py:53 TEST END: test_disabled_trigger_is_disabled[chromium]
+INFO     root:conftest.py:54 ================================================================================

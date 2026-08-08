@@ -1,0 +1,16 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_menu_hides_on_scroll_down[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:72 Navigated to home page
+INFO     pages.home_page:home_page.py:332 Getting Floating Menu card element
+INFO     pages.home_page:home_page.py:342 Clicked Floating Menu card
+INFO     pages.floating_menu_page:floating_menu_page.py:55 Scrolling down the page
+INFO     pages.floating_menu_page:floating_menu_page.py:43 Getting floating menu element
+INFO     pages.floating_menu_page:floating_menu_page.py:85 Floating menu hidden: False
+INFO     pages.floating_menu_page:floating_menu_page.py:43 Getting floating menu element
+INFO     pages.floating_menu_page:floating_menu_page.py:85 Floating menu hidden: True
+INFO     pages.floating_menu_page:floating_menu_page.py:43 Getting floating menu element
+INFO     pages.floating_menu_page:floating_menu_page.py:85 Floating menu hidden: True
+INFO     root:conftest.py:53 TEST END: test_menu_hides_on_scroll_down[chromium]
+INFO     root:conftest.py:54 ================================================================================

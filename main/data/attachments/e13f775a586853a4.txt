@@ -1,0 +1,30 @@
+2026-08-08 11:05:29,523 - root - INFO - ================================================================================
+2026-08-08 11:05:29,524 - root - INFO - TEST START: test_click_preferences_shows_toast[chromium]
+2026-08-08 11:05:29,622 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:05:30,231 - pages.base_page - INFO - Page load completed
+2026-08-08 11:05:30,231 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:05:30,232 - pages.home_page - INFO - Getting Menus card element
+2026-08-08 11:05:30,297 - pages.home_page - INFO - Clicked Menus card
+2026-08-08 11:05:30,299 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-08-08 11:05:30,300 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-08 11:05:31,194 - pages.menus_page - INFO - Clicking Preferences menu item
+2026-08-08 11:05:31,194 - pages.menus_page - INFO - Getting Preferences menu item element
+2026-08-08 11:05:31,195 - pages.menus_page - INFO - Getting menu item: Preferences
+2026-08-08 11:05:31,474 - pages.menus_page - INFO - Getting toast notification element
+2026-08-08 11:05:31,831 - root - INFO - TEST END: test_click_preferences_shows_toast[chromium]
+2026-08-08 11:05:31,831 - root - INFO - ================================================================================
+2026-08-08 11:05:31,837 - root - INFO - ================================================================================
+2026-08-08 11:05:31,837 - root - INFO - TEST START: test_click_preferences_shows_toast[chromium]
+2026-08-08 11:05:31,926 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:05:32,433 - pages.base_page - INFO - Page load completed
+2026-08-08 11:05:32,434 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:05:32,434 - pages.home_page - INFO - Getting Menus card element
+2026-08-08 11:05:32,513 - pages.home_page - INFO - Clicked Menus card
+2026-08-08 11:05:32,516 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-08-08 11:05:32,516 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-08 11:05:32,916 - pages.menus_page - INFO - Clicking Preferences menu item
+2026-08-08 11:05:32,917 - pages.menus_page - INFO - Getting Preferences menu item element
+2026-08-08 11:05:32,917 - pages.menus_page - INFO - Getting menu item: Preferences
+2026-08-08 11:05:33,178 - pages.menus_page - INFO - Getting toast notification element
+2026-08-08 11:05:33,523 - root - INFO - TEST END: test_click_preferences_shows_toast[chromium]
+2026-08-08 11:05:33,524 - root - INFO - ================================================================================

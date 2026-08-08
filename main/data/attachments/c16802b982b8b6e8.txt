@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_click_here_link_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:72 Navigated to home page
+INFO     pages.home_page:home_page.py:458 Getting Multiple Windows card element
+INFO     pages.home_page:home_page.py:468 Clicked Multiple Windows card
+INFO     pages.multiple_windows_page:multiple_windows_page.py:45 Getting Click Here link element
+INFO     root:conftest.py:53 TEST END: test_click_here_link_is_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

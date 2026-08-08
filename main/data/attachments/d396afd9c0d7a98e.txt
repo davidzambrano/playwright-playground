@@ -1,0 +1,12 @@
+2026-08-08 11:03:01,328 - root - INFO - ================================================================================
+2026-08-08 11:03:01,328 - root - INFO - TEST START: test_button_text[chromium]
+2026-08-08 11:03:01,425 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:03:02,381 - pages.base_page - INFO - Page load completed
+2026-08-08 11:03:02,381 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:03:02,382 - pages.home_page - INFO - Getting Add/Remove Elements card element
+2026-08-08 11:03:02,434 - pages.home_page - INFO - Clicked Add/Remove Elements card
+2026-08-08 11:03:04,281 - pages.add_remove_elements_page - INFO - Clicked Add Element button
+2026-08-08 11:03:04,330 - pages.add_remove_elements_page - INFO - Clicked Add Element button
+2026-08-08 11:03:04,382 - pages.add_remove_elements_page - INFO - Clicked Add Element button
+2026-08-08 11:03:04,711 - root - INFO - TEST END: test_button_text[chromium]
+2026-08-08 11:03:04,712 - root - INFO - ================================================================================

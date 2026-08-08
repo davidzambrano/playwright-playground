@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_file_input_is_present[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:72 Navigated to home page
+INFO     pages.home_page:home_page.py:314 Getting File Upload card element
+INFO     pages.home_page:home_page.py:324 Clicked File Upload card
+INFO     pages.file_upload_page:file_upload_page.py:47 Getting file input element
+INFO     root:conftest.py:53 TEST END: test_file_input_is_present[chromium]
+INFO     root:conftest.py:54 ================================================================================

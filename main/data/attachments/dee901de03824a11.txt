@@ -1,0 +1,13 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_page_content_is_correct[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:72 Navigated to home page
+INFO     pages.home_page:home_page.py:152 Getting Broken Images card element
+INFO     pages.home_page:home_page.py:523 Clicked Broken Images card
+INFO     pages.broken_images_page:broken_images_page.py:26 Getting Broken Images page heading element
+INFO     pages.broken_images_page:broken_images_page.py:26 Getting Broken Images page heading element
+INFO     pages.broken_images_page:broken_images_page.py:31 Getting Broken Images page description element
+INFO     pages.broken_images_page:broken_images_page.py:31 Getting Broken Images page description element
+INFO     root:conftest.py:53 TEST END: test_page_content_is_correct[chromium]
+INFO     root:conftest.py:54 ================================================================================

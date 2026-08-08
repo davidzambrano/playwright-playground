@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_hotspot_area_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:72 Navigated to home page
+INFO     pages.home_page:home_page.py:179 Getting Context Menu card element
+INFO     pages.home_page:home_page.py:553 Clicked Context Menu card
+INFO     pages.context_menu_page:context_menu_page.py:39 Getting hot-spot area element
+INFO     root:conftest.py:53 TEST END: test_hotspot_area_is_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

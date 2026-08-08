@@ -1,0 +1,15 @@
+2026-08-08 11:03:35,533 - root - INFO - ================================================================================
+2026-08-08 11:03:35,533 - root - INFO - TEST START: test_modal_triggers_on_exit_intent[chromium]
+2026-08-08 11:03:35,627 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-08 11:03:37,120 - pages.base_page - INFO - Page load completed
+2026-08-08 11:03:37,121 - pages.home_page - INFO - Navigated to home page
+2026-08-08 11:03:37,121 - pages.home_page - INFO - Getting Exit Intent card element
+2026-08-08 11:03:37,193 - pages.home_page - INFO - Clicked Exit Intent card
+2026-08-08 11:03:37,196 - pages.exit_intent_page - INFO - Waiting for client component hydration
+2026-08-08 11:03:37,196 - pages.exit_intent_page - INFO - Getting instruction text element
+2026-08-08 11:03:38,538 - pages.exit_intent_page - INFO - Triggering exit intent by dispatching mouseout event
+2026-08-08 11:03:38,583 - pages.modal_page - INFO - Waiting for modal to appear
+2026-08-08 11:03:38,585 - pages.modal_page - INFO - Getting modal element
+2026-08-08 11:03:38,599 - pages.modal_page - INFO - Getting modal element
+2026-08-08 11:03:38,943 - root - INFO - TEST END: test_modal_triggers_on_exit_intent[chromium]
+2026-08-08 11:03:38,943 - root - INFO - ================================================================================

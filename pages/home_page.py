@@ -43,6 +43,7 @@ class HomePage(BasePage):
     IFRAME_CARD_LOCATOR = "iFrame"
     INFINITE_SCROLL_CARD_LOCATOR = "Infinite Scroll"
     INPUTS_CARD_LOCATOR = "Inputs"
+    MENUS_CARD_LOCATOR = "Menus"
     MULTIPLE_WINDOWS_CARD_LOCATOR = "Multiple Windows"
 
     def _get_card(self, title: str):
@@ -429,6 +430,24 @@ class HomePage(BasePage):
         """
         self.get_inputs_card().click()
         logger.info("Clicked Inputs card")
+
+    def get_menus_card(self):
+        """Get the Menus card element.
+
+        Returns:
+            Locator: The locator for the Menus card element.
+        """
+        logger.info("Getting Menus card element")
+        return self._get_card(self.MENUS_CARD_LOCATOR)
+
+    def click_menus_card(self):
+        """Click the Menus card.
+
+        Returns:
+            None
+        """
+        self.get_menus_card().click()
+        logger.info("Clicked Menus card")
 
     def get_multiple_windows_card(self):
         """Get the Multiple Windows card element.

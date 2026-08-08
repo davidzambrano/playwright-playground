@@ -45,6 +45,7 @@ class HomePage(BasePage):
     INPUTS_CARD_LOCATOR = "Inputs"
     MENUS_CARD_LOCATOR = "Menus"
     MULTIPLE_WINDOWS_CARD_LOCATOR = "Multiple Windows"
+    NOTIFICATION_MESSAGES_CARD_LOCATOR = "Notification Messages"
 
     def _get_card(self, title: str):
         """Get a card link locator by its title text.
@@ -448,6 +449,24 @@ class HomePage(BasePage):
         """
         self.get_menus_card().click()
         logger.info("Clicked Menus card")
+
+    def get_notification_messages_card(self):
+        """Get the Notification Messages card element.
+
+        Returns:
+            Locator: The locator for the Notification Messages card element.
+        """
+        logger.info("Getting Notification Messages card element")
+        return self._get_card(self.NOTIFICATION_MESSAGES_CARD_LOCATOR)
+
+    def click_notification_messages_card(self):
+        """Click the Notification Messages card.
+
+        Returns:
+            None
+        """
+        self.get_notification_messages_card().click()
+        logger.info("Clicked Notification Messages card")
 
     def get_multiple_windows_card(self):
         """Get the Multiple Windows card element.

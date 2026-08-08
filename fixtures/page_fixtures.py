@@ -30,6 +30,7 @@ from pages.infinite_scroll_page import InfiniteScrollPage
 from pages.inputs_page import InputsPage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
 from pages.key_presses_page import KeyPressesPage
+from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
@@ -214,3 +215,9 @@ def inputs_page(page: Page) -> InputsPage:
 def multiple_windows_page(page: Page) -> MultipleWindowsPage:
     """Fixture for MultipleWindowsPage object."""
     return MultipleWindowsPage(page)
+
+
+@pytest.fixture(scope="function")
+def menus_page(page: Page) -> MenusPage:
+    """Fixture for MenusPage object."""
+    return MenusPage(page)

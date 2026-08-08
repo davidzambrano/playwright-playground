@@ -46,6 +46,7 @@ class HomePage(BasePage):
     MENUS_CARD_LOCATOR = "Menus"
     MULTIPLE_WINDOWS_CARD_LOCATOR = "Multiple Windows"
     NOTIFICATION_MESSAGES_CARD_LOCATOR = "Notification Messages"
+    REDIRECT_LINK_CARD_LOCATOR = "Redirect Link"
 
     def _get_card(self, title: str):
         """Get a card link locator by its title text.
@@ -449,6 +450,24 @@ class HomePage(BasePage):
         """
         self.get_menus_card().click()
         logger.info("Clicked Menus card")
+
+    def get_redirect_link_card(self):
+        """Get the Redirect Link card element.
+
+        Returns:
+            Locator: The locator for the Redirect Link card element.
+        """
+        logger.info("Getting Redirect Link card element")
+        return self._get_card(self.REDIRECT_LINK_CARD_LOCATOR)
+
+    def click_redirect_link_card(self):
+        """Click the Redirect Link card.
+
+        Returns:
+            None
+        """
+        self.get_redirect_link_card().click()
+        logger.info("Clicked Redirect Link card")
 
     def get_notification_messages_card(self):
         """Get the Notification Messages card element.

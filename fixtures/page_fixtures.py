@@ -32,6 +32,9 @@ from pages.javascript_alerts_page import JavaScriptAlertsPage
 from pages.key_presses_page import KeyPressesPage
 from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
+from pages.notification_messages_page import NotificationMessagesPage
+from pages.redirect_link_page import RedirectLinkPage
+from pages.secure_file_download_page import SecureFileDownloadPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
@@ -221,3 +224,21 @@ def multiple_windows_page(page: Page) -> MultipleWindowsPage:
 def menus_page(page: Page) -> MenusPage:
     """Fixture for MenusPage object."""
     return MenusPage(page)
+
+
+@pytest.fixture(scope="function")
+def notification_messages_page(page: Page) -> NotificationMessagesPage:
+    """Fixture for NotificationMessagesPage object."""
+    return NotificationMessagesPage(page)
+
+
+@pytest.fixture(scope="function")
+def redirect_link_page(page: Page) -> RedirectLinkPage:
+    """Fixture for RedirectLinkPage object."""
+    return RedirectLinkPage(page)
+
+
+@pytest.fixture(scope="function")
+def secure_file_download_page(page: Page) -> SecureFileDownloadPage:
+    """Fixture for SecureFileDownloadPage object."""
+    return SecureFileDownloadPage(page)

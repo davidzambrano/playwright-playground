@@ -1,6 +1,7 @@
 """Page object for the Exit Intent page."""
 
 import logging
+import re
 
 from .modal_page import ModalPage
 
@@ -11,10 +12,10 @@ class ExitIntentPage(ModalPage):
     """Page object for the Exit Intent page."""
 
     # Locators
-    PAGE_HEADING = "//h1"
-    INSTRUCTION_TEXT = "//p[contains(text(), 'Move your mouse out of the top')]"
-    MODAL_TITLE = '//h2[contains(text(), "Wait! Don\'t Go!")]'
-    MODAL_BODY = "//*[contains(text(), 'about to leave')]"
+    PAGE_HEADING = re.compile("Exit Intent")
+    INSTRUCTION_TEXT = re.compile("Move your mouse out of the top")
+    MODAL_TITLE = re.compile("Wait! Don't Go!")
+    MODAL_BODY = re.compile("about to leave")
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -23,7 +24,7 @@ class ExitIntentPage(ModalPage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def trigger_exit_intent(self):
         """Trigger the exit intent modal by dispatching a mouseout event
@@ -55,4 +56,22 @@ class ExitIntentPage(ModalPage):
             Locator: The locator for the instruction text element.
         """
         logger.info("Getting instruction text element")
-        return self.page.locator(self.INSTRUCTION_TEXT)
+        return self.page.get_by_text(self.INSTRUCTION_TEXT)
+
+    def get_modal_title(self):
+        """Get the modal title element.
+
+        Returns:
+            Locator: The locator for the modal title element.
+        """
+        logger.info("Getting modal title element")
+        return self.get_modal().get_by_text(self.MODAL_TITLE)
+
+    def get_modal_body(self):
+        """Get the modal body element.
+
+        Returns:
+            Locator: The locator for the modal body element.
+        """
+        logger.info("Getting modal body element")
+        return self.get_modal().get_by_text(self.MODAL_BODY)

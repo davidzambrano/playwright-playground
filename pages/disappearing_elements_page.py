@@ -1,6 +1,7 @@
 """Page object for the Disappearing Elements page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -14,15 +15,9 @@ class DisappearingElementsPage(BasePage):
     """
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'Disappearing Elements')]"
-    INSTRUCTION_TEXT = "//p[contains(text(), 'elements on a page change')]"
-    TAB_BUTTON = "//button[normalize-space()='{}']"
-    CONTENT_AREA = "//div[contains(@class, 'min-h')]"
-    HOME_TAB = "//button[normalize-space()='Home']"
-    ABOUT_TAB = "//button[normalize-space()='About']"
-    CONTACT_US_TAB = "//button[normalize-space()='Contact Us']"
-    PORTFOLIO_TAB = "//button[normalize-space()='Portfolio']"
-    GALLERY_TAB = "//button[normalize-space()='Gallery']"
+    PAGE_HEADING = re.compile("Disappearing Elements")
+    INSTRUCTION_TEXT = re.compile("elements on a page change")
+    CONTENT_AREA = "main"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -31,7 +26,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_instruction_text(self):
         """Get the instruction text element.
@@ -40,7 +35,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the instruction text element.
         """
         logger.info("Getting instruction text element")
-        return self.page.locator(self.INSTRUCTION_TEXT)
+        return self.page.get_by_text(self.INSTRUCTION_TEXT)
 
     def get_tab_button(self, tab_name):
         """Get a specific tab button element.
@@ -52,7 +47,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the tab button element.
         """
         logger.info("Getting %s tab button element", tab_name)
-        return self.page.locator(self.TAB_BUTTON.format(tab_name))
+        return self.page.get_by_role("button", name=tab_name, exact=True)
 
     def get_home_tab(self):
         """Get the Home tab button element.
@@ -61,7 +56,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the Home tab button element.
         """
         logger.info("Getting Home tab button element")
-        return self.page.locator(self.HOME_TAB)
+        return self.get_tab_button("Home")
 
     def get_about_tab(self):
         """Get the About tab button element.
@@ -70,7 +65,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the About tab button element.
         """
         logger.info("Getting About tab button element")
-        return self.page.locator(self.ABOUT_TAB)
+        return self.get_tab_button("About")
 
     def get_contact_us_tab(self):
         """Get the Contact Us tab button element.
@@ -79,7 +74,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the Contact Us tab button element.
         """
         logger.info("Getting Contact Us tab button element")
-        return self.page.locator(self.CONTACT_US_TAB)
+        return self.get_tab_button("Contact Us")
 
     def get_portfolio_tab(self):
         """Get the Portfolio tab button element.
@@ -88,7 +83,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the Portfolio tab button element.
         """
         logger.info("Getting Portfolio tab button element")
-        return self.page.locator(self.PORTFOLIO_TAB)
+        return self.get_tab_button("Portfolio")
 
     def get_gallery_tab(self):
         """Get the Gallery tab button element.
@@ -97,7 +92,7 @@ class DisappearingElementsPage(BasePage):
             Locator: The locator for the Gallery tab button element.
         """
         logger.info("Getting Gallery tab button element")
-        return self.page.locator(self.GALLERY_TAB)
+        return self.get_tab_button("Gallery")
 
     def get_content_area(self):
         """Get the content area element.

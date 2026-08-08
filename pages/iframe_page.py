@@ -1,6 +1,7 @@
 """Page object for the iFrame page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -11,10 +12,10 @@ class IFramePage(BasePage):
     """Page object for the iFrame page."""
 
     # Locators
-    PAGE_HEADING = "//h1[contains(text(), 'iFrame')]"
+    PAGE_HEADING = re.compile("iFrame")
     IFRAME = "#mce_0_ifr"
     IFRAME_BODY = "body"
-    BACK_TO_HOME_LINK = "//a[contains(text(), 'Back to Home')]"
+    BACK_TO_HOME_LINK = "Back to Home"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -23,7 +24,7 @@ class IFramePage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_iframe_element(self):
         """Get the iFrame element (not frame locator).
@@ -94,4 +95,4 @@ class IFramePage(BasePage):
             Locator: The locator for the Back to Home link element.
         """
         logger.info("Getting Back to Home link element")
-        return self.page.locator(self.BACK_TO_HOME_LINK)
+        return self.page.get_by_role("link", name=self.BACK_TO_HOME_LINK)

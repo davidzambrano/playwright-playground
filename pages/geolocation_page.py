@@ -1,6 +1,7 @@
 """Page object for the Geolocation page."""
 
 import logging
+import re
 
 from .base_page import BasePage
 
@@ -11,12 +12,12 @@ class GeolocationPage(BasePage):
     """Page object for the Geolocation page."""
 
     # Locators
-    PAGE_HEADING = "//h1"
-    WHERE_AM_I_BUTTON = "//button[normalize-space()='Where am I?']"
+    PAGE_HEADING = re.compile("Geolocation")
+    WHERE_AM_I_BUTTON = "Where am I?"
     LATITUDE_VALUE = "#lat-value"
     LONGITUDE_VALUE = "#long-value"
-    ERROR_MESSAGE = "//p[contains(@class, 'text-destructive')]"
-    GOOGLE_MAPS_LINK = "//a[contains(text(), 'See it on Google')]"
+    ERROR_MESSAGE = "p.text-destructive"
+    GOOGLE_MAPS_LINK = "See it on Google"
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -25,7 +26,7 @@ class GeolocationPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING)
 
     def get_where_am_i_button(self):
         """Get the Where am I? button element.
@@ -34,7 +35,7 @@ class GeolocationPage(BasePage):
             Locator: The locator for the Where am I? button.
         """
         logger.info("Getting Where am I? button element")
-        return self.page.locator(self.WHERE_AM_I_BUTTON)
+        return self.page.get_by_role("button", name=self.WHERE_AM_I_BUTTON)
 
     def click_where_am_i(self):
         """Click the Where am I? button.
@@ -79,4 +80,4 @@ class GeolocationPage(BasePage):
             Locator: The locator for the Google Maps link.
         """
         logger.info("Getting Google Maps link element")
-        return self.page.locator(self.GOOGLE_MAPS_LINK)
+        return self.page.get_by_role("link", name=self.GOOGLE_MAPS_LINK)

@@ -2,6 +2,7 @@
 
 import logging
 import os
+import re
 import tempfile
 
 from .base_page import BasePage
@@ -13,12 +14,11 @@ class FileUploadPage(BasePage):
     """Page object for the File Upload page."""
 
     # Locators
-    PAGE_HEADING = "//h1"
-    UPLOADER_HEADING = "//h2[contains(text(), 'File Uploader')]"
+    PAGE_HEADING = "File Upload"
+    UPLOADER_HEADING = "File Uploader"
     FILE_INPUT = "#file-upload"
-    UPLOAD_BUTTON = "//button[normalize-space()='Upload']"
-    UPLOADED_SECTION = "//div[.//h3[contains(text(), 'File Uploaded')]]"
-    UPLOADED_FILE_NAME = "//div[.//h3[contains(text(), 'File Uploaded')]]//p"
+    UPLOAD_BUTTON = "Upload"
+    UPLOADED_SECTION = re.compile("File Uploaded")
 
     def get_page_heading(self):
         """Get the page heading element.
@@ -27,7 +27,7 @@ class FileUploadPage(BasePage):
             Locator: The locator for the page heading element.
         """
         logger.info("Getting page heading element")
-        return self.page.locator(self.PAGE_HEADING)
+        return self.page.get_by_role("heading", name=self.PAGE_HEADING, exact=True)
 
     def get_uploader_heading(self):
         """Get the uploader heading element.
@@ -36,7 +36,7 @@ class FileUploadPage(BasePage):
             Locator: The locator for the uploader heading element.
         """
         logger.info("Getting uploader heading element")
-        return self.page.locator(self.UPLOADER_HEADING)
+        return self.page.get_by_role("heading", name=self.UPLOADER_HEADING)
 
     def get_file_input(self):
         """Get the file input element.
@@ -54,7 +54,7 @@ class FileUploadPage(BasePage):
             Locator: The locator for the Upload button element.
         """
         logger.info("Getting Upload button element")
-        return self.page.locator(self.UPLOAD_BUTTON)
+        return self.page.get_by_role("button", name=self.UPLOAD_BUTTON)
 
     def get_uploaded_section(self):
         """Get the uploaded file section element.
@@ -63,7 +63,7 @@ class FileUploadPage(BasePage):
             Locator: The locator for the uploaded file section element.
         """
         logger.info("Getting uploaded section element")
-        return self.page.locator(self.UPLOADED_SECTION)
+        return self.page.get_by_text(self.UPLOADED_SECTION)
 
     def get_uploaded_file_name(self):
         """Get the uploaded file name element.
@@ -72,7 +72,7 @@ class FileUploadPage(BasePage):
             Locator: The locator for the uploaded file name element.
         """
         logger.info("Getting uploaded file name element")
-        return self.page.locator(self.UPLOADED_FILE_NAME)
+        return self.page.get_by_text(self.UPLOADED_SECTION).locator("..").locator("p")
 
     def upload_file(self, file_path: str):
         """Set the file input to the given file path.

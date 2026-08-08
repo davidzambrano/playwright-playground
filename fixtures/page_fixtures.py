@@ -34,6 +34,7 @@ from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
 from pages.notification_messages_page import NotificationMessagesPage
 from pages.redirect_link_page import RedirectLinkPage
+from pages.secure_file_download_page import SecureFileDownloadPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
@@ -235,3 +236,9 @@ def notification_messages_page(page: Page) -> NotificationMessagesPage:
 def redirect_link_page(page: Page) -> RedirectLinkPage:
     """Fixture for RedirectLinkPage object."""
     return RedirectLinkPage(page)
+
+
+@pytest.fixture(scope="function")
+def secure_file_download_page(page: Page) -> SecureFileDownloadPage:
+    """Fixture for SecureFileDownloadPage object."""
+    return SecureFileDownloadPage(page)

@@ -1,0 +1,17 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_hover_shows_menu_items[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:443 Getting Menus card element
+INFO     pages.home_page:home_page.py:453 Clicked Menus card
+INFO     pages.menus_page:menus_page.py:180 Hovering over Enabled menu trigger
+INFO     pages.menus_page:menus_page.py:57 Getting Enabled menu trigger element
+INFO     pages.menus_page:menus_page.py:87 Getting Copy menu item element
+INFO     pages.menus_page:menus_page.py:78 Getting menu item: Copy
+INFO     pages.menus_page:menus_page.py:96 Getting Paste menu item element
+INFO     pages.menus_page:menus_page.py:78 Getting menu item: Paste
+INFO     pages.menus_page:menus_page.py:105 Getting Preferences menu item element
+INFO     pages.menus_page:menus_page.py:78 Getting menu item: Preferences
+INFO     root:conftest.py:53 TEST END: test_hover_shows_menu_items[chromium]
+INFO     root:conftest.py:54 ================================================================================

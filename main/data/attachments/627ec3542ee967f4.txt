@@ -1,0 +1,17 @@
+2026-08-13 17:40:47,273 - root - INFO - ================================================================================
+2026-08-13 17:40:47,273 - root - INFO - TEST START: test_content_changes_on_randomize[chromium]
+2026-08-13 17:40:47,352 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-13 17:40:48,889 - pages.base_page - INFO - Page load completed
+2026-08-13 17:40:48,890 - pages.home_page - INFO - Navigated to home page
+2026-08-13 17:40:48,890 - pages.home_page - INFO - Getting Dynamic Content card element
+2026-08-13 17:40:48,957 - pages.home_page - INFO - Clicked Dynamic Content card
+2026-08-13 17:40:48,958 - pages.dynamic_content_page - INFO - Getting text content of all items
+2026-08-13 17:40:48,959 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-08-13 17:40:49,800 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-08-13 17:40:49,852 - pages.dynamic_content_page - INFO - Clicking Randomize Content button
+2026-08-13 17:40:49,852 - pages.dynamic_content_page - INFO - Getting Randomize Content button element
+2026-08-13 17:40:49,887 - pages.dynamic_content_page - INFO - Getting text content of all items
+2026-08-13 17:40:49,887 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-08-13 17:40:49,898 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-08-13 17:40:50,192 - root - INFO - TEST END: test_content_changes_on_randomize[chromium]
+2026-08-13 17:40:50,192 - root - INFO - ================================================================================

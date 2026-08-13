@@ -1,0 +1,36 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_click_excel_submenu_shows_toast[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:443 Getting Menus card element
+INFO     pages.home_page:home_page.py:453 Clicked Menus card
+INFO     pages.menus_page:menus_page.py:180 Hovering over Enabled menu trigger
+INFO     pages.menus_page:menus_page.py:57 Getting Enabled menu trigger element
+INFO     pages.menus_page:menus_page.py:225 Hovering over Downloads submenu trigger
+INFO     pages.menus_page:menus_page.py:123 Getting Downloads submenu trigger element
+INFO     pages.menus_page:menus_page.py:78 Getting menu item: Downloads
+INFO     pages.menus_page:menus_page.py:252 Clicking Excel submenu item
+INFO     pages.menus_page:menus_page.py:162 Getting Excel submenu item element
+INFO     pages.menus_page:menus_page.py:135 Getting submenu item: Excel
+INFO     pages.menus_page:menus_page.py:171 Getting toast notification element
+INFO     root:conftest.py:53 TEST END: test_click_excel_submenu_shows_toast[chromium]
+INFO     root:conftest.py:54 ================================================================================
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_click_excel_submenu_shows_toast[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:443 Getting Menus card element
+INFO     pages.home_page:home_page.py:453 Clicked Menus card
+INFO     pages.menus_page:menus_page.py:180 Hovering over Enabled menu trigger
+INFO     pages.menus_page:menus_page.py:57 Getting Enabled menu trigger element
+INFO     pages.menus_page:menus_page.py:225 Hovering over Downloads submenu trigger
+INFO     pages.menus_page:menus_page.py:123 Getting Downloads submenu trigger element
+INFO     pages.menus_page:menus_page.py:78 Getting menu item: Downloads
+INFO     pages.menus_page:menus_page.py:252 Clicking Excel submenu item
+INFO     pages.menus_page:menus_page.py:162 Getting Excel submenu item element
+INFO     pages.menus_page:menus_page.py:135 Getting submenu item: Excel
+INFO     pages.menus_page:menus_page.py:171 Getting toast notification element
+INFO     root:conftest.py:53 TEST END: test_click_excel_submenu_shows_toast[chromium]
+INFO     root:conftest.py:54 ================================================================================

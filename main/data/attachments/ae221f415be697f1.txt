@@ -1,0 +1,13 @@
+2026-08-13 17:39:48,349 - root - INFO - ================================================================================
+2026-08-13 17:39:48,349 - root - INFO - TEST START: test_click_portfolio_tab_shows_content[chromium]
+2026-08-13 17:39:48,429 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-13 17:39:50,311 - pages.base_page - INFO - Page load completed
+2026-08-13 17:39:50,311 - pages.home_page - INFO - Navigated to home page
+2026-08-13 17:39:50,311 - pages.home_page - INFO - Getting Disappearing Elements card element
+2026-08-13 17:39:50,378 - pages.home_page - INFO - Clicked Disappearing Elements card
+2026-08-13 17:39:50,381 - pages.disappearing_elements_page - INFO - Clicking Portfolio tab
+2026-08-13 17:39:50,381 - pages.disappearing_elements_page - INFO - Getting Portfolio tab button element
+2026-08-13 17:39:50,381 - pages.disappearing_elements_page - INFO - Getting Portfolio tab button element
+2026-08-13 17:39:51,705 - pages.disappearing_elements_page - INFO - Getting content area element
+2026-08-13 17:39:52,054 - root - INFO - TEST END: test_click_portfolio_tab_shows_content[chromium]
+2026-08-13 17:39:52,054 - root - INFO - ================================================================================

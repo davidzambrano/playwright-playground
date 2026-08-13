@@ -1,0 +1,16 @@
+2026-08-13 17:39:48,779 - root - INFO - ================================================================================
+2026-08-13 17:39:48,779 - root - INFO - TEST START: test_drag_item_from_d_to_a[chromium]
+2026-08-13 17:39:48,873 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-13 17:39:50,987 - pages.base_page - INFO - Page load completed
+2026-08-13 17:39:50,987 - pages.home_page - INFO - Navigated to home page
+2026-08-13 17:39:50,987 - pages.home_page - INFO - Getting Drag and Drop card element
+2026-08-13 17:39:51,058 - pages.home_page - INFO - Clicked Drag and Drop card
+2026-08-13 17:39:51,061 - pages.drag_and_drop_page - INFO - Getting column D drop zone element
+2026-08-13 17:39:51,061 - pages.drag_and_drop_page - INFO - Dragging item to column
+2026-08-13 17:39:51,062 - pages.drag_and_drop_page - INFO - Getting draggable item element
+2026-08-13 17:39:52,965 - pages.drag_and_drop_page - INFO - Getting column A drop zone element
+2026-08-13 17:39:52,966 - pages.drag_and_drop_page - INFO - Dragging item to column
+2026-08-13 17:39:52,966 - pages.drag_and_drop_page - INFO - Getting draggable item element
+2026-08-13 17:39:53,065 - pages.drag_and_drop_page - INFO - Getting column A drop zone element
+2026-08-13 17:39:53,352 - root - INFO - TEST END: test_drag_item_from_d_to_a[chromium]
+2026-08-13 17:39:53,353 - root - INFO - ================================================================================

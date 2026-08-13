@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_description_and_canvas_are_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:146 Getting Challenging DOM card element
+INFO     pages.home_page:home_page.py:571 Clicked Challenging DOM card
+INFO     pages.challenging_dom_page:challenging_dom_page.py:27 Getting Challenging DOM page description element
+INFO     pages.challenging_dom_page:challenging_dom_page.py:37 Getting canvas element
+INFO     root:conftest.py:53 TEST END: test_description_and_canvas_are_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,12 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_send_standard_key[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:227 Getting Key Presses card element
+INFO     pages.home_page:home_page.py:660 Clicked Key Presses card
+INFO     pages.key_presses_page:key_presses_page.py:78 Pressing key 'A' in input field
+INFO     pages.key_presses_page:key_presses_page.py:48 Getting input field element
+INFO     pages.key_presses_page:key_presses_page.py:66 Getting result value element
+INFO     root:conftest.py:53 TEST END: test_send_standard_key[chromium]
+INFO     root:conftest.py:54 ================================================================================

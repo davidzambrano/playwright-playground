@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_download_file[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:299 Getting File Download card element
+INFO     pages.home_page:home_page.py:309 Clicked File Download card
+INFO     pages.file_download_page:file_download_page.py:52 Clicking Download File button
+INFO     pages.file_download_page:file_download_page.py:43 Getting Download File button element
+INFO     root:conftest.py:53 TEST END: test_download_file[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,12 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_set_range_slider_max[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:371 Getting Horizontal Slider card element
+INFO     pages.home_page:home_page.py:381 Clicked Horizontal Slider card
+INFO     pages.horizontal_slider_page:horizontal_slider_page.py:127 Setting range slider maximum to 90
+INFO     pages.horizontal_slider_page:horizontal_slider_page.py:55 Getting range slider maximum thumb element
+INFO     pages.horizontal_slider_page:horizontal_slider_page.py:73 Getting range values element
+INFO     root:conftest.py:53 TEST END: test_set_range_slider_max[chromium]
+INFO     root:conftest.py:54 ================================================================================

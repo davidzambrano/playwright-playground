@@ -1,0 +1,20 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_required_field_empty_shows_error[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:425 Getting Inputs card element
+INFO     pages.home_page:home_page.py:435 Clicked Inputs card
+INFO     pages.inputs_page:inputs_page.py:127 Filling Email input: john@example.com
+INFO     pages.inputs_page:inputs_page.py:49 Getting Email input field
+INFO     pages.inputs_page:inputs_page.py:139 Filling Password input
+INFO     pages.inputs_page:inputs_page.py:58 Getting Password input field
+INFO     pages.inputs_page:inputs_page.py:151 Filling Number input: 42
+INFO     pages.inputs_page:inputs_page.py:67 Getting Number input field
+INFO     pages.inputs_page:inputs_page.py:163 Filling Website input: https://example.com
+INFO     pages.inputs_page:inputs_page.py:76 Getting Website input field
+INFO     pages.inputs_page:inputs_page.py:172 Clicking Submit button
+INFO     pages.inputs_page:inputs_page.py:85 Getting Submit button
+INFO     pages.inputs_page:inputs_page.py:94 Getting toast title
+INFO     root:conftest.py:53 TEST END: test_required_field_empty_shows_error[chromium]
+INFO     root:conftest.py:54 ================================================================================

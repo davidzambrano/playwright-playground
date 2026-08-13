@@ -1,0 +1,13 @@
+2026-08-13 17:40:36,586 - root - INFO - ================================================================================
+2026-08-13 17:40:36,586 - root - INFO - TEST START: test_google_maps_link_appears[chromium]
+2026-08-13 17:40:36,683 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-13 17:40:37,546 - pages.base_page - INFO - Page load completed
+2026-08-13 17:40:37,547 - pages.home_page - INFO - Navigated to home page
+2026-08-13 17:40:37,547 - pages.home_page - INFO - Getting Geolocation card element
+2026-08-13 17:40:37,629 - pages.home_page - INFO - Clicked Geolocation card
+2026-08-13 17:40:37,657 - pages.geolocation_page - INFO - Clicking Where am I? button
+2026-08-13 17:40:37,657 - pages.geolocation_page - INFO - Getting Where am I? button element
+2026-08-13 17:40:38,988 - pages.geolocation_page - INFO - Getting Google Maps link element
+2026-08-13 17:40:38,996 - pages.geolocation_page - INFO - Getting Google Maps link element
+2026-08-13 17:40:39,335 - root - INFO - TEST END: test_google_maps_link_appears[chromium]
+2026-08-13 17:40:39,335 - root - INFO - ================================================================================

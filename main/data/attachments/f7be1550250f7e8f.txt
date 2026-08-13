@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_default_checkbox_states[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:164 Getting Checkboxes card element
+INFO     pages.home_page:home_page.py:590 Clicked Checkboxes card
+INFO     pages.checkboxes_page:checkboxes_page.py:36 Getting checkbox1 element
+INFO     pages.checkboxes_page:checkboxes_page.py:41 Getting checkbox2 element
+INFO     root:conftest.py:53 TEST END: test_default_checkbox_states[chromium]
+INFO     root:conftest.py:54 ================================================================================

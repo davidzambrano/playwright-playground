@@ -1,0 +1,11 @@
+2026-08-13 17:39:36,940 - root - INFO - ================================================================================
+2026-08-13 17:39:36,941 - root - INFO - TEST START: test_home_tab_always_present[chromium]
+2026-08-13 17:39:37,035 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-13 17:39:38,677 - pages.base_page - INFO - Page load completed
+2026-08-13 17:39:38,677 - pages.home_page - INFO - Navigated to home page
+2026-08-13 17:39:38,678 - pages.home_page - INFO - Getting Disappearing Elements card element
+2026-08-13 17:39:38,747 - pages.home_page - INFO - Clicked Disappearing Elements card
+2026-08-13 17:39:38,750 - pages.disappearing_elements_page - INFO - Getting Home tab button element
+2026-08-13 17:39:38,750 - pages.disappearing_elements_page - INFO - Getting Home tab button element
+2026-08-13 17:39:40,983 - root - INFO - TEST END: test_home_tab_always_present[chromium]
+2026-08-13 17:39:40,984 - root - INFO - ================================================================================

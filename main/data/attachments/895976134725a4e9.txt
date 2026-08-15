@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_click_gallery_tab_shows_content_if_present[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:218 Getting Disappearing Elements card element
+INFO     pages.home_page:home_page.py:650 Clicked Disappearing Elements card
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:94 Getting Gallery tab button element
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:49 Getting Gallery tab button element
+INFO     root:conftest.py:53 TEST END: test_click_gallery_tab_shows_content_if_present[chromium]
+INFO     root:conftest.py:54 ================================================================================

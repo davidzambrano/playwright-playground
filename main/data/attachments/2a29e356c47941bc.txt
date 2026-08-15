@@ -1,0 +1,17 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_images_change_on_randomize[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:254 Getting Dynamic Content card element
+INFO     pages.home_page:home_page.py:690 Clicked Dynamic Content card
+INFO     pages.dynamic_content_page:dynamic_content_page.py:95 Getting src attributes of all images
+INFO     pages.dynamic_content_page:dynamic_content_page.py:66 Getting content image elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:66 Getting content image elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:75 Clicking Randomize Content button
+INFO     pages.dynamic_content_page:dynamic_content_page.py:48 Getting Randomize Content button element
+INFO     pages.dynamic_content_page:dynamic_content_page.py:95 Getting src attributes of all images
+INFO     pages.dynamic_content_page:dynamic_content_page.py:66 Getting content image elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:66 Getting content image elements
+INFO     root:conftest.py:53 TEST END: test_images_change_on_randomize[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,12 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_floating_menu_is_visible_on_load[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:335 Getting Floating Menu card element
+INFO     pages.home_page:home_page.py:345 Clicked Floating Menu card
+INFO     pages.floating_menu_page:floating_menu_page.py:43 Getting floating menu element
+INFO     pages.floating_menu_page:floating_menu_page.py:43 Getting floating menu element
+INFO     pages.floating_menu_page:floating_menu_page.py:96 Floating menu visible: True
+INFO     root:conftest.py:53 TEST END: test_floating_menu_is_visible_on_load[chromium]
+INFO     root:conftest.py:54 ================================================================================

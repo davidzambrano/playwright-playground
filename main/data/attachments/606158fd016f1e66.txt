@@ -1,0 +1,16 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_content_changes_on_refresh[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:75 Navigated to home page
+INFO     pages.home_page:home_page.py:254 Getting Dynamic Content card element
+INFO     pages.home_page:home_page.py:690 Clicked Dynamic Content card
+INFO     pages.dynamic_content_page:dynamic_content_page.py:84 Getting text content of all items
+INFO     pages.dynamic_content_page:dynamic_content_page.py:57 Getting content item text elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:57 Getting content item text elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:57 Getting content item text elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:84 Getting text content of all items
+INFO     pages.dynamic_content_page:dynamic_content_page.py:57 Getting content item text elements
+INFO     pages.dynamic_content_page:dynamic_content_page.py:57 Getting content item text elements
+INFO     root:conftest.py:53 TEST END: test_content_changes_on_refresh[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,10 @@
+2026-08-15 11:44:22,079 - root - INFO - ================================================================================
+2026-08-15 11:44:22,079 - root - INFO - TEST START: test_instruction_text_is_visible[chromium]
+2026-08-15 11:44:22,175 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-15 11:44:22,845 - pages.base_page - INFO - Page load completed
+2026-08-15 11:44:22,845 - pages.home_page - INFO - Navigated to home page
+2026-08-15 11:44:22,845 - pages.home_page - INFO - Getting Multiple Windows card element
+2026-08-15 11:44:22,916 - pages.home_page - INFO - Clicked Multiple Windows card
+2026-08-15 11:44:22,919 - pages.multiple_windows_page - INFO - Getting instruction text element
+2026-08-15 11:44:24,119 - root - INFO - TEST END: test_instruction_text_is_visible[chromium]
+2026-08-15 11:44:24,119 - root - INFO - ================================================================================

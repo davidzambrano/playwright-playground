@@ -1,0 +1,13 @@
+2026-08-15 11:41:21,535 - root - INFO - ================================================================================
+2026-08-15 11:41:21,536 - root - INFO - TEST START: test_active_version_card_body_content_is_displayed[chromium]
+2026-08-15 11:41:21,634 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-15 11:41:24,602 - pages.base_page - INFO - Page load completed
+2026-08-15 11:41:24,602 - pages.home_page - INFO - Navigated to home page
+2026-08-15 11:41:24,603 - pages.home_page - INFO - Getting A/B Testing card element
+2026-08-15 11:41:24,671 - pages.home_page - INFO - Clicked A/B Testing card
+2026-08-15 11:41:24,673 - pages.ab_testing_page - INFO - Getting Version A title element
+2026-08-15 11:41:24,673 - pages.ab_testing_page - INFO - Getting Version B title element
+2026-08-15 11:41:26,029 - pages.ab_testing_page - INFO - Getting Version A card body paragraph element
+2026-08-15 11:41:26,037 - pages.ab_testing_page - INFO - Getting Version A card body paragraph element
+2026-08-15 11:41:26,368 - root - INFO - TEST END: test_active_version_card_body_content_is_displayed[chromium]
+2026-08-15 11:41:26,369 - root - INFO - ================================================================================

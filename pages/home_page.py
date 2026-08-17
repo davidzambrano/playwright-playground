@@ -14,7 +14,7 @@ class HomePage(BasePage):
     # HomePage is a navigation hub with multiple cards, each requiring getter and clicker methods
     # Following the project's Page Object Model pattern with clear separation of concerns
 
-    # Card titles (used with get_by_role("link", name=...))
+    # Card titles (used with get_by_text(title, exact=True))
     SLOW_RESOURCES_CARD_LOCATOR = "Slow Resources"
     STALE_ELEMENT_CARD_LOCATOR = "Stale Element"
     ADD_REMOVE_ELEMENT_CARD_LOCATOR = "Add/Remove Elements"
@@ -28,6 +28,7 @@ class HomePage(BasePage):
     DYNAMIC_CONTROLS_CARD_LOCATOR = "Dynamic Controls"
     HOVERS_CARD_LOCATOR = "Hovers"
     JAVASCRIPT_ALERTS_CARD_LOCATOR = "JavaScript Alerts"
+    JAVASCRIPT_ONLOAD_ERROR_CARD_LOCATOR = "JavaScript onload event error"
     DISAPPEARING_ELEMENTS_CARD_LOCATOR = "Disappearing Elements"
     KEY_PRESSES_CARD_LOCATOR = "Key Presses"
     DRAG_AND_DROP_CARD_LOCATOR = "Drag and Drop"
@@ -208,6 +209,24 @@ class HomePage(BasePage):
         """
         logger.info("Getting JavaScript Alerts card element")
         return self._get_card(self.JAVASCRIPT_ALERTS_CARD_LOCATOR)
+
+    def get_javascript_onload_error_card(self):
+        """Get the JavaScript onload event error card element.
+
+        Returns:
+            Locator: The locator for the JavaScript onload event error card element.
+        """
+        logger.info("Getting JavaScript onload event error card element")
+        return self._get_card(self.JAVASCRIPT_ONLOAD_ERROR_CARD_LOCATOR)
+
+    def click_javascript_onload_error_card(self):
+        """Click the JavaScript onload event error card.
+
+        Returns:
+            None
+        """
+        self.get_javascript_onload_error_card().click()
+        logger.info("Clicked JavaScript onload event error card")
 
     def get_disappearing_elements_card(self):
         """Get the Disappearing Elements card element.

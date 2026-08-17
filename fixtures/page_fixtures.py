@@ -29,6 +29,7 @@ from pages.iframe_page import IFramePage
 from pages.infinite_scroll_page import InfiniteScrollPage
 from pages.inputs_page import InputsPage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
+from pages.javascript_onload_error_page import JavascriptOnloadErrorPage
 from pages.key_presses_page import KeyPressesPage
 from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
@@ -39,206 +40,212 @@ from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def home_page(page: Page) -> HomePage:
     """Fixture for HomePage object."""
     return HomePage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def slow_resources_page(page: Page) -> SlowResourcesPage:
     """Fixture for SlowResourcesPage object."""
     return SlowResourcesPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def add_remove_elements_page(page: Page) -> AddRemoveElementsPage:
     """Fixture for AddRemoveElementsPage object."""
     return AddRemoveElementsPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def basic_auth_page(page: Page) -> BasicAuthPage:
     """Fixture for BasicAuthPage object."""
     return BasicAuthPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def ab_testing_page(page: Page) -> ABTestingPage:
     """Fixture for ABTestingPage object."""
     return ABTestingPage(page)
 
 
 # Broken Images page fixture
-@pytest.fixture(scope="function")
+@pytest.fixture
 def broken_images_page(page: Page) -> BrokenImagesPage:
     """Fixture for BrokenImagesPage object."""
     return BrokenImagesPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def challenging_dom_page(page: Page) -> ChallengingDomPage:
     """Fixture for ChallengingDomPage object."""
     return ChallengingDomPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def checkboxes_page(page: Page) -> CheckboxesPage:
     """Fixture for CheckboxesPage object."""
     return CheckboxesPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def dropdown_page(page: Page) -> DropdownPage:
     """Fixture for DropdownPage object."""
     return DropdownPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def context_menu_page(page: Page) -> ContextMenuPage:
     """Fixture for ContextMenuPage object."""
     return ContextMenuPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def dynamic_controls_page(page: Page) -> DynamicControlsPage:
     """Fixture for DynamicControlsPage object."""
     return DynamicControlsPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def hovers_page(page: Page) -> HoversPage:
     """Fixture for HoversPage object."""
     return HoversPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def javascript_alerts_page(page: Page) -> JavaScriptAlertsPage:
     """Fixture for JavaScriptAlertsPage object."""
     return JavaScriptAlertsPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
+def javascript_onload_error_page(page: Page) -> JavascriptOnloadErrorPage:
+    """Fixture for JavascriptOnloadErrorPage object."""
+    return JavascriptOnloadErrorPage(page)
+
+
+@pytest.fixture
 def disappearing_elements_page(page: Page) -> DisappearingElementsPage:
     """Fixture for DisappearingElementsPage object."""
     return DisappearingElementsPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def key_presses_page(page: Page) -> KeyPressesPage:
     """Fixture for KeyPressesPage object."""
     return KeyPressesPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def drag_and_drop_page(page: Page) -> DragAndDropPage:
     """Fixture for DragAndDropPage object."""
     return DragAndDropPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def dynamic_loading_page(page: Page) -> DynamicLoadingPage:
     """Fixture for DynamicLoadingPage object."""
     return DynamicLoadingPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def dynamic_content_page(page: Page) -> DynamicContentPage:
     """Fixture for DynamicContentPage object."""
     return DynamicContentPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def stale_element_page(page: Page) -> StaleElementPage:
     """Fixture for StaleElementPage object."""
     return StaleElementPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def entry_ad_page(page: Page) -> EntryAdPage:
     """Fixture for EntryAdPage object."""
     return EntryAdPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def exit_intent_page(page: Page) -> ExitIntentPage:
     """Fixture for ExitIntentPage object."""
     return ExitIntentPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def file_download_page(page: Page) -> FileDownloadPage:
     """Fixture for FileDownloadPage object."""
     return FileDownloadPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def file_upload_page(page: Page) -> FileUploadPage:
     """Fixture for FileUploadPage object."""
     return FileUploadPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def floating_menu_page(page: Page) -> FloatingMenuPage:
     """Fixture for FloatingMenuPage object."""
     return FloatingMenuPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def geolocation_page(page: Page) -> GeolocationPage:
     """Fixture for GeolocationPage object."""
     return GeolocationPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def horizontal_slider_page(page: Page) -> HorizontalSliderPage:
     """Fixture for HorizontalSliderPage object."""
     return HorizontalSliderPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def iframe_page(page: Page) -> IFramePage:
     """Fixture for IFramePage object."""
     return IFramePage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def infinite_scroll_page(page: Page) -> InfiniteScrollPage:
     """Fixture for InfiniteScrollPage object."""
     return InfiniteScrollPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def inputs_page(page: Page) -> InputsPage:
     """Fixture for InputsPage object."""
     return InputsPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def multiple_windows_page(page: Page) -> MultipleWindowsPage:
     """Fixture for MultipleWindowsPage object."""
     return MultipleWindowsPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def menus_page(page: Page) -> MenusPage:
     """Fixture for MenusPage object."""
     return MenusPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def notification_messages_page(page: Page) -> NotificationMessagesPage:
     """Fixture for NotificationMessagesPage object."""
     return NotificationMessagesPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def redirect_link_page(page: Page) -> RedirectLinkPage:
     """Fixture for RedirectLinkPage object."""
     return RedirectLinkPage(page)
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture
 def secure_file_download_page(page: Page) -> SecureFileDownloadPage:
     """Fixture for SecureFileDownloadPage object."""
     return SecureFileDownloadPage(page)

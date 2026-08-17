@@ -29,6 +29,7 @@ from pages.iframe_page import IFramePage
 from pages.infinite_scroll_page import InfiniteScrollPage
 from pages.inputs_page import InputsPage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
+from pages.javascript_onload_error_page import JavascriptOnloadErrorPage
 from pages.key_presses_page import KeyPressesPage
 from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
@@ -116,6 +117,12 @@ def hovers_page(page: Page) -> HoversPage:
 def javascript_alerts_page(page: Page) -> JavaScriptAlertsPage:
     """Fixture for JavaScriptAlertsPage object."""
     return JavaScriptAlertsPage(page)
+
+
+@pytest.fixture(scope="function")
+def javascript_onload_error_page(page: Page) -> JavascriptOnloadErrorPage:
+    """Fixture for JavascriptOnloadErrorPage object."""
+    return JavascriptOnloadErrorPage(page)
 
 
 @pytest.fixture(scope="function")

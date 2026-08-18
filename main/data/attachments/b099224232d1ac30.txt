@@ -1,0 +1,14 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_upload_file[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:336 Getting File Upload card element
+INFO     pages.home_page:home_page.py:346 Clicked File Upload card
+INFO     pages.file_upload_page:file_upload_page.py:112 Created test file at: /tmp/test-upload.txt
+INFO     pages.file_upload_page:file_upload_page.py:86 Setting file input to: /tmp/test-upload.txt
+INFO     pages.file_upload_page:file_upload_page.py:47 Getting file input element
+INFO     pages.file_upload_page:file_upload_page.py:95 Clicking Upload button
+INFO     pages.file_upload_page:file_upload_page.py:56 Getting Upload button element
+INFO     root:conftest.py:53 TEST END: test_upload_file[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_range_slider_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:390 Getting Horizontal Slider card element
+INFO     pages.home_page:home_page.py:400 Clicked Horizontal Slider card
+INFO     pages.horizontal_slider_page:horizontal_slider_page.py:46 Getting range slider minimum thumb element
+INFO     pages.horizontal_slider_page:horizontal_slider_page.py:55 Getting range slider maximum thumb element
+INFO     root:conftest.py:53 TEST END: test_range_slider_is_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

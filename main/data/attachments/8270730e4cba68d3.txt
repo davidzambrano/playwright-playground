@@ -1,0 +1,18 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_successful_login_shows_secure_area[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:480 Getting Secure File Download card element
+INFO     pages.home_page:home_page.py:490 Clicked Secure File Download card
+INFO     pages.secure_file_download_page:secure_file_download_page.py:97 Performing login
+INFO     pages.secure_file_download_page:secure_file_download_page.py:82 Entering username: admin
+INFO     pages.secure_file_download_page:secure_file_download_page.py:38 Getting username input element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:87 Entering password
+INFO     pages.secure_file_download_page:secure_file_download_page.py:43 Getting password input element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:92 Clicking Login button
+INFO     pages.secure_file_download_page:secure_file_download_page.py:48 Getting Login button element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:53 Getting Secure Area heading element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:58 Getting welcome text element
+INFO     root:conftest.py:53 TEST END: test_successful_login_shows_secure_area[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,36 @@
+2026-08-18 06:37:47,660 - root - INFO - ================================================================================
+2026-08-18 06:37:47,661 - root - INFO - TEST START: test_click_excel_submenu_shows_toast[chromium]
+2026-08-18 06:37:47,758 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 06:37:49,222 - pages.base_page - INFO - Page load completed
+2026-08-18 06:37:49,222 - pages.home_page - INFO - Navigated to home page
+2026-08-18 06:37:49,223 - pages.home_page - INFO - Getting Menus card element
+2026-08-18 06:37:49,305 - pages.home_page - INFO - Clicked Menus card
+2026-08-18 06:37:49,307 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-08-18 06:37:49,308 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-18 06:37:50,177 - pages.menus_page - INFO - Hovering over Downloads submenu trigger
+2026-08-18 06:37:50,177 - pages.menus_page - INFO - Getting Downloads submenu trigger element
+2026-08-18 06:37:50,177 - pages.menus_page - INFO - Getting menu item: Downloads
+2026-08-18 06:37:50,443 - pages.menus_page - INFO - Clicking Excel submenu item
+2026-08-18 06:37:50,443 - pages.menus_page - INFO - Getting Excel submenu item element
+2026-08-18 06:37:50,443 - pages.menus_page - INFO - Getting submenu item: Excel
+2026-08-18 06:37:50,731 - pages.menus_page - INFO - Getting toast notification element
+2026-08-18 06:37:51,113 - root - INFO - TEST END: test_click_excel_submenu_shows_toast[chromium]
+2026-08-18 06:37:51,113 - root - INFO - ================================================================================
+2026-08-18 06:37:51,119 - root - INFO - ================================================================================
+2026-08-18 06:37:51,119 - root - INFO - TEST START: test_click_excel_submenu_shows_toast[chromium]
+2026-08-18 06:37:51,217 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 06:37:52,514 - pages.base_page - INFO - Page load completed
+2026-08-18 06:37:52,515 - pages.home_page - INFO - Navigated to home page
+2026-08-18 06:37:52,515 - pages.home_page - INFO - Getting Menus card element
+2026-08-18 06:37:52,599 - pages.home_page - INFO - Clicked Menus card
+2026-08-18 06:37:52,603 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-08-18 06:37:52,603 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-18 06:37:53,493 - pages.menus_page - INFO - Hovering over Downloads submenu trigger
+2026-08-18 06:37:53,493 - pages.menus_page - INFO - Getting Downloads submenu trigger element
+2026-08-18 06:37:53,494 - pages.menus_page - INFO - Getting menu item: Downloads
+2026-08-18 06:37:53,754 - pages.menus_page - INFO - Clicking Excel submenu item
+2026-08-18 06:37:53,754 - pages.menus_page - INFO - Getting Excel submenu item element
+2026-08-18 06:37:53,754 - pages.menus_page - INFO - Getting submenu item: Excel
+2026-08-18 06:37:54,058 - pages.menus_page - INFO - Getting toast notification element
+2026-08-18 06:37:54,453 - root - INFO - TEST END: test_click_excel_submenu_shows_toast[chromium]
+2026-08-18 06:37:54,454 - root - INFO - ================================================================================

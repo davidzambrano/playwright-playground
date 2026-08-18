@@ -1,0 +1,12 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_switch_to_iframe_and_get_text[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:408 Getting iFrame card element
+INFO     pages.home_page:home_page.py:418 Clicked iFrame card
+INFO     pages.iframe_page:iframe_page.py:62 Getting iFrame text content
+INFO     pages.iframe_page:iframe_page.py:53 Getting iFrame body element
+INFO     pages.iframe_page:iframe_page.py:44 Getting iFrame frame locator
+INFO     root:conftest.py:53 TEST END: test_switch_to_iframe_and_get_text[chromium]
+INFO     root:conftest.py:54 ================================================================================

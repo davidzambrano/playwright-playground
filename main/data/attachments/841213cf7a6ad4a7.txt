@@ -1,0 +1,10 @@
+2026-08-18 06:36:18,792 - root - INFO - ================================================================================
+2026-08-18 06:36:18,793 - root - INFO - TEST START: test_checkbox_is_visible_initially[chromium]
+2026-08-18 06:36:18,892 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 06:36:19,972 - pages.base_page - INFO - Page load completed
+2026-08-18 06:36:19,973 - pages.home_page - INFO - Navigated to home page
+2026-08-18 06:36:19,973 - pages.home_page - INFO - Getting Dynamic Controls card element
+2026-08-18 06:36:20,035 - pages.home_page - INFO - Clicked Dynamic Controls card
+2026-08-18 06:36:20,038 - pages.dynamic_controls_page - INFO - Getting checkbox element
+2026-08-18 06:36:21,728 - root - INFO - TEST END: test_checkbox_is_visible_initially[chromium]
+2026-08-18 06:36:21,728 - root - INFO - ================================================================================

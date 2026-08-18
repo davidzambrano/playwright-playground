@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_page_heading_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:246 Getting Key Presses card element
+INFO     pages.home_page:home_page.py:679 Clicked Key Presses card
+INFO     pages.key_presses_page:key_presses_page.py:30 Getting page heading element
+INFO     root:conftest.py:53 TEST END: test_page_heading_is_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,15 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_add_checkbox[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:192 Getting Dynamic Controls card element
+INFO     pages.home_page:home_page.py:639 Clicked Dynamic Controls card
+INFO     pages.dynamic_controls_page:dynamic_controls_page.py:75 Clicking toggle checkbox button
+INFO     pages.dynamic_controls_page:dynamic_controls_page.py:48 Getting toggle checkbox button element
+INFO     pages.dynamic_controls_page:dynamic_controls_page.py:39 Getting checkbox element
+INFO     pages.dynamic_controls_page:dynamic_controls_page.py:75 Clicking toggle checkbox button
+INFO     pages.dynamic_controls_page:dynamic_controls_page.py:48 Getting toggle checkbox button element
+INFO     pages.dynamic_controls_page:dynamic_controls_page.py:39 Getting checkbox element
+INFO     root:conftest.py:53 TEST END: test_add_checkbox[chromium]
+INFO     root:conftest.py:54 ================================================================================

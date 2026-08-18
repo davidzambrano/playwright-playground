@@ -1,0 +1,63 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_console_error_is_captured[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.javascript_onload_error_page:javascript_onload_error_page.py:37 Captured console error: Access to font at 'https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2' from origin 'https://auto-things.onrender.com' has been blocked by CORS policy: Request header field cache-control is not allowed by Access-Control-Allow-Headers in preflight response.
+INFO     pages.javascript_onload_error_page:javascript_onload_error_page.py:37 Captured console error: Failed to load resource: net::ERR_FAILED
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:219 Getting JavaScript onload event error card element
+INFO     pages.home_page:home_page.py:229 Clicked JavaScript onload event error card
+INFO     pages.javascript_onload_error_page:javascript_onload_error_page.py:37 Captured console error: Caught intentional onload error: TypeError: Cannot set properties of undefined (setting 'xyz')
+    at https://auto-things.onrender.com/_next/static/chunks/app/link/%5Bslug%5D/page-46915b4a7125fa4c.js:1:12623
+    at oq (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:87081)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102577)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102614)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+    at uh (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102557)
+    at um (https://auto-things.onrender.com/_next/static/chunks/4bd1b696-0c62b2bae3c1ba8f.js:1:102461)
+INFO     pages.javascript_onload_error_page:javascript_onload_error_page.py:45 Getting page heading element
+INFO     root:conftest.py:53 TEST END: test_console_error_is_captured[chromium]
+INFO     root:conftest.py:54 ================================================================================

@@ -1,0 +1,10 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_page_heading_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:372 Getting Geolocation card element
+INFO     pages.home_page:home_page.py:382 Clicked Geolocation card
+INFO     pages.geolocation_page:geolocation_page.py:28 Getting page heading element
+INFO     root:conftest.py:53 TEST END: test_page_heading_is_visible[chromium]
+INFO     root:conftest.py:54 ================================================================================

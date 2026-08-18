@@ -1,0 +1,11 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_notification_message_is_valid[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:516 Getting Notification Messages card element
+INFO     pages.home_page:home_page.py:526 Clicked Notification Messages card
+INFO     pages.notification_messages_page:notification_messages_page.py:68 Getting notification message text element
+INFO     pages.notification_messages_page:notification_messages_page.py:59 Getting notification alert element
+INFO     root:conftest.py:53 TEST END: test_notification_message_is_valid[chromium]
+INFO     root:conftest.py:54 ================================================================================

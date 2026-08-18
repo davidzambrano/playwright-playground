@@ -1,0 +1,10 @@
+2026-08-18 06:36:49,316 - root - INFO - ================================================================================
+2026-08-18 06:36:49,316 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-08-18 06:36:49,377 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 06:36:51,539 - pages.base_page - INFO - Page load completed
+2026-08-18 06:36:51,540 - pages.home_page - INFO - Navigated to home page
+2026-08-18 06:36:51,540 - pages.home_page - INFO - Getting Context Menu card element
+2026-08-18 06:36:51,615 - pages.home_page - INFO - Clicked Context Menu card
+2026-08-18 06:36:51,617 - pages.context_menu_page - INFO - Getting page heading element
+2026-08-18 06:36:53,188 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-08-18 06:36:53,189 - root - INFO - ================================================================================

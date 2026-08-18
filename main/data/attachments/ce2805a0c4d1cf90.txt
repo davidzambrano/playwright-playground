@@ -1,0 +1,16 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_simple_dropdown_select_vegetable[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:174 Getting Dropdown card element
+INFO     pages.home_page:home_page.py:619 Clicked Dropdown card
+INFO     pages.dropdown_page:dropdown_page.py:110 Selecting option from simple dropdown: carrot
+INFO     pages.dropdown_page:dropdown_page.py:37 Getting simple dropdown trigger element
+INFO     pages.dropdown_page:dropdown_page.py:43 Clicking simple dropdown trigger
+INFO     pages.dropdown_page:dropdown_page.py:55 Getting simple dropdown option with value: carrot
+INFO     pages.dropdown_page:dropdown_page.py:113 Waiting for option to exist
+INFO     pages.dropdown_page:dropdown_page.py:115 Clicking dropdown option: carrot
+INFO     pages.dropdown_page:dropdown_page.py:62 Getting selection text element
+INFO     root:conftest.py:53 TEST END: test_simple_dropdown_select_vegetable[chromium]
+INFO     root:conftest.py:54 ================================================================================

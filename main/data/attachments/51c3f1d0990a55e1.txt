@@ -1,0 +1,14 @@
+INFO     root:conftest.py:50 ================================================================================
+INFO     root:conftest.py:51 TEST START: test_add_multiple_elements[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:102 Getting Add/Remove Elements card element
+INFO     pages.home_page:home_page.py:563 Clicked Add/Remove Elements card
+INFO     pages.add_remove_elements_page:add_remove_elements_page.py:43 Clicked Add Element button
+INFO     pages.add_remove_elements_page:add_remove_elements_page.py:43 Clicked Add Element button
+INFO     pages.add_remove_elements_page:add_remove_elements_page.py:43 Clicked Add Element button
+INFO     pages.add_remove_elements_page:add_remove_elements_page.py:43 Clicked Add Element button
+INFO     pages.add_remove_elements_page:add_remove_elements_page.py:43 Clicked Add Element button
+INFO     root:conftest.py:53 TEST END: test_add_multiple_elements[chromium]
+INFO     root:conftest.py:54 ================================================================================

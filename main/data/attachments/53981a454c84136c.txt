@@ -1,0 +1,12 @@
+2026-08-18 06:36:02,456 - root - INFO - ================================================================================
+2026-08-18 06:36:02,456 - root - INFO - TEST START: test_right_click_triggers_context_menu[chromium]
+2026-08-18 06:36:02,549 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 06:36:04,299 - pages.base_page - INFO - Page load completed
+2026-08-18 06:36:04,299 - pages.home_page - INFO - Navigated to home page
+2026-08-18 06:36:04,299 - pages.home_page - INFO - Getting Context Menu card element
+2026-08-18 06:36:04,369 - pages.home_page - INFO - Clicked Context Menu card
+2026-08-18 06:36:04,372 - pages.context_menu_page - INFO - Right-clicking on hot-spot area
+2026-08-18 06:36:04,373 - pages.context_menu_page - INFO - Getting hot-spot area element
+2026-08-18 06:36:05,749 - pages.context_menu_page - INFO - Getting context menu element
+2026-08-18 06:36:06,097 - root - INFO - TEST END: test_right_click_triggers_context_menu[chromium]
+2026-08-18 06:36:06,098 - root - INFO - ================================================================================

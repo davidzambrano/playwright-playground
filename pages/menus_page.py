@@ -169,7 +169,9 @@ class MenusPage(BasePage):
             Locator: The locator for the toast notification element.
         """
         logger.info("Getting toast notification element")
-        return self.page.get_by_text(self.TOAST_TITLE)
+        # exact=True avoids matching the aria-live screen-reader announcement
+        # span, which concatenates the toast title and description text.
+        return self.page.get_by_text(self.TOAST_TITLE, exact=True)
 
     def hover_over_enabled_trigger(self):
         """Hover over the Enabled menu trigger to open the menu.

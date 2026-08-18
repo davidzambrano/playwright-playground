@@ -3,9 +3,11 @@
 import logging
 import os
 from datetime import datetime
+from pathlib import Path
 from typing import Dict, Generator
 
 import pytest
+from allure_commons.types import LabelType
 from dotenv import load_dotenv
 from playwright.sync_api import Page, expect
 
@@ -108,3 +110,38 @@ def page(
 def base_url() -> str:
     """Base URL for the application under test."""
     return os.getenv("BASE_URL", "https://auto-things.onrender.com/")
+
+
+# ---------------------------------------------------------------------------
+# Allure report labeling
+# ---------------------------------------------------------------------------
+# allure-pytest auto-derives the "Suites" facet (parentSuite/suite/subSuite)
+# from the pytest node id, but the "Features" facet is left empty by default.
+# Each test module in this repo maps to one the-internet page, so the
+# "feature" label is derived from the module name and applied to every test
+# here, avoiding per-test @allure.feature decorators.
+# Label hierarchy reference: https://allurereport.org/docs/how-it-works/
+_ALLURE_FEATURE_OVERRIDES = {
+    "ab_testing": "A/B Testing",
+    "add_remove_elements": "Add/Remove Elements",
+    "challenging_dom": "Challenging DOM",
+    "drag_and_drop": "Drag and Drop",
+    "iframe": "iFrame",
+    "javascript_alerts": "JavaScript Alerts",
+    "javascript_onload_error": "JavaScript onload event error",
+}
+
+
+def _allure_feature_for_item(item) -> str:
+    """Build a human-friendly Allure feature name from the test module."""
+    module_stem = Path(item.nodeid.split("::", 1)[0]).stem  # e.g. test_dropdown_page
+    key = module_stem.removeprefix("test_").removesuffix("_page")  # e.g. dropdown
+    return _ALLURE_FEATURE_OVERRIDES.get(key, key.replace("_", " ").title())
+
+
+def pytest_collection_modifyitems(items):
+    """Auto-tag every test with an Allure feature label (its page under test)."""
+    for item in items:
+        feature = _allure_feature_for_item(item)
+        # Equivalent to applying @allure.feature(feature) to each test from one place.
+        item.add_marker(pytest.mark.allure_label(feature, label_type=LabelType.FEATURE))

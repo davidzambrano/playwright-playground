@@ -1,0 +1,10 @@
+2026-08-18 07:25:09,277 - root - INFO - ================================================================================
+2026-08-18 07:25:09,277 - root - INFO - TEST START: test_enabled_trigger_is_visible[chromium]
+2026-08-18 07:25:09,367 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:25:10,405 - pages.base_page - INFO - Page load completed
+2026-08-18 07:25:10,405 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:25:10,405 - pages.home_page - INFO - Getting Menus card element
+2026-08-18 07:25:10,479 - pages.home_page - INFO - Clicked Menus card
+2026-08-18 07:25:10,481 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-18 07:25:12,165 - root - INFO - TEST END: test_enabled_trigger_is_visible[chromium]
+2026-08-18 07:25:12,166 - root - INFO - ================================================================================

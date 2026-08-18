@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_broken_images_fail_to_load[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:156 Getting Broken Images card element
+INFO     pages.home_page:home_page.py:599 Clicked Broken Images card
+INFO     pages.broken_images_page:broken_images_page.py:36 Getting all image elements on Broken Images page
+INFO     pages.broken_images_page:broken_images_page.py:46 Getting broken image elements
+INFO     root:conftest.py:55 TEST END: test_broken_images_fail_to_load[chromium]
+INFO     root:conftest.py:56 ================================================================================

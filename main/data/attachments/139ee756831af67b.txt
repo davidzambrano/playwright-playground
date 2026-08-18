@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_gallery_tab_may_be_present[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:237 Getting Disappearing Elements card element
+INFO     pages.home_page:home_page.py:669 Clicked Disappearing Elements card
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:28 Getting page heading element
+INFO     pages.disappearing_elements_page:disappearing_elements_page.py:37 Getting instruction text element
+INFO     root:conftest.py:55 TEST END: test_gallery_tab_may_be_present[chromium]
+INFO     root:conftest.py:56 ================================================================================

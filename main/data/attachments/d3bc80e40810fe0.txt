@@ -1,0 +1,10 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_buttons_are_present_and_interactable[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:147 Getting Challenging DOM card element
+INFO     pages.home_page:home_page.py:590 Clicked Challenging DOM card
+INFO     pages.challenging_dom_page:challenging_dom_page.py:32 Getting all random buttons
+INFO     root:conftest.py:55 TEST END: test_buttons_are_present_and_interactable[chromium]
+INFO     root:conftest.py:56 ================================================================================

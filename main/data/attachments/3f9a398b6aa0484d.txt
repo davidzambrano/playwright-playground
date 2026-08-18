@@ -1,0 +1,13 @@
+2026-08-18 07:24:50,811 - root - INFO - ================================================================================
+2026-08-18 07:24:50,811 - root - INFO - TEST START: test_original_page_still_active_after_closing_new_window[chromium]
+2026-08-18 07:24:50,905 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:24:52,174 - pages.base_page - INFO - Page load completed
+2026-08-18 07:24:52,174 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:24:52,174 - pages.home_page - INFO - Getting Multiple Windows card element
+2026-08-18 07:24:52,248 - pages.home_page - INFO - Clicked Multiple Windows card
+2026-08-18 07:24:52,252 - pages.multiple_windows_page - INFO - Clicking Click Here link to open a new window
+2026-08-18 07:24:52,258 - pages.multiple_windows_page - INFO - Getting Click Here link element
+2026-08-18 07:24:55,761 - pages.multiple_windows_page - INFO - New window opened
+2026-08-18 07:24:55,901 - pages.multiple_windows_page - INFO - Getting page heading element
+2026-08-18 07:24:56,420 - root - INFO - TEST END: test_original_page_still_active_after_closing_new_window[chromium]
+2026-08-18 07:24:56,421 - root - INFO - ================================================================================

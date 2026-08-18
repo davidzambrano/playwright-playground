@@ -1,0 +1,12 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_user_1_caption_visible_on_hover[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:201 Getting Hovers card element
+INFO     pages.home_page:home_page.py:649 Clicked Hovers card
+INFO     pages.hovers_page:hovers_page.py:105 Hovering over User 1 image
+INFO     pages.hovers_page:hovers_page.py:51 Getting User 1 image element
+INFO     pages.hovers_page:hovers_page.py:60 Getting User 1 caption element
+INFO     root:conftest.py:55 TEST END: test_user_1_caption_visible_on_hover[chromium]
+INFO     root:conftest.py:56 ================================================================================

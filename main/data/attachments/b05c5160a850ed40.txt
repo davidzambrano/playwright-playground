@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_headings_are_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:174 Getting Dropdown card element
+INFO     pages.home_page:home_page.py:619 Clicked Dropdown card
+INFO     pages.dropdown_page:dropdown_page.py:27 Getting Simple Dropdown heading element
+INFO     pages.dropdown_page:dropdown_page.py:32 Getting Searchable Combobox heading element
+INFO     root:conftest.py:55 TEST END: test_headings_are_visible[chromium]
+INFO     root:conftest.py:56 ================================================================================

@@ -1,0 +1,16 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_drag_item_from_c_to_d[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:255 Getting Drag and Drop card element
+INFO     pages.home_page:home_page.py:689 Clicked Drag and Drop card
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:67 Getting column C drop zone element
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:88 Dragging item to column
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:40 Getting draggable item element
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:76 Getting column D drop zone element
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:88 Dragging item to column
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:40 Getting draggable item element
+INFO     pages.drag_and_drop_page:drag_and_drop_page.py:76 Getting column D drop zone element
+INFO     root:conftest.py:55 TEST END: test_drag_item_from_c_to_d[chromium]
+INFO     root:conftest.py:56 ================================================================================

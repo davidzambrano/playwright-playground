@@ -1,0 +1,16 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_modal_has_body_text[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:300 Getting Exit Intent card element
+INFO     pages.home_page:home_page.py:310 Clicked Exit Intent card
+INFO     pages.exit_intent_page:exit_intent_page.py:40 Waiting for client component hydration
+INFO     pages.exit_intent_page:exit_intent_page.py:58 Getting instruction text element
+INFO     pages.exit_intent_page:exit_intent_page.py:42 Triggering exit intent by dispatching mouseout event
+INFO     pages.modal_page:modal_page.py:73 Waiting for modal to appear
+INFO     pages.modal_page:modal_page.py:25 Getting modal element
+INFO     pages.exit_intent_page:exit_intent_page.py:76 Getting modal body element
+INFO     pages.modal_page:modal_page.py:25 Getting modal element
+INFO     root:conftest.py:55 TEST END: test_modal_has_body_text[chromium]
+INFO     root:conftest.py:56 ================================================================================

@@ -1,0 +1,13 @@
+2026-08-18 07:25:27,283 - root - INFO - ================================================================================
+2026-08-18 07:25:27,283 - root - INFO - TEST START: test_close_button_hides_notification[chromium]
+2026-08-18 07:25:27,387 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:25:28,496 - pages.base_page - INFO - Page load completed
+2026-08-18 07:25:28,497 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:25:28,497 - pages.home_page - INFO - Getting Notification Messages card element
+2026-08-18 07:25:28,571 - pages.home_page - INFO - Clicked Notification Messages card
+2026-08-18 07:25:28,575 - pages.notification_messages_page - INFO - Clicking notification close button
+2026-08-18 07:25:28,575 - pages.notification_messages_page - INFO - Getting notification close button element
+2026-08-18 07:25:28,575 - pages.notification_messages_page - INFO - Getting notification alert element
+2026-08-18 07:25:30,845 - pages.notification_messages_page - INFO - Getting notification alert element
+2026-08-18 07:25:31,186 - root - INFO - TEST END: test_close_button_hides_notification[chromium]
+2026-08-18 07:25:31,187 - root - INFO - ================================================================================

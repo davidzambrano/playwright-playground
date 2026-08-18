@@ -1,0 +1,12 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_modal_appears_on_page_load[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:282 Getting Entry Ad card element
+INFO     pages.home_page:home_page.py:292 Clicked Entry Ad card
+INFO     pages.modal_page:modal_page.py:73 Waiting for modal to appear
+INFO     pages.modal_page:modal_page.py:25 Getting modal element
+INFO     pages.modal_page:modal_page.py:25 Getting modal element
+INFO     root:conftest.py:55 TEST END: test_modal_appears_on_page_load[chromium]
+INFO     root:conftest.py:56 ================================================================================

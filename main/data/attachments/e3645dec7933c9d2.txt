@@ -1,0 +1,15 @@
+2026-08-18 07:24:35,397 - root - INFO - ================================================================================
+2026-08-18 07:24:35,397 - root - INFO - TEST START: test_click_copy_shows_toast[chromium]
+2026-08-18 07:24:35,491 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:24:36,701 - pages.base_page - INFO - Page load completed
+2026-08-18 07:24:36,702 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:24:36,702 - pages.home_page - INFO - Getting Menus card element
+2026-08-18 07:24:36,781 - pages.home_page - INFO - Clicked Menus card
+2026-08-18 07:24:36,784 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-08-18 07:24:36,784 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-08-18 07:24:38,165 - pages.menus_page - INFO - Clicking Copy menu item
+2026-08-18 07:24:38,166 - pages.menus_page - INFO - Getting Copy menu item element
+2026-08-18 07:24:38,166 - pages.menus_page - INFO - Getting menu item: Copy
+2026-08-18 07:24:38,422 - pages.menus_page - INFO - Getting toast notification element
+2026-08-18 07:24:38,784 - root - INFO - TEST END: test_click_copy_shows_toast[chromium]
+2026-08-18 07:24:38,786 - root - INFO - ================================================================================

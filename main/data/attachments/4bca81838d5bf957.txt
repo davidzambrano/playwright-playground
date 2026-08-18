@@ -1,0 +1,15 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_left_click_dismisses_context_menu[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:183 Getting Context Menu card element
+INFO     pages.home_page:home_page.py:629 Clicked Context Menu card
+INFO     pages.context_menu_page:context_menu_page.py:75 Right-clicking on hot-spot area
+INFO     pages.context_menu_page:context_menu_page.py:39 Getting hot-spot area element
+INFO     pages.context_menu_page:context_menu_page.py:48 Getting context menu element
+INFO     pages.context_menu_page:context_menu_page.py:84 Left-clicking outside context menu to dismiss it
+INFO     pages.context_menu_page:context_menu_page.py:30 Getting page heading element
+INFO     pages.context_menu_page:context_menu_page.py:48 Getting context menu element
+INFO     root:conftest.py:55 TEST END: test_left_click_dismisses_context_menu[chromium]
+INFO     root:conftest.py:56 ================================================================================

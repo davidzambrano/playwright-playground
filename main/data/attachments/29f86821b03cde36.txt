@@ -1,0 +1,15 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_click_preferences_shows_toast[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:462 Getting Menus card element
+INFO     pages.home_page:home_page.py:472 Clicked Menus card
+INFO     pages.menus_page:menus_page.py:182 Hovering over Enabled menu trigger
+INFO     pages.menus_page:menus_page.py:57 Getting Enabled menu trigger element
+INFO     pages.menus_page:menus_page.py:209 Clicking Preferences menu item
+INFO     pages.menus_page:menus_page.py:105 Getting Preferences menu item element
+INFO     pages.menus_page:menus_page.py:78 Getting menu item: Preferences
+INFO     pages.menus_page:menus_page.py:171 Getting toast notification element
+INFO     root:conftest.py:55 TEST END: test_click_preferences_shows_toast[chromium]
+INFO     root:conftest.py:56 ================================================================================

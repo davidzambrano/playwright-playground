@@ -1,0 +1,13 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_click_stale_button_shows_success_description[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:120 Getting Stale Element card element
+INFO     pages.home_page:home_page.py:130 Clicked Stale Element card
+INFO     pages.stale_element_page:stale_element_page.py:51 Clicking stale button
+INFO     pages.stale_element_page:stale_element_page.py:38 Getting stale button element
+INFO     pages.stale_element_page:stale_element_page.py:60 Getting success message element
+INFO     pages.stale_element_page:stale_element_page.py:69 Getting success description element
+INFO     root:conftest.py:55 TEST END: test_click_stale_button_shows_success_description[chromium]
+INFO     root:conftest.py:56 ================================================================================

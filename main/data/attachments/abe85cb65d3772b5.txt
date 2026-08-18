@@ -1,0 +1,12 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_new_window_url_is_correct[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:534 Getting Multiple Windows card element
+INFO     pages.home_page:home_page.py:544 Clicked Multiple Windows card
+INFO     pages.multiple_windows_page:multiple_windows_page.py:54 Clicking Click Here link to open a new window
+INFO     pages.multiple_windows_page:multiple_windows_page.py:45 Getting Click Here link element
+INFO     pages.multiple_windows_page:multiple_windows_page.py:59 New window opened
+INFO     root:conftest.py:55 TEST END: test_new_window_url_is_correct[chromium]
+INFO     root:conftest.py:56 ================================================================================

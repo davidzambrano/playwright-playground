@@ -1,0 +1,10 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_iframe_is_present[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:408 Getting iFrame card element
+INFO     pages.home_page:home_page.py:418 Clicked iFrame card
+INFO     pages.iframe_page:iframe_page.py:35 Getting iFrame element
+INFO     root:conftest.py:55 TEST END: test_iframe_is_present[chromium]
+INFO     root:conftest.py:56 ================================================================================

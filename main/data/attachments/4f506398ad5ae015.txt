@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_disabled_checkboxes_cannot_be_changed[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:165 Getting Checkboxes card element
+INFO     pages.home_page:home_page.py:609 Clicked Checkboxes card
+INFO     pages.checkboxes_page:checkboxes_page.py:46 Getting disabled unchecked checkbox element
+INFO     pages.checkboxes_page:checkboxes_page.py:51 Getting disabled checked checkbox element
+INFO     root:conftest.py:55 TEST END: test_disabled_checkboxes_cannot_be_changed[chromium]
+INFO     root:conftest.py:56 ================================================================================

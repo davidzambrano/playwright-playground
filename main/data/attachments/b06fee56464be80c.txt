@@ -1,0 +1,17 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_scroll_loads_more_content[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:426 Getting Infinite Scroll card element
+INFO     pages.home_page:home_page.py:436 Clicked Infinite Scroll card
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:42 Getting paragraph count
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:33 Getting all paragraph elements
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:51 Scrolling to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:53 Scrolled to bottom of page
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:65 Waiting for new paragraphs to load (initial count: 0)
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:70 New paragraphs loaded
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:42 Getting paragraph count
+INFO     pages.infinite_scroll_page:infinite_scroll_page.py:33 Getting all paragraph elements
+INFO     root:conftest.py:55 TEST END: test_scroll_loads_more_content[chromium]
+INFO     root:conftest.py:56 ================================================================================

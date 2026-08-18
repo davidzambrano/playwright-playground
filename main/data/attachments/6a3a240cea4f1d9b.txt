@@ -1,0 +1,18 @@
+2026-08-18 07:23:45,747 - root - INFO - ================================================================================
+2026-08-18 07:23:45,747 - root - INFO - TEST START: test_clear_and_type_in_iframe[chromium]
+2026-08-18 07:23:45,837 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:23:47,103 - pages.base_page - INFO - Page load completed
+2026-08-18 07:23:47,104 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:23:47,104 - pages.home_page - INFO - Getting iFrame card element
+2026-08-18 07:23:47,184 - pages.home_page - INFO - Clicked iFrame card
+2026-08-18 07:23:47,188 - pages.iframe_page - INFO - Clearing iFrame content
+2026-08-18 07:23:47,188 - pages.iframe_page - INFO - Getting iFrame body element
+2026-08-18 07:23:47,188 - pages.iframe_page - INFO - Getting iFrame frame locator
+2026-08-18 07:23:49,094 - pages.iframe_page - INFO - Typing text into iFrame: Hello, Playwright!
+2026-08-18 07:23:49,094 - pages.iframe_page - INFO - Getting iFrame body element
+2026-08-18 07:23:49,094 - pages.iframe_page - INFO - Getting iFrame frame locator
+2026-08-18 07:23:49,177 - pages.iframe_page - INFO - Getting iFrame text content
+2026-08-18 07:23:49,178 - pages.iframe_page - INFO - Getting iFrame body element
+2026-08-18 07:23:49,178 - pages.iframe_page - INFO - Getting iFrame frame locator
+2026-08-18 07:23:49,447 - root - INFO - TEST END: test_clear_and_type_in_iframe[chromium]
+2026-08-18 07:23:49,448 - root - INFO - ================================================================================

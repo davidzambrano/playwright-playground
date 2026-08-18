@@ -1,0 +1,13 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_login_form_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:480 Getting Secure File Download card element
+INFO     pages.home_page:home_page.py:490 Clicked Secure File Download card
+INFO     pages.secure_file_download_page:secure_file_download_page.py:33 Getting login card title element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:38 Getting username input element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:43 Getting password input element
+INFO     pages.secure_file_download_page:secure_file_download_page.py:48 Getting Login button element
+INFO     root:conftest.py:55 TEST END: test_login_form_is_visible[chromium]
+INFO     root:conftest.py:56 ================================================================================

@@ -1,0 +1,10 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_instruction_text_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:76 Navigated to home page
+INFO     pages.home_page:home_page.py:516 Getting Notification Messages card element
+INFO     pages.home_page:home_page.py:526 Clicked Notification Messages card
+INFO     pages.notification_messages_page:notification_messages_page.py:41 Getting instruction text element
+INFO     root:conftest.py:55 TEST END: test_instruction_text_is_visible[chromium]
+INFO     root:conftest.py:56 ================================================================================

@@ -1,0 +1,65 @@
+2026-08-18 07:22:23,200 - root - INFO - ================================================================================
+2026-08-18 07:22:23,201 - root - INFO - TEST START: test_delete_all_rows[chromium]
+2026-08-18 07:22:23,291 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:22:24,033 - pages.base_page - INFO - Page load completed
+2026-08-18 07:22:24,033 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:22:24,034 - pages.home_page - INFO - Getting Challenging DOM card element
+2026-08-18 07:22:24,102 - pages.home_page - INFO - Clicked Challenging DOM card
+2026-08-18 07:22:24,104 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:24,105 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,407 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,408 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,416 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,416 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,416 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,450 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,450 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,460 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,460 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,461 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,518 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,519 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,537 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,538 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,538 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,598 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,598 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,610 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,611 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,611 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,666 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,666 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,677 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,677 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,677 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,734 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,735 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,745 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,745 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,745 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,815 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,816 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,825 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,826 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,826 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,880 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,881 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,890 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,890 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,890 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,947 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,947 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:25,955 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:25,955 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:25,955 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:26,015 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:26,015 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:26,027 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-08-18 07:22:26,027 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:26,027 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:26,081 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:26,081 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:26,089 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-08-18 07:22:26,089 - pages.challenging_dom_page - INFO - Getting table element
+2026-08-18 07:22:26,452 - root - INFO - TEST END: test_delete_all_rows[chromium]
+2026-08-18 07:22:26,452 - root - INFO - ================================================================================

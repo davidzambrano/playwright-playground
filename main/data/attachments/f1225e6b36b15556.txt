@@ -1,0 +1,17 @@
+2026-08-18 07:22:15,120 - root - INFO - Logging configured for test session
+2026-08-18 07:22:16,159 - root - INFO - ================================================================================
+2026-08-18 07:22:16,160 - root - INFO - TEST START: test_active_version_elements_are_displayed[chromium]
+2026-08-18 07:22:16,315 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-08-18 07:22:17,118 - pages.base_page - INFO - Page load completed
+2026-08-18 07:22:17,119 - pages.home_page - INFO - Navigated to home page
+2026-08-18 07:22:17,119 - pages.home_page - INFO - Getting A/B Testing card element
+2026-08-18 07:22:17,449 - pages.home_page - INFO - Clicked A/B Testing card
+2026-08-18 07:22:17,453 - pages.ab_testing_page - INFO - Getting Version A title element
+2026-08-18 07:22:17,453 - pages.ab_testing_page - INFO - Getting Version B title element
+2026-08-18 07:22:18,281 - pages.ab_testing_page - INFO - Getting heading element for A/B Testing page
+2026-08-18 07:22:18,289 - pages.ab_testing_page - INFO - Getting page description element for A/B Testing page
+2026-08-18 07:22:18,310 - pages.ab_testing_page - INFO - Getting Version B description element
+2026-08-18 07:22:18,318 - pages.ab_testing_page - INFO - Getting Version B description element
+2026-08-18 07:22:18,327 - pages.ab_testing_page - INFO - Getting Version B sign up button element
+2026-08-18 07:22:18,647 - root - INFO - TEST END: test_active_version_elements_are_displayed[chromium]
+2026-08-18 07:22:18,647 - root - INFO - ================================================================================

@@ -41,6 +41,7 @@ class HomePage(BasePage):
     FLOATING_MENU_CARD_LOCATOR = "Floating Menu"
     GEOLOCATION_CARD_LOCATOR = "Geolocation"
     HORIZONTAL_SLIDER_CARD_LOCATOR = "Horizontal Slider"
+    LARGE_DEEP_DOM_CARD_LOCATOR = "Large & Deep DOM"
     IFRAME_CARD_LOCATOR = "iFrame"
     INFINITE_SCROLL_CARD_LOCATOR = "Infinite Scroll"
     INPUTS_CARD_LOCATOR = "Inputs"
@@ -390,6 +391,15 @@ class HomePage(BasePage):
         logger.info("Getting Horizontal Slider card element")
         return self._get_card(self.HORIZONTAL_SLIDER_CARD_LOCATOR)
 
+    def get_large_deep_dom_card(self):
+        """Get the Large & Deep DOM card element.
+
+        Returns:
+            Locator: The locator for the Large & Deep DOM card element.
+        """
+        logger.info("Getting Large & Deep DOM card element")
+        return self._get_card(self.LARGE_DEEP_DOM_CARD_LOCATOR)
+
     def click_horizontal_slider_card(self):
         """Click the Horizontal Slider card.
 
@@ -398,6 +408,15 @@ class HomePage(BasePage):
         """
         self.get_horizontal_slider_card().click()
         logger.info("Clicked Horizontal Slider card")
+
+    def click_large_deep_dom_card(self):
+        """Click the Large & Deep DOM card.
+
+        Returns:
+            None
+        """
+        self.get_large_deep_dom_card().click()
+        logger.info("Clicked Large & Deep DOM card")
 
     def get_iframe_card(self):
         """Get the iFrame card element.

@@ -34,6 +34,7 @@ from pages.key_presses_page import KeyPressesPage
 from pages.large_deep_dom_page import LargeDeepDomPage
 from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
+from pages.nested_frames_page import NestedFramesPage
 from pages.notification_messages_page import NotificationMessagesPage
 from pages.redirect_link_page import RedirectLinkPage
 from pages.secure_file_download_page import SecureFileDownloadPage
@@ -208,6 +209,12 @@ def horizontal_slider_page(page: Page) -> HorizontalSliderPage:
 def large_deep_dom_page(page: Page) -> LargeDeepDomPage:
     """Fixture for LargeDeepDomPage object."""
     return LargeDeepDomPage(page)
+
+
+@pytest.fixture
+def nested_frames_page(page: Page) -> NestedFramesPage:
+    """Fixture for NestedFramesPage object."""
+    return NestedFramesPage(page)
 
 
 @pytest.fixture

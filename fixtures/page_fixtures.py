@@ -31,6 +31,7 @@ from pages.inputs_page import InputsPage
 from pages.javascript_alerts_page import JavaScriptAlertsPage
 from pages.javascript_onload_error_page import JavascriptOnloadErrorPage
 from pages.key_presses_page import KeyPressesPage
+from pages.large_deep_dom_page import LargeDeepDomPage
 from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
 from pages.notification_messages_page import NotificationMessagesPage
@@ -201,6 +202,12 @@ def geolocation_page(page: Page) -> GeolocationPage:
 def horizontal_slider_page(page: Page) -> HorizontalSliderPage:
     """Fixture for HorizontalSliderPage object."""
     return HorizontalSliderPage(page)
+
+
+@pytest.fixture
+def large_deep_dom_page(page: Page) -> LargeDeepDomPage:
+    """Fixture for LargeDeepDomPage object."""
+    return LargeDeepDomPage(page)
 
 
 @pytest.fixture

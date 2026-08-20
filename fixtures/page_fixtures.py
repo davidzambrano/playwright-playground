@@ -38,6 +38,7 @@ from pages.nested_frames_page import NestedFramesPage
 from pages.notification_messages_page import NotificationMessagesPage
 from pages.redirect_link_page import RedirectLinkPage
 from pages.secure_file_download_page import SecureFileDownloadPage
+from pages.shadow_dom_page import ShadowDomPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
@@ -263,3 +264,9 @@ def redirect_link_page(page: Page) -> RedirectLinkPage:
 def secure_file_download_page(page: Page) -> SecureFileDownloadPage:
     """Fixture for SecureFileDownloadPage object."""
     return SecureFileDownloadPage(page)
+
+
+@pytest.fixture
+def shadow_dom_page(page: Page) -> ShadowDomPage:
+    """Fixture for ShadowDomPage object."""
+    return ShadowDomPage(page)

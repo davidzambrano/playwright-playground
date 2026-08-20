@@ -34,9 +34,11 @@ from pages.key_presses_page import KeyPressesPage
 from pages.large_deep_dom_page import LargeDeepDomPage
 from pages.menus_page import MenusPage
 from pages.multiple_windows_page import MultipleWindowsPage
+from pages.nested_frames_page import NestedFramesPage
 from pages.notification_messages_page import NotificationMessagesPage
 from pages.redirect_link_page import RedirectLinkPage
 from pages.secure_file_download_page import SecureFileDownloadPage
+from pages.shadow_dom_page import ShadowDomPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
@@ -211,6 +213,12 @@ def large_deep_dom_page(page: Page) -> LargeDeepDomPage:
 
 
 @pytest.fixture
+def nested_frames_page(page: Page) -> NestedFramesPage:
+    """Fixture for NestedFramesPage object."""
+    return NestedFramesPage(page)
+
+
+@pytest.fixture
 def iframe_page(page: Page) -> IFramePage:
     """Fixture for IFramePage object."""
     return IFramePage(page)
@@ -256,3 +264,9 @@ def redirect_link_page(page: Page) -> RedirectLinkPage:
 def secure_file_download_page(page: Page) -> SecureFileDownloadPage:
     """Fixture for SecureFileDownloadPage object."""
     return SecureFileDownloadPage(page)
+
+
+@pytest.fixture
+def shadow_dom_page(page: Page) -> ShadowDomPage:
+    """Fixture for ShadowDomPage object."""
+    return ShadowDomPage(page)

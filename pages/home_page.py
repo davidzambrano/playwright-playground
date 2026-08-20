@@ -50,6 +50,8 @@ class HomePage(BasePage):
     NOTIFICATION_MESSAGES_CARD_LOCATOR = "Notification Messages"
     REDIRECT_LINK_CARD_LOCATOR = "Redirect Link"
     SECURE_FILE_DOWNLOAD_CARD_LOCATOR = "Secure File Download"
+    NESTED_FRAMES_CARD_LOCATOR = "Nested Frames"
+    SHADOW_DOM_CARD_LOCATOR = "Shadow DOM"
 
     def _get_card(self, title: str):
         """Get a card link locator by its title text.
@@ -726,3 +728,39 @@ class HomePage(BasePage):
         """
         self.get_dynamic_content_card().click()
         logger.info("Clicked Dynamic Content card")
+
+    def get_nested_frames_card(self):
+        """Get the Nested Frames card element.
+
+        Returns:
+            Locator: The locator for the Nested Frames card element.
+        """
+        logger.info("Getting Nested Frames card element")
+        return self._get_card(self.NESTED_FRAMES_CARD_LOCATOR)
+
+    def click_nested_frames_card(self):
+        """Click the Nested Frames card.
+
+        Returns:
+            None
+        """
+        self.get_nested_frames_card().click()
+        logger.info("Clicked Nested Frames card")
+
+    def get_shadow_dom_card(self):
+        """Get the Shadow DOM card element.
+
+        Returns:
+            Locator: The locator for the Shadow DOM card element.
+        """
+        logger.info("Getting Shadow DOM card element")
+        return self._get_card(self.SHADOW_DOM_CARD_LOCATOR)
+
+    def click_shadow_dom_card(self):
+        """Click the Shadow DOM card.
+
+        Returns:
+            None
+        """
+        self.get_shadow_dom_card().click()
+        logger.info("Clicked Shadow DOM card")

@@ -52,6 +52,7 @@ class HomePage(BasePage):
     SECURE_FILE_DOWNLOAD_CARD_LOCATOR = "Secure File Download"
     NESTED_FRAMES_CARD_LOCATOR = "Nested Frames"
     SHADOW_DOM_CARD_LOCATOR = "Shadow DOM"
+    SHIFTING_CONTENT_CARD_LOCATOR = "Shifting Content"
 
     def _get_card(self, title: str):
         """Get a card link locator by its title text.
@@ -764,3 +765,22 @@ class HomePage(BasePage):
         """
         self.get_shadow_dom_card().click()
         logger.info("Clicked Shadow DOM card")
+
+    def get_shifting_content_card(self):
+        """Get the Shifting Content card element.
+
+        Returns:
+            Locator: The locator for the Shifting Content card element.
+        """
+        logger.info("Getting Shifting Content card element")
+        return self._get_card(self.SHIFTING_CONTENT_CARD_LOCATOR)
+
+    def click_shifting_content_card(self):
+        """Click the Shifting Content card.
+
+        Returns:
+            None
+
+        """
+        self.get_shifting_content_card().click()
+        logger.info("Clicked Shifting Content card")

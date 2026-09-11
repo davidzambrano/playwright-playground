@@ -39,6 +39,7 @@ from pages.notification_messages_page import NotificationMessagesPage
 from pages.redirect_link_page import RedirectLinkPage
 from pages.secure_file_download_page import SecureFileDownloadPage
 from pages.shadow_dom_page import ShadowDomPage
+from pages.shifting_content_page import ShiftingContentPage
 from pages.slow_resources_page import SlowResourcesPage
 from pages.stale_element_page import StaleElementPage
 
@@ -270,3 +271,9 @@ def secure_file_download_page(page: Page) -> SecureFileDownloadPage:
 def shadow_dom_page(page: Page) -> ShadowDomPage:
     """Fixture for ShadowDomPage object."""
     return ShadowDomPage(page)
+
+
+@pytest.fixture
+def shifting_content_page(page: Page) -> ShiftingContentPage:
+    """Fixture for ShiftingContentPage object."""
+    return ShiftingContentPage(page)

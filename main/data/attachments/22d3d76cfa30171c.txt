@@ -1,0 +1,10 @@
+2026-09-11 22:09:07,013 - root - INFO - ================================================================================
+2026-09-11 22:09:07,013 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-09-11 22:09:07,108 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-11 22:09:08,422 - pages.base_page - INFO - Page load completed
+2026-09-11 22:09:08,423 - pages.home_page - INFO - Navigated to home page
+2026-09-11 22:09:08,423 - pages.home_page - INFO - Getting Drag and Drop card element
+2026-09-11 22:09:08,511 - pages.home_page - INFO - Clicked Drag and Drop card
+2026-09-11 22:09:08,515 - pages.drag_and_drop_page - INFO - Getting page heading element
+2026-09-11 22:09:09,781 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-09-11 22:09:09,782 - root - INFO - ================================================================================

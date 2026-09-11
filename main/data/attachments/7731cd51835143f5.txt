@@ -1,0 +1,13 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_deeply_nested_dom_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:80 Navigated to home page
+INFO     pages.home_page:home_page.py:403 Getting Large & Deep DOM card element
+INFO     pages.home_page:home_page.py:422 Clicked Large & Deep DOM card
+INFO     pages.large_deep_dom_page:large_deep_dom_page.py:34 Getting no-siblings container element
+INFO     pages.large_deep_dom_page:large_deep_dom_page.py:43 Getting deepest nested level element
+INFO     pages.large_deep_dom_page:large_deep_dom_page.py:52 Getting nested siblings container element
+INFO     pages.large_deep_dom_page:large_deep_dom_page.py:64 Getting nested sibling element: 1.1.1.1
+INFO     root:conftest.py:55 TEST END: test_deeply_nested_dom_is_visible[chromium]
+INFO     root:conftest.py:56 ================================================================================

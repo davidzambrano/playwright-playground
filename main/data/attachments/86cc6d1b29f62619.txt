@@ -1,0 +1,10 @@
+2026-09-11 22:10:48,316 - root - INFO - ================================================================================
+2026-09-11 22:10:48,316 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-09-11 22:10:48,385 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-11 22:10:49,981 - pages.base_page - INFO - Page load completed
+2026-09-11 22:10:49,981 - pages.home_page - INFO - Navigated to home page
+2026-09-11 22:10:49,981 - pages.home_page - INFO - Getting JavaScript Alerts card element
+2026-09-11 22:10:50,030 - pages.home_page - INFO - Clicked JavaScript Alerts card
+2026-09-11 22:10:50,031 - pages.javascript_alerts_page - INFO - Getting page heading element
+2026-09-11 22:10:51,037 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-09-11 22:10:51,037 - root - INFO - ================================================================================

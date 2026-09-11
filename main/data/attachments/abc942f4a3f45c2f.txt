@@ -1,0 +1,11 @@
+2026-09-11 22:08:37,485 - root - INFO - Logging configured for test session
+2026-09-11 22:08:38,673 - root - INFO - ================================================================================
+2026-09-11 22:08:38,673 - root - INFO - TEST START: test_all_images_are_present_in_dom[chromium]
+2026-09-11 22:08:38,837 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-11 22:08:40,009 - pages.base_page - INFO - Page load completed
+2026-09-11 22:08:40,010 - pages.home_page - INFO - Navigated to home page
+2026-09-11 22:08:40,010 - pages.home_page - INFO - Getting Broken Images card element
+2026-09-11 22:08:41,332 - pages.home_page - INFO - Clicked Broken Images card
+2026-09-11 22:08:41,336 - pages.broken_images_page - INFO - Getting all image elements on Broken Images page
+2026-09-11 22:08:42,466 - root - INFO - TEST END: test_all_images_are_present_in_dom[chromium]
+2026-09-11 22:08:42,466 - root - INFO - ================================================================================

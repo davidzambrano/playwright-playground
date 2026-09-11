@@ -1,0 +1,13 @@
+2026-09-11 22:10:33,321 - root - INFO - ================================================================================
+2026-09-11 22:10:33,321 - root - INFO - TEST START: test_deeply_nested_dom_is_visible[chromium]
+2026-09-11 22:10:33,419 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-11 22:10:35,503 - pages.base_page - INFO - Page load completed
+2026-09-11 22:10:35,503 - pages.home_page - INFO - Navigated to home page
+2026-09-11 22:10:35,504 - pages.home_page - INFO - Getting Large & Deep DOM card element
+2026-09-11 22:10:35,593 - pages.home_page - INFO - Clicked Large & Deep DOM card
+2026-09-11 22:10:35,598 - pages.large_deep_dom_page - INFO - Getting no-siblings container element
+2026-09-11 22:10:36,552 - pages.large_deep_dom_page - INFO - Getting deepest nested level element
+2026-09-11 22:10:36,587 - pages.large_deep_dom_page - INFO - Getting nested siblings container element
+2026-09-11 22:10:36,617 - pages.large_deep_dom_page - INFO - Getting nested sibling element: 1.1.1.1
+2026-09-11 22:10:36,964 - root - INFO - TEST END: test_deeply_nested_dom_is_visible[chromium]
+2026-09-11 22:10:36,965 - root - INFO - ================================================================================

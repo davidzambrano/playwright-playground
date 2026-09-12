@@ -1,0 +1,10 @@
+2026-09-12 11:55:57,903 - root - INFO - ================================================================================
+2026-09-12 11:55:57,903 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-09-12 11:55:57,998 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:55:59,789 - pages.base_page - INFO - Page load completed
+2026-09-12 11:55:59,789 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:55:59,789 - pages.home_page - INFO - Getting Dynamic Controls card element
+2026-09-12 11:55:59,870 - pages.home_page - INFO - Clicked Dynamic Controls card
+2026-09-12 11:55:59,873 - pages.dynamic_controls_page - INFO - Getting page heading element
+2026-09-12 11:56:02,574 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-09-12 11:56:02,575 - root - INFO - ================================================================================

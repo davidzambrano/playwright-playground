@@ -1,0 +1,14 @@
+2026-09-12 11:56:19,484 - root - INFO - ================================================================================
+2026-09-12 11:56:19,484 - root - INFO - TEST START: test_example2_content_text_is_hello_world[chromium]
+2026-09-12 11:56:19,578 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:56:23,252 - pages.base_page - INFO - Page load completed
+2026-09-12 11:56:23,252 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:56:23,252 - pages.home_page - INFO - Getting Dynamic Loading card element
+2026-09-12 11:56:23,335 - pages.home_page - INFO - Clicked Dynamic Loading card
+2026-09-12 11:56:23,337 - pages.dynamic_loading_page - INFO - Clicking Example 2 Start button
+2026-09-12 11:56:23,337 - pages.dynamic_loading_page - INFO - Getting Example 2 Start button
+2026-09-12 11:56:26,179 - pages.dynamic_loading_page - INFO - Waiting for Example 2 content to load
+2026-09-12 11:56:26,180 - pages.dynamic_loading_page - INFO - Getting Example 2 finish content
+2026-09-12 11:56:28,499 - pages.dynamic_loading_page - INFO - Getting Example 2 finish content
+2026-09-12 11:56:28,801 - root - INFO - TEST END: test_example2_content_text_is_hello_world[chromium]
+2026-09-12 11:56:28,802 - root - INFO - ================================================================================

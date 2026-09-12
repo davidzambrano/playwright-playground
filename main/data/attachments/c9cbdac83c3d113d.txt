@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_parent_checkbox_is_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:80 Navigated to home page
+INFO     pages.home_page:home_page.py:739 Getting Nested Frames card element
+INFO     pages.home_page:home_page.py:749 Clicked Nested Frames card
+INFO     pages.nested_frames_page:nested_frames_page.py:103 Getting parent checkbox element
+INFO     pages.nested_frames_page:nested_frames_page.py:46 Getting parent frame locator
+INFO     root:conftest.py:55 TEST END: test_parent_checkbox_is_visible[chromium]
+INFO     root:conftest.py:56 ================================================================================

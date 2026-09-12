@@ -1,0 +1,11 @@
+2026-09-12 11:46:16,452 - root - INFO - ================================================================================
+2026-09-12 11:46:16,452 - root - INFO - TEST START: test_parent_checkbox_is_visible[chromium]
+2026-09-12 11:46:16,522 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:46:17,293 - pages.base_page - INFO - Page load completed
+2026-09-12 11:46:17,293 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:46:17,294 - pages.home_page - INFO - Getting Nested Frames card element
+2026-09-12 11:46:17,349 - pages.home_page - INFO - Clicked Nested Frames card
+2026-09-12 11:46:17,351 - pages.nested_frames_page - INFO - Getting parent checkbox element
+2026-09-12 11:46:17,351 - pages.nested_frames_page - INFO - Getting parent frame locator
+2026-09-12 11:46:18,900 - root - INFO - TEST END: test_parent_checkbox_is_visible[chromium]
+2026-09-12 11:46:18,900 - root - INFO - ================================================================================

@@ -1,0 +1,12 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_child_frame_heading_text[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:80 Navigated to home page
+INFO     pages.home_page:home_page.py:739 Getting Nested Frames card element
+INFO     pages.home_page:home_page.py:749 Clicked Nested Frames card
+INFO     pages.nested_frames_page:nested_frames_page.py:76 Getting child frame heading element
+INFO     pages.nested_frames_page:nested_frames_page.py:58 Getting child frame locator (nested in parent frame)
+INFO     pages.nested_frames_page:nested_frames_page.py:46 Getting parent frame locator
+INFO     root:conftest.py:55 TEST END: test_child_frame_heading_text[chromium]
+INFO     root:conftest.py:56 ================================================================================

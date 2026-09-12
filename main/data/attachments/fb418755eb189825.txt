@@ -1,0 +1,16 @@
+2026-09-12 11:44:48,388 - root - INFO - ================================================================================
+2026-09-12 11:44:48,388 - root - INFO - TEST START: test_simple_dropdown_select_banana[chromium]
+2026-09-12 11:44:48,477 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:44:50,012 - pages.base_page - INFO - Page load completed
+2026-09-12 11:44:50,012 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:44:50,012 - pages.home_page - INFO - Getting Dropdown card element
+2026-09-12 11:44:50,088 - pages.home_page - INFO - Clicked Dropdown card
+2026-09-12 11:44:50,090 - pages.dropdown_page - INFO - Selecting option from simple dropdown: banana
+2026-09-12 11:44:50,091 - pages.dropdown_page - INFO - Getting simple dropdown trigger element
+2026-09-12 11:44:50,091 - pages.dropdown_page - INFO - Clicking simple dropdown trigger
+2026-09-12 11:44:50,939 - pages.dropdown_page - INFO - Getting simple dropdown option with value: banana
+2026-09-12 11:44:50,940 - pages.dropdown_page - INFO - Waiting for option to exist
+2026-09-12 11:44:50,980 - pages.dropdown_page - INFO - Clicking dropdown option: banana
+2026-09-12 11:44:51,024 - pages.dropdown_page - INFO - Getting selection text element
+2026-09-12 11:44:51,310 - root - INFO - TEST END: test_simple_dropdown_select_banana[chromium]
+2026-09-12 11:44:51,310 - root - INFO - ================================================================================

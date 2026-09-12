@@ -1,0 +1,10 @@
+2026-09-12 11:46:33,306 - root - INFO - ================================================================================
+2026-09-12 11:46:33,306 - root - INFO - TEST START: test_shifting_image_is_visible[chromium]
+2026-09-12 11:46:33,369 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:46:34,680 - pages.base_page - INFO - Page load completed
+2026-09-12 11:46:34,680 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:46:34,680 - pages.home_page - INFO - Getting Shifting Content card element
+2026-09-12 11:46:34,750 - pages.home_page - INFO - Clicked Shifting Content card
+2026-09-12 11:46:34,751 - pages.shifting_content_page - INFO - Getting shifting image element
+2026-09-12 11:46:35,809 - root - INFO - TEST END: test_shifting_image_is_visible[chromium]
+2026-09-12 11:46:35,810 - root - INFO - ================================================================================

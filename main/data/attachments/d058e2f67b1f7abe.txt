@@ -1,0 +1,20 @@
+2026-09-12 11:46:52,782 - root - INFO - ================================================================================
+2026-09-12 11:46:52,782 - root - INFO - TEST START: test_logout_returns_to_login[chromium]
+2026-09-12 11:46:52,870 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:46:54,126 - pages.base_page - INFO - Page load completed
+2026-09-12 11:46:54,126 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:46:54,126 - pages.home_page - INFO - Getting Secure File Download card element
+2026-09-12 11:46:54,200 - pages.home_page - INFO - Clicked Secure File Download card
+2026-09-12 11:46:54,202 - pages.secure_file_download_page - INFO - Performing login
+2026-09-12 11:46:54,203 - pages.secure_file_download_page - INFO - Entering username: admin
+2026-09-12 11:46:54,203 - pages.secure_file_download_page - INFO - Getting username input element
+2026-09-12 11:46:55,024 - pages.secure_file_download_page - INFO - Entering password
+2026-09-12 11:46:55,025 - pages.secure_file_download_page - INFO - Getting password input element
+2026-09-12 11:46:55,046 - pages.secure_file_download_page - INFO - Clicking Login button
+2026-09-12 11:46:55,046 - pages.secure_file_download_page - INFO - Getting Login button element
+2026-09-12 11:46:55,128 - pages.secure_file_download_page - INFO - Getting Secure Area heading element
+2026-09-12 11:46:55,137 - pages.secure_file_download_page - INFO - Clicking Log out button
+2026-09-12 11:46:55,138 - pages.secure_file_download_page - INFO - Getting Log out button element
+2026-09-12 11:46:55,178 - pages.secure_file_download_page - INFO - Getting login card title element
+2026-09-12 11:46:55,514 - root - INFO - TEST END: test_logout_returns_to_login[chromium]
+2026-09-12 11:46:55,514 - root - INFO - ================================================================================

@@ -1,0 +1,10 @@
+2026-09-12 11:44:50,529 - root - INFO - ================================================================================
+2026-09-12 11:44:50,529 - root - INFO - TEST START: test_single_slider_is_visible[chromium]
+2026-09-12 11:44:50,614 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:44:51,871 - pages.base_page - INFO - Page load completed
+2026-09-12 11:44:51,871 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:44:51,871 - pages.home_page - INFO - Getting Horizontal Slider card element
+2026-09-12 11:44:51,937 - pages.home_page - INFO - Clicked Horizontal Slider card
+2026-09-12 11:44:51,939 - pages.horizontal_slider_page - INFO - Getting single value slider element
+2026-09-12 11:44:53,633 - root - INFO - TEST END: test_single_slider_is_visible[chromium]
+2026-09-12 11:44:53,634 - root - INFO - ================================================================================

@@ -1,0 +1,19 @@
+2026-09-12 11:59:49,723 - root - INFO - ================================================================================
+2026-09-12 11:59:49,723 - root - INFO - TEST START: test_download_sample_file[chromium]
+2026-09-12 11:59:49,812 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:59:53,068 - pages.base_page - INFO - Page load completed
+2026-09-12 11:59:53,069 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:59:53,069 - pages.home_page - INFO - Getting Secure File Download card element
+2026-09-12 11:59:53,145 - pages.home_page - INFO - Clicked Secure File Download card
+2026-09-12 11:59:53,148 - pages.secure_file_download_page - INFO - Performing login
+2026-09-12 11:59:53,149 - pages.secure_file_download_page - INFO - Entering username: admin
+2026-09-12 11:59:53,149 - pages.secure_file_download_page - INFO - Getting username input element
+2026-09-12 11:59:56,480 - pages.secure_file_download_page - INFO - Entering password
+2026-09-12 11:59:56,481 - pages.secure_file_download_page - INFO - Getting password input element
+2026-09-12 11:59:56,498 - pages.secure_file_download_page - INFO - Clicking Login button
+2026-09-12 11:59:56,498 - pages.secure_file_download_page - INFO - Getting Login button element
+2026-09-12 11:59:56,564 - pages.secure_file_download_page - INFO - Clicking Download button for file: sample.txt
+2026-09-12 11:59:56,564 - pages.secure_file_download_page - INFO - Getting Download button for file: sample.txt
+2026-09-12 11:59:56,564 - pages.secure_file_download_page - INFO - Getting file card element: sample.txt
+2026-09-12 11:59:57,092 - root - INFO - TEST END: test_download_sample_file[chromium]
+2026-09-12 11:59:57,092 - root - INFO - ================================================================================

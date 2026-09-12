@@ -1,0 +1,20 @@
+2026-09-12 11:57:32,069 - root - INFO - ================================================================================
+2026-09-12 11:57:32,069 - root - INFO - TEST START: test_required_field_empty_shows_error[chromium]
+2026-09-12 11:57:32,163 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 11:57:35,118 - pages.base_page - INFO - Page load completed
+2026-09-12 11:57:35,119 - pages.home_page - INFO - Navigated to home page
+2026-09-12 11:57:35,119 - pages.home_page - INFO - Getting Inputs card element
+2026-09-12 11:57:35,197 - pages.home_page - INFO - Clicked Inputs card
+2026-09-12 11:57:35,200 - pages.inputs_page - INFO - Filling Email input: john@example.com
+2026-09-12 11:57:35,201 - pages.inputs_page - INFO - Getting Email input field
+2026-09-12 11:57:38,040 - pages.inputs_page - INFO - Filling Password input
+2026-09-12 11:57:38,040 - pages.inputs_page - INFO - Getting Password input field
+2026-09-12 11:57:38,068 - pages.inputs_page - INFO - Filling Number input: 42
+2026-09-12 11:57:38,068 - pages.inputs_page - INFO - Getting Number input field
+2026-09-12 11:57:38,091 - pages.inputs_page - INFO - Filling Website input: https://example.com
+2026-09-12 11:57:38,091 - pages.inputs_page - INFO - Getting Website input field
+2026-09-12 11:57:38,135 - pages.inputs_page - INFO - Clicking Submit button
+2026-09-12 11:57:38,135 - pages.inputs_page - INFO - Getting Submit button
+2026-09-12 11:57:38,178 - pages.inputs_page - INFO - Getting toast title
+2026-09-12 11:57:38,467 - root - INFO - TEST END: test_required_field_empty_shows_error[chromium]
+2026-09-12 11:57:38,468 - root - INFO - ================================================================================

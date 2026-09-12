@@ -1,0 +1,10 @@
+2026-09-12 12:00:13,088 - root - INFO - ================================================================================
+2026-09-12 12:00:13,089 - root - INFO - TEST START: test_list_items_inside_shadow_root[chromium]
+2026-09-12 12:00:13,175 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 12:00:15,909 - pages.base_page - INFO - Page load completed
+2026-09-12 12:00:15,909 - pages.home_page - INFO - Navigated to home page
+2026-09-12 12:00:15,910 - pages.home_page - INFO - Getting Shadow DOM card element
+2026-09-12 12:00:15,979 - pages.home_page - INFO - Clicked Shadow DOM card
+2026-09-12 12:00:15,982 - pages.shadow_dom_page - INFO - Getting list items from second shadow root
+2026-09-12 12:00:18,602 - root - INFO - TEST END: test_list_items_inside_shadow_root[chromium]
+2026-09-12 12:00:18,602 - root - INFO - ================================================================================

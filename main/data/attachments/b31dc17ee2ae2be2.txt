@@ -1,0 +1,10 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_first_shadow_element_text[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:80 Navigated to home page
+INFO     pages.home_page:home_page.py:757 Getting Shadow DOM card element
+INFO     pages.home_page:home_page.py:767 Clicked Shadow DOM card
+INFO     pages.shadow_dom_page:shadow_dom_page.py:92 Getting first shadow paragraph element
+INFO     root:conftest.py:55 TEST END: test_first_shadow_element_text[chromium]
+INFO     root:conftest.py:56 ================================================================================

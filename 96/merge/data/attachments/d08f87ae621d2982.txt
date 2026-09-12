@@ -1,0 +1,10 @@
+2026-09-12 15:06:24,337 - root - INFO - ================================================================================
+2026-09-12 15:06:24,338 - root - INFO - TEST START: test_table_cell_is_accessible_by_id[chromium]
+2026-09-12 15:06:24,421 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 15:06:25,275 - pages.base_page - INFO - Page load completed
+2026-09-12 15:06:25,275 - pages.home_page - INFO - Navigated to home page
+2026-09-12 15:06:25,276 - pages.home_page - INFO - Getting Large & Deep DOM card element
+2026-09-12 15:06:25,350 - pages.home_page - INFO - Clicked Large & Deep DOM card
+2026-09-12 15:06:25,354 - pages.large_deep_dom_page - INFO - Getting table cell: 25.25
+2026-09-12 15:06:27,308 - root - INFO - TEST END: test_table_cell_is_accessible_by_id[chromium]
+2026-09-12 15:06:27,308 - root - INFO - ================================================================================

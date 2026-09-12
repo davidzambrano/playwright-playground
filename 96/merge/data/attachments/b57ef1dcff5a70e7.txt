@@ -1,0 +1,20 @@
+2026-09-12 15:06:12,875 - root - INFO - ================================================================================
+2026-09-12 15:06:12,875 - root - INFO - TEST START: test_submenu_shows_on_hover[chromium]
+2026-09-12 15:06:12,955 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 15:06:13,883 - pages.base_page - INFO - Page load completed
+2026-09-12 15:06:13,883 - pages.home_page - INFO - Navigated to home page
+2026-09-12 15:06:13,883 - pages.home_page - INFO - Getting Menus card element
+2026-09-12 15:06:13,976 - pages.home_page - INFO - Clicked Menus card
+2026-09-12 15:06:13,979 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-09-12 15:06:13,979 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-09-12 15:06:15,332 - pages.menus_page - INFO - Hovering over Downloads submenu trigger
+2026-09-12 15:06:15,333 - pages.menus_page - INFO - Getting Downloads submenu trigger element
+2026-09-12 15:06:15,333 - pages.menus_page - INFO - Getting menu item: Downloads
+2026-09-12 15:06:15,595 - pages.menus_page - INFO - Getting PDF submenu item element
+2026-09-12 15:06:15,595 - pages.menus_page - INFO - Getting submenu item: PDF
+2026-09-12 15:06:15,792 - pages.menus_page - INFO - Getting CSV submenu item element
+2026-09-12 15:06:15,792 - pages.menus_page - INFO - Getting submenu item: CSV
+2026-09-12 15:06:15,799 - pages.menus_page - INFO - Getting Excel submenu item element
+2026-09-12 15:06:15,800 - pages.menus_page - INFO - Getting submenu item: Excel
+2026-09-12 15:06:16,112 - root - INFO - TEST END: test_submenu_shows_on_hover[chromium]
+2026-09-12 15:06:16,112 - root - INFO - ================================================================================

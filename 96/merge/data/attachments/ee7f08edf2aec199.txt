@@ -1,0 +1,10 @@
+2026-09-12 15:05:53,538 - root - INFO - ================================================================================
+2026-09-12 15:05:53,539 - root - INFO - TEST START: test_input_field_is_visible[chromium]
+2026-09-12 15:05:53,622 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 15:05:55,195 - pages.base_page - INFO - Page load completed
+2026-09-12 15:05:55,196 - pages.home_page - INFO - Navigated to home page
+2026-09-12 15:05:55,196 - pages.home_page - INFO - Getting Key Presses card element
+2026-09-12 15:05:55,272 - pages.home_page - INFO - Clicked Key Presses card
+2026-09-12 15:05:55,275 - pages.key_presses_page - INFO - Getting input field element
+2026-09-12 15:05:56,490 - root - INFO - TEST END: test_input_field_is_visible[chromium]
+2026-09-12 15:05:56,490 - root - INFO - ================================================================================

@@ -1,0 +1,13 @@
+2026-09-12 09:53:52,101 - root - INFO - ================================================================================
+2026-09-12 09:53:52,101 - root - INFO - TEST START: test_get_location_displays_coordinates[chromium]
+2026-09-12 09:53:52,188 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 09:53:53,870 - pages.base_page - INFO - Page load completed
+2026-09-12 09:53:53,871 - pages.home_page - INFO - Navigated to home page
+2026-09-12 09:53:53,871 - pages.home_page - INFO - Getting Geolocation card element
+2026-09-12 09:53:53,953 - pages.home_page - INFO - Clicked Geolocation card
+2026-09-12 09:53:53,975 - pages.geolocation_page - INFO - Clicking Where am I? button
+2026-09-12 09:53:53,975 - pages.geolocation_page - INFO - Getting Where am I? button element
+2026-09-12 09:53:55,312 - pages.geolocation_page - INFO - Getting latitude value element
+2026-09-12 09:53:55,320 - pages.geolocation_page - INFO - Getting longitude value element
+2026-09-12 09:53:55,644 - root - INFO - TEST END: test_get_location_displays_coordinates[chromium]
+2026-09-12 09:53:55,645 - root - INFO - ================================================================================

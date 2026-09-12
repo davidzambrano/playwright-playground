@@ -1,0 +1,15 @@
+2026-09-12 09:54:33,126 - root - INFO - ================================================================================
+2026-09-12 09:54:33,127 - root - INFO - TEST START: test_click_preferences_shows_toast[chromium]
+2026-09-12 09:54:33,218 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 09:54:33,989 - pages.base_page - INFO - Page load completed
+2026-09-12 09:54:33,990 - pages.home_page - INFO - Navigated to home page
+2026-09-12 09:54:33,990 - pages.home_page - INFO - Getting Menus card element
+2026-09-12 09:54:34,068 - pages.home_page - INFO - Clicked Menus card
+2026-09-12 09:54:34,072 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-09-12 09:54:34,072 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-09-12 09:54:34,935 - pages.menus_page - INFO - Clicking Preferences menu item
+2026-09-12 09:54:34,936 - pages.menus_page - INFO - Getting Preferences menu item element
+2026-09-12 09:54:34,936 - pages.menus_page - INFO - Getting menu item: Preferences
+2026-09-12 09:54:35,190 - pages.menus_page - INFO - Getting toast notification element
+2026-09-12 09:54:35,493 - root - INFO - TEST END: test_click_preferences_shows_toast[chromium]
+2026-09-12 09:54:35,494 - root - INFO - ================================================================================

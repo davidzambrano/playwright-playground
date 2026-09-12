@@ -1,0 +1,11 @@
+2026-09-12 09:51:59,013 - root - INFO - ================================================================================
+2026-09-12 09:51:59,013 - root - INFO - TEST START: test_disabled_checkboxes_cannot_be_changed[chromium]
+2026-09-12 09:51:59,118 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 09:52:00,885 - pages.base_page - INFO - Page load completed
+2026-09-12 09:52:00,885 - pages.home_page - INFO - Navigated to home page
+2026-09-12 09:52:00,885 - pages.home_page - INFO - Getting Checkboxes card element
+2026-09-12 09:52:00,952 - pages.home_page - INFO - Clicked Checkboxes card
+2026-09-12 09:52:00,955 - pages.checkboxes_page - INFO - Getting disabled unchecked checkbox element
+2026-09-12 09:52:00,956 - pages.checkboxes_page - INFO - Getting disabled checked checkbox element
+2026-09-12 09:52:02,667 - root - INFO - TEST END: test_disabled_checkboxes_cannot_be_changed[chromium]
+2026-09-12 09:52:02,667 - root - INFO - ================================================================================

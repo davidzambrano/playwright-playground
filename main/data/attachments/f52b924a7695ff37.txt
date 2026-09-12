@@ -1,0 +1,10 @@
+2026-09-12 09:54:37,720 - root - INFO - ================================================================================
+2026-09-12 09:54:37,720 - root - INFO - TEST START: test_click_here_link_is_visible[chromium]
+2026-09-12 09:54:37,806 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 09:54:38,835 - pages.base_page - INFO - Page load completed
+2026-09-12 09:54:38,836 - pages.home_page - INFO - Navigated to home page
+2026-09-12 09:54:38,836 - pages.home_page - INFO - Getting Notification Messages card element
+2026-09-12 09:54:38,918 - pages.home_page - INFO - Clicked Notification Messages card
+2026-09-12 09:54:38,922 - pages.notification_messages_page - INFO - Getting Click here link element
+2026-09-12 09:54:40,632 - root - INFO - TEST END: test_click_here_link_is_visible[chromium]
+2026-09-12 09:54:40,633 - root - INFO - ================================================================================

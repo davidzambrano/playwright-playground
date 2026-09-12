@@ -1,0 +1,13 @@
+2026-09-12 09:54:51,059 - root - INFO - ================================================================================
+2026-09-12 09:54:51,059 - root - INFO - TEST START: test_login_form_is_visible[chromium]
+2026-09-12 09:54:51,150 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 09:54:52,233 - pages.base_page - INFO - Page load completed
+2026-09-12 09:54:52,233 - pages.home_page - INFO - Navigated to home page
+2026-09-12 09:54:52,234 - pages.home_page - INFO - Getting Secure File Download card element
+2026-09-12 09:54:52,295 - pages.home_page - INFO - Clicked Secure File Download card
+2026-09-12 09:54:52,298 - pages.secure_file_download_page - INFO - Getting login card title element
+2026-09-12 09:54:53,711 - pages.secure_file_download_page - INFO - Getting username input element
+2026-09-12 09:54:53,718 - pages.secure_file_download_page - INFO - Getting password input element
+2026-09-12 09:54:53,724 - pages.secure_file_download_page - INFO - Getting Login button element
+2026-09-12 09:54:54,032 - root - INFO - TEST END: test_login_form_is_visible[chromium]
+2026-09-12 09:54:54,032 - root - INFO - ================================================================================

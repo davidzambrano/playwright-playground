@@ -1,0 +1,22 @@
+2026-09-12 12:15:05,067 - root - INFO - ================================================================================
+2026-09-12 12:15:05,067 - root - INFO - TEST START: test_table_structure_and_row_deletion[chromium]
+2026-09-12 12:15:05,156 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 12:15:07,066 - pages.base_page - INFO - Page load completed
+2026-09-12 12:15:07,066 - pages.home_page - INFO - Navigated to home page
+2026-09-12 12:15:07,066 - pages.home_page - INFO - Getting Challenging DOM card element
+2026-09-12 12:15:07,151 - pages.home_page - INFO - Clicked Challenging DOM card
+2026-09-12 12:15:07,153 - pages.challenging_dom_page - INFO - Getting table element
+2026-09-12 12:15:08,028 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-09-12 12:15:08,028 - pages.challenging_dom_page - INFO - Getting table element
+2026-09-12 12:15:08,037 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-09-12 12:15:08,038 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-09-12 12:15:08,038 - pages.challenging_dom_page - INFO - Getting table element
+2026-09-12 12:15:08,082 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-09-12 12:15:08,083 - pages.challenging_dom_page - INFO - Getting table element
+2026-09-12 12:15:08,092 - pages.challenging_dom_page - INFO - Clicking delete button for row at index 0
+2026-09-12 12:15:08,093 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-09-12 12:15:08,093 - pages.challenging_dom_page - INFO - Getting table element
+2026-09-12 12:15:08,163 - pages.challenging_dom_page - INFO - Getting all table row elements
+2026-09-12 12:15:08,163 - pages.challenging_dom_page - INFO - Getting table element
+2026-09-12 12:15:08,511 - root - INFO - TEST END: test_table_structure_and_row_deletion[chromium]
+2026-09-12 12:15:08,512 - root - INFO - ================================================================================

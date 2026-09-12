@@ -1,0 +1,11 @@
+2026-09-12 12:15:09,981 - root - INFO - ================================================================================
+2026-09-12 12:15:09,981 - root - INFO - TEST START: test_unchecking_item_unchecks_select_all[chromium]
+2026-09-12 12:15:10,074 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 12:15:11,418 - pages.base_page - INFO - Page load completed
+2026-09-12 12:15:11,418 - pages.home_page - INFO - Navigated to home page
+2026-09-12 12:15:11,419 - pages.home_page - INFO - Getting Checkboxes card element
+2026-09-12 12:15:11,491 - pages.home_page - INFO - Clicked Checkboxes card
+2026-09-12 12:15:11,493 - pages.checkboxes_page - INFO - Getting select all checkbox element
+2026-09-12 12:15:11,494 - pages.checkboxes_page - INFO - Getting item1 (Apples) checkbox element
+2026-09-12 12:15:13,226 - root - INFO - TEST END: test_unchecking_item_unchecks_select_all[chromium]
+2026-09-12 12:15:13,227 - root - INFO - ================================================================================

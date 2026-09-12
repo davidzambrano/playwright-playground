@@ -1,0 +1,15 @@
+2026-09-12 12:15:06,645 - root - INFO - ================================================================================
+2026-09-12 12:15:06,645 - root - INFO - TEST START: test_hover_share_item_triggers_sub_menu[chromium]
+2026-09-12 12:15:06,742 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 12:15:07,498 - pages.base_page - INFO - Page load completed
+2026-09-12 12:15:07,499 - pages.home_page - INFO - Navigated to home page
+2026-09-12 12:15:07,499 - pages.home_page - INFO - Getting Context Menu card element
+2026-09-12 12:15:07,581 - pages.home_page - INFO - Clicked Context Menu card
+2026-09-12 12:15:07,584 - pages.context_menu_page - INFO - Right-clicking on hot-spot area
+2026-09-12 12:15:07,584 - pages.context_menu_page - INFO - Getting hot-spot area element
+2026-09-12 12:15:08,407 - pages.context_menu_page - INFO - Getting context menu element
+2026-09-12 12:15:08,415 - pages.context_menu_page - INFO - Hovering over Share menu item
+2026-09-12 12:15:08,415 - pages.context_menu_page - INFO - Getting Share menu item element
+2026-09-12 12:15:08,471 - pages.context_menu_page - INFO - Getting sub-menu element
+2026-09-12 12:15:08,836 - root - INFO - TEST END: test_hover_share_item_triggers_sub_menu[chromium]
+2026-09-12 12:15:08,836 - root - INFO - ================================================================================

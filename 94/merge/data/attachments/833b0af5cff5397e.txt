@@ -1,0 +1,14 @@
+2026-09-12 12:15:21,230 - root - INFO - ================================================================================
+2026-09-12 12:15:21,230 - root - INFO - TEST START: test_combobox_search_and_select_nextjs[chromium]
+2026-09-12 12:15:21,321 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 12:15:21,902 - pages.base_page - INFO - Page load completed
+2026-09-12 12:15:21,902 - pages.home_page - INFO - Navigated to home page
+2026-09-12 12:15:21,903 - pages.home_page - INFO - Getting Dropdown card element
+2026-09-12 12:15:21,978 - pages.home_page - INFO - Clicked Dropdown card
+2026-09-12 12:15:21,981 - pages.dropdown_page - INFO - Selecting option from combobox: Next.js
+2026-09-12 12:15:21,981 - pages.dropdown_page - INFO - Getting combobox trigger element
+2026-09-12 12:15:23,352 - pages.dropdown_page - INFO - Clicking combobox trigger
+2026-09-12 12:15:23,410 - pages.dropdown_page - INFO - Getting combobox option with label: Next.js
+2026-09-12 12:15:23,677 - pages.dropdown_page - INFO - Getting combobox trigger element
+2026-09-12 12:15:24,048 - root - INFO - TEST END: test_combobox_search_and_select_nextjs[chromium]
+2026-09-12 12:15:24,049 - root - INFO - ================================================================================

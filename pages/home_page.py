@@ -53,6 +53,7 @@ class HomePage(BasePage):
     NESTED_FRAMES_CARD_LOCATOR = "Nested Frames"
     SHADOW_DOM_CARD_LOCATOR = "Shadow DOM"
     SHIFTING_CONTENT_CARD_LOCATOR = "Shifting Content"
+    SORTABLE_DATA_TABLES_CARD_LOCATOR = "Sortable Data Tables"
 
     def _get_card(self, title: str):
         """Get a card link locator by its title text.
@@ -784,3 +785,22 @@ class HomePage(BasePage):
         """
         self.get_shifting_content_card().click()
         logger.info("Clicked Shifting Content card")
+
+    def get_sortable_data_tables_card(self):
+        """Get the Sortable Data Tables card element.
+
+        Returns:
+            Locator: The locator for the Sortable Data Tables card element.
+        """
+        logger.info("Getting Sortable Data Tables card element")
+        return self._get_card(self.SORTABLE_DATA_TABLES_CARD_LOCATOR)
+
+    def click_sortable_data_tables_card(self):
+        """Click the Sortable Data Tables card.
+
+        Returns:
+            None
+
+        """
+        self.get_sortable_data_tables_card().click()
+        logger.info("Clicked Sortable Data Tables card")

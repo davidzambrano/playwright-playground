@@ -127,7 +127,7 @@ class TestExample:
 
 - **`regression.yml`** - Manual trigger. Wakes up Render app, then runs Playwright tests with configurable browser and markers. Tests are sharded across 4 parallel runners for faster execution. Use `pipelinedebug` marker to run only specific tests in CI for quick debugging. Publishes an Allure report per branch (see [Allure Reporting](#allure-reporting)).
 - **`code-quality.yml`** - Runs on push/PR to `main`/`develop`. Checks pylint (≥8.0), black, and isort.
-- **`sonarcloud.yml`** - Runs on push/PR to `main`. Performs SonarCloud static analysis only (code smells, duplication, maintainability, bugs). Code coverage is not collected, since this is a UI test automation framework and coverage of `pages`/`fixtures`/`utils` from running the E2E suite would only reflect which locators/actions were exercised by tests, not meaningful production code coverage. Requires `SONAR_TOKEN` secret.
+- **`sonarcloud.yml`** - Runs on push/PR to `main`. Runs tests in 4 parallel shards, combines coverage, and performs SonarCloud analysis. Requires `SONAR_TOKEN` secret.
 
 ### Test Sharding
 

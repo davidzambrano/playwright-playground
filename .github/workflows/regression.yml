@@ -1,10 +1,12 @@
 # Runs Playwright automated tests against the Render-hosted application.
-# Triggered on push to main and manually via GitHub Actions UI with configurable environment,
-# markers, and browser.
+# Triggered on push and PR to main, and manually via GitHub Actions UI with
+# configurable environment, markers, and browser.
 name: Regression
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
     inputs:

@@ -1,0 +1,11 @@
+2026-09-12 15:13:04,866 - root - INFO - ================================================================================
+2026-09-12 15:13:04,866 - root - INFO - TEST START: test_first_shadow_host_has_shadow_root[chromium]
+2026-09-12 15:13:04,944 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 15:13:05,634 - pages.base_page - INFO - Page load completed
+2026-09-12 15:13:05,634 - pages.home_page - INFO - Navigated to home page
+2026-09-12 15:13:05,634 - pages.home_page - INFO - Getting Shadow DOM card element
+2026-09-12 15:13:05,730 - pages.home_page - INFO - Clicked Shadow DOM card
+2026-09-12 15:13:05,733 - pages.shadow_dom_page - INFO - Checking first host for shadow root
+2026-09-12 15:13:05,734 - pages.shadow_dom_page - INFO - Getting first shadow host element
+2026-09-12 15:13:06,895 - root - INFO - TEST END: test_first_shadow_host_has_shadow_root[chromium]
+2026-09-12 15:13:06,896 - root - INFO - ================================================================================

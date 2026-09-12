@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_second_shadow_host_has_shadow_root[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:80 Navigated to home page
+INFO     pages.home_page:home_page.py:757 Getting Shadow DOM card element
+INFO     pages.home_page:home_page.py:767 Clicked Shadow DOM card
+INFO     pages.shadow_dom_page:shadow_dom_page.py:80 Checking second host for shadow root
+INFO     pages.shadow_dom_page:shadow_dom_page.py:60 Getting second shadow host element
+INFO     root:conftest.py:55 TEST END: test_second_shadow_host_has_shadow_root[chromium]
+INFO     root:conftest.py:56 ================================================================================

@@ -1,0 +1,12 @@
+2026-09-12 15:11:11,639 - root - INFO - ================================================================================
+2026-09-12 15:11:11,639 - root - INFO - TEST START: test_user_2_caption_visible_on_hover[chromium]
+2026-09-12 15:11:11,720 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 15:11:12,485 - pages.base_page - INFO - Page load completed
+2026-09-12 15:11:12,485 - pages.home_page - INFO - Navigated to home page
+2026-09-12 15:11:12,485 - pages.home_page - INFO - Getting Hovers card element
+2026-09-12 15:11:12,561 - pages.home_page - INFO - Clicked Hovers card
+2026-09-12 15:11:12,564 - pages.hovers_page - INFO - Hovering over User 2 image
+2026-09-12 15:11:12,564 - pages.hovers_page - INFO - Getting User 2 image element
+2026-09-12 15:11:13,898 - pages.hovers_page - INFO - Getting User 2 caption element
+2026-09-12 15:11:14,307 - root - INFO - TEST END: test_user_2_caption_visible_on_hover[chromium]
+2026-09-12 15:11:14,308 - root - INFO - ================================================================================

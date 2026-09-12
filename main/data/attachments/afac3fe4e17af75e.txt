@@ -1,0 +1,12 @@
+2026-09-12 15:13:01,107 - root - INFO - ================================================================================
+2026-09-12 15:13:01,107 - root - INFO - TEST START: test_list_item_count_method[chromium]
+2026-09-12 15:13:01,215 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 15:13:01,992 - pages.base_page - INFO - Page load completed
+2026-09-12 15:13:01,993 - pages.home_page - INFO - Navigated to home page
+2026-09-12 15:13:01,993 - pages.home_page - INFO - Getting Shifting Content card element
+2026-09-12 15:13:02,072 - pages.home_page - INFO - Clicked Shifting Content card
+2026-09-12 15:13:02,076 - pages.shifting_content_page - INFO - Getting list item count
+2026-09-12 15:13:02,076 - pages.shifting_content_page - INFO - Getting list items
+2026-09-12 15:13:02,888 - pages.shifting_content_page - INFO - Getting list items
+2026-09-12 15:13:03,201 - root - INFO - TEST END: test_list_item_count_method[chromium]
+2026-09-12 15:13:03,201 - root - INFO - ================================================================================

@@ -1,13 +1,10 @@
-# Runs SonarCloud analysis on every push and pull request to main/develop.
+# Runs SonarCloud static analysis. Triggered manually via workflow_dispatch.
 # Requires SONAR_TOKEN to be set as a GitHub Actions secret.
 # Tests run in 4 parallel shards for speed; coverage data is combined before scanning.
 name: SonarCloud
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   wake-app:

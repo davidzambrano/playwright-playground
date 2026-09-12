@@ -41,6 +41,7 @@ from pages.secure_file_download_page import SecureFileDownloadPage
 from pages.shadow_dom_page import ShadowDomPage
 from pages.shifting_content_page import ShiftingContentPage
 from pages.slow_resources_page import SlowResourcesPage
+from pages.sortable_data_tables_page import SortableDataTablesPage
 from pages.stale_element_page import StaleElementPage
 
 
@@ -277,3 +278,9 @@ def shadow_dom_page(page: Page) -> ShadowDomPage:
 def shifting_content_page(page: Page) -> ShiftingContentPage:
     """Fixture for ShiftingContentPage object."""
     return ShiftingContentPage(page)
+
+
+@pytest.fixture
+def sortable_data_tables_page(page: Page) -> SortableDataTablesPage:
+    """Fixture for SortableDataTablesPage object."""
+    return SortableDataTablesPage(page)

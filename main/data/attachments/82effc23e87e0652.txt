@@ -1,0 +1,13 @@
+2026-09-12 14:21:56,026 - root - INFO - ================================================================================
+2026-09-12 14:21:56,027 - root - INFO - TEST START: test_menu_buttons_are_visible[chromium]
+2026-09-12 14:21:56,110 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 14:21:56,860 - pages.base_page - INFO - Page load completed
+2026-09-12 14:21:56,861 - pages.home_page - INFO - Navigated to home page
+2026-09-12 14:21:56,861 - pages.home_page - INFO - Getting Shifting Content card element
+2026-09-12 14:21:56,939 - pages.home_page - INFO - Clicked Shifting Content card
+2026-09-12 14:21:56,943 - pages.shifting_content_page - INFO - Getting menu button: Home
+2026-09-12 14:21:57,828 - pages.shifting_content_page - INFO - Getting menu button: About
+2026-09-12 14:21:57,844 - pages.shifting_content_page - INFO - Getting menu button: Portfolio
+2026-09-12 14:21:57,859 - pages.shifting_content_page - INFO - Getting menu button: Contact Us
+2026-09-12 14:21:58,303 - root - INFO - TEST END: test_menu_buttons_are_visible[chromium]
+2026-09-12 14:21:58,303 - root - INFO - ================================================================================

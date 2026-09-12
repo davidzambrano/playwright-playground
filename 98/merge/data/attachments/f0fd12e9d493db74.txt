@@ -1,0 +1,24 @@
+2026-09-12 22:05:33,506 - root - INFO - ================================================================================
+2026-09-12 22:05:33,506 - root - INFO - TEST START: test_sort_by_first_name[chromium]
+2026-09-12 22:05:33,569 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:05:34,243 - pages.base_page - INFO - Page load completed
+2026-09-12 22:05:34,244 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:05:34,244 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-09-12 22:05:34,319 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-09-12 22:05:34,321 - pages.sortable_data_tables_page - INFO - Clicking 'First Name' header button in table 0
+2026-09-12 22:05:34,321 - pages.sortable_data_tables_page - INFO - Getting 'First Name' header button in table 0
+2026-09-12 22:05:34,321 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-09-12 22:05:34,321 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:05:35,128 - pages.sortable_data_tables_page - INFO - Getting 'First Name' column values in table 0
+2026-09-12 22:05:35,129 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-09-12 22:05:35,129 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-09-12 22:05:35,129 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:05:35,151 - pages.sortable_data_tables_page - INFO - Getting 'First Name' column cells in table 0
+2026-09-12 22:05:35,151 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-09-12 22:05:35,151 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-09-12 22:05:35,151 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:05:35,160 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-09-12 22:05:35,160 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-09-12 22:05:35,161 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:05:35,449 - root - INFO - TEST END: test_sort_by_first_name[chromium]
+2026-09-12 22:05:35,449 - root - INFO - ================================================================================

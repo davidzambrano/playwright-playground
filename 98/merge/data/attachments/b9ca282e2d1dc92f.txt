@@ -1,0 +1,24 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_sort_by_first_name[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:81 Navigated to home page
+INFO     pages.home_page:home_page.py:795 Getting Sortable Data Tables card element
+INFO     pages.home_page:home_page.py:806 Clicked Sortable Data Tables card
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:121 Clicking 'First Name' header button in table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:106 Getting 'First Name' header button in table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:93 Getting data table at index 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:81 Getting both data tables
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:160 Getting 'First Name' column values in table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:133 Getting rows of table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:93 Getting data table at index 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:81 Getting both data tables
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:147 Getting 'First Name' column cells in table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:133 Getting rows of table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:93 Getting data table at index 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:81 Getting both data tables
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:133 Getting rows of table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:93 Getting data table at index 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:81 Getting both data tables
+INFO     root:conftest.py:55 TEST END: test_sort_by_first_name[chromium]
+INFO     root:conftest.py:56 ================================================================================

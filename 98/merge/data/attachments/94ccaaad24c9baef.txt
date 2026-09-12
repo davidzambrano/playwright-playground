@@ -1,0 +1,13 @@
+2026-09-12 22:05:22,395 - root - INFO - ================================================================================
+2026-09-12 22:05:22,395 - root - INFO - TEST START: test_due_amount_for_jason_doe[chromium]
+2026-09-12 22:05:22,469 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:05:23,668 - pages.base_page - INFO - Page load completed
+2026-09-12 22:05:23,668 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:05:23,668 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-09-12 22:05:23,773 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-09-12 22:05:23,780 - pages.sortable_data_tables_page - INFO - Getting row containing 'Jason' in table 0
+2026-09-12 22:05:23,780 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-09-12 22:05:23,780 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-09-12 22:05:23,781 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:05:25,440 - root - INFO - TEST END: test_due_amount_for_jason_doe[chromium]
+2026-09-12 22:05:25,440 - root - INFO - ================================================================================

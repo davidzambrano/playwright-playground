@@ -1,0 +1,11 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_example_headings_are_visible[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:81 Navigated to home page
+INFO     pages.home_page:home_page.py:795 Getting Sortable Data Tables card element
+INFO     pages.home_page:home_page.py:806 Clicked Sortable Data Tables card
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:63 Getting Example 1 heading element
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:72 Getting Example 2 heading element
+INFO     root:conftest.py:55 TEST END: test_example_headings_are_visible[chromium]
+INFO     root:conftest.py:56 ================================================================================

@@ -1,4 +1,4 @@
-# Runs SonarCloud static analysis on every push and pull request to main.
+# Runs SonarCloud static analysis. Triggered manually via workflow_dispatch (disabled on push/PR).
 # Requires SONAR_TOKEN to be set as a GitHub Actions secret.
 #
 # Note: this project is a UI test automation framework (Page Object Model over
@@ -9,10 +9,7 @@
 name: SonarCloud
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   sonarcloud:

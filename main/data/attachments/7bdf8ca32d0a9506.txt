@@ -1,0 +1,15 @@
+2026-09-12 22:11:00,118 - root - INFO - ================================================================================
+2026-09-12 22:11:00,118 - root - INFO - TEST START: test_close_modal[chromium]
+2026-09-12 22:11:00,208 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:11:01,833 - pages.base_page - INFO - Page load completed
+2026-09-12 22:11:01,833 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:11:01,834 - pages.home_page - INFO - Getting Entry Ad card element
+2026-09-12 22:11:01,909 - pages.home_page - INFO - Clicked Entry Ad card
+2026-09-12 22:11:01,913 - pages.modal_page - INFO - Waiting for modal to appear
+2026-09-12 22:11:01,913 - pages.modal_page - INFO - Getting modal element
+2026-09-12 22:11:04,736 - pages.modal_page - INFO - Clicking Close button on modal
+2026-09-12 22:11:04,737 - pages.modal_page - INFO - Getting Close button element
+2026-09-12 22:11:04,737 - pages.modal_page - INFO - Getting modal element
+2026-09-12 22:11:04,769 - pages.modal_page - INFO - Getting modal element
+2026-09-12 22:11:05,256 - root - INFO - TEST END: test_close_modal[chromium]
+2026-09-12 22:11:05,257 - root - INFO - ================================================================================

@@ -1,0 +1,13 @@
+2026-09-12 22:12:29,774 - root - INFO - ================================================================================
+2026-09-12 22:12:29,774 - root - INFO - TEST START: test_click_stale_button_shows_success_description[chromium]
+2026-09-12 22:12:29,833 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:12:30,504 - pages.base_page - INFO - Page load completed
+2026-09-12 22:12:30,504 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:12:30,504 - pages.home_page - INFO - Getting Stale Element card element
+2026-09-12 22:12:30,583 - pages.home_page - INFO - Clicked Stale Element card
+2026-09-12 22:12:30,585 - pages.stale_element_page - INFO - Clicking stale button
+2026-09-12 22:12:30,585 - pages.stale_element_page - INFO - Getting stale button element
+2026-09-12 22:12:30,945 - pages.stale_element_page - INFO - Getting success message element
+2026-09-12 22:12:30,950 - pages.stale_element_page - INFO - Getting success description element
+2026-09-12 22:12:31,213 - root - INFO - TEST END: test_click_stale_button_shows_success_description[chromium]
+2026-09-12 22:12:31,213 - root - INFO - ================================================================================

@@ -1,0 +1,19 @@
+2026-09-12 22:10:54,099 - root - INFO - ================================================================================
+2026-09-12 22:10:54,099 - root - INFO - TEST START: test_new_content_is_different[chromium]
+2026-09-12 22:10:54,162 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:10:56,230 - pages.base_page - INFO - Page load completed
+2026-09-12 22:10:56,235 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:10:56,235 - pages.home_page - INFO - Getting Infinite Scroll card element
+2026-09-12 22:10:56,303 - pages.home_page - INFO - Clicked Infinite Scroll card
+2026-09-12 22:10:56,305 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-09-12 22:10:58,093 - pages.infinite_scroll_page - INFO - Getting paragraph count
+2026-09-12 22:10:58,094 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-09-12 22:10:58,098 - pages.infinite_scroll_page - INFO - Scrolling to bottom of page
+2026-09-12 22:10:58,104 - pages.infinite_scroll_page - INFO - Scrolled to bottom of page
+2026-09-12 22:10:58,104 - pages.infinite_scroll_page - INFO - Waiting for new paragraphs to load (initial count: 10)
+2026-09-12 22:10:58,613 - pages.infinite_scroll_page - INFO - New paragraphs loaded
+2026-09-12 22:10:58,614 - pages.infinite_scroll_page - INFO - Getting paragraph count
+2026-09-12 22:10:58,614 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-09-12 22:10:58,618 - pages.infinite_scroll_page - INFO - Getting all paragraph elements
+2026-09-12 22:10:58,982 - root - INFO - TEST END: test_new_content_is_different[chromium]
+2026-09-12 22:10:58,983 - root - INFO - ================================================================================

@@ -1,0 +1,15 @@
+2026-09-12 22:12:21,667 - root - INFO - ================================================================================
+2026-09-12 22:12:21,668 - root - INFO - TEST START: test_both_tables_have_four_rows[chromium]
+2026-09-12 22:12:21,726 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:12:22,426 - pages.base_page - INFO - Page load completed
+2026-09-12 22:12:22,427 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:12:22,427 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-09-12 22:12:22,488 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-09-12 22:12:22,491 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-09-12 22:12:22,492 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-09-12 22:12:22,492 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:12:23,285 - pages.sortable_data_tables_page - INFO - Getting rows of table 1
+2026-09-12 22:12:23,286 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-09-12 22:12:23,286 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-09-12 22:12:23,589 - root - INFO - TEST END: test_both_tables_have_four_rows[chromium]
+2026-09-12 22:12:23,589 - root - INFO - ================================================================================

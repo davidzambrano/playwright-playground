@@ -1,0 +1,10 @@
+2026-09-12 22:10:17,628 - root - INFO - ================================================================================
+2026-09-12 22:10:17,628 - root - INFO - TEST START: test_uploader_heading_is_visible[chromium]
+2026-09-12 22:10:17,691 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-12 22:10:19,394 - pages.base_page - INFO - Page load completed
+2026-09-12 22:10:19,394 - pages.home_page - INFO - Navigated to home page
+2026-09-12 22:10:19,394 - pages.home_page - INFO - Getting File Upload card element
+2026-09-12 22:10:19,471 - pages.home_page - INFO - Clicked File Upload card
+2026-09-12 22:10:19,473 - pages.file_upload_page - INFO - Getting uploader heading element
+2026-09-12 22:10:21,122 - root - INFO - TEST END: test_uploader_heading_is_visible[chromium]
+2026-09-12 22:10:21,123 - root - INFO - ================================================================================

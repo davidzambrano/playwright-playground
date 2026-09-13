@@ -1,0 +1,11 @@
+2026-09-13 17:01:52,132 - root - INFO - ================================================================================
+2026-09-13 17:01:52,133 - root - INFO - TEST START: test_description_and_canvas_are_visible[chromium]
+2026-09-13 17:01:52,213 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:01:53,350 - pages.base_page - INFO - Page load completed
+2026-09-13 17:01:53,350 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:01:53,350 - pages.home_page - INFO - Getting Challenging DOM card element
+2026-09-13 17:01:53,428 - pages.home_page - INFO - Clicked Challenging DOM card
+2026-09-13 17:01:53,431 - pages.challenging_dom_page - INFO - Getting Challenging DOM page description element
+2026-09-13 17:01:54,304 - pages.challenging_dom_page - INFO - Getting canvas element
+2026-09-13 17:01:54,641 - root - INFO - TEST END: test_description_and_canvas_are_visible[chromium]
+2026-09-13 17:01:54,643 - root - INFO - ================================================================================

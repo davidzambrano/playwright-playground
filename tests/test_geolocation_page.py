@@ -1,9 +1,11 @@
 """Tests for the Geolocation page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Geolocation Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestGeolocationPage:
@@ -26,12 +28,18 @@ class TestGeolocationPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_geolocation_card()
 
+    @allure.story("Geolocation behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_geolocation_page):
         """
         Test that the page heading is visible.
         """
         expect(self.geolocation_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Geolocation behaviour")
+    @allure.title("Where am i button is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_where_am_i_button_is_visible(self, navigate_to_geolocation_page):
         """
         Test that the Where am I? button is visible.
@@ -61,6 +69,9 @@ class TestGeolocationPage:
             }}
         """)
 
+    @allure.story("Geolocation behaviour")
+    @allure.title("Get location displays coordinates")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_get_location_displays_coordinates(self, navigate_to_geolocation_page):
         """
         Test that clicking Where am I? displays latitude and longitude values.
@@ -70,6 +81,9 @@ class TestGeolocationPage:
         expect(self.geolocation_page.get_latitude_value()).to_have_text("40.4168")
         expect(self.geolocation_page.get_longitude_value()).to_have_text("-3.7038")
 
+    @allure.story("Geolocation behaviour")
+    @allure.title("Google maps link appears")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_google_maps_link_appears(self, navigate_to_geolocation_page):
         """
         Test that the See it on Google link appears after getting coordinates.

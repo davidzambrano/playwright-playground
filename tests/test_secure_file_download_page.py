@@ -3,10 +3,12 @@
 import os
 import tempfile
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Secure File Download Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestSecureFileDownloadPage:
@@ -26,12 +28,18 @@ class TestSecureFileDownloadPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_secure_file_download_card()
 
+    @allure.story("Secure File Download behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_secure_file_download_page):
         """
         Test that the Secure File Download heading is visible.
         """
         expect(self.secure_file_download_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Secure File Download behaviour")
+    @allure.title("Login form is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_login_form_is_visible(self, navigate_to_secure_file_download_page):
         """
         Test that the login form elements are visible.
@@ -41,6 +49,9 @@ class TestSecureFileDownloadPage:
         expect(self.secure_file_download_page.get_password_input()).to_be_visible()
         expect(self.secure_file_download_page.get_login_button()).to_be_visible()
 
+    @allure.story("Secure File Download behaviour")
+    @allure.title("Successful login shows secure area")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_successful_login_shows_secure_area(self, navigate_to_secure_file_download_page):
         """
         Test that logging in with correct credentials shows the secure area.
@@ -49,6 +60,9 @@ class TestSecureFileDownloadPage:
         expect(self.secure_file_download_page.get_secure_area_heading()).to_be_visible()
         expect(self.secure_file_download_page.get_welcome_text()).to_be_visible()
 
+    @allure.story("Secure File Download behaviour")
+    @allure.title("Download sample file")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_download_sample_file(self, navigate_to_secure_file_download_page):
         """
         Test that downloading sample.txt works after login.
@@ -59,6 +73,9 @@ class TestSecureFileDownloadPage:
         download = download_info.value
         assert download.suggested_filename == "sample.txt"
 
+    @allure.story("Secure File Download behaviour")
+    @allure.title("Download file content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_download_file_content(self, navigate_to_secure_file_download_page):
         """
         Test that the downloaded file contains the expected content.
@@ -75,6 +92,9 @@ class TestSecureFileDownloadPage:
                 content = f.read()
         assert "This is a sample text file." in content
 
+    @allure.story("Secure File Download behaviour")
+    @allure.title("Logout returns to login")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_logout_returns_to_login(self, navigate_to_secure_file_download_page):
         """
         Test that logging out returns to the login form.

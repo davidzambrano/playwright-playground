@@ -1,9 +1,11 @@
 """Tests for the Hovers page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Hovers Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestHoversPage:
@@ -23,18 +25,27 @@ class TestHoversPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_hovers_card()
 
+    @allure.story("Hovers behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_hovers_page):
         """
         Test that the Hovers heading is visible.
         """
         expect(self.hovers_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Hovers behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_hovers_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.hovers_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Hovers behaviour")
+    @allure.title("User 1 caption visible on hover")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_user_1_caption_visible_on_hover(self, navigate_to_hovers_page):
         """
         Test that hovering over User 1 image shows the caption.
@@ -42,6 +53,9 @@ class TestHoversPage:
         self.hovers_page.hover_over_user_1()
         expect(self.hovers_page.get_user_1_caption()).to_be_visible()
 
+    @allure.story("Hovers behaviour")
+    @allure.title("User 2 caption visible on hover")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_user_2_caption_visible_on_hover(self, navigate_to_hovers_page):
         """
         Test that hovering over User 2 image shows the caption.
@@ -49,6 +63,9 @@ class TestHoversPage:
         self.hovers_page.hover_over_user_2()
         expect(self.hovers_page.get_user_2_caption()).to_be_visible()
 
+    @allure.story("Hovers behaviour")
+    @allure.title("User 3 caption visible on hover")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_user_3_caption_visible_on_hover(self, navigate_to_hovers_page):
         """
         Test that hovering over User 3 image shows the caption.

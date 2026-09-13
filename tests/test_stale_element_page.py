@@ -1,9 +1,11 @@
 """Tests for the Stale Element page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Stale Element Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestStaleElementPage:
@@ -23,18 +25,27 @@ class TestStaleElementPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_stale_element_card()
 
+    @allure.story("Stale Element behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_stale_element_page):
         """
         Test that the Stale Element Monster heading is visible.
         """
         expect(self.stale_element_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Stale Element behaviour")
+    @allure.title("Stale button is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_stale_button_is_visible(self, navigate_to_stale_element_page):
         """
         Test that the stale button is visible on the page.
         """
         expect(self.stale_element_page.get_stale_button()).to_be_visible()
 
+    @allure.story("Stale Element behaviour")
+    @allure.title("Click stale button shows success message")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_stale_button_shows_success_message(self, navigate_to_stale_element_page):
         """
         Test that clicking the stale button shows the success message.
@@ -45,6 +56,9 @@ class TestStaleElementPage:
         self.stale_element_page.click_stale_button()
         expect(self.stale_element_page.get_success_message()).to_be_visible()
 
+    @allure.story("Stale Element behaviour")
+    @allure.title("Click stale button shows success description")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_stale_button_shows_success_description(self, navigate_to_stale_element_page):
         """
         Test that clicking the stale button shows the success description.
@@ -53,6 +67,9 @@ class TestStaleElementPage:
         expect(self.stale_element_page.get_success_message()).to_be_visible()
         expect(self.stale_element_page.get_success_description()).to_be_visible()
 
+    @allure.story("Stale Element behaviour")
+    @allure.title("Success message has correct text")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_success_message_has_correct_text(self, navigate_to_stale_element_page):
         """
         Test that the success message displays the expected text.
@@ -62,6 +79,9 @@ class TestStaleElementPage:
             "You managed to click the button"
         )
 
+    @allure.story("Stale Element behaviour")
+    @allure.title("Stale button label is correct")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_stale_button_label_is_correct(self, navigate_to_stale_element_page):
         """
         Test that the stale button has the expected label text.

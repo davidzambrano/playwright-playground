@@ -1,9 +1,11 @@
 """Tests for the Large & Deep DOM page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Large Deep Dom Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestLargeDeepDomPage:
@@ -22,10 +24,16 @@ class TestLargeDeepDomPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_large_deep_dom_card()
 
+    @allure.story("Large Deep Dom behaviour")
+    @allure.title("The page heading is visible.'''")
+    @allure.severity(allure.severity_level.MINOR)
     def test_page_heading_is_visible(self, navigate_to_large_deep_dom_page):
         """Test that the page heading is visible."""
         expect(self.large_deep_dom_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Large Deep Dom behaviour")
+    @allure.title("The deeply nested DOM sections are visible.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_deeply_nested_dom_is_visible(self, navigate_to_large_deep_dom_page):
         """Test that the deeply nested DOM sections are visible."""
         expect(self.large_deep_dom_page.get_no_siblings_container()).to_be_visible()
@@ -33,6 +41,9 @@ class TestLargeDeepDomPage:
         expect(self.large_deep_dom_page.get_nested_siblings_container()).to_be_visible()
         expect(self.large_deep_dom_page.get_nested_sibling("1.1.1.1")).to_be_visible()
 
+    @allure.story("Large Deep Dom behaviour")
+    @allure.title("A large table cell can be targeted by its id.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_table_cell_is_accessible_by_id(self, navigate_to_large_deep_dom_page):
         """Test that a large table cell can be targeted by its id."""
         expect(self.large_deep_dom_page.get_table_cell(25, 25)).to_have_text("25.25")

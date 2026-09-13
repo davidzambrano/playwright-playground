@@ -3,10 +3,12 @@
 import os
 import tempfile
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("File Download Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestFileDownloadPage:
@@ -26,24 +28,36 @@ class TestFileDownloadPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_file_download_card()
 
+    @allure.story("File Download behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_file_download_page):
         """
         Test that the page heading is visible.
         """
         expect(self.file_download_page.get_page_heading()).to_be_visible()
 
+    @allure.story("File Download behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_file_download_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.file_download_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("File Download behaviour")
+    @allure.title("Download button is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_download_button_is_visible(self, navigate_to_file_download_page):
         """
         Test that the Download File button is visible.
         """
         expect(self.file_download_page.get_download_button()).to_be_visible()
 
+    @allure.story("File Download behaviour")
+    @allure.title("Download file")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_download_file(self, navigate_to_file_download_page):
         """
         Test that clicking the Download File button downloads sample-file.txt.
@@ -53,6 +67,9 @@ class TestFileDownloadPage:
         download = download_info.value
         assert download.suggested_filename == "sample-file.txt"
 
+    @allure.story("File Download behaviour")
+    @allure.title("Download file content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_download_file_content(self, navigate_to_file_download_page):
         """
         Test that the downloaded file contains the expected text.

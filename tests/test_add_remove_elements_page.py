@@ -1,9 +1,11 @@
 """Tests for the Add/Remove Elements page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Add/Remove Elements Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestAddRemoveElementsPage:
@@ -23,17 +25,26 @@ class TestAddRemoveElementsPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_add_remove_element_card()
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Adding a single element creates exactly one delete button.'''")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
     def test_add_one_element(self, navigate_to_add_remove_elements):
         """Test adding a single element creates exactly one delete button."""
         self.add_remove_elements_page.click_add_element_button()
         expect(self.add_remove_elements_page.get_delete_buttons()).to_have_count(1)
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("No delete buttons are present initially.'''")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
     def test_initial_state(self, navigate_to_add_remove_elements):
         """Test that no delete buttons are present initially."""
         expect(self.add_remove_elements_page.get_delete_buttons()).to_have_count(0)
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Adding multiple elements creates one new delete button per click.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_add_multiple_elements(self, navigate_to_add_remove_elements):
         """Test adding multiple elements creates one new delete button per click."""
         num_clicks = 5
@@ -41,6 +52,9 @@ class TestAddRemoveElementsPage:
             self.add_remove_elements_page.click_add_element_button()
             expect(self.add_remove_elements_page.get_delete_buttons()).to_have_count(i + 1)
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Add Element and Delete buttons are visible after adding one element.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_button_visibility_after_adding_one(self, navigate_to_add_remove_elements):
         """Test that Add Element and Delete buttons are visible after adding one element."""
         # Add one element
@@ -54,6 +68,9 @@ class TestAddRemoveElementsPage:
         delete_button = self.add_remove_elements_page.get_delete_button(1)
         expect(delete_button).to_be_visible()
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Newly created elements display the correct 'Element N' text.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_button_text(self, navigate_to_add_remove_elements):
         """Test that newly created elements display the correct 'Element N' text."""
         num_elements = 3
@@ -63,6 +80,9 @@ class TestAddRemoveElementsPage:
             added_element = self.add_remove_elements_page.get_added_element(i + 1)
             expect(added_element).to_have_text(f"Element {i + 1}")
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Removing a single element removes only that button.'''")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
     def test_remove_single_element(self, navigate_to_add_remove_elements):
         """Test removing a single element removes only that button."""
@@ -75,6 +95,9 @@ class TestAddRemoveElementsPage:
         self.add_remove_elements_page.click_delete_button(1)
         expect(self.add_remove_elements_page.get_delete_buttons()).to_have_count(2)
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Removing multiple elements updates the list correctly.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_remove_multiple_elements(self, navigate_to_add_remove_elements):
         """Test removing multiple elements updates the list correctly."""
         # Add 5 elements
@@ -87,6 +110,9 @@ class TestAddRemoveElementsPage:
         self.add_remove_elements_page.click_delete_button(2)
         expect(self.add_remove_elements_page.get_delete_buttons()).to_have_count(3)
 
+    @allure.story("Add/Remove Elements behaviour")
+    @allure.title("Adding elements works after deleting all.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_add_after_removing_all(self, navigate_to_add_remove_elements):
         """Test that adding elements works after deleting all."""
         # Add 3 elements

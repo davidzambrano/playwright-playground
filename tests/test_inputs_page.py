@@ -1,9 +1,11 @@
 """Tests for the Inputs page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Inputs Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestInputsPage:
@@ -23,12 +25,18 @@ class TestInputsPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_inputs_card()
 
+    @allure.story("Inputs behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_inputs_page):
         """
         Test that the Inputs page heading is visible.
         """
         expect(self.inputs_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Inputs behaviour")
+    @allure.title("All input fields are visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_all_input_fields_are_visible(self, navigate_to_inputs_page):
         """
         Test that all input fields are visible on the page.
@@ -39,6 +47,9 @@ class TestInputsPage:
         expect(self.inputs_page.get_number_input()).to_be_visible()
         expect(self.inputs_page.get_website_input()).to_be_visible()
 
+    @allure.story("Inputs behaviour")
+    @allure.title("Valid form submission")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_valid_form_submission(self, navigate_to_inputs_page):
         """
         Test valid form submission.
@@ -55,6 +66,9 @@ class TestInputsPage:
         # Verify success toast appears
         expect(self.inputs_page.get_toast_title()).to_be_visible()
 
+    @allure.story("Inputs behaviour")
+    @allure.title("Invalid email shows error")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_invalid_email_shows_error(self, navigate_to_inputs_page):
         """
         Test invalid email format shows validation error.
@@ -70,6 +84,9 @@ class TestInputsPage:
         # Verify form submission failed (toast should not appear)
         expect(self.inputs_page.get_toast_title()).not_to_be_visible()
 
+    @allure.story("Inputs behaviour")
+    @allure.title("Required field empty shows error")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_required_field_empty_shows_error(self, navigate_to_inputs_page):
         """
         Test empty required field shows validation error.

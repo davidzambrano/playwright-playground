@@ -1,9 +1,11 @@
 """Tests for the Exit Intent page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Exit Intent Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestExitIntentPage:
@@ -23,12 +25,18 @@ class TestExitIntentPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_exit_intent_card()
 
+    @allure.story("Exit Intent behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_exit_intent_page):
         """
         Test that the page heading is visible.
         """
         expect(self.exit_intent_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Exit Intent behaviour")
+    @allure.title("Modal triggers on exit intent")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_modal_triggers_on_exit_intent(self, navigate_to_exit_intent_page):
         """
         Test that moving the mouse out of the top of the viewport
@@ -38,6 +46,9 @@ class TestExitIntentPage:
         self.exit_intent_page.wait_for_modal()
         expect(self.exit_intent_page.get_modal()).to_be_visible()
 
+    @allure.story("Exit Intent behaviour")
+    @allure.title("Modal has title")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_modal_has_title(self, navigate_to_exit_intent_page):
         """
         Test that the exit intent modal has the expected title.
@@ -46,6 +57,9 @@ class TestExitIntentPage:
         self.exit_intent_page.wait_for_modal()
         expect(self.exit_intent_page.get_modal_title()).to_be_visible()
 
+    @allure.story("Exit Intent behaviour")
+    @allure.title("Modal has body text")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_modal_has_body_text(self, navigate_to_exit_intent_page):
         """
         Test that the exit intent modal has body text.
@@ -54,6 +68,9 @@ class TestExitIntentPage:
         self.exit_intent_page.wait_for_modal()
         expect(self.exit_intent_page.get_modal_body()).to_be_visible()
 
+    @allure.story("Exit Intent behaviour")
+    @allure.title("Close modal")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_close_modal(self, navigate_to_exit_intent_page):
         """
         Test that clicking the Close button dismisses the modal.

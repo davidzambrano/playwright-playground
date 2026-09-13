@@ -1,9 +1,11 @@
 """Tests for the Infinite Scroll page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Infinite Scroll Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestInfiniteScrollPage:
@@ -23,12 +25,18 @@ class TestInfiniteScrollPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_infinite_scroll_card()
 
+    @allure.story("Infinite Scroll behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_infinite_scroll_page):
         """
         Test that the Infinite Scroll page heading is visible.
         """
         expect(self.infinite_scroll_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Infinite Scroll behaviour")
+    @allure.title("Initial paragraphs present")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_initial_paragraphs_present(self, navigate_to_infinite_scroll_page):
         """
         Test that initial paragraphs are present on page load.
@@ -38,6 +46,9 @@ class TestInfiniteScrollPage:
         initial_count = self.infinite_scroll_page.get_paragraph_count()
         assert initial_count > 0, "Should have at least one paragraph on page load"
 
+    @allure.story("Infinite Scroll behaviour")
+    @allure.title("Scroll loads more content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_scroll_loads_more_content(self, navigate_to_infinite_scroll_page):
         """
         Test that scrolling to bottom loads more content.
@@ -57,6 +68,9 @@ class TestInfiniteScrollPage:
             new_count > initial_count
         ), f"Expected more paragraphs after scrolling. Initial: {initial_count}, After: {new_count}"
 
+    @allure.story("Infinite Scroll behaviour")
+    @allure.title("Paragraphs have content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_paragraphs_have_content(self, navigate_to_infinite_scroll_page):
         """
         Test that loaded paragraphs contain text content.
@@ -67,6 +81,9 @@ class TestInfiniteScrollPage:
             text = paragraphs.nth(i).inner_text()
             assert len(text.strip()) > 0, f"Paragraph {i} should have content"
 
+    @allure.story("Infinite Scroll behaviour")
+    @allure.title("Multiple scrolls load incremental content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_multiple_scrolls_load_incremental_content(self, navigate_to_infinite_scroll_page):
         """
         Test that multiple consecutive scrolls continue to load more content.
@@ -86,6 +103,9 @@ class TestInfiniteScrollPage:
             f"Initial: {initial_count}, Final: {final_count}"
         )
 
+    @allure.story("Infinite Scroll behaviour")
+    @allure.title("New content is different")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_new_content_is_different(self, navigate_to_infinite_scroll_page):
         """
         Test that newly loaded content is different from initial content.

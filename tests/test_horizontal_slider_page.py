@@ -1,9 +1,11 @@
 """Tests for the Horizontal Slider page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Horizontal Slider Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestHorizontalSliderPage:
@@ -22,18 +24,27 @@ class TestHorizontalSliderPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_horizontal_slider_card()
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_horizontal_slider_page):
         """
         Test that the page heading is visible.
         """
         expect(self.horizontal_slider_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Single slider is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_single_slider_is_visible(self, navigate_to_horizontal_slider_page):
         """
         Test that the single value slider is visible.
         """
         expect(self.horizontal_slider_page.get_single_slider()).to_be_visible()
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Range slider is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_range_slider_is_visible(self, navigate_to_horizontal_slider_page):
         """
         Test that the range slider is visible.
@@ -41,6 +52,9 @@ class TestHorizontalSliderPage:
         expect(self.horizontal_slider_page.get_range_slider_min()).to_be_visible()
         expect(self.horizontal_slider_page.get_range_slider_max()).to_be_visible()
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Move slider updates value")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_move_slider_updates_value(self, navigate_to_horizontal_slider_page):
         """
         Test that moving the single slider to a new position updates the displayed value.
@@ -48,12 +62,18 @@ class TestHorizontalSliderPage:
         self.horizontal_slider_page.set_slider_value(75)
         expect(self.horizontal_slider_page.get_range_value()).to_have_text("75")
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Range slider default values")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_range_slider_default_values(self, navigate_to_horizontal_slider_page):
         """
         Test that the range slider displays the default values.
         """
         expect(self.horizontal_slider_page.get_range_values()).to_have_text("25 - 75")
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Set range slider min")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_set_range_slider_min(self, navigate_to_horizontal_slider_page):
         """
         Test that setting the range slider minimum thumb updates the displayed values.
@@ -61,6 +81,9 @@ class TestHorizontalSliderPage:
         self.horizontal_slider_page.set_range_slider_min(10)
         expect(self.horizontal_slider_page.get_range_values()).to_have_text("10 - 75")
 
+    @allure.story("Horizontal Slider behaviour")
+    @allure.title("Set range slider max")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_set_range_slider_max(self, navigate_to_horizontal_slider_page):
         """
         Test that setting the range slider maximum thumb updates the displayed values.

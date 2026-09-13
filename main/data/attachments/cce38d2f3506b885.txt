@@ -1,0 +1,8 @@
+INFO     pages.ab_testing_page:ab_testing_page.py:69 Getting Version A title element
+INFO     pages.ab_testing_page:ab_testing_page.py:114 Getting Version B title element
+INFO     pages.ab_testing_page:ab_testing_page.py:78 Getting Version A description element
+INFO     pages.ab_testing_page:ab_testing_page.py:105 Clicking Version A sign up button
+INFO     pages.ab_testing_page:ab_testing_page.py:159 Getting toast title element
+INFO     pages.ab_testing_page:ab_testing_page.py:168 Getting toast description element for Version A
+INFO     root:conftest.py:55 TEST END: test_signup_displays_confirmation_toast[chromium]
+INFO     root:conftest.py:56 ================================================================================

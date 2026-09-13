@@ -1,0 +1,13 @@
+2026-09-13 17:11:38,877 - root - INFO - ================================================================================
+2026-09-13 17:11:38,877 - root - INFO - TEST START: test_page_content_is_correct[chromium]
+2026-09-13 17:11:38,962 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:11:40,875 - pages.base_page - INFO - Page load completed
+2026-09-13 17:11:40,875 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:11:40,875 - pages.home_page - INFO - Getting Broken Images card element
+2026-09-13 17:11:40,928 - pages.home_page - INFO - Clicked Broken Images card
+2026-09-13 17:11:40,930 - pages.broken_images_page - INFO - Getting Broken Images page heading element
+2026-09-13 17:11:41,774 - pages.broken_images_page - INFO - Getting Broken Images page heading element
+2026-09-13 17:11:41,778 - pages.broken_images_page - INFO - Getting Broken Images page description element
+2026-09-13 17:11:41,783 - pages.broken_images_page - INFO - Getting Broken Images page description element
+2026-09-13 17:11:42,025 - root - INFO - TEST END: test_page_content_is_correct[chromium]
+2026-09-13 17:11:42,025 - root - INFO - ================================================================================

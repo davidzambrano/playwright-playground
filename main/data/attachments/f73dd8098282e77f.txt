@@ -1,0 +1,10 @@
+2026-09-13 17:14:27,390 - root - INFO - ================================================================================
+2026-09-13 17:14:27,391 - root - INFO - TEST START: test_back_to_home_link_is_visible[chromium]
+2026-09-13 17:14:27,451 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:14:28,501 - pages.base_page - INFO - Page load completed
+2026-09-13 17:14:28,501 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:14:28,501 - pages.home_page - INFO - Getting Shadow DOM card element
+2026-09-13 17:14:28,574 - pages.home_page - INFO - Clicked Shadow DOM card
+2026-09-13 17:14:28,575 - pages.shadow_dom_page - INFO - Getting Back to Home link element
+2026-09-13 17:14:30,209 - root - INFO - TEST END: test_back_to_home_link_is_visible[chromium]
+2026-09-13 17:14:30,209 - root - INFO - ================================================================================

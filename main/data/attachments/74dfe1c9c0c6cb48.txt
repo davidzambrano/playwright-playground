@@ -1,0 +1,14 @@
+2026-09-13 17:14:03,429 - root - INFO - ================================================================================
+2026-09-13 17:14:03,429 - root - INFO - TEST START: test_click_portfolio_menu_item[chromium]
+2026-09-13 17:14:03,515 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:14:04,499 - pages.base_page - INFO - Page load completed
+2026-09-13 17:14:04,499 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:14:04,499 - pages.home_page - INFO - Getting Shifting Content card element
+2026-09-13 17:14:04,584 - pages.home_page - INFO - Clicked Shifting Content card
+2026-09-13 17:14:04,586 - pages.shifting_content_page - INFO - Clicking Portfolio menu button
+2026-09-13 17:14:04,587 - pages.shifting_content_page - INFO - Getting Portfolio menu button element
+2026-09-13 17:14:04,587 - pages.shifting_content_page - INFO - Getting menu button: Portfolio
+2026-09-13 17:14:05,407 - pages.shifting_content_page - INFO - Getting Portfolio menu button element
+2026-09-13 17:14:05,407 - pages.shifting_content_page - INFO - Getting menu button: Portfolio
+2026-09-13 17:14:05,777 - root - INFO - TEST END: test_click_portfolio_menu_item[chromium]
+2026-09-13 17:14:05,778 - root - INFO - ================================================================================

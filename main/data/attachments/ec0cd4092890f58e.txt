@@ -1,0 +1,15 @@
+2026-09-13 17:13:53,104 - root - INFO - ================================================================================
+2026-09-13 17:13:53,104 - root - INFO - TEST START: test_child_frame_content_is_visible[chromium]
+2026-09-13 17:13:53,186 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:13:54,171 - pages.base_page - INFO - Page load completed
+2026-09-13 17:13:54,171 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:13:54,172 - pages.home_page - INFO - Getting Nested Frames card element
+2026-09-13 17:13:54,238 - pages.home_page - INFO - Clicked Nested Frames card
+2026-09-13 17:13:54,241 - pages.nested_frames_page - INFO - Getting child frame heading element
+2026-09-13 17:13:54,241 - pages.nested_frames_page - INFO - Getting child frame locator (nested in parent frame)
+2026-09-13 17:13:54,241 - pages.nested_frames_page - INFO - Getting parent frame locator
+2026-09-13 17:13:56,164 - pages.nested_frames_page - INFO - Getting child frame text element
+2026-09-13 17:13:56,164 - pages.nested_frames_page - INFO - Getting child frame locator (nested in parent frame)
+2026-09-13 17:13:56,164 - pages.nested_frames_page - INFO - Getting parent frame locator
+2026-09-13 17:13:56,574 - root - INFO - TEST END: test_child_frame_content_is_visible[chromium]
+2026-09-13 17:13:56,574 - root - INFO - ================================================================================

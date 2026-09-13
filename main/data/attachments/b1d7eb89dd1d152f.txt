@@ -1,0 +1,18 @@
+2026-09-13 17:14:17,416 - root - INFO - ================================================================================
+2026-09-13 17:14:17,416 - root - INFO - TEST START: test_successful_login_shows_secure_area[chromium]
+2026-09-13 17:14:17,493 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:14:18,187 - pages.base_page - INFO - Page load completed
+2026-09-13 17:14:18,187 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:14:18,187 - pages.home_page - INFO - Getting Secure File Download card element
+2026-09-13 17:14:18,304 - pages.home_page - INFO - Clicked Secure File Download card
+2026-09-13 17:14:18,306 - pages.secure_file_download_page - INFO - Performing login
+2026-09-13 17:14:18,306 - pages.secure_file_download_page - INFO - Entering username: admin
+2026-09-13 17:14:18,307 - pages.secure_file_download_page - INFO - Getting username input element
+2026-09-13 17:14:19,117 - pages.secure_file_download_page - INFO - Entering password
+2026-09-13 17:14:19,117 - pages.secure_file_download_page - INFO - Getting password input element
+2026-09-13 17:14:19,129 - pages.secure_file_download_page - INFO - Clicking Login button
+2026-09-13 17:14:19,129 - pages.secure_file_download_page - INFO - Getting Login button element
+2026-09-13 17:14:19,184 - pages.secure_file_download_page - INFO - Getting Secure Area heading element
+2026-09-13 17:14:19,193 - pages.secure_file_download_page - INFO - Getting welcome text element
+2026-09-13 17:14:19,529 - root - INFO - TEST END: test_successful_login_shows_secure_area[chromium]
+2026-09-13 17:14:19,531 - root - INFO - ================================================================================

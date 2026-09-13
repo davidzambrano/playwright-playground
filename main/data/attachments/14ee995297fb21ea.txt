@@ -1,0 +1,10 @@
+2026-09-13 17:12:20,809 - root - INFO - ================================================================================
+2026-09-13 17:12:20,809 - root - INFO - TEST START: test_example2_content_not_present_initially[chromium]
+2026-09-13 17:12:20,905 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:12:22,092 - pages.base_page - INFO - Page load completed
+2026-09-13 17:12:22,092 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:12:22,092 - pages.home_page - INFO - Getting Dynamic Loading card element
+2026-09-13 17:12:22,166 - pages.home_page - INFO - Clicked Dynamic Loading card
+2026-09-13 17:12:22,170 - pages.dynamic_loading_page - INFO - Getting Example 2 finish content
+2026-09-13 17:12:22,451 - root - INFO - TEST END: test_example2_content_not_present_initially[chromium]
+2026-09-13 17:12:22,452 - root - INFO - ================================================================================

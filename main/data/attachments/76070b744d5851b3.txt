@@ -1,0 +1,11 @@
+2026-09-13 17:14:33,308 - root - INFO - ================================================================================
+2026-09-13 17:14:33,308 - root - INFO - TEST START: test_example_headings_are_visible[chromium]
+2026-09-13 17:14:33,391 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:14:34,186 - pages.base_page - INFO - Page load completed
+2026-09-13 17:14:34,187 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:14:34,187 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-09-13 17:14:34,290 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-09-13 17:14:34,295 - pages.sortable_data_tables_page - INFO - Getting Example 1 heading element
+2026-09-13 17:14:35,174 - pages.sortable_data_tables_page - INFO - Getting Example 2 heading element
+2026-09-13 17:14:35,511 - root - INFO - TEST END: test_example_headings_are_visible[chromium]
+2026-09-13 17:14:35,511 - root - INFO - ================================================================================

@@ -1,0 +1,10 @@
+2026-09-13 17:12:42,567 - root - INFO - ================================================================================
+2026-09-13 17:12:42,567 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-09-13 17:12:42,652 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:12:44,713 - pages.base_page - INFO - Page load completed
+2026-09-13 17:12:44,714 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:12:44,714 - pages.home_page - INFO - Getting Geolocation card element
+2026-09-13 17:12:44,781 - pages.home_page - INFO - Clicked Geolocation card
+2026-09-13 17:12:44,786 - pages.geolocation_page - INFO - Getting page heading element
+2026-09-13 17:12:45,981 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-09-13 17:12:45,981 - root - INFO - ================================================================================

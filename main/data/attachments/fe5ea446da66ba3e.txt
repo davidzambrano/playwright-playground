@@ -1,0 +1,18 @@
+2026-09-13 17:13:15,949 - root - INFO - ================================================================================
+2026-09-13 17:13:15,949 - root - INFO - TEST START: test_click_csv_submenu_shows_toast[chromium]
+2026-09-13 17:13:16,029 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:13:16,664 - pages.base_page - INFO - Page load completed
+2026-09-13 17:13:16,664 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:13:16,665 - pages.home_page - INFO - Getting Menus card element
+2026-09-13 17:13:16,774 - pages.home_page - INFO - Clicked Menus card
+2026-09-13 17:13:16,777 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-09-13 17:13:16,777 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-09-13 17:13:18,124 - pages.menus_page - INFO - Hovering over Downloads submenu trigger
+2026-09-13 17:13:18,124 - pages.menus_page - INFO - Getting Downloads submenu trigger element
+2026-09-13 17:13:18,124 - pages.menus_page - INFO - Getting menu item: Downloads
+2026-09-13 17:13:18,387 - pages.menus_page - INFO - Clicking CSV submenu item
+2026-09-13 17:13:18,388 - pages.menus_page - INFO - Getting CSV submenu item element
+2026-09-13 17:13:18,388 - pages.menus_page - INFO - Getting submenu item: CSV
+2026-09-13 17:13:18,711 - pages.menus_page - INFO - Getting toast notification element
+2026-09-13 17:13:19,051 - root - INFO - TEST END: test_click_csv_submenu_shows_toast[chromium]
+2026-09-13 17:13:19,051 - root - INFO - ================================================================================

@@ -1,0 +1,10 @@
+2026-09-13 17:12:03,242 - root - INFO - ================================================================================
+2026-09-13 17:12:03,243 - root - INFO - TEST START: test_instruction_text_is_visible[chromium]
+2026-09-13 17:12:03,322 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-09-13 17:12:04,582 - pages.base_page - INFO - Page load completed
+2026-09-13 17:12:04,582 - pages.home_page - INFO - Navigated to home page
+2026-09-13 17:12:04,582 - pages.home_page - INFO - Getting Dynamic Content card element
+2026-09-13 17:12:04,669 - pages.home_page - INFO - Clicked Dynamic Content card
+2026-09-13 17:12:04,673 - pages.dynamic_content_page - INFO - Getting instruction text element
+2026-09-13 17:12:06,363 - root - INFO - TEST END: test_instruction_text_is_visible[chromium]
+2026-09-13 17:12:06,363 - root - INFO - ================================================================================

@@ -1,9 +1,11 @@
 """Tests for the Basic Auth page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Basic Auth Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestBasicAuthPage:
@@ -23,6 +25,9 @@ class TestBasicAuthPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_basic_auth_card()
 
+    @allure.story("Basic Auth behaviour")
+    @allure.title("The Basic Auth page loads.'''")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
     def test_basic_auth_page_loads(self, navigate_to_basic_auth_page):
         """Test that the Basic Auth page loads."""

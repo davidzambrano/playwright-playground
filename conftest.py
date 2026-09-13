@@ -117,9 +117,10 @@ def base_url() -> str:
 # ---------------------------------------------------------------------------
 # allure-pytest auto-derives the "Suites" facet (parentSuite/suite/subSuite)
 # from the pytest node id, but the "Features" facet is left empty by default.
-# Each test module in this repo maps to one the-internet page, so the
-# "feature" label is derived from the module name and applied to every test
-# here, avoiding per-test @allure.feature decorators.
+# Each test module in this repo maps to one the-internet page, so both the
+# "feature" label and the "Suites" hierarchy are derived here and applied to
+# every test in one place, avoiding per-test @allure decorators.
+# Result: Suites = UI > Smoke|Regression > <Page>, Behaviors = <Page feature>.
 # Label hierarchy reference: https://allurereport.org/docs/how-it-works/
 _ALLURE_FEATURE_OVERRIDES = {
     "ab_testing": "A/B Testing",
@@ -139,9 +140,23 @@ def _allure_feature_for_item(item) -> str:
     return _ALLURE_FEATURE_OVERRIDES.get(key, key.replace("_", " ").title())
 
 
+def _allure_suite_for_item(item) -> str:
+    """Use the Smoke marker to pick the Allure suite; default to Regression."""
+    return "Smoke" if "smoke" in item.keywords else "Regression"
+
+
 def pytest_collection_modifyitems(items):
-    """Auto-tag every test with an Allure feature label (its page under test)."""
+    """Auto-tag every test with Allure feature + suite labels.
+
+    Feature comes from the test module (the page under test); the Suites
+    hierarchy is fixed to UI > Smoke|Regression > <Page feature>, so every
+    test lands under a named suite instead of the bare `tests` node.
+    """
     for item in items:
         feature = _allure_feature_for_item(item)
-        # Equivalent to applying @allure.feature(feature) to each test from one place.
+        suite = _allure_suite_for_item(item)
+        # Equivalent to applying @allure.feature/suite decorators from one place.
         item.add_marker(pytest.mark.allure_label(feature, label_type=LabelType.FEATURE))
+        item.add_marker(pytest.mark.allure_label("UI", label_type=LabelType.PARENT_SUITE))
+        item.add_marker(pytest.mark.allure_label(suite, label_type=LabelType.SUITE))
+        item.add_marker(pytest.mark.allure_label(feature, label_type=LabelType.SUB_SUITE))

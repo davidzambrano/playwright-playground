@@ -1,11 +1,16 @@
 """Tests for the Checkboxes page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
 @pytest.mark.ui
 @pytest.mark.regression
+@allure.epic("Form Interactions")
+@allure.parent_suite("UI")
+@allure.suite("Regression")
+@allure.sub_suite("Checkboxes")
 class TestCheckboxesPage:
     """Tests for the Checkboxes page."""
 
@@ -23,12 +28,18 @@ class TestCheckboxesPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_checkboxes_card()
 
+    @allure.story("Basic checkbox behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.MINOR)
     def test_page_heading_is_visible(self, navigate_to_checkboxes_page):
         """
         Test that the Basic Checkboxes heading is visible.
         """
         expect(self.checkboxes_page.get_heading()).to_be_visible()
 
+    @allure.story("Basic checkbox behaviour")
+    @allure.title("Default checkbox states are unchecked / checked")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_default_checkbox_states(self, navigate_to_checkboxes_page):
         """
         Test that checkbox1 is unchecked by default and checkbox2 is checked by default.
@@ -36,6 +47,9 @@ class TestCheckboxesPage:
         expect(self.checkboxes_page.get_checkbox1()).not_to_be_checked()
         expect(self.checkboxes_page.get_checkbox2()).to_be_checked()
 
+    @allure.story("Basic checkbox behaviour")
+    @allure.title("Checkbox can be toggled on and off")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_toggle_checkbox(self, navigate_to_checkboxes_page):
         """
         Test that a checkbox can be toggled from unchecked to checked and back.
@@ -47,6 +61,9 @@ class TestCheckboxesPage:
         checkbox1.uncheck()
         expect(checkbox1).not_to_be_checked()
 
+    @allure.story("Basic checkbox behaviour")
+    @allure.title("Disabled checkboxes cannot be changed")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_disabled_checkboxes_cannot_be_changed(self, navigate_to_checkboxes_page):
         """
         Test that disabled checkboxes cannot be changed.
@@ -58,6 +75,9 @@ class TestCheckboxesPage:
         expect(disabled_checked).to_be_disabled()
         expect(disabled_checked).to_be_checked()
 
+    @allure.story("Basic checkbox behaviour")
+    @allure.title("Terms checkbox can be checked")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_terms_checkbox_can_be_checked(self, navigate_to_checkboxes_page):
         """
         Test that the terms checkbox can be checked.
@@ -67,6 +87,9 @@ class TestCheckboxesPage:
         terms_checkbox.check()
         expect(terms_checkbox).to_be_checked()
 
+    @allure.story("Controlled Select All group")
+    @allure.title("Select All checks every item")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_select_all_checks_all_items(self, navigate_to_checkboxes_page):
         """
         Test that clicking Select All checks all fruit checkboxes.
@@ -86,6 +109,9 @@ class TestCheckboxesPage:
         expect(item2).to_be_checked()
         expect(item3).to_be_checked()
 
+    @allure.story("Controlled Select All group")
+    @allure.title("Unchecking one item unchecks Select All")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_unchecking_item_unchecks_select_all(self, navigate_to_checkboxes_page):
         """
         Test that unchecking an individual item unchecks Select All.
@@ -99,6 +125,9 @@ class TestCheckboxesPage:
         item1.uncheck()
         expect(select_all).not_to_be_checked()
 
+    @allure.story("Controlled Select All group")
+    @allure.title("Checking every item checks Select All")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_checking_all_items_checks_select_all(self, navigate_to_checkboxes_page):
         """
         Test that checking all items individually checks Select All.

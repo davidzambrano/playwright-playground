@@ -1,9 +1,11 @@
 """Tests for the Notification Messages page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Notification Messages Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestNotificationMessagesPage:
@@ -23,30 +25,45 @@ class TestNotificationMessagesPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_notification_messages_card()
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_notification_messages_page):
         """
         Test that the Notification Messages heading is visible.
         """
         expect(self.notification_messages_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_notification_messages_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.notification_messages_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Click here link is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_here_link_is_visible(self, navigate_to_notification_messages_page):
         """
         Test that the Click here link is visible.
         """
         expect(self.notification_messages_page.get_click_here_link()).to_be_visible()
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Notification alert is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_notification_alert_is_visible(self, navigate_to_notification_messages_page):
         """
         Test that the notification alert is visible on page load.
         """
         expect(self.notification_messages_page.get_notification_alert()).to_be_visible()
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Notification message is valid")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_notification_message_is_valid(self, navigate_to_notification_messages_page):
         """
         Test that the notification message is one of the possible messages.
@@ -54,6 +71,9 @@ class TestNotificationMessagesPage:
         message_text = self.notification_messages_page.get_notification_message().inner_text()
         assert message_text in self.notification_messages_page.POSSIBLE_MESSAGES
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Click here loads new message")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_here_loads_new_message(self, navigate_to_notification_messages_page):
         """
         Test that clicking the Click here link loads a new message.
@@ -61,6 +81,9 @@ class TestNotificationMessagesPage:
         self.notification_messages_page.click_click_here()
         expect(self.notification_messages_page.get_notification_alert()).to_be_visible()
 
+    @allure.story("Notification Messages behaviour")
+    @allure.title("Close button hides notification")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_close_button_hides_notification(self, navigate_to_notification_messages_page):
         """
         Test that clicking the close button hides the notification.

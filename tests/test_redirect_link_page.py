@@ -1,9 +1,11 @@
 """Tests for the Redirect Link page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Redirect Link Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestRedirectLinkPage:
@@ -23,24 +25,36 @@ class TestRedirectLinkPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_redirect_link_card()
 
+    @allure.story("Redirect Link behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_redirect_link_page):
         """
         Test that the Redirect Link heading is visible.
         """
         expect(self.redirect_link_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Redirect Link behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_redirect_link_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.redirect_link_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Redirect Link behaviour")
+    @allure.title("Start redirect button is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_start_redirect_button_is_visible(self, navigate_to_redirect_link_page):
         """
         Test that the Start Redirect button is visible.
         """
         expect(self.redirect_link_page.get_start_redirect_button()).to_be_visible()
 
+    @allure.story("Redirect Link behaviour")
+    @allure.title("Click start redirect shows countdown")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_start_redirect_shows_countdown(self, navigate_to_redirect_link_page):
         """
         Test that clicking Start Redirect shows the countdown text.
@@ -48,6 +62,9 @@ class TestRedirectLinkPage:
         self.redirect_link_page.click_start_redirect()
         expect(self.redirect_link_page.get_redirecting_text()).to_be_visible()
 
+    @allure.story("Redirect Link behaviour")
+    @allure.title("Redirect to destination page")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_redirect_to_destination_page(self, navigate_to_redirect_link_page):
         """
         Test that clicking Start Redirect redirects to the destination page.

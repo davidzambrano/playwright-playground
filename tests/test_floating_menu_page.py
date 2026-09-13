@@ -1,9 +1,11 @@
 """Tests for the Floating Menu page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Floating Menu Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestFloatingMenuPage:
@@ -22,18 +24,27 @@ class TestFloatingMenuPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_floating_menu_card()
 
+    @allure.story("Floating Menu behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_floating_menu_page):
         """
         Test that the page heading is visible.
         """
         expect(self.floating_menu_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Floating Menu behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_floating_menu_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.floating_menu_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Floating Menu behaviour")
+    @allure.title("Floating menu is visible on load")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_floating_menu_is_visible_on_load(self, navigate_to_floating_menu_page):
         """
         Test that the floating menu is visible when the page loads.
@@ -41,6 +52,9 @@ class TestFloatingMenuPage:
         expect(self.floating_menu_page.get_floating_menu()).to_be_visible()
         assert self.floating_menu_page.is_menu_visible()
 
+    @allure.story("Floating Menu behaviour")
+    @allure.title("Menu hides on scroll down")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_menu_hides_on_scroll_down(self, navigate_to_floating_menu_page):
         """
         Test that the floating menu hides when scrolling down.
@@ -48,6 +62,9 @@ class TestFloatingMenuPage:
         self.floating_menu_page.scroll_down()
         assert self.floating_menu_page.is_menu_hidden()
 
+    @allure.story("Floating Menu behaviour")
+    @allure.title("Menu reappears on scroll up")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_menu_reappears_on_scroll_up(self, navigate_to_floating_menu_page):
         """
         Test that the floating menu reappears when scrolling back up.

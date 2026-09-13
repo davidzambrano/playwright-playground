@@ -1,11 +1,13 @@
 """Tests for the File Upload page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 from pages.file_upload_page import FileUploadPage
 
 
+@allure.epic("File Upload Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestFileUploadPage:
@@ -25,18 +27,27 @@ class TestFileUploadPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_file_upload_card()
 
+    @allure.story("File Upload behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_file_upload_page):
         """
         Test that the page heading is visible.
         """
         expect(self.file_upload_page.get_page_heading()).to_be_visible()
 
+    @allure.story("File Upload behaviour")
+    @allure.title("Uploader heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_uploader_heading_is_visible(self, navigate_to_file_upload_page):
         """
         Test that the File Uploader heading is visible.
         """
         expect(self.file_upload_page.get_uploader_heading()).to_be_visible()
 
+    @allure.story("File Upload behaviour")
+    @allure.title("File input is present")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_file_input_is_present(self, navigate_to_file_upload_page):
         """
         Test that the file input element is present in the DOM.
@@ -44,12 +55,18 @@ class TestFileUploadPage:
         """
         expect(self.file_upload_page.get_file_input()).to_be_attached()
 
+    @allure.story("File Upload behaviour")
+    @allure.title("Upload button is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_upload_button_is_visible(self, navigate_to_file_upload_page):
         """
         Test that the Upload button is visible.
         """
         expect(self.file_upload_page.get_upload_button()).to_be_visible()
 
+    @allure.story("File Upload behaviour")
+    @allure.title("Upload file")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_upload_file(self, navigate_to_file_upload_page):
         """
         Test that uploading a file displays the uploaded section with the correct file name.

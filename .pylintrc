@@ -1,5 +1,5 @@
 [MESSAGES CONTROL]
-disable=attribute-defined-outside-init,unused-argument,redefined-outer-name,import-error
+disable=attribute-defined-outside-init,unused-argument,redefined-outer-name,import-error,duplicate-code
 
 [TYPECHECK]
 generated-members=pytest.*,playwright.*,dotenv.*

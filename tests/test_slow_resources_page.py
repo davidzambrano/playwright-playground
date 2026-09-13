@@ -1,9 +1,11 @@
 """Tests for the Slow Resources page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Slow Resources Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 @pytest.mark.slow
@@ -24,6 +26,9 @@ class TestSlowResourcesPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_slow_resources_card()
 
+    @allure.story("Slow Resources behaviour")
+    @allure.title("Small resource status banner appears after loading")
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
     def test_small_resource_banner_visible(self, navigate_to_slow_resources):
         """Verify that the small resource status banner appears after loading."""
@@ -34,6 +39,9 @@ class TestSlowResourcesPage:
         expect(small_banner).to_be_visible(timeout=7000)
         expect(small_banner).to_contain_text("Small CSS file (5s) has finished loading.")
 
+    @allure.story("Slow Resources behaviour")
+    @allure.title("The mid resource status banner appears after loading.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_mid_resource_banner_visible(self, navigate_to_slow_resources):
         """Verify that the mid resource status banner appears after loading."""
         header = self.slow_resources_page.get_header()
@@ -43,6 +51,9 @@ class TestSlowResourcesPage:
         expect(mid_banner).to_be_visible(timeout=17000)
         expect(mid_banner).to_contain_text("Large Javascript bundle (15s) has finished loading.")
 
+    @allure.story("Slow Resources behaviour")
+    @allure.title("The large resource status banner appears after loading.'''")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_large_resource_banner_visible(self, navigate_to_slow_resources):
         """Verify that the large resource status banner appears after loading."""
         header = self.slow_resources_page.get_header()

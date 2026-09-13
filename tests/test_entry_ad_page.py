@@ -1,9 +1,11 @@
 """Tests for the Entry Ad page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Entry Ad Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestEntryAdPage:
@@ -23,12 +25,18 @@ class TestEntryAdPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_entry_ad_card()
 
+    @allure.story("Entry Ad behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_entry_ad_page):
         """
         Test that the page heading is visible.
         """
         expect(self.entry_ad_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Entry Ad behaviour")
+    @allure.title("Modal appears on page load")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_modal_appears_on_page_load(self, navigate_to_entry_ad_page):
         """
         Test that the modal window appears after navigating to the page.
@@ -36,6 +44,9 @@ class TestEntryAdPage:
         self.entry_ad_page.wait_for_modal()
         expect(self.entry_ad_page.get_modal()).to_be_visible()
 
+    @allure.story("Entry Ad behaviour")
+    @allure.title("Modal has title")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_modal_has_title(self, navigate_to_entry_ad_page):
         """
         Test that the modal has a title.
@@ -43,6 +54,9 @@ class TestEntryAdPage:
         self.entry_ad_page.wait_for_modal()
         expect(self.entry_ad_page.get_modal_title()).to_be_visible()
 
+    @allure.story("Entry Ad behaviour")
+    @allure.title("Modal has body text")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_modal_has_body_text(self, navigate_to_entry_ad_page):
         """
         Test that the modal has body text.
@@ -50,6 +64,9 @@ class TestEntryAdPage:
         self.entry_ad_page.wait_for_modal()
         expect(self.entry_ad_page.get_modal_body()).to_be_visible()
 
+    @allure.story("Entry Ad behaviour")
+    @allure.title("Close modal")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_close_modal(self, navigate_to_entry_ad_page):
         """
         Test that clicking the Close button dismisses the modal.

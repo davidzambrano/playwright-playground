@@ -1,9 +1,11 @@
 """Tests for the Menus page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Menus Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestMenusPage:
@@ -23,30 +25,45 @@ class TestMenusPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_menus_card()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_menus_page):
         """
         Test that the Menus heading is visible.
         """
         expect(self.menus_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_menus_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.menus_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Enabled trigger is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_enabled_trigger_is_visible(self, navigate_to_menus_page):
         """
         Test that the Enabled menu trigger is visible.
         """
         expect(self.menus_page.get_enabled_trigger()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Disabled trigger is disabled")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_disabled_trigger_is_disabled(self, navigate_to_menus_page):
         """
         Test that the Disabled menu trigger is disabled.
         """
         expect(self.menus_page.get_disabled_trigger()).to_be_disabled()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Hover shows menu items")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_hover_shows_menu_items(self, navigate_to_menus_page):
         """
         Test that hovering over the Enabled trigger shows the menu items.
@@ -56,6 +73,9 @@ class TestMenusPage:
         expect(self.menus_page.get_paste_menu_item()).to_be_visible()
         expect(self.menus_page.get_preferences_menu_item()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Click copy shows toast")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_copy_shows_toast(self, navigate_to_menus_page):
         """
         Test that clicking the Copy menu item shows a toast notification.
@@ -64,6 +84,9 @@ class TestMenusPage:
         self.menus_page.click_copy_menu_item()
         expect(self.menus_page.get_toast()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Click paste shows toast")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_paste_shows_toast(self, navigate_to_menus_page):
         """
         Test that clicking the Paste menu item shows a toast notification.
@@ -72,6 +95,9 @@ class TestMenusPage:
         self.menus_page.click_paste_menu_item()
         expect(self.menus_page.get_toast()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Click preferences shows toast")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_preferences_shows_toast(self, navigate_to_menus_page):
         """
         Test that clicking the Preferences menu item shows a toast notification.
@@ -80,6 +106,9 @@ class TestMenusPage:
         self.menus_page.click_preferences_menu_item()
         expect(self.menus_page.get_toast()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Submenu shows on hover")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_submenu_shows_on_hover(self, navigate_to_menus_page):
         """
         Test that hovering over the Downloads submenu trigger shows submenu items.
@@ -90,6 +119,9 @@ class TestMenusPage:
         expect(self.menus_page.get_csv_submenu_item()).to_be_visible()
         expect(self.menus_page.get_excel_submenu_item()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Click pdf submenu shows toast")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_pdf_submenu_shows_toast(self, navigate_to_menus_page):
         """
         Test that clicking the PDF submenu item shows a toast notification.
@@ -99,6 +131,9 @@ class TestMenusPage:
         self.menus_page.click_pdf_submenu_item()
         expect(self.menus_page.get_toast()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Click csv submenu shows toast")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_csv_submenu_shows_toast(self, navigate_to_menus_page):
         """
         Test that clicking the CSV submenu item shows a toast notification.
@@ -108,6 +143,9 @@ class TestMenusPage:
         self.menus_page.click_csv_submenu_item()
         expect(self.menus_page.get_toast()).to_be_visible()
 
+    @allure.story("Menus behaviour")
+    @allure.title("Click excel submenu shows toast")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_excel_submenu_shows_toast(self, navigate_to_menus_page):
         """
         Test that clicking the Excel submenu item shows a toast notification.

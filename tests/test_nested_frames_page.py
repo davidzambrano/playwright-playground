@@ -1,9 +1,11 @@
 """Tests for the Nested Frames page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Nested Frames Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestNestedFramesPage:
@@ -22,18 +24,27 @@ class TestNestedFramesPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_nested_frames_card()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_nested_frames_page):
         """
         Test that the Nested Frames page heading is visible.
         """
         expect(self.nested_frames_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Back to home link is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_back_to_home_link_is_visible(self, navigate_to_nested_frames_page):
         """
         Test that the Back to Home link is visible on the page.
         """
         expect(self.nested_frames_page.get_back_to_home_link()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Switch to parent frame")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_switch_to_parent_frame(self, navigate_to_nested_frames_page):
         """
         Test Case 28.1: Switch context to the parent frame (frame-parent).
@@ -44,6 +55,9 @@ class TestNestedFramesPage:
         # Access the parent frame and verify its heading is visible
         expect(self.nested_frames_page.get_parent_frame_heading()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Switch to child frame")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_switch_to_child_frame(self, navigate_to_nested_frames_page):
         """
         Test Case 28.2: From the parent frame, switch context to the child frame
@@ -55,6 +69,9 @@ class TestNestedFramesPage:
         # Access the child frame (nested in parent) and verify its heading is visible
         expect(self.nested_frames_page.get_child_frame_heading()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Interact with child content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_interact_with_child_content(self, navigate_to_nested_frames_page):
         """
         Test Case 28.3: Inside the child frame, assert that the text "Child Frame" is
@@ -73,6 +90,9 @@ class TestNestedFramesPage:
         # Verify that a parent page element is accessible after returning to default content
         expect(self.nested_frames_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Parent frame content is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_parent_frame_content_is_visible(self, navigate_to_nested_frames_page):
         """
         Test that the parent frame content (heading and instructional text) is
@@ -81,12 +101,18 @@ class TestNestedFramesPage:
         expect(self.nested_frames_page.get_parent_frame_heading()).to_be_visible()
         expect(self.nested_frames_page.get_parent_frame_text_element()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Parent checkbox is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_parent_checkbox_is_visible(self, navigate_to_nested_frames_page):
         """
         Test that the parent checkbox inside the parent frame is visible.
         """
         expect(self.nested_frames_page.get_parent_checkbox()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Child frame content is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_child_frame_content_is_visible(self, navigate_to_nested_frames_page):
         """
         Test that the child frame content (heading and instructional text) is
@@ -95,18 +121,27 @@ class TestNestedFramesPage:
         expect(self.nested_frames_page.get_child_frame_heading()).to_be_visible()
         expect(self.nested_frames_page.get_child_frame_text_element()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Child checkbox is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_child_checkbox_is_visible(self, navigate_to_nested_frames_page):
         """
         Test that the child checkbox inside the child frame is visible.
         """
         expect(self.nested_frames_page.get_child_checkbox()).to_be_visible()
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Parent frame heading text")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_parent_frame_heading_text(self, navigate_to_nested_frames_page):
         """
         Test that the parent frame heading has the correct text "Parent Frame".
         """
         expect(self.nested_frames_page.get_parent_frame_heading()).to_have_text("Parent Frame")
 
+    @allure.story("Nested Frames behaviour")
+    @allure.title("Child frame heading text")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_child_frame_heading_text(self, navigate_to_nested_frames_page):
         """
         Test that the child frame heading has the correct text "Child Frame".

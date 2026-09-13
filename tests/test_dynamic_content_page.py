@@ -1,9 +1,11 @@
 """Tests for the Dynamic Content page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Dynamic Content Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestDynamicContentPage:
@@ -23,30 +25,45 @@ class TestDynamicContentPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_dynamic_content_card()
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_dynamic_content_page):
         """
         Test that the Dynamic Content heading is visible.
         """
         expect(self.dynamic_content_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_dynamic_content_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.dynamic_content_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Randomize button is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_randomize_button_is_visible(self, navigate_to_dynamic_content_page):
         """
         Test that the Randomize Content button is visible.
         """
         expect(self.dynamic_content_page.get_randomize_button()).to_be_visible()
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Content items are visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_content_items_are_visible(self, navigate_to_dynamic_content_page):
         """
         Test that content items are visible on the page.
         """
         expect(self.dynamic_content_page.get_content_items()).to_have_count(3)
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Content changes on randomize")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_content_changes_on_randomize(self, navigate_to_dynamic_content_page):
         """
         Test that clicking Randomize Content changes the displayed content.
@@ -56,6 +73,9 @@ class TestDynamicContentPage:
         new_texts = self.dynamic_content_page.get_content_texts()
         assert initial_texts != new_texts, "Content should change after clicking Randomize"
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Images change on randomize")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_images_change_on_randomize(self, navigate_to_dynamic_content_page):
         """
         Test that clicking Randomize Content changes the displayed images.
@@ -65,6 +85,9 @@ class TestDynamicContentPage:
         new_images = self.dynamic_content_page.get_image_sources()
         assert initial_images != new_images, "Images should change after clicking Randomize"
 
+    @allure.story("Dynamic Content behaviour")
+    @allure.title("Content changes on refresh")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_content_changes_on_refresh(self, navigate_to_dynamic_content_page):
         """
         Test that refreshing the page changes the displayed content.

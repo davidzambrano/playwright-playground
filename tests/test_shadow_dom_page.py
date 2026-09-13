@@ -1,9 +1,11 @@
 """Tests for the Shadow DOM page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Shadow Dom Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestShadowDomPage:
@@ -22,24 +24,36 @@ class TestShadowDomPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_shadow_dom_card()
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_shadow_dom_page):
         """
         Test that the Shadow DOM page heading is visible.
         """
         expect(self.shadow_dom_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_shadow_dom_page):
         """
         Test that the instruction text about Shadow DOM is visible.
         """
         expect(self.shadow_dom_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("Back to home link is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_back_to_home_link_is_visible(self, navigate_to_shadow_dom_page):
         """
         Test that the Back to Home link is visible on the page.
         """
         expect(self.shadow_dom_page.get_back_to_home_link()).to_be_visible()
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("First shadow host has shadow root")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_first_shadow_host_has_shadow_root(self, navigate_to_shadow_dom_page):
         """
         Verifies that the first host element actually exposes a shadow root,
@@ -49,6 +63,9 @@ class TestShadowDomPage:
             self.shadow_dom_page.first_host_has_shadow_root()
         ), "First host element should expose a shadow root"
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("Second shadow host has shadow root")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_second_shadow_host_has_shadow_root(self, navigate_to_shadow_dom_page):
         """
         Test that the second host element also exposes a shadow root.
@@ -57,6 +74,9 @@ class TestShadowDomPage:
             self.shadow_dom_page.second_host_has_shadow_root()
         ), "Second host element should expose a shadow root"
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("First shadow element is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_first_shadow_element_is_visible(self, navigate_to_shadow_dom_page):
         """
         Verifies that the text element inside the first shadow root is
@@ -64,6 +84,9 @@ class TestShadowDomPage:
         """
         expect(self.shadow_dom_page.get_first_paragraph()).to_be_visible()
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("First shadow element text")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_first_shadow_element_text(self, navigate_to_shadow_dom_page):
         """
         Verifies that the paragraph inside the shadow root has the expected
@@ -73,6 +96,9 @@ class TestShadowDomPage:
             "Let's have some different text!"
         )
 
+    @allure.story("Shadow Dom behaviour")
+    @allure.title("List items inside shadow root")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_list_items_inside_shadow_root(self, navigate_to_shadow_dom_page):
         """
         Test that the list items inside the second shadow root are accessible

@@ -1,9 +1,11 @@
 """Tests for the Disappearing Elements page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("Disappearing Elements Interactions")
 @pytest.mark.ui
 @pytest.mark.regression
 class TestDisappearingElementsPage:
@@ -23,18 +25,27 @@ class TestDisappearingElementsPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_disappearing_elements_card()
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Page heading is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_page_heading_is_visible(self, navigate_to_disappearing_elements_page):
         """
         Test that the Disappearing Elements heading is visible.
         """
         expect(self.disappearing_elements_page.get_page_heading()).to_be_visible()
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Instruction text is visible")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_instruction_text_is_visible(self, navigate_to_disappearing_elements_page):
         """
         Test that the instruction text is visible.
         """
         expect(self.disappearing_elements_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Gallery tab may be present")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_gallery_tab_may_be_present(self, navigate_to_disappearing_elements_page):
         """
         Test that the Gallery tab may or may not be present on page load.
@@ -45,12 +56,18 @@ class TestDisappearingElementsPage:
         expect(self.disappearing_elements_page.get_page_heading()).to_be_visible()
         expect(self.disappearing_elements_page.get_instruction_text()).to_be_visible()
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Home tab always present")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_home_tab_always_present(self, navigate_to_disappearing_elements_page):
         """
         Test that the Home tab is always present.
         """
         expect(self.disappearing_elements_page.get_home_tab()).to_be_visible()
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Click home tab shows content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_home_tab_shows_content(self, navigate_to_disappearing_elements_page):
         """
         Test that clicking the Home tab shows the Home content.
@@ -60,6 +77,9 @@ class TestDisappearingElementsPage:
             "Welcome to the Home page"
         )
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Click about tab shows content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_about_tab_shows_content(self, navigate_to_disappearing_elements_page):
         """
         Test that clicking the About tab shows the About content.
@@ -69,6 +89,9 @@ class TestDisappearingElementsPage:
             "Information about us"
         )
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Click contact us tab shows content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_contact_us_tab_shows_content(self, navigate_to_disappearing_elements_page):
         """
         Test that clicking the Contact Us tab shows the Contact Us content.
@@ -78,6 +101,9 @@ class TestDisappearingElementsPage:
             "How to contact us"
         )
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Click portfolio tab shows content")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_portfolio_tab_shows_content(self, navigate_to_disappearing_elements_page):
         """
         Test that clicking the Portfolio tab shows the Portfolio content.
@@ -87,6 +113,9 @@ class TestDisappearingElementsPage:
             "Our work portfolio"
         )
 
+    @allure.story("Disappearing Elements behaviour")
+    @allure.title("Click gallery tab shows content if present")
+    @allure.severity(allure.severity_level.NORMAL)
     def test_click_gallery_tab_shows_content_if_present(
         self, navigate_to_disappearing_elements_page
     ):

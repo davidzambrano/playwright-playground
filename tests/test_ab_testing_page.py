@@ -1,9 +1,11 @@
 """Tests for the A/B Testing page."""
 
+import allure
 import pytest
 from playwright.sync_api import expect
 
 
+@allure.epic("A/B Testing Interactions")
 @pytest.mark.ui
 @pytest.mark.smoke
 class TestABTestingPage:
@@ -23,6 +25,9 @@ class TestABTestingPage:
         self.home_page.goto_home_page(self.base_url)
         self.home_page.click_ab_testing_card()
 
+    @allure.story("A/B Testing behaviour")
+    @allure.title("Signup displays confirmation toast")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_signup_displays_confirmation_toast(self, navigate_to_ab_testing_page):
         """
         Test that clicking the sign up button on the active A/B version
@@ -44,6 +49,9 @@ class TestABTestingPage:
             expect(self.ab_testing_page.get_toast_title()).to_be_visible()
             expect(self.ab_testing_page.get_toast_version_b_description()).to_be_visible()
 
+    @allure.story("A/B Testing behaviour")
+    @allure.title("Active version elements are displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_active_version_elements_are_displayed(self, navigate_to_ab_testing_page):
         """
         Test that the heading, description, card content, and sign up button are all visible
@@ -73,6 +81,9 @@ class TestABTestingPage:
             )
             expect(self.ab_testing_page.get_version_b_signup_button()).to_be_visible()
 
+    @allure.story("A/B Testing behaviour")
+    @allure.title("Page heading and description text are correct")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_page_heading_and_description_text_are_correct(self, navigate_to_ab_testing_page):
         """
         Test that the static page heading and description text are correct
@@ -81,6 +92,9 @@ class TestABTestingPage:
         expect(self.ab_testing_page.get_heading()).to_have_text("A/B Test: Call to Action")
         expect(self.ab_testing_page.get_description()).to_be_visible()
 
+    @allure.story("A/B Testing behaviour")
+    @allure.title("Only one ab version is displayed at a time")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_only_one_ab_version_is_displayed_at_a_time(self, navigate_to_ab_testing_page):
         """
         Test that only one A/B version card is visible at a time - never both simultaneously.
@@ -99,6 +113,9 @@ class TestABTestingPage:
         else:
             expect(version_a_title).to_be_hidden()
 
+    @allure.story("A/B Testing behaviour")
+    @allure.title("Active version card body content is displayed")
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_active_version_card_body_content_is_displayed(self, navigate_to_ab_testing_page):
         """
         Test that the card body paragraph for the active A/B version is visible

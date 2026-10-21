@@ -1,5 +1,5 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
-![Playwright](https://img.shields.io/badge/playwright-1.58.0-green)
+![Playwright](https://img.shields.io/badge/playwright-1.62.0-green)
 ![pytest](https://img.shields.io/badge/pytest-9.0.3-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -39,8 +39,8 @@ playwright-playground/
 Install dependencies and Playwright browsers:
 
 ```bash
-pip install -r requirements.txt
-playwright install
+python -m pip install -r requirements.txt
+python -m playwright install
 ```
 
 Run the tests:

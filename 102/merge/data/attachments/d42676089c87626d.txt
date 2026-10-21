@@ -1,0 +1,10 @@
+2026-10-21 11:13:27,669 - root - INFO - ================================================================================
+2026-10-21 11:13:27,669 - root - INFO - TEST START: test_file_input_is_present[chromium]
+2026-10-21 11:13:27,733 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:13:28,633 - pages.base_page - INFO - Page load completed
+2026-10-21 11:13:28,633 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:13:28,634 - pages.home_page - INFO - Getting File Upload card element
+2026-10-21 11:13:28,692 - pages.home_page - INFO - Clicked File Upload card
+2026-10-21 11:13:28,694 - pages.file_upload_page - INFO - Getting file input element
+2026-10-21 11:13:31,335 - root - INFO - TEST END: test_file_input_is_present[chromium]
+2026-10-21 11:13:31,335 - root - INFO - ================================================================================

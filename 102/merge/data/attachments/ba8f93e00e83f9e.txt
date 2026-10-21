@@ -1,0 +1,14 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_click_portfolio_menu_item[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:81 Navigated to home page
+INFO     pages.home_page:home_page.py:776 Getting Shifting Content card element
+INFO     pages.home_page:home_page.py:787 Clicked Shifting Content card
+INFO     pages.shifting_content_page:shifting_content_page.py:113 Clicking Portfolio menu button
+INFO     pages.shifting_content_page:shifting_content_page.py:100 Getting Portfolio menu button element
+INFO     pages.shifting_content_page:shifting_content_page.py:91 Getting menu button: Portfolio
+INFO     pages.shifting_content_page:shifting_content_page.py:100 Getting Portfolio menu button element
+INFO     pages.shifting_content_page:shifting_content_page.py:91 Getting menu button: Portfolio
+INFO     root:conftest.py:55 TEST END: test_click_portfolio_menu_item[chromium]
+INFO     root:conftest.py:56 ================================================================================

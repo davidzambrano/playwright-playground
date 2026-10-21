@@ -1,0 +1,9 @@
+INFO     pages.ab_testing_page:ab_testing_page.py:69 Getting Version A title element
+INFO     pages.ab_testing_page:ab_testing_page.py:114 Getting Version B title element
+INFO     pages.ab_testing_page:ab_testing_page.py:53 Getting heading element for A/B Testing page
+INFO     pages.ab_testing_page:ab_testing_page.py:58 Getting page description element for A/B Testing page
+INFO     pages.ab_testing_page:ab_testing_page.py:123 Getting Version B description element
+INFO     pages.ab_testing_page:ab_testing_page.py:123 Getting Version B description element
+INFO     pages.ab_testing_page:ab_testing_page.py:132 Getting Version B sign up button element
+INFO     root:conftest.py:55 TEST END: test_active_version_elements_are_displayed[chromium]
+INFO     root:conftest.py:56 ================================================================================

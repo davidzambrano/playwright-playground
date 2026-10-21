@@ -1,0 +1,18 @@
+2026-10-21 11:14:17,893 - root - INFO - ================================================================================
+2026-10-21 11:14:17,893 - root - INFO - TEST START: test_click_pdf_submenu_shows_toast[chromium]
+2026-10-21 11:14:17,957 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:14:20,373 - pages.base_page - INFO - Page load completed
+2026-10-21 11:14:20,373 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:14:20,373 - pages.home_page - INFO - Getting Menus card element
+2026-10-21 11:14:20,425 - pages.home_page - INFO - Clicked Menus card
+2026-10-21 11:14:20,427 - pages.menus_page - INFO - Hovering over Enabled menu trigger
+2026-10-21 11:14:20,427 - pages.menus_page - INFO - Getting Enabled menu trigger element
+2026-10-21 11:14:21,262 - pages.menus_page - INFO - Hovering over Downloads submenu trigger
+2026-10-21 11:14:21,263 - pages.menus_page - INFO - Getting Downloads submenu trigger element
+2026-10-21 11:14:21,263 - pages.menus_page - INFO - Getting menu item: Downloads
+2026-10-21 11:14:21,518 - pages.menus_page - INFO - Clicking PDF submenu item
+2026-10-21 11:14:21,518 - pages.menus_page - INFO - Getting PDF submenu item element
+2026-10-21 11:14:21,519 - pages.menus_page - INFO - Getting submenu item: PDF
+2026-10-21 11:14:21,829 - pages.menus_page - INFO - Getting toast notification element
+2026-10-21 11:14:22,056 - root - INFO - TEST END: test_click_pdf_submenu_shows_toast[chromium]
+2026-10-21 11:14:22,057 - root - INFO - ================================================================================

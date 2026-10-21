@@ -1,0 +1,10 @@
+2026-10-21 11:12:12,861 - root - INFO - ================================================================================
+2026-10-21 11:12:12,861 - root - INFO - TEST START: test_hotspot_area_is_visible[chromium]
+2026-10-21 11:12:12,932 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:12:14,127 - pages.base_page - INFO - Page load completed
+2026-10-21 11:12:14,127 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:12:14,127 - pages.home_page - INFO - Getting Context Menu card element
+2026-10-21 11:12:14,193 - pages.home_page - INFO - Clicked Context Menu card
+2026-10-21 11:12:14,195 - pages.context_menu_page - INFO - Getting hot-spot area element
+2026-10-21 11:12:16,861 - root - INFO - TEST END: test_hotspot_area_is_visible[chromium]
+2026-10-21 11:12:16,861 - root - INFO - ================================================================================

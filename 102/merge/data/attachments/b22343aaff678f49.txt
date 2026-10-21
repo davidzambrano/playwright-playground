@@ -1,0 +1,25 @@
+2026-10-21 11:16:58,717 - root - INFO - ================================================================================
+2026-10-21 11:16:58,717 - root - INFO - TEST START: test_default_sort_is_last_name_ascending[chromium]
+2026-10-21 11:16:58,802 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:16:59,800 - pages.base_page - INFO - Page load completed
+2026-10-21 11:16:59,800 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:16:59,801 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-10-21 11:16:59,877 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-10-21 11:16:59,881 - pages.sortable_data_tables_page - INFO - Getting 'Last Name' column values in table 0
+2026-10-21 11:16:59,881 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-10-21 11:16:59,882 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:16:59,882 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:17:00,712 - pages.sortable_data_tables_page - INFO - Getting 'Last Name' column cells in table 0
+2026-10-21 11:17:00,713 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-10-21 11:17:00,713 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:17:00,713 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:17:00,738 - pages.sortable_data_tables_page - INFO - Getting 'Last Name' column values in table 1
+2026-10-21 11:17:00,738 - pages.sortable_data_tables_page - INFO - Getting rows of table 1
+2026-10-21 11:17:00,738 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:17:00,739 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:17:00,758 - pages.sortable_data_tables_page - INFO - Getting 'Last Name' column cells in table 1
+2026-10-21 11:17:00,758 - pages.sortable_data_tables_page - INFO - Getting rows of table 1
+2026-10-21 11:17:00,759 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:17:00,759 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:17:01,087 - root - INFO - TEST END: test_default_sort_is_last_name_ascending[chromium]
+2026-10-21 11:17:01,087 - root - INFO - ================================================================================

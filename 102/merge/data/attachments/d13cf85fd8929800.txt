@@ -1,0 +1,13 @@
+INFO     root:conftest.py:52 ================================================================================
+INFO     root:conftest.py:53 TEST START: test_due_amount_for_jason_doe[chromium]
+INFO     pages.base_page:base_page.py:37 Navigating to: https://auto-things.onrender.com/
+INFO     pages.base_page:base_page.py:54 Page load completed
+INFO     pages.home_page:home_page.py:81 Navigated to home page
+INFO     pages.home_page:home_page.py:795 Getting Sortable Data Tables card element
+INFO     pages.home_page:home_page.py:806 Clicked Sortable Data Tables card
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:174 Getting row containing 'Jason' in table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:133 Getting rows of table 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:93 Getting data table at index 0
+INFO     pages.sortable_data_tables_page:sortable_data_tables_page.py:81 Getting both data tables
+INFO     root:conftest.py:55 TEST END: test_due_amount_for_jason_doe[chromium]
+INFO     root:conftest.py:56 ================================================================================

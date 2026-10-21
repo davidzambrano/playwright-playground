@@ -1,0 +1,16 @@
+2026-10-21 11:12:56,323 - root - INFO - ================================================================================
+2026-10-21 11:12:56,323 - root - INFO - TEST START: test_content_changes_on_refresh[chromium]
+2026-10-21 11:12:56,383 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:12:58,105 - pages.base_page - INFO - Page load completed
+2026-10-21 11:12:58,105 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:12:58,105 - pages.home_page - INFO - Getting Dynamic Content card element
+2026-10-21 11:12:58,162 - pages.home_page - INFO - Clicked Dynamic Content card
+2026-10-21 11:12:58,163 - pages.dynamic_content_page - INFO - Getting text content of all items
+2026-10-21 11:12:58,164 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-10-21 11:12:58,992 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-10-21 11:13:01,391 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-10-21 11:13:01,424 - pages.dynamic_content_page - INFO - Getting text content of all items
+2026-10-21 11:13:01,425 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-10-21 11:13:01,439 - pages.dynamic_content_page - INFO - Getting content item text elements
+2026-10-21 11:13:01,695 - root - INFO - TEST END: test_content_changes_on_refresh[chromium]
+2026-10-21 11:13:01,696 - root - INFO - ================================================================================

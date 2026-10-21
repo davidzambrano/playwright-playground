@@ -1,0 +1,39 @@
+2026-10-21 11:15:25,490 - root - INFO - ================================================================================
+2026-10-21 11:15:25,490 - root - INFO - TEST START: test_header_buttons_are_visible[chromium]
+2026-10-21 11:15:25,555 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:15:26,626 - pages.base_page - INFO - Page load completed
+2026-10-21 11:15:26,626 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:15:26,626 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-10-21 11:15:26,705 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-10-21 11:15:26,707 - pages.sortable_data_tables_page - INFO - Getting 'Last Name' header button in table 0
+2026-10-21 11:15:26,707 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:15:26,707 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,581 - pages.sortable_data_tables_page - INFO - Getting 'First Name' header button in table 0
+2026-10-21 11:15:28,581 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:15:28,582 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,589 - pages.sortable_data_tables_page - INFO - Getting 'Email' header button in table 0
+2026-10-21 11:15:28,589 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:15:28,589 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,594 - pages.sortable_data_tables_page - INFO - Getting 'Due' header button in table 0
+2026-10-21 11:15:28,595 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:15:28,595 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,600 - pages.sortable_data_tables_page - INFO - Getting 'Web Site' header button in table 0
+2026-10-21 11:15:28,600 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 11:15:28,600 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,605 - pages.sortable_data_tables_page - INFO - Getting 'Last Name' header button in table 1
+2026-10-21 11:15:28,605 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:15:28,605 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,609 - pages.sortable_data_tables_page - INFO - Getting 'First Name' header button in table 1
+2026-10-21 11:15:28,609 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:15:28,610 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,614 - pages.sortable_data_tables_page - INFO - Getting 'Email' header button in table 1
+2026-10-21 11:15:28,614 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:15:28,614 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,619 - pages.sortable_data_tables_page - INFO - Getting 'Due' header button in table 1
+2026-10-21 11:15:28,619 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:15:28,619 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,623 - pages.sortable_data_tables_page - INFO - Getting 'Web Site' header button in table 1
+2026-10-21 11:15:28,623 - pages.sortable_data_tables_page - INFO - Getting data table at index 1
+2026-10-21 11:15:28,623 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 11:15:28,838 - root - INFO - TEST END: test_header_buttons_are_visible[chromium]
+2026-10-21 11:15:28,838 - root - INFO - ================================================================================

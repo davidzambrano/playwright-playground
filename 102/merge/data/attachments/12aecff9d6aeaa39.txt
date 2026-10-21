@@ -1,0 +1,10 @@
+2026-10-21 11:13:42,087 - root - INFO - ================================================================================
+2026-10-21 11:13:42,087 - root - INFO - TEST START: test_page_heading_is_visible[chromium]
+2026-10-21 11:13:42,174 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:13:43,348 - pages.base_page - INFO - Page load completed
+2026-10-21 11:13:43,348 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:13:43,348 - pages.home_page - INFO - Getting Infinite Scroll card element
+2026-10-21 11:13:43,427 - pages.home_page - INFO - Clicked Infinite Scroll card
+2026-10-21 11:13:43,431 - pages.infinite_scroll_page - INFO - Getting page heading element
+2026-10-21 11:13:45,789 - root - INFO - TEST END: test_page_heading_is_visible[chromium]
+2026-10-21 11:13:45,789 - root - INFO - ================================================================================

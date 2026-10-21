@@ -1,0 +1,22 @@
+2026-10-21 11:13:59,956 - root - INFO - ================================================================================
+2026-10-21 11:13:59,956 - root - INFO - TEST START: test_invalid_email_shows_error[chromium]
+2026-10-21 11:14:00,036 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:14:01,734 - pages.base_page - INFO - Page load completed
+2026-10-21 11:14:01,734 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:14:01,735 - pages.home_page - INFO - Getting Inputs card element
+2026-10-21 11:14:01,833 - pages.home_page - INFO - Clicked Inputs card
+2026-10-21 11:14:01,836 - pages.inputs_page - INFO - Filling Name input: John Doe
+2026-10-21 11:14:01,837 - pages.inputs_page - INFO - Getting Name input field
+2026-10-21 11:14:04,148 - pages.inputs_page - INFO - Filling Email input: invalid-email
+2026-10-21 11:14:04,148 - pages.inputs_page - INFO - Getting Email input field
+2026-10-21 11:14:04,181 - pages.inputs_page - INFO - Filling Password input
+2026-10-21 11:14:04,181 - pages.inputs_page - INFO - Getting Password input field
+2026-10-21 11:14:04,203 - pages.inputs_page - INFO - Filling Number input: 42
+2026-10-21 11:14:04,203 - pages.inputs_page - INFO - Getting Number input field
+2026-10-21 11:14:04,223 - pages.inputs_page - INFO - Filling Website input: https://example.com
+2026-10-21 11:14:04,223 - pages.inputs_page - INFO - Getting Website input field
+2026-10-21 11:14:04,243 - pages.inputs_page - INFO - Clicking Submit button
+2026-10-21 11:14:04,243 - pages.inputs_page - INFO - Getting Submit button
+2026-10-21 11:14:04,303 - pages.inputs_page - INFO - Getting toast title
+2026-10-21 11:14:04,741 - root - INFO - TEST END: test_invalid_email_shows_error[chromium]
+2026-10-21 11:14:04,742 - root - INFO - ================================================================================

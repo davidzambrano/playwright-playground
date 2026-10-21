@@ -1,0 +1,10 @@
+2026-10-21 11:13:25,750 - root - INFO - ================================================================================
+2026-10-21 11:13:25,750 - root - INFO - TEST START: test_where_am_i_button_is_visible[chromium]
+2026-10-21 11:13:25,813 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 11:13:28,201 - pages.base_page - INFO - Page load completed
+2026-10-21 11:13:28,201 - pages.home_page - INFO - Navigated to home page
+2026-10-21 11:13:28,202 - pages.home_page - INFO - Getting Geolocation card element
+2026-10-21 11:13:28,260 - pages.home_page - INFO - Clicked Geolocation card
+2026-10-21 11:13:28,262 - pages.geolocation_page - INFO - Getting Where am I? button element
+2026-10-21 11:13:30,464 - root - INFO - TEST END: test_where_am_i_button_is_visible[chromium]
+2026-10-21 11:13:30,464 - root - INFO - ================================================================================

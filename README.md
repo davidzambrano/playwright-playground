@@ -39,13 +39,9 @@ playwright-playground/
 Install dependencies and Playwright browsers:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m playwright install
 ```
-
-Activate `.venv` again in each new terminal session before running tests. On Windows, activate it with `.venv\\Scripts\\activate` instead.
 
 Run the tests:
 
@@ -61,7 +57,7 @@ pytest --browser firefox            # Use Firefox
 Install code quality tools:
 
 ```bash
-python -m pip install -r requirements-dev.txt
+pip install -r requirements-dev.txt
 pre-commit install
 ```
 

@@ -1,0 +1,33 @@
+2026-10-21 12:27:23,692 - root - INFO - ================================================================================
+2026-10-21 12:27:23,692 - root - INFO - TEST START: test_sort_toggle_reverses_order[chromium]
+2026-10-21 12:27:23,780 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 12:27:25,476 - pages.base_page - INFO - Page load completed
+2026-10-21 12:27:25,477 - pages.home_page - INFO - Navigated to home page
+2026-10-21 12:27:25,477 - pages.home_page - INFO - Getting Sortable Data Tables card element
+2026-10-21 12:27:25,571 - pages.home_page - INFO - Clicked Sortable Data Tables card
+2026-10-21 12:27:25,575 - pages.sortable_data_tables_page - INFO - Clicking 'First Name' header button in table 0
+2026-10-21 12:27:25,575 - pages.sortable_data_tables_page - INFO - Getting 'First Name' header button in table 0
+2026-10-21 12:27:25,575 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 12:27:25,575 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 12:27:26,425 - pages.sortable_data_tables_page - INFO - Getting 'First Name' column values in table 0
+2026-10-21 12:27:26,426 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-10-21 12:27:26,426 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 12:27:26,426 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 12:27:26,462 - pages.sortable_data_tables_page - INFO - Getting 'First Name' column cells in table 0
+2026-10-21 12:27:26,462 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-10-21 12:27:26,462 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 12:27:26,463 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 12:27:26,474 - pages.sortable_data_tables_page - INFO - Clicking 'First Name' header button in table 0
+2026-10-21 12:27:26,474 - pages.sortable_data_tables_page - INFO - Getting 'First Name' header button in table 0
+2026-10-21 12:27:26,474 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 12:27:26,474 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 12:27:26,516 - pages.sortable_data_tables_page - INFO - Getting 'First Name' column values in table 0
+2026-10-21 12:27:26,517 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-10-21 12:27:26,517 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 12:27:26,517 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 12:27:26,560 - pages.sortable_data_tables_page - INFO - Getting 'First Name' column cells in table 0
+2026-10-21 12:27:26,560 - pages.sortable_data_tables_page - INFO - Getting rows of table 0
+2026-10-21 12:27:26,560 - pages.sortable_data_tables_page - INFO - Getting data table at index 0
+2026-10-21 12:27:26,561 - pages.sortable_data_tables_page - INFO - Getting both data tables
+2026-10-21 12:27:26,879 - root - INFO - TEST END: test_sort_toggle_reverses_order[chromium]
+2026-10-21 12:27:26,879 - root - INFO - ================================================================================

@@ -1,0 +1,11 @@
+2026-10-21 12:27:07,791 - root - INFO - ================================================================================
+2026-10-21 12:27:07,791 - root - INFO - TEST START: test_redirect_to_destination_page[chromium]
+2026-10-21 12:27:07,880 - pages.base_page - INFO - Navigating to: https://auto-things.onrender.com/
+2026-10-21 12:27:09,942 - pages.base_page - INFO - Page load completed
+2026-10-21 12:27:09,942 - pages.home_page - INFO - Navigated to home page
+2026-10-21 12:27:09,943 - pages.home_page - INFO - Getting Redirect Link card element
+2026-10-21 12:27:10,022 - pages.home_page - INFO - Clicked Redirect Link card
+2026-10-21 12:27:10,026 - pages.redirect_link_page - INFO - Clicking Start Redirect button
+2026-10-21 12:27:10,026 - pages.redirect_link_page - INFO - Getting Start Redirect button element
+2026-10-21 12:27:16,895 - root - INFO - TEST END: test_redirect_to_destination_page[chromium]
+2026-10-21 12:27:16,896 - root - INFO - ================================================================================
